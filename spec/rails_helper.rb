@@ -7,17 +7,9 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'database_cleaner'
 require 'ffaker'
-require 'support/controller_macros.rb'
 require 'shoulda-matchers'
 require 'capybara/rails'
 require 'capybara/rspec'
-
-# Devise TestHelper
-require 'devise'
-RSpec.configure do |config|
-  config.include Devise::TestHelpers, :type => :controller
-  config.extend ControllerMacros, :type => :controller
-end
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
