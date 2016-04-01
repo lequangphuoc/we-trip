@@ -1,2 +1,2 @@
-# WE TRIP [![Build Status](https://travis-ci.org/we-trip/we-trip.svg?branch=master)](https://travis-ci.org/we-trip/we-trip) 
+# WE TRIP [![Build Status](https://travis-ci.org/we-trip/we-trip.svg?branch=master)](https://travis-ci.org/we-trip/we-trip) [![Coverage Status](https://coveralls.io/repos/github/we-trip/we-trip/badge.svg?branch=master)](https://coveralls.io/github/we-trip/we-trip?branch=master)
 **website: https://wetrip.herokuapp.com**
