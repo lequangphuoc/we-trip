@@ -63,5 +63,5 @@ URL: **https://wetrip.herokuapp.com**
 * [ ][0.5] User can login with facebook
 * [ ][3] Map: A map that draws all the roadmap in summary screen
 * [ ][1] Member can receive email when
-	* [0.5] Be involed to a trip
-	* [0.5] Reminder to publish
+	* [ ][0.5] Be involed to a trip
+	* [ ][0.5] Reminder to publish
