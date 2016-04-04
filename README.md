@@ -30,7 +30,7 @@ URL: **https://wetrip.herokuapp.com**
 * [ ][5] As a user I can edit the trip (before publishing, once the trip is published it can not be edited, they can only add attachment like photos)
 * [ ][1] Only member in the trip can edit that trip
 * [ ][20] As a user I can create a new trip-planning
-	* [3] First screen contains some basic info (start date, end date, departure and destination (multiple), expected budget, friends, title, description)
+	* [ ][3] First screen contains some basic info (start date, end date, departure and destination (multiple), expected budget, friends, title, description)
 	* [ ][6] Second screen includes itinerary (2 tabs)
 		* [ ][3] Schedule: tourist attractions for each day with schedule
 		* [ ][3] Map: the map includes all the locations
