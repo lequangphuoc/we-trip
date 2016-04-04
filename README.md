@@ -12,11 +12,11 @@ URL: **https://wetrip.herokuapp.com**
 * Khanh: **3** points/week
 * Total: 4 x (5 + 3 + 13) = **84 points**
 
-## Review and fix bugs [12 points]
+## Review and fix bugs [14 points]
 
-## User Stories [72 points]
+## User Stories [70 points]
 
-### Required [60.5]:
+### Required [62.5]:
 * [ ][0.5] As a user I want to register a new account
 * [ ][0.5] As a user I want to login/logout to the application
 * [ ][0.5] As a user I can edit my profile
