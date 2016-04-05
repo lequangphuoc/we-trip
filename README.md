@@ -67,7 +67,7 @@ URL: **https://wetrip.herokuapp.com**
 	* [ ][0.5] Reminder to publish
 
 ## Database schema
-![alt text](https://github.com/we-trip/we-trip/blob/develop/db_chema.png "Data")
+![alt text](https://github.com/we-trip/we-trip/blob/master/db_chema.png "Data")
 
 ## Some wireframes
 ###The wireframes pdf has been included in the repo
