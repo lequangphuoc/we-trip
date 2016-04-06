@@ -7,7 +7,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="top-home">
+  <div class="container">
+    <div class="col-md-9 text-xs-center">
+      <h1>WE TRIP</h1>
+    </div>
+    <div class="col-md-3 text-xs-right">
+      <div class="bd-example">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
 
+      </div>
+    </div>
+  </div>
+  <%= render 'login'  %>
+  <%= render 'register'  %>
+
+</div>
+<div class="top_img_home">
+  <div class="container">
+    <h1> Love your planned trip... </h1>
+    <div class="form-group">
+
+      <input type="text" class="form-control" name="search_text" id="search_text" placeholder="Search for events, shows, courses...">
+    </div>
+
+  </div>
+</div>
 <div class="container">
   <%= yield %>
 </div>
