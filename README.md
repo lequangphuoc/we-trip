@@ -38,8 +38,9 @@ URL: **https://wetrip.herokuapp.com**
 		* [ ][1] Pre-trip seciton
 		* [ ][1] Transport section
 		* [ ][1] On-trip section: list all destinations with price base on each day
-		* [ ][1] User can edit the budget
+		* [ ][1] User can edit the budget 
 		* [ ][1] User should be notified if the total budget exceed the expected expense (equal to budget for invidual multiply by the number of friends)
+		* [ ][5] As a user I can plan budget for each member in the trip-planning 
 	* [ ][6] Others screen includes 3 tabs (1 is optional - the map):
 		* [ ][3] Attachment (only allow png, jpg, gif, pdf)
 		* [ ][2] Todo-list
@@ -65,6 +66,8 @@ URL: **https://wetrip.herokuapp.com**
 * [ ][1] Member can receive email when
 	* [ ][0.5] Be involed to a trip
 	* [ ][0.5] Reminder to publish
+* [ ][3] As a user, if we have space time in the schedule the system can suggest some nearby place to play with  
+* [ ][3] As a user, I want to add travel time to Itinerary 
 
 ## Database schema
 ![alt text](https://github.com/we-trip/we-trip/blob/develop/db_chema.png "Data")

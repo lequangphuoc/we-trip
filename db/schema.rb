@@ -51,6 +51,4 @@ ActiveRecord::Schema.define(version: 20160407005218) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "place_photos", "places"
-  add_foreign_key "places", "regions"
 end

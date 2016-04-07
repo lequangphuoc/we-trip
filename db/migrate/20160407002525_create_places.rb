@@ -8,7 +8,7 @@ class CreatePlaces < ActiveRecord::Migration
       t.decimal :longitude
       t.string :vicinity
       t.text :description
-      t.references :region, index: true, foreign_key: true
+      t.references :region, index: true
       t.integer :default_budget
 
       t.timestamps null: false
