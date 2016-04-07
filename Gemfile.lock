@@ -112,6 +112,9 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.3)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -156,6 +159,7 @@ GEM
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    puma (3.3.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -288,6 +292,7 @@ DEPENDENCIES
   factory_girl_rails
   ffaker
   figaro
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
@@ -295,6 +300,7 @@ DEPENDENCIES
   omniauth
   omniauth-facebook (~> 3.0.0)
   pg (~> 0.15)
+  puma
   rails (= 4.2.5.2)
   rails-assets-tether (>= 1.1.0)!
   rails_12factor

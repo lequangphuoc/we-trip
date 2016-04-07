@@ -47,6 +47,10 @@ gem 'omniauth'
 gem 'omniauth-facebook', '~> 3.0.0'
 # remotipart
 gem 'remotipart', '~> 1.2'
+# http
+gem 'httparty'
+# puma
+gem 'puma'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'

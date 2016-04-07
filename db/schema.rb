@@ -11,9 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160407005218) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "place_photos", force: :cascade do |t|
+    t.integer  "place_id"
+    t.string   "photo_reference"
+    t.integer  "height"
+    t.integer  "width"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "place_photos", ["place_id"], name: "index_place_photos_on_place_id", using: :btree
+
+  create_table "places", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location_id"
+    t.decimal  "rating"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.string   "vicinity"
+    t.text     "description"
+    t.integer  "region_id"
+    t.integer  "default_budget"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "places", ["region_id"], name: "index_places_on_region_id", using: :btree
+
+  create_table "regions", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "place_photos", "places"
+  add_foreign_key "places", "regions"
 end
