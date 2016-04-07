@@ -67,14 +67,10 @@ URL: **https://wetrip.herokuapp.com**
 	* [ ][0.5] Reminder to publish
 
 ## Database schema
-![alt text](https://github.com/we-trip/we-trip/blob/master/db_chema.png "Data")
+![alt text](https://github.com/we-trip/we-trip/blob/develop/db_chema.png "Data")
 
 ## Some wireframes
 ###The wireframes pdf has been included in the repo
 ![alt text](http://s24.postimg.org/c48v9utc1/Screenshot_2016_04_05_07_13_11.png "Data")
 ![alt text](http://s24.postimg.org/j4s9ow5q9/Screenshot_2016_04_05_07_13_17.png "Data")
 ![alt text](http://s24.postimg.org/4a89oglj5/Screenshot_2016_04_05_07_13_24.png "Data")
-
-## Survey
-**https://github.com/we-trip/we-trip/blob/develop/Party%20Invite.csv**
-
