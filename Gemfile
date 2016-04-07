@@ -51,6 +51,8 @@ gem 'remotipart', '~> 1.2'
 gem 'httparty'
 # puma
 gem 'puma'
+# dumbing database
+gem 'yaml_db'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
