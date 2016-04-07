@@ -2,7 +2,10 @@ require 'ffaker'
 
 class FetchPlacesService
   def execute
-    fetch_places_foreach_region if Place.count == 0
+    if Place.count == 0
+      fetch_places_foreach_region
+      destroy_place_have_no_photo
+    end
   end
 
   private
@@ -43,5 +46,9 @@ class FetchPlacesService
         )
       end
     end if place_detail['photos']
+  end
+
+  def destroy_place_have_no_photo
+    Place.where("id NOT IN (SELECT DISTINCT(place_id) from place_photos)").destroy_all
   end
 end
