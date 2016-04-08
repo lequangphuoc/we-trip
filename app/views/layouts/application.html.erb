@@ -8,11 +8,11 @@
 </head>
 <body>
 <div class="top-home">
-  <div class="container">
-    <div class="col-md-9 text-xs-center">
+  <div class="row">
+    <div class="name-center">
       <h1>WE TRIP</h1>
     </div>
-    <div class="col-md-3 text-xs-right">
+    <div class="info-right">
       <div class="bd-example">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
@@ -27,10 +27,17 @@
 <div class="top_img_home">
   <div class="container">
     <h1> Love your planned trip... </h1>
-    <div class="form-group">
-
-      <input type="text" class="form-control" name="search_text" id="search_text" placeholder="Search for events, shows, courses...">
-    </div>
+    <form class="form-inline home-search">
+      <div class="form-group">
+        <label class="sr-only" for="fromPlace">From</label>
+        <input type="email" class="form-control home-search-box" id="fromPlace" placeholder="Departure">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="toPlace">Password</label>
+        <input type="password" class="form-control home-search-box" id="toPlace" placeholder="Destination">
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
 
   </div>
 </div>

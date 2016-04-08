@@ -121,33 +121,58 @@ input, select {
   font-url('JosefinSans-Bold.woff') format('woff'),
   font-url('JosefinSans-Bold.svg#webfont') format('svg');
 }
+@font-face {
+  font-family: blanchCap;
+  src: font-url('blanch_caps.eot');
+  src: font-url('blanch_caps.ttf') format('truetype'),
+  font-url('blanch_caps.eot?#iefix') format('embedded-opentype'),
+  font-url('blanch_caps.woff') format('woff'),
+  font-url('blanch_caps.svg#webfont') format('svg');
+}
 
 body, p, a{
   font-family: josefin;
 }
-
-h1, h2, h3, h4, h5, h6, strong, .bold-text {
+h1{
+  font-family: blanchCap;
+}
+h2, h3, h4, h5, h6, strong, .bold-text {
   font-family: josefinBold;
 }
 .top-home{
   background: #212121;
   color: #fff;
-  padding: 15px;
+  width: 1440px;
   h1{
-    font-size: 40px;
+    font-size: 90px;
+  }
+  .name-center{
+    float: left;
+    margin-left: 620px;
+  }
+  .info-right{
+    margin-top: 30px;
+    float: right;
+    width: 300px;
   }
 }
 .top_img_home{
   background-image: image-url('home_big.jpg');
-  width: 100%;
-  height: 400px;
+  width: 1440px;
+  height: 300px;
   .container{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   h1{
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .home-search{
+    margin-top: 50px;
+  }
+  .home-search-box{
+    width: 300px;
   }
 }
 
