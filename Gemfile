@@ -102,5 +102,8 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+  #photo gallery
+gem 'Bootstrap-Image-Gallery-rails'
+
 
 

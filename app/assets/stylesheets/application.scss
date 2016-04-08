@@ -1,3 +1,9 @@
+/*
+ *= require blueimp-gallery
+ *= require bootstrap-image-gallery
+ *= require blueimp-gallery-indicator
+ *= require blueimp-gallery-video
+*/
 @import "bootstrap";
 @import "toastr";
 
@@ -191,4 +197,28 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     }
   }
 
+}
+
+/*location*/
+#photos-place{
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.one-column{
+  h1{
+    font-size: 50px;
+    border-bottom: 1px dashed #BBBBBB;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    padding: 10px 10px 10px 0;
+  }
 }
