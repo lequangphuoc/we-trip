@@ -8,10 +8,18 @@
         <h4 class="modal-title" id="registerFormLabel">Create an account</h4>
       </div>
       <div class="modal-body">
+        <% @user ||= User.new %>
         <form>
+          <%= render 'share/model_error', object: @user %>
+          <div class="form-group">
+            <label for="username" class="form-control-label">Username:</label>
+            <input type="text" class="form-control" id="username" value="<%= @user.name %>"
+                   name="user[name]" placeholder="Enter your username">
+          </div>
           <div class="form-group">
             <label for="email" class="form-control-label">Email:</label>
-            <input type="text" class="form-control" id="email" placeholder="Enter your email">
+            <input type="text" class="form-control" id="email" value="<%= @user.email %>"
+                   name="user[email]" placeholder="Enter your email">
           </div>
           <div class="form-group">
             <label for="password" class="form-control-label">Password:</label>
@@ -30,8 +38,17 @@
             </div>
         </form>
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Create</button>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-success btn-lg btn-block">Register</button>
+          </div>
+
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Login with Facebook</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

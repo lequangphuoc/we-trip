@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WeTrip</title>
+  <title>We Trip</title>
+  <link rel="icon" href="<%= image_path 'logo.png' %>">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="top-home">
-  <div class="row">
-    <div class="name-center">
-      <h1>WE TRIP</h1>
-    </div>
-    <div class="info-right">
-      <div class="bd-example">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
+<%= render 'share/navbar' %>
 
-      </div>
-    </div>
-  </div>
-  <%= render 'login'  %>
-  <%= render 'register'  %>
-
-</div>
-<div class="top_img_home">
-  <div class="container">
-    <h1> Love your planned trip... </h1>
-    <form class="form-inline home-search">
-      <div class="form-group">
-        <label class="sr-only" for="fromPlace">From</label>
-        <input type="email" class="form-control home-search-box" id="fromPlace" placeholder="Departure">
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="toPlace">Password</label>
-        <input type="password" class="form-control home-search-box" id="toPlace" placeholder="Destination">
-      </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-
-  </div>
-</div>
 <div class="container">
   <%= yield %>
 </div>

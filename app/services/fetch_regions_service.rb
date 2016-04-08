@@ -1,3 +1,4 @@
+# :nocov:
 class FetchRegionsService
   def execute
     fetch_regions if Region.count == 0
@@ -19,3 +20,4 @@ class FetchRegionsService
     response['results'][0]['geometry']['location']
   end
 end
+# :nocov:

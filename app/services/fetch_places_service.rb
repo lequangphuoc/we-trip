@@ -1,5 +1,6 @@
 require 'ffaker'
 
+# :nocov:
 class FetchPlacesService
   def execute
     fetch_places_foreach_region if Place.count == 0
@@ -45,3 +46,4 @@ class FetchPlacesService
     end if place_detail['photos']
   end
 end
+# :nocov:
