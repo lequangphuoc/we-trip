@@ -2,19 +2,18 @@
 #
 # Table name: places
 #
-#  id              :integer          not null, primary key
-#  name            :string
-#  location_id     :integer
-#  rating          :decimal(, )
-#  latitude        :decimal(, )
-#  longitude       :decimal(, )
-#  image_reference :string
-#  vicinity        :string
-#  description     :text
-#  region_id       :integer
-#  default_budget  :integer
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
+#  id             :integer          not null, primary key
+#  name           :string
+#  location_id    :string
+#  rating         :decimal(, )
+#  latitude       :decimal(, )
+#  longitude      :decimal(, )
+#  vicinity       :string
+#  description    :text
+#  region_id      :integer
+#  default_budget :integer
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
 #
 
 class Place < ActiveRecord::Base

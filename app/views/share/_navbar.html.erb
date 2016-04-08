@@ -5,28 +5,16 @@
     </div>
     <div class="info-right">
       <div class="bd-example">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
+        <% if sign_in? %>
+            <%= link_to 'Logout', sessions_path, method: :delete, class: 'btn btn-danger' %>
+            <%= link_to 'Edit Profile', edit_user_path(current_user_id), method: :get, class: 'btn btn-warning' %>
+      <% else %>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
+        <% end %>
       </div>
     </div>
   </div>
-  <%= render 'home/login' %>
-  <%= render 'home/register' %>
-</div>
-
-<div class="top_img_home">
-  <div class="container">
-    <h1> Love your planned trip... </h1>
-    <form class="form-inline home-search">
-      <div class="form-group">
-        <label class="sr-only" for="fromPlace">From</label>
-        <input type="email" class="form-control home-search-box" id="fromPlace" placeholder="Departure">
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="toPlace">Password</label>
-        <input type="password" class="form-control home-search-box" id="toPlace" placeholder="Destination">
-      </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-  </div>
+  <%= render 'sessions/new' %>
+  <%= render 'users/new' %>
 </div>

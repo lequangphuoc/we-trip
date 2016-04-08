@@ -1,0 +1,5 @@
+<% if @authenticate %>
+  location.href = '<%= root_path %>';
+<% else %>
+  $('#session-error').html("<%= j(render 'share/error', errors: ['Invalid email or password']) %>");
+<% end %>
