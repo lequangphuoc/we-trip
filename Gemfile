@@ -53,6 +53,8 @@ gem 'httparty'
 gem 'puma'
 # dumbing database
 gem 'yaml_db'
+#photo gallery
+gem 'Bootstrap-Image-Gallery-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
