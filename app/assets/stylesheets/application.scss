@@ -141,10 +141,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 .top-home{
   background: #212121;
-  color: #fff;
   width: 1440px;
   h1{
     font-size: 90px;
+    color: #fff;
   }
   .name-center{
     float: left;
@@ -174,10 +174,14 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .home-search-box{
     width: 300px;
   }
+  .file-custom::after {
+    content: "Choose avatar...";
+  }
 }
 
 /*login form*/
 .trip-form{
+
   .modal-header{
     background: #212121;
     color: #fff;
