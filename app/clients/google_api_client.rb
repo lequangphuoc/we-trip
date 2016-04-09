@@ -1,3 +1,4 @@
+# :nocov:
 class GoogleApiClient
   API_KEY = ENV['GOOGLE_API_KEY']
   TYPES = 'museum|night_club|shopping_small|cafe|movie_theater'
@@ -37,3 +38,4 @@ class GoogleApiClient
     HTTParty.get(URI.encode(url)).parsed_response
   end
 end
+# :nocov:
