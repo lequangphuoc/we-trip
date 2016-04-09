@@ -2,6 +2,8 @@ language: ruby
 cache: bundler
 rvm:
   - 2.2.2
+notifications:
+  slack: ruby032016:aeuAQs9tTYRCHPtSRu0xaNQn
 script:
   - bundle exec rake db:create db:migrate RAILS_ENV=test
   - bundle exec rspec spec
