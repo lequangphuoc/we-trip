@@ -12,7 +12,7 @@ class LocationsController < ApplicationController
 		case @location.first.class.name
 		when 'Place'
 			@location = Place.find(params[:id])
-			@photos = PlacePhoto.where(place: location)
+			@photos = PlacePhoto.where(place: @location)
 		when 'Region'
 			@location = Region.find(params[:id])
 		else
