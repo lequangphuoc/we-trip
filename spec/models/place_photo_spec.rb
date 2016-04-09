@@ -14,5 +14,9 @@
 require 'rails_helper'
 
 RSpec.describe PlacePhoto, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should validate_presence_of(:height) }
+  it { should validate_presence_of(:width) }
+  it { should validate_presence_of(:place_id) }
+  it { should validate_presence_of(:photo_reference) }
+  it { should belong_to(:place) }
 end

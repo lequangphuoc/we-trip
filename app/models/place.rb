@@ -19,4 +19,7 @@
 class Place < ActiveRecord::Base
   belongs_to :region
   has_many :place_photos, dependent: :destroy
+
+  validates_presence_of :name, :latitude, :longitude, :vicinity,
+                        :region_id, :description, :rating
 end

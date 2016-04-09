@@ -13,4 +13,6 @@
 
 class PlacePhoto < ActiveRecord::Base
   belongs_to :place
+
+  validates_presence_of :height, :width, :place_id, :photo_reference
 end

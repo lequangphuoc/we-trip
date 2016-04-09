@@ -19,5 +19,13 @@
 require 'rails_helper'
 
 RSpec.describe Place, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should validate_presence_of(:name) }
+  it { should validate_presence_of(:latitude) }
+  it { should validate_presence_of(:longitude) }
+  it { should validate_presence_of(:vicinity) }
+  it { should validate_presence_of(:description) }
+  it { should validate_presence_of(:rating) }
+  it { should validate_presence_of(:region_id) }
+  it { should belong_to(:region) }
+  it { should have_many(:place_photos).dependent(:destroy) }
 end
