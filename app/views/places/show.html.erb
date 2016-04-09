@@ -1,11 +1,11 @@
 <div class="one-column">
   <h1>
-    <%= @location.name %>
+    <%= @place.name %>
   </h1>
   <h2>Description</h2>
   <div>
     <p>
-      <%= @location.description %>
+      <%= @place.description %>
     </p>
   </div>
   <h2>Photos</h2>
@@ -46,17 +46,13 @@
   </div>
 
   <div id="photos-place">
-    <% if !@photos.blank? %>
-      <% @photos.each do |photo| %>
-      <a href="<%= GoogleApiClient.get_place_photo(photo.photo_reference, photo.height) %>" title="<%=  @location.name %>" data-gallery>
-        <img src="<%= GoogleApiClient.get_place_photo(photo.photo_reference, photo.height) %>" alt="<%=  @location.name %>">
-      </a>
-      <% end %>
+    <% if !@place_photos.blank? %>
+      <%= render @place_photos %>
     <% else %>
       <p>There is no image for this location yet.</p>
     <% end %>
   </div>
 
   <h2>Maps</h2>
-  <iframe src="<%= GoogleApiClient.get_map_frame(@location.location_id) %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="<%= @place.map_url %>" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
