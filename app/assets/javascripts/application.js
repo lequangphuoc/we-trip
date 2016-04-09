@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.remotipart
 //= require tether
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require toastr
-
 //= require blueimp-gallery
 //= require blueimp-gallery-fullscreen
 //= require blueimp-gallery-indicator

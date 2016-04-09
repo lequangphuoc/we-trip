@@ -53,6 +53,8 @@ gem 'httparty'
 gem 'puma'
 # dumbing database
 gem 'yaml_db'
+#photo gallery
+gem 'Bootstrap-Image-Gallery-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -101,9 +103,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
-
-  #photo gallery
-gem 'Bootstrap-Image-Gallery-rails'
 
 
 

@@ -4,10 +4,12 @@
       <h1>WE TRIP</h1>
     </div>
     <div class="info-right">
-      <!-- <div class="top-before-login">
+      <% if !sign_in? %>
+      <div class="top-before-login">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
-      </div>-->
+      </div>
+      <% else %>
       <ul class="nav nav-tabs top-after-login">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -20,9 +22,10 @@
           </div>
         </li>
       </ul>
+      <% end %>
     </div>
   </div>
-  <%= render 'home/login' %>
-  <%= render 'home/register' %>
+  <%= render 'sessions/new' %>
+  <%= render 'users/new' %>
 </div>
 
