@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PlaceDecorator do
-	let(:place) { create(:place).decorate}
+	let(:place) { build(:place).decorate}
 
   describe '#map_url' do
     it 'should return url' do

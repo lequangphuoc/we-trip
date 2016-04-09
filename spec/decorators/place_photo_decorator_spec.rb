@@ -2,9 +2,8 @@ require 'spec_helper'
 
 describe PlacePhotoDecorator do
   before(:each) do
-    @place = create(:place).decorate
-    @place_photo = create(:place_photo).decorate
-    @place_photo.place_id = @place.id
+    @place_photo = build(:place_photo).decorate
+    @place_photo.place = build(:place)
   end
 
   describe '#place_name' do

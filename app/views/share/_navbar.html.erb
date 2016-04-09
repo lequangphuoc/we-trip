@@ -4,15 +4,25 @@
       <h1>WE TRIP</h1>
     </div>
     <div class="info-right">
-      <div class="bd-example">
-        <% if sign_in? %>
-            <%= link_to 'Logout', sessions_path, method: :delete, class: 'btn btn-danger' %>
-            <%= link_to 'Edit Profile', edit_user_path(current_user_id), method: :get, class: 'btn btn-warning' %>
-        <% else %>
+      <% if sign_in? %>
+          <ul class="nav nav-tabs top-after-login">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="http://designwannabe.com/wp-content/themes/AdvancedGallery/images/default-avatar.gif" alt="default" width="30" class="img-rounded">
+                <span>Username</span>
+              </a>
+              <div class="dropdown-menu">
+                <%= link_to 'Logout', sessions_path, method: :delete, class: 'dropdown-item' %>
+                <%= link_to 'Profile', edit_user_path(current_user_id), method: :get, class: 'dropdown-item' %>
+              </div>
+            </li>
+          </ul>
+      <% else %>
+          <div class="top-before-login">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
-        <% end %>
-      </div>
+          </div>
+      <% end %>
     </div>
   </div>
   <%= render 'sessions/new' %>

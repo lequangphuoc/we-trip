@@ -161,6 +161,22 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     float: right;
     width: 300px;
   }
+  .top-after-login{
+    border: none;
+    a{
+
+      background: none;
+    }
+    .nav-link{
+      color: #fff;
+    }
+    .dropdown-item:hover{
+      background-color: #EFEFEF;
+    }
+    span{
+      font-size: 18px;
+    }
+  }
 }
 .top_img_home{
   background-image: image-url('home_big.jpg');
