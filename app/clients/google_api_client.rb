@@ -22,6 +22,11 @@ class GoogleApiClient
     get_method('https://maps.googleapis.com/maps/api/place/nearbysearch/json' + params)
   end
 
+  def self.get_place_photo(photo_reference,height)
+    params = "?maxheight=height&photoreference=#{photo_reference}&key=#{API_KEY}"
+    get_method('https://maps.googleapis.com/maps/api/place/photo' + params)
+  end
+
   private
   def self.get_method(url)
     HTTParty.get(URI.encode(url)).parsed_response
