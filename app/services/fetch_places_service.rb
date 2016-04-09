@@ -25,7 +25,7 @@ class FetchPlacesService
             rating: result['rating'],
             vicinity: result['vicinity'],
             location_id: result['place_id'],
-            description: FFaker::Lorem.characters(1000),
+            description: FFaker::Lorem.words(1000),
             default_budget: rand(50000..1000000)
         )
         fetch_photos_for_place(place)

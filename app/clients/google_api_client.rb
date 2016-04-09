@@ -1,3 +1,4 @@
+# :nocov:
 class GoogleApiClient
   API_KEY = ENV['GOOGLE_API_KEY']
   TYPES = 'museum|night_club|shopping_small|cafe|movie_theater'
@@ -22,8 +23,19 @@ class GoogleApiClient
     get_method('https://maps.googleapis.com/maps/api/place/nearbysearch/json' + params)
   end
 
+  def self.get_place_photo(photo_reference, height)
+    params = "?maxheight=#{height}&photoreference=#{photo_reference}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
+    return 'https://maps.googleapis.com/maps/api/place/photo' + params
+  end
+
+  def self.get_map_frame(place_id)
+    params = "?q=place_id:#{place_id}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
+    return 'https://www.google.com/maps/embed/v1/place' + params
+  end
+
   private
   def self.get_method(url)
     HTTParty.get(URI.encode(url)).parsed_response
   end
 end
+# :nocov:
