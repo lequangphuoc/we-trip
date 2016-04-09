@@ -4,10 +4,22 @@
       <h1>WE TRIP</h1>
     </div>
     <div class="info-right">
-      <div class="bd-example">
+      <!-- <div class="top-before-login">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
-      </div>
+      </div>-->
+      <ul class="nav nav-tabs top-after-login">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="http://designwannabe.com/wp-content/themes/AdvancedGallery/images/default-avatar.gif" alt="default" width="30" class="img-rounded">
+            <span>Username</span>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <%= render 'home/login' %>
