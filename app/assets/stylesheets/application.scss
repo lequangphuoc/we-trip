@@ -169,11 +169,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .top-after-login{
     border: none;
     a{
-
       background: none;
     }
     .nav-link{
-      color: #fff;
+
       padding: 5px;
       height: 45px;
       border: none !important;
@@ -189,8 +188,11 @@ h2, h3, h4, h5, h6, strong, .bold-text {
       }
 
     }
+    .nav-link:hover{
+      color: #777777;
+    }
 
-    .dropdown-toggle::after{
+    .caret{
       margin-top: 15px;
     }
     .dropdown-item:hover{
