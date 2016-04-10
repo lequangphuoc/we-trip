@@ -1,0 +1,50 @@
+
+<div class="form-slide">
+  <form>
+  <h2 class="fs-title">Trip Basic Information</h2>
+    <fieldset class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter title">
+    </fieldset>
+
+
+    <fieldset class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" rows="3"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="expected_budget">Expected Budget</label>
+      <input type="number" class="form-control" id="expected_budget">
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Participants</label>
+      <ul id="participantTags"></ul>
+      <%= hidden_field_tag 'participant' %>
+    </fieldset>
+    <fieldset class="form-group">
+      <label>Destination and Departure</label>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">Departure</div>
+          <div class="col-md-3">Destination</div>
+          <div class="col-md-3">Start Date</div>
+          <div class="col-md-3">End Date</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"><input type="text" class="form-control" id="departure_1" /></div>
+          <div class="col-md-3"><input type="text" class="form-control" id="destination_1" /></div>
+          <div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_1" /></div>
+          <div class="col-md-3"><input type="text" class="form-control datetimepicker" id="end-date_1" /></div>
+        </div>
+
+
+      </div>
+
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <input type="button" name="next" class="next action-button" value="Next" />
+
+  </form>
+</div>
+

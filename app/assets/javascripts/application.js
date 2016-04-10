@@ -24,3 +24,9 @@
 //= require blueimp-gallery-youtube
 //= require jquery.blueimp-gallery
 //= require bootstrap-image-gallery
+//= require jquery.easing
+//= require jquery-ui
+//= require tag-it
+//= require bootstrap
+//= require moment
+//= require bootstrap-datetimepicker

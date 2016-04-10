@@ -103,6 +103,11 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
+gem 'jquery-ui-rails'
+gem 'jquery-easing-rails'
+gem 'tag-it-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 
 
 
