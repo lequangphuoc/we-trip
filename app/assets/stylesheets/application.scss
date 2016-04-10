@@ -169,6 +169,26 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     }
     .nav-link{
       color: #fff;
+      padding: 5px;
+      height: 45px;
+      border: none !important;
+      width: 159px;
+      .img-rounded{
+        float: left;
+      }
+      .username-right-top{
+        float: left;
+        font-size: 20px;
+        margin-top: 6px;
+        margin-left: 5px;
+      }
+
+    }
+    .dropdown-item{
+      width: 100px;
+    }
+    .dropdown-toggle::after{
+      margin-top: 15px;
     }
     .dropdown-item:hover{
       background-color: #EFEFEF;
