@@ -31,4 +31,6 @@ RSpec.describe User, type: :model do
   it { should allow_value('vuhuyquan@apidez.com').for(:email) }
   it { should validate_numericality_of(:point).only_integer }
   it { should validate_numericality_of(:point).is_greater_than_or_equal_to(0) }
+  it { should have_many(:friend_relations) }
+  it { should have_many(:friends).through(:friend_relations).class_name(User).with_foreign_key(:target_id) }
 end

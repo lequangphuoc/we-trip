@@ -14,7 +14,8 @@
 #
 
 class User < ActiveRecord::Base
-  has_many :events
+  has_many :friend_relations
+  has_many :friends, through: :friend_relations, class_name: User, foreign_key: :target_id
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader

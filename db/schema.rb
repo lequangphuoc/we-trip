@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160408133727) do
+ActiveRecord::Schema.define(version: 20160410041141) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "friend_relations", force: :cascade do |t|
+    t.string   "status",     default: "pending"
+    t.integer  "user_id"
+    t.integer  "target_id"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
+  add_index "friend_relations", ["user_id"], name: "index_friend_relations_on_user_id", using: :btree
 
   create_table "place_photos", force: :cascade do |t|
     t.integer  "place_id"
@@ -62,4 +72,5 @@ ActiveRecord::Schema.define(version: 20160408133727) do
     t.datetime "updated_at",                  null: false
   end
 
+  add_foreign_key "friend_relations", "users"
 end

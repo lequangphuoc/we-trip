@@ -77,3 +77,9 @@ URL: **https://wetrip.herokuapp.com**
 ![alt text](http://s24.postimg.org/c48v9utc1/Screenshot_2016_04_05_07_13_11.png "Data")
 ![alt text](http://s24.postimg.org/j4s9ow5q9/Screenshot_2016_04_05_07_13_17.png "Data")
 ![alt text](http://s24.postimg.org/4a89oglj5/Screenshot_2016_04_05_07_13_24.png "Data")
+
+## Some patterns
+* Service: when doing complicated insert to database (example: create order, calculate points, ...)
+* Queries: when doing complicated queries from database
+* Decorator: when adding more responsibilities for model to be displayed in view
+* Policies: when doing complicated queries for exisitng model
