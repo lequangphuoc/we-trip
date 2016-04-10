@@ -17,16 +17,16 @@ URL: **https://wetrip.herokuapp.com**
 ## User Stories [70 points]
 
 ### Required [62.5]:
-* [ ][0.5] As a user I want to register a new account
-* [ ][0.5] As a user I want to login/logout to the application
+* [x][0.5] As a user I want to register a new account
+* [x][0.5] As a user I want to login/logout to the application
 * [ ][0.5] As a user I can edit my profile
 * [ ][1.5] As a user at a home page I can see the search box and some description information
 	* [ ][0.5] As a user I can search for a trip-planning with origin and destinattion
 	* [ ][1] As a user I can see best contributor
-* [ ][2.5] As a user I can see detail of a location
-	* [ ][1] Detail location should have some description
-	* [ ][0.5] Detail location should have a map to display location
-	* [ ][1] Detail location should have a side-bar that includes pictures about the location
+* [x][2.5] As a user I can see detail of a location
+	* [x][1] Detail location should have some description
+	* [x][0.5] Detail location should have a map to display location
+	* [x][1] Detail location should have a side-bar that includes pictures about the location
 * [ ][5] As a user I can edit the trip (before publishing, once the trip is published it can not be edited, they can only add attachment like photos)
 * [ ][1] Only member in the trip can edit that trip
 * [ ][20] As a user I can create a new trip-planning
@@ -48,20 +48,20 @@ URL: **https://wetrip.herokuapp.com**
 * [ ][4] Notification when
 	* [ ][1] Invlove in the trip, remind publish
 	* [ ][3] When trip change (edit, create, publish)
-* [ ][3] Each user can have points
-	* [ ][1] Views count (1 points)
-	* [ ][1] Clone count (5 points)
-	* [ ][1] Create a trip (10 points)
+* [x][3] Each user can have points
+	* [x][1] Views count (1 points)
+	* [x][1] Clone count (5 points)
+	* [x][1] Create a trip (10 points)
 * [ ][5] As a user outside of a trip-planning I can view detail of a published trip-planning but cannot be editted
 * [ ][11] User can clone a trip-planning and edit it
 	* [ ][5] Delete: friends, todos, attachments, end date
 	* [ ][1] Has default start date
 	* [ ][5] Logic update number of dates (can only update the number of days that larger or equal the number of date in on-trip planning)
-* [ ][8] Information about locations, places and budgets should be fetched from somewhere (from the third party)
+* [x][8] Information about locations, places and budgets should be fetched from somewhere (from the third party)
 
 ### Optinal [7.5 points]:
 * [ ][3] The system can create a gif or a recap-video after the trip has been plubished in the trip-planning detail
-* [ ][0.5] User can login with facebook
+* [x][0.5] User can login with facebook
 * [ ][3] Map: A map that draws all the roadmap in summary screen
 * [ ][1] Member can receive email when
 	* [ ][0.5] Be involed to a trip
