@@ -53,8 +53,14 @@ gem 'httparty'
 gem 'puma'
 # dumbing database
 gem 'yaml_db'
-#photo gallery
+# ui libaries
 gem 'Bootstrap-Image-Gallery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-easing-rails'
+gem 'tag-it-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -103,12 +109,3 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
-gem 'jquery-ui-rails'
-gem 'jquery-easing-rails'
-gem 'tag-it-rails'
-gem 'momentjs-rails', '>= 2.9.0'
-gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
-gem 'bootstrap-sass', '~> 3.3.6'
-
-
-
