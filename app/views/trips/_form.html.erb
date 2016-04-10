@@ -19,7 +19,19 @@
 
 <script>
   $(document).ready(function(){
-    $('.datetimepicker').datetimepicker();
+    $('#addSchedule').click(function(){
+      var number_schedule = $('.basic-schedule-detail').length + 1;
+      var append = '<div class="row basic-schedule-detail">' +
+          '<div class="col-md-3"><input type="text" class="form-control" id="departure_'+ number_schedule +'" /></div>' +
+          '<div class="col-md-3"><input type="text" class="form-control" id="destination_'+ number_schedule +'" /></div>' +
+          '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_'+ number_schedule +'" /></div>' +
+          '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="end-date_'+ number_schedule +'" /></div>' +
+          '</div>';
+      $('.basic-info-schedule').append(append);
+    });
+    $('.datetimepicker').datetimepicker({
+      format: 'DD-MMM-YYYY'
+    });
     var sampleTags = ["Quan Vu", "Khanh Dang", "Lan Doang", "Harley Trung"]
 
       //-------------------------------

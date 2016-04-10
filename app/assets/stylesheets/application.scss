@@ -1,4 +1,5 @@
 /*
+ *= require_self
  *= require blueimp-gallery
  *= require bootstrap-image-gallery
  *= require blueimp-gallery-indicator
@@ -6,6 +7,7 @@
  *= require jquery-ui
  *= require jquery.tagit.css
 */
+@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "toastr";
 @import 'bootstrap-datetimepicker';
@@ -373,4 +375,13 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 #progressbar li.active:before,  #progressbar li.active:after{
   background: #27AE60;
 
+}
+/*basic info*/
+.basic-info-schedule{
+  margin-top: 20px;
+  background-color: #E7F4F2;
+  padding: 10px 0;
+  .basic-schedule-detail{
+    margin: 10px 0;
+  }
 }

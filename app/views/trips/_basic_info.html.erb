@@ -23,14 +23,14 @@
     </fieldset>
     <fieldset class="form-group">
       <label>Destination and Departure</label>
-      <div class="container">
+      <div class="basic-info-schedule">
         <div class="row">
           <div class="col-md-3">Departure</div>
           <div class="col-md-3">Destination</div>
           <div class="col-md-3">Start Date</div>
           <div class="col-md-3">End Date</div>
         </div>
-        <div class="row">
+        <div class="row basic-schedule-detail">
           <div class="col-md-3"><input type="text" class="form-control" id="departure_1" /></div>
           <div class="col-md-3"><input type="text" class="form-control" id="destination_1" /></div>
           <div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_1" /></div>
@@ -38,8 +38,9 @@
         </div>
 
 
-      </div>
 
+      </div>
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Schedule Details</button>
     </fieldset>
 
     <button type="submit" class="btn btn-primary">Submit</button>

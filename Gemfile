@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # boostrap
-gem 'bootstrap', '~> 4.0.0.alpha1'
+#gem 'bootstrap', '~> 4.0.0.alpha1'
 # authentication
 gem 'devise'
 # toast
@@ -108,6 +108,7 @@ gem 'jquery-easing-rails'
 gem 'tag-it-rails'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 
 
