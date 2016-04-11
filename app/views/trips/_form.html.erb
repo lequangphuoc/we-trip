@@ -31,7 +31,7 @@
       next_fs = $(this).parent().parent().next();
 
       //activate next step on progressbar using the index of next_fs
-      $("#progressbar").find("li").eq($(".form-slide").index(next_fs)).addClass("active");
+      $("#progressbar li").eq($(".form-slide").index(next_fs)).addClass("active");
 
       //show the next form-slide
       next_fs.show();
@@ -69,7 +69,7 @@
       previous_fs = $(this).parent().parent().prev();
 
       //de-activate current step on progressbar
-      $("#progressbar").find("li").eq($(".form-slide").index(current_fs)).removeClass("active");
+      $("#progressbar li").eq($(".form-slide").index(current_fs)).removeClass("active");
 
       //show the previous form-slide
       previous_fs.show();

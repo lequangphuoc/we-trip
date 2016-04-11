@@ -39,9 +39,12 @@
           </div>
 
           <div class="col-md-3">
-            <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date_1"/></div>
+            <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date_1"/>
+          </div>
+
           <div class="col-md-3">
-            <input title="End Date" type="text" class="form-control datetimepicker" id="end-date_1"/></div>
+            <input title="End Date" type="text" class="form-control datetimepicker" id="end-date_1"/>
+          </div>
         </div>
       </div>
       <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Schedule Details</button>
@@ -93,10 +96,9 @@
     }
   });
 
-  // Row typehead
+  // row typehead
   var numberOfRow = 1;
   var states;
-
   $.ajax({
     method: 'GET',
     url: '/regions/all',
@@ -111,7 +113,6 @@
       addTypeHead(numberOfRow++);
     }
   });
-
   addTypeHead = function (line_number) {
     $('#departure_' + line_number).typeahead({
           hint: true,
