@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160410041141) do
+ActiveRecord::Schema.define(version: 20160411132742) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,6 +61,26 @@ ActiveRecord::Schema.define(version: 20160410041141) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "trips", force: :cascade do |t|
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.string   "title"
+    t.text     "description"
+    t.decimal  "expected_budget"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "user_trips", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "user_trips", ["trip_id"], name: "index_user_trips_on_trip_id", using: :btree
+  add_index "user_trips", ["user_id"], name: "index_user_trips_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -73,4 +93,6 @@ ActiveRecord::Schema.define(version: 20160410041141) do
   end
 
   add_foreign_key "friend_relations", "users"
+  add_foreign_key "user_trips", "trips"
+  add_foreign_key "user_trips", "users"
 end

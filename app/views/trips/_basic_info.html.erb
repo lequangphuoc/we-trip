@@ -1,12 +1,10 @@
-
 <div class="form-slide">
   <form>
-  <h2 class="fs-title">Trip Basic Information</h2>
+    <h2 class="fs-title">Trip Basic Information</h2>
     <fieldset class="form-group">
       <label for="title">Title</label>
       <input type="text" class="form-control" id="title" placeholder="Enter title">
     </fieldset>
-
 
     <fieldset class="form-group">
       <label for="description">Description</label>
@@ -30,21 +28,98 @@
           <div class="col-md-3">Start Date</div>
           <div class="col-md-3">End Date</div>
         </div>
+
         <div class="row basic-schedule-detail">
-          <div class="col-md-3"><input type="text" class="form-control" id="departure_1" /></div>
-          <div class="col-md-3"><input type="text" class="form-control" id="destination_1" /></div>
-          <div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_1" /></div>
-          <div class="col-md-3"><input type="text" class="form-control datetimepicker" id="end-date_1" /></div>
+          <div class="col-md-3">
+            <input class="typeahead form-control" type="text" placeholder="Departure" id="departure_1">
+          </div>
+
+          <div class="col-md-3">
+            <input class="typeahead form-control" type="text" placeholder="Destination" id="destination_1">
+          </div>
+
+          <div class="col-md-3">
+            <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date_1"/></div>
+          <div class="col-md-3">
+            <input title="End Date" type="text" class="form-control datetimepicker" id="end-date_1"/></div>
         </div>
-
-
-
       </div>
       <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Schedule Details</button>
     </fieldset>
-
-    <input type="button" name="next" class="next action-button" value="Save & Next" />
-
+    <input type="button" name="next" class="next action-button" value="Save & Next"/>
   </form>
 </div>
+
+<script>
+  var states = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: <%= raw @region_names.to_json %>
+  });
+
+  $('#addSchedule').click(function () {
+    var current_schedule = $('.basic-schedule-detail').length;
+    var number_schedule = $('.basic-schedule-detail').length + 1;
+    var new_departure = $('#destination_' + current_schedule).val();
+    var new_start_date = $('#end-date_' + current_schedule).val();
+    var append = '<div class="row basic-schedule-detail">' +
+        '<div class="col-md-3"><input type="text" class="form-control" placeholder="Departure" id="departure_' + number_schedule + '" value= "' + new_departure + '"/></div>' +
+        '<div class="col-md-3"><input type="text" class="form-control" placeholder="Destination" id="destination_' + number_schedule + '" /></div>' +
+        '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_' + number_schedule + '" value="' + new_start_date + '"/></div>' +
+        '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="end-date_' + number_schedule + '" /></div>' +
+        '</div>';
+    $('.basic-info-schedule').append(append);
+    $('#start-date_' + number_schedule).datetimepicker({
+      format: 'DD-MMM-YYYY'
+    });
+    $('#end-date_' + number_schedule).datetimepicker({
+      format: 'DD-MMM-YYYY'
+    });
+    addTypeHead(numberOfRow++);
+  });
+  $('.datetimepicker').datetimepicker({
+    format: 'DD-MMM-YYYY'
+  });
+  var sampleTags = ["Quan Vu", "Khanh Dang", "Lan Doang", "Harley Trung"];
+
+  //-------------------------------
+  // Single field
+  //-------------------------------
+  $('#participantTags').tagit({
+    availableTags: sampleTags,
+    // This will make Tag-it submit a single form value, as a comma-delimited field.
+    singleField: true,
+    singleFieldNode: $('#participant')
+  });
+
+  // Row typehead
+  var numberOfRow = 1;
+
+
+  $(document).ready(function () {
+    addTypeHead(numberOfRow++);
+  });
+
+  addTypeHead = function (line_number) {
+    $('#departure_' + line_number).typeahead({
+          hint: true,
+          highlight: true,
+          minLength: 1
+        },
+        {
+          name: 'states',
+          source: states
+        });
+
+    $('#destination_' + line_number).typeahead({
+          hint: true,
+          highlight: true,
+          minLength: 1
+        },
+        {
+          name: 'states',
+          source: states
+        });
+  }
+</script>
 

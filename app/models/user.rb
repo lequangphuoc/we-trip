@@ -15,12 +15,14 @@
 
 class User < ActiveRecord::Base
   has_many :friend_relations
+  has_many :user_trips
+  has_many :trips, through: :user_trips
   has_many :friends, through: :friend_relations, class_name: User, foreign_key: :target_id
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader
   validates :password, length: {minimum: 8}, presence: true, allow_nil: true
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
   validates :email, uniqueness: true, format: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
   validates :point, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0}
 end

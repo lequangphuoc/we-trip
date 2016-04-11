@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   resources :users, only: [:create, :edit, :update]
   resources :places, only: [:show, :index]
-  resources :trips
+  resources :trips, only: [:new, :edit, :create, :update]
 end
