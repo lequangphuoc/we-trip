@@ -25,4 +25,8 @@ class User < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   validates :email, uniqueness: true, format: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
   validates :point, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0}
+
+  def friends
+    User.where('id != (?)', self.id)
+  end
 end

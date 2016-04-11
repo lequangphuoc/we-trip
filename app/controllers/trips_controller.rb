@@ -5,6 +5,5 @@ class TripsController < ApplicationController
   end
 
   def new
-    @region_names = Region.all.map { |region| region.name }
   end
 end

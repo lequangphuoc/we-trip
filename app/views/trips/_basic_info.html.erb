@@ -12,7 +12,7 @@
     </fieldset>
     <fieldset class="form-group">
       <label for="expected_budget">Expected Budget</label>
-      <input type="number" class="form-control" id="expected_budget">
+      <input type="number" class="form-control" id="expected_budget" min="0">
     </fieldset>
     <fieldset class="form-group">
       <label>Participants</label>
@@ -51,12 +51,7 @@
 </div>
 
 <script>
-  var states = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: <%= raw @region_names.to_json %>
-  });
-
+  // add schedule
   $('#addSchedule').click(function () {
     var current_schedule = $('.basic-schedule-detail').length;
     var number_schedule = $('.basic-schedule-detail').length + 1;
@@ -77,27 +72,44 @@
     });
     addTypeHead(numberOfRow++);
   });
+
+  // datetime picker
   $('.datetimepicker').datetimepicker({
     format: 'DD-MMM-YYYY'
   });
-  var sampleTags = ["Quan Vu", "Khanh Dang", "Lan Doang", "Harley Trung"];
 
-  //-------------------------------
-  // Single field
-  //-------------------------------
-  $('#participantTags').tagit({
-    availableTags: sampleTags,
-    // This will make Tag-it submit a single form value, as a comma-delimited field.
-    singleField: true,
-    singleFieldNode: $('#participant')
+  // friends tag
+  $.ajax({
+    method: 'GET',
+    url: '/users/friends',
+    success: function (data) {
+      $('#participantTags').tagit({
+        availableTags: data.map(function(user) {
+          return user.name
+        }),
+        singleField: true,
+        singleFieldNode: $('#participant')
+      });
+    }
   });
 
   // Row typehead
   var numberOfRow = 1;
+  var states;
 
-
-  $(document).ready(function () {
-    addTypeHead(numberOfRow++);
+  $.ajax({
+    method: 'GET',
+    url: '/regions/all',
+    success: function (data) {
+      states = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: data.map(function(region) {
+          return region.name;
+        })
+      });
+      addTypeHead(numberOfRow++);
+    }
   });
 
   addTypeHead = function (line_number) {

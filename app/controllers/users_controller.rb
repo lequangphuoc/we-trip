@@ -14,6 +14,10 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def friends
+    render json: current_user.friends
+  end
+
   def update
     if @user.update_attributes(user_update_params)
       flash[:notice] = 'Update successfully'

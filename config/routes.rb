@@ -9,7 +9,18 @@ Rails.application.routes.draw do
   post 'friend_relations/confirm' => 'friend_relations#confirm'
   post 'friend_relations/reject' => 'friend_relations#reject'
 
-  resources :users, only: [:create, :edit, :update]
+  resources :users, only: [:create, :edit, :update] do
+    collection do
+      get :friends
+    end
+  end
+
+  resources :regions do
+    collection do
+      get :all
+    end
+  end
+
   resources :places, only: [:show, :index]
   resources :trips, only: [:new, :edit, :create, :update]
 end
