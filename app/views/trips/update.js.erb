@@ -1,0 +1,5 @@
+<% if @updated %>
+  toastr.info('Update successfully');
+<% else %>
+  $('#trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
+<% end %>

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'user_trips/add'
+
+  get 'user_trips/remove'
+
   get 'home/index'
   root 'home#index'
 
@@ -22,5 +26,6 @@ Rails.application.routes.draw do
   end
 
   resources :places, only: [:show, :index]
-  resources :trips, only: [:new, :edit, :create, :update]
+  resources :user_trips, only: [:create, :destroy]
+  resources :trips, only: [:new, :edit, :create, :update, :show]
 end

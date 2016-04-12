@@ -1,0 +1,5 @@
+<% if @created %>
+  location.href = "<%= edit_trip_path(@trip) %>";
+<% else %>
+  $('#trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
+<% end %>
