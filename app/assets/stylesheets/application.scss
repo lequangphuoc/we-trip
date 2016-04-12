@@ -146,7 +146,7 @@ input, select {
 }
 
 body, p, a{
-  font-family: josefin;
+  font-family: josefinBold;
 }
 h1{
   font-family: blanchCap;
@@ -413,14 +413,14 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     a {
       margin-right: 0;
       border: 0;
-      background-color: #333;
-      color: #fff;
+      background-color: #fff;
+      color: #333;
 
       &:hover {
-        background-color: #fff;
-        color: #333;
+        background-color: #333;
+        color: #fff;
         .glyphicon{
-          color: #333;
+          color: #fff;
 
         }
       }
@@ -434,10 +434,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 
   .active a
   {
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     .glyphicon {
-      color: #333;
+      color: #fff;
     }
   }
 }
@@ -485,6 +485,9 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 /*itinerary*/
 .itinerary-content{
   margin-left: 0;
+  .tab-pane{
+    padding: 0 10px;
+  }
   h1{
     font-size: 40px;
   }
@@ -514,10 +517,15 @@ h2, h3, h4, h5, h6, strong, .bold-text {
       padding: 10px;
       border: 1px solid #bbb;
       border-radius: 11px;
+      background-color: #E7F4F2;
     }
   }
   .itinerary-display{
-    background-color: #E7F4F2;
   }
 
+}
+
+.image-foot{
+  width: 100%;
+  height: 150px;
 }

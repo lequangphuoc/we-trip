@@ -1,13 +1,22 @@
 <div class="form-slide">
 
     <h2 class="fs-title">Itinerary</h2>
-    <h3>Trip start in: 18 Apr 2016</h3>
-    <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Day</button>
+  <div class="row">
+    <div class="col-md-5">
+      <%= image_tag(asset_path("clock_vintage.jpg"), width:"220") %>
+    </div>
+    <div class="col-md-7">
+      <h3>Trip start in: 18 Apr 2016</h3>
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Day</button>
+    </div>
+  </div>
+
     <div class="itinerary">
       <div class="row">
         <div class="itinerary-details">
           <div class="tabs-left">
             <ul class="nav nav-tabs-vertical" id="day-left-panel">
+              <li></li>
               <li class="active" id="li-day1"><a href="#day1" data-toggle="tab" class="days-tab">Day 1</a></li>
 
 
@@ -17,6 +26,7 @@
                 <h1>Day 1</h1>
                 <div class="schedule-form">
                   <ul class="nav nav-tabs">
+
                     <li class="active"><a data-toggle="tab" href="#schedule_1">Schedule</a></li>
                     <li><a data-toggle="tab" href="#map_1">Map</a></li>
 
@@ -24,24 +34,24 @@
 
                   <div class="tab-content schedule-content">
                     <div id="schedule_1" class="tab-pane fade in active schedule">
-                      <div class="col-md-7">
+                      <div class="col-md-5">
 
                         <form class="form-horizontal form-schedule" id="form-schedule_1">
                           <div class="form-group">
-                            <label for="startPlace_1" class="col-md-4 control-label">Departure From: </label>
-                            <div class="col-md-8">
+                            <label for="startPlace_1" class="col-md-5 control-label">Departure From: </label>
+                            <div class="col-md-7">
                               <input type="text" class="form-control" id="startPlace_1" placeholder="Go From">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="attraction_1" class="col-md-4 control-label">Tourist Attraction: </label>
-                            <div class="col-md-8">
+                            <label for="attraction_1" class="col-md-5 control-label">Tourist Attraction: </label>
+                            <div class="col-md-7">
                               <input type="text" class="form-control" id="attraction_1" placeholder="Where you love to visit">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="spendingTime_1" class="col-md-4 control-label">Hours spending: </label>
-                            <div class="col-md-8">
+                            <label for="spendingTime_1" class="col-md-5 control-label">Hours spending: </label>
+                            <div class="col-md-7">
                               <select class="form-control" id="spendingTime_1">
                                 <option>1</option>
                                 <option>2</option>
@@ -62,7 +72,7 @@
                           </div>
                         </form>
                       </div>
-                      <div class="col-md-5 itinerary-display">
+                      <div class="col-md-7 itinerary-display">
                         <ul class="sortable" id="sortable_1">
                           <li class="day_detail">
                             <%= image_tag(asset_path("default_img.png"), height: "20") %>
@@ -112,23 +122,23 @@
 
           '<div class="tab-content schedule-content">' +
           '<div id="schedule_'+ new_no +'" class="tab-pane fade in active schedule">' +
-          '<div class="col-md-7">' +
+          '<div class="col-md-5">' +
           '<form class="form-horizontal form-schedule" id="form-schedule_'+ new_no +'">' +
           '<div class="form-group">' +
-          '<label for="startPlace_'+ new_no +'" class="col-md-4 control-label">Departure From: </label>' +
-      '<div class="col-md-8">' +
+          '<label for="startPlace_'+ new_no +'" class="col-md-5 control-label">Departure From: </label>' +
+      '<div class="col-md-7">' +
        '<input type="text" class="form-control" id="startPlace_'+ new_no +'" placeholder="Go From">' +
       '</div>' +
       '</div>' +
       '<div class="form-group">' +
-          '<label for="attraction_'+ new_no +'" class="col-md-4 control-label">Tourist Attraction: </label>' +
-      '<div class="col-md-8">' +
+          '<label for="attraction_'+ new_no +'" class="col-md-5 control-label">Tourist Attraction: </label>' +
+      '<div class="col-md-7">' +
         '<input type="text" class="form-control" id="attraction_'+ new_no +'" placeholder="Where you love to visit">' +
       '</div>' +
       '</div>' +
       '<div class="form-group">' +
-          '<label for="spendingTime_'+ new_no +'" class="col-md-4 control-label">Hours spending: </label>' +
-      '<div class="col-md-8">' +
+          '<label for="spendingTime_'+ new_no +'" class="col-md-5 control-label">Hours spending: </label>' +
+      '<div class="col-md-7">' +
         '<select class="form-control" id="spendingTime_'+ new_no +'">' +
           '<option>1</option>' +
           '<option>2</option>' +
@@ -149,7 +159,7 @@
         '</div>' +
         '</form>' +
         '</div>' +
-        '<div class="col-md-5 itinerary-display">' +
+        '<div class="col-md-7 itinerary-display">' +
         '<ul class="sortable" id="sortable_'+ new_no +'">' +
         '<li class="day_detail">' +
         '<%= image_tag(asset_path("default_img.png"), height: "20") %>' +
@@ -184,7 +194,7 @@
       var added_info_time = $("#spendingTime_" + current_no).val();
       var append = '<li class="day_detail">'+
           '<div class="transport_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>2 hours driving</div>' +
-          '<div class="next_place">' + added_info_place +' - <strong>'+ added_info_time +' hour(s)</strong>' + '</div>' +
+          '<div class="next_place"><%= image_tag(asset_path("default_img.png"), height: "20") %>' + added_info_place +' - <strong>'+ added_info_time +' hour(s)</strong>' + '</div>' +
           '</li>';
 
       $("#sortable_" + current_no).append(append);
