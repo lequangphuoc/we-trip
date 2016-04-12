@@ -70,7 +70,7 @@ URL: **https://wetrip.herokuapp.com**
 * [ ][3] As a user, I want to add travel time to Itinerary 
 
 ## Database schema
-![alt text](https://github.com/we-trip/we-trip/blob/develop/db_chema.png "Data")
+![alt text](https://github.com/we-trip/we-trip/blob/develop/db_schema.png "Data")
 
 ## Some wireframes
 ###The wireframes pdf has been included in the repo
