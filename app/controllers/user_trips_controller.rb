@@ -1,12 +1,14 @@
 class UserTripsController < ApplicationController
   def create
-    @user_trip = UserTrip.create(user_trip_params)
-    respond_to :js
+    @user_trip = User.find_by(name: params[:tag])
+                     .user_trips.create(trip_id: params[:trip_id])
+    render json: JsonResponse.new(true, @user_trip)
   end
 
   def destroy
-    @destroyed = UserTrip.find_by(user_trip_params).destroy
-    respond_to :js
+    @destroyed = User.find_by(name: params[:tag])
+                     .user_trips.find_by(trip_id: params[:trip_id]).destroy
+    render json: JsonResponse.new(true, @destroyed)
   end
 
   private

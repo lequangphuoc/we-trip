@@ -16,7 +16,9 @@ require 'rails_helper'
 
 RSpec.describe Trip, type: :model do
   it { should validate_presence_of(:title) }
-  it { should validate_presence_of(:expected_budget) }
+  it { should validate_presence_of(:departure_id).on(:update) }
+  it { should validate_presence_of(:description).on(:update) }
+  it { should validate_presence_of(:start_date).on(:update) }
   it { should validate_numericality_of(:expected_budget) }
   it { should have_many(:user_trips) }
   it { should have_many(:users).through(:user_trips) }
@@ -24,5 +26,5 @@ RSpec.describe Trip, type: :model do
   it { should respond_to(:departure_id) }
   it { should respond_to(:start_date) }
   it { should respond_to(:description) }
-  it { should have_one(:departure).class_name(Region).with_foreign_key(:departure_id) }
+  it { should belong_to(:departure).class_name(Region).with_foreign_key(:departure_id) }
 end

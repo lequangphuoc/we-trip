@@ -32,8 +32,12 @@ class TripsController < ApplicationController
   end
 
   def update
-    @updated = @trip.update_attributes(trip_update_params)
-    respond_to :js
+    @trip.departure = Region.find_by(name: params[:trip][:departure])
+    if @trip.update_attributes(trip_update_params)
+      redirect_to edit_trip_path(@trip)
+    else
+      render :edit
+    end
   end
 
   private
@@ -47,7 +51,7 @@ class TripsController < ApplicationController
 
   def trip_update_params
     params.require(:trip).permit(
-        :title, :description, :expected_budget, :start_date, :departure_id
+        :title, :description, :expected_budget, :start_date
     )
   end
 end
