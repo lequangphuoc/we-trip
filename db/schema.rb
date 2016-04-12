@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411132742) do
+ActiveRecord::Schema.define(version: 20160412080130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20160411132742) do
     t.datetime "updated_at",     null: false
   end
 
+  add_index "places", ["name"], name: "index_places_on_name", using: :btree
   add_index "places", ["region_id"], name: "index_places_on_region_id", using: :btree
 
   create_table "regions", force: :cascade do |t|
@@ -61,15 +62,19 @@ ActiveRecord::Schema.define(version: 20160411132742) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "regions", ["name"], name: "index_regions_on_name", using: :btree
+
   create_table "trips", force: :cascade do |t|
     t.datetime "start_date"
-    t.datetime "end_date"
+    t.integer  "departure_id"
     t.string   "title"
     t.text     "description"
     t.decimal  "expected_budget"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  add_index "trips", ["departure_id"], name: "index_trips_on_departure_id", using: :btree
 
   create_table "user_trips", force: :cascade do |t|
     t.integer  "user_id"
@@ -91,6 +96,8 @@ ActiveRecord::Schema.define(version: 20160411132742) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
+
+  add_index "users", ["name"], name: "index_users_on_name", using: :btree
 
   add_foreign_key "friend_relations", "users"
   add_foreign_key "user_trips", "trips"
