@@ -22,9 +22,9 @@ RSpec.describe UserTripsController, type: :controller do
 
     it 'should have right response' do
       post :create, {tag: user.name, trip_id: trip.id}
-      @result = JSON.parse(response.body)
-      expect(@result['success']).to eq(true)
-      expect(@result['data']['user_id']).to eq(user.id)
+      result = JSON.parse(response.body)
+      expect(result['success']).to eq(true)
+      expect(result['data']['user_id']).to eq(user.id)
     end
   end
 
@@ -47,9 +47,9 @@ RSpec.describe UserTripsController, type: :controller do
 
     it 'should have right response' do
       delete :destroy, {tag: user.name, trip_id: trip.id}
-      @result = JSON.parse(response.body)
-      expect(@result['success']).to eq(true)
-      expect(@result['data']['user_id']).to eq(user.id)
+      result = JSON.parse(response.body)
+      expect(result['success']).to eq(true)
+      expect(result['data']['user_id']).to eq(user.id)
     end
   end
 end

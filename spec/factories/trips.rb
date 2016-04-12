@@ -17,4 +17,11 @@ FactoryGirl.define do
     title 'Trip 1'
     expected_budget 100000
   end
+
+  factory :trip2, class: Trip do
+    title 'Trip 2'
+    expected_budget 200000
+    start_date Time.now
+    description 'description'
+  end
 end
