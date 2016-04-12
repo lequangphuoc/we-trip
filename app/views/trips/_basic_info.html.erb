@@ -1,47 +1,55 @@
 <div class="form-slide">
-  <form>
-    <h2 class="fs-title">Trip Basic Information</h2>
-    <fieldset class="form-group">
-      <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" placeholder="Enter title">
-    </fieldset>
+  <%= form_for @trip, method: :put do |_| %>
+      <%= render 'share/model_error', object: @trip %>
+      <h2 class="fs-title">Trip Basic Information</h2>
+      <fieldset class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" value="<%= @trip.title %>" placeholder="Enter title">
+      </fieldset>
 
-    <fieldset class="form-group">
-      <label for="description">Description</label>
-      <textarea class="form-control" id="description" rows="3" placeholder="Enter description"></textarea>
-    </fieldset>
+      <fieldset class="form-group">
+        <label for="description">Description</label>
+      <textarea class="form-control" id="description" rows="3" name="trip[description]"
+                placeholder="Enter description"><%= @trip.description %></textarea>
+      </fieldset>
 
-    <fieldset class="form-group">
-      <label for="expected_budget">Expected Budget</label>
-      <input type="number" class="form-control" id="expected_budget" min="0" placeholder="Enter expected budget">
-    </fieldset>
+      <fieldset class="form-group">
+        <label for="expected_budget">Expected Budget</label>
+        <input type="number" class="form-control" id="expected_budget" min="0" value="<%= @trip.expected_budget %>"
+               placeholder="Enter expected budget" name="trip[expected_budget]">
+      </fieldset>
 
-    <fieldset class="form-group">
-      <label>Participants</label>
-      <ul id="participantTags"></ul>
-    </fieldset>
+      <fieldset class="form-group">
+        <label>Participants</label>
+        <ul id="participantTags">
+        </ul>
+        <%= hidden_field_tag 'participant' %>
+      </fieldset>
 
-    <fieldset class="form-group">
-      <label>Starting Information</label>
-      <div class="col-md-12">
-        <div class="col-md-6">
-          <input class="typeahead form-control" type="text" placeholder="Departure" id="departure">
+      <fieldset class="form-group">
+        <label>Starting Information</label>
+        <div class="col-md-12">
+          <div class="col-md-6" id="trip-departure-id">
+            <input class="typeahead form-control" type="text" value="<%= @trip.departure.try(:name) %>"
+                   name="trip[departure]" placeholder="Departure" id="departure">
+          </div>
+
+          <div class="col-md-6">
+            <input title="Start Date" type="text" class="form-control datetimepicker"
+                   value="<%= @trip.start_date.try(:strftime, '%d-%m-%Y') %>"
+                   name="trip[start_date]" id="start-date" placeholder="Enter Start Date"/>
+          </div>
         </div>
+      </fieldset>
 
-        <div class="col-md-6">
-          <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date" placeholder="Enter Start Date"/>
-        </div>
-      </div>
-    </fieldset>
-
-    <input type="button" name="save" class="btn btn-primary" value="Save"/>
-    <input type="button" name="next" class="next action-button" value="Next"/>
-  </form>
+      <input type="submit" name="save" class="btn btn-primary" value="Save"/>
+      <input type="button" name="next" class="next action-button" value="Next"/>
+  <% end %>
 
   <script>
     // datetime picker
     $('.datetimepicker').datetimepicker({
-      format: 'DD-MMM-YYYY'
+      format: 'DD-MM-YYYY'
     });
 
     // friends tag
@@ -50,21 +58,52 @@
       url: '/users/friends',
       success: function (data) {
         $('#participantTags').tagit({
+          beforeTagRemoved: function (event, ui) {
+            removeTag(ui.tagLabel);
+          },
+          afterTagAdded: function (event, ui) {
+            addTag(ui.tagLabel);
+          },
           availableTags: data.map(function (user) {
             return user.name
           }),
           singleField: true,
           singleFieldNode: $('#participant')
         });
+
+        <% @trip.users.each do |user| %>
+          $("#participantTags").tagit("createTag", "<%= user.name %>");
+        <% end %>
       }
     });
+
+    // Remove tag
+    removeTag = function (tagLabel) {
+      $.ajax({
+        method: 'DELETE',
+        url: '/user_trips',
+        data: {trip_id: '<%= @trip.id %>', tag: tagLabel},
+        success: function (data) {
+        }
+      });
+    };
+
+    // Add tag
+    addTag = function (tagLabel) {
+      $.ajax({
+        method: 'POST',
+        url: '/user_trips',
+        data: {trip_id: '<%= @trip.id %>', tag: tagLabel},
+        success: function (data) {}
+      });
+    };
 
     // Departure
     $.ajax({
       method: 'GET',
       url: '/regions/all',
       success: function (data) {
-        states = new Bloodhound({
+        var states = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
           local: data.map(function (region) {

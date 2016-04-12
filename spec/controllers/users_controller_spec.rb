@@ -14,7 +14,7 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-  context 'POST #create' do
+  describe 'POST #create' do
     context 'create account successfully' do
       before(:each) do
         post :create, user: attributes_for(:user), format: :js
@@ -51,7 +51,20 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  context 'GET #edit' do
+  describe 'GET #friends' do
+    let(:user) { create(:user) }
+
+    it 'should get friends' do
+      session[:user_id] = user.id
+      allow_any_instance_of(User).to receive(:friends).and_return(user)
+      get :friends
+      result = JSON.parse(response.body)
+      expect(result['name']).to eq(user.name)
+      expect(result['email']).to eq(user.email)
+    end
+  end
+
+  describe 'GET #edit' do
     before(:each) do
       @user = create(:user)
     end
@@ -74,7 +87,7 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  context 'POST #update' do
+  describe 'POST #update' do
     before(:each) do
       @user = create(:user)
     end

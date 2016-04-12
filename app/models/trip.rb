@@ -15,8 +15,9 @@
 class Trip < ActiveRecord::Base
   has_many :user_trips
   has_many :users, through: :user_trips
-  has_one :departure, class_name: Region, foreign_key: :departure_id
+  belongs_to :departure, class_name: Region, foreign_key: :departure_id
 
-  validates_presence_of :expected_budget, :title
+  validates_presence_of :title
   validates_numericality_of :expected_budget
+  validates_presence_of :departure_id, :description, :start_date, on: :update
 end
