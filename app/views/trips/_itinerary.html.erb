@@ -1,57 +1,198 @@
 <div class="form-slide">
-  <form>
+
     <h2 class="fs-title">Itinerary</h2>
-    <div class="container">
+    <h3>Trip start in: 18 Apr 2016</h3>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Day</button>
+    <div class="itinerary">
       <div class="row">
-        <div class="col-md-4 col-sm-5">
+        <div class="itinerary-details">
           <div class="tabs-left">
-            <ul class="nav nav-tabs-vertical">
-              <li class="active"><a href="#day1" data-toggle="tab">Day 1</a></li>
-              <li><a href="#day2" data-toggle="tab">Day 2</a></li>
-              <li><a href="#day3" data-toggle="tab">Day 3</a></li>
+            <ul class="nav nav-tabs-vertical" id="day-left-panel">
+              <li class="active" id="li-day1"><a href="#day1" data-toggle="tab" class="days-tab">Day 1</a></li>
+
 
             </ul>
-            <div class="tab-content">
+            <div class="tab-content itinerary-content">
               <div class="tab-pane active" id="day1">
-                <div class="container">
-                  <h2>Dynamic Tabs</h2>
+                <h1>Day 1</h1>
+                <div class="schedule-form">
                   <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                    <li class="active"><a data-toggle="tab" href="#schedule_1">Schedule</a></li>
+                    <li><a data-toggle="tab" href="#map_1">Map</a></li>
+
                   </ul>
 
-                  <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                      <h3>HOME</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="tab-content schedule-content">
+                    <div id="schedule_1" class="tab-pane fade in active schedule">
+                      <div class="col-md-7">
+
+                        <form class="form-horizontal form-schedule" id="form-schedule_1">
+                          <div class="form-group">
+                            <label for="startPlace_1" class="col-md-4 control-label">Departure From: </label>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="startPlace_1" placeholder="Go From">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="attraction_1" class="col-md-4 control-label">Tourist Attraction: </label>
+                            <div class="col-md-8">
+                              <input type="text" class="form-control" id="attraction_1" placeholder="Where you love to visit">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="spendingTime_1" class="col-md-4 control-label">Hours spending: </label>
+                            <div class="col-md-8">
+                              <select class="form-control" id="spendingTime_1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+
+                            </div>
+
+
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <button type="submit" class="btn btn-default">Add to itinerary</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-5 itinerary-display">
+                        <ul class="sortable" id="sortable_1">
+                          <li class="day_detail">
+                            <%= image_tag(asset_path("default_img.png"), height: "20") %>
+                            Ho Chi Minh
+                          </li>
+
+                        </ul>
+                      </div>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="map_1" class="tab-pane fade">
                       <h3>Menu 1</h3>
                       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
-                      <h3>Menu 2</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                      <h3>Menu 3</h3>
-                      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
+
                   </div>
                 </div>
 
 
               </div>
-              <div class="tab-pane" id="day2">
 
-              </div>
-              <div class="tab-pane" id="day3">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
               </div><!-- /tab-content -->
           </div><!-- /tabbable -->
         </div><!-- /col -->
       </div><!-- /row -->
     </div><!-- /container -->
-  </form>
 </div>
+
+<style>
+
+</style>
+<script>
+  $(function() {
+    $("#addSchedule").click(function(){
+      var current_no = $(".days-tab").length;
+      var new_no = current_no + 1;
+      $("#li-day" + current_no).removeClass('active');
+      $("#day" + current_no).removeClass('active');
+      var append_vertical = '<li class="active" id="li-day'+ new_no +'"><a href="#day'+ new_no +'" data-toggle="tab" class="days-tab">Day '+ new_no +'</a></li>'
+      var append_schedule = '<div class="tab-pane active" id="day'+ new_no+'">' +
+          '<h1>Day '+ new_no +'</h1>' +
+          '<div class="schedule-form">' +
+          '<ul class="nav nav-tabs">' +
+          '<li class="active"><a data-toggle="tab" href="#schedule_'+ new_no +'">Schedule</a></li>' +
+          '<li><a data-toggle="tab" href="#map_'+ new_no +'">Map</a></li>' +
+
+          '</ul>' +
+
+          '<div class="tab-content schedule-content">' +
+          '<div id="schedule_'+ new_no +'" class="tab-pane fade in active schedule">' +
+          '<div class="col-md-7">' +
+          '<form class="form-horizontal form-schedule" id="form-schedule_'+ new_no +'">' +
+          '<div class="form-group">' +
+          '<label for="startPlace_'+ new_no +'" class="col-md-4 control-label">Departure From: </label>' +
+      '<div class="col-md-8">' +
+       '<input type="text" class="form-control" id="startPlace_'+ new_no +'" placeholder="Go From">' +
+      '</div>' +
+      '</div>' +
+      '<div class="form-group">' +
+          '<label for="attraction_'+ new_no +'" class="col-md-4 control-label">Tourist Attraction: </label>' +
+      '<div class="col-md-8">' +
+        '<input type="text" class="form-control" id="attraction_'+ new_no +'" placeholder="Where you love to visit">' +
+      '</div>' +
+      '</div>' +
+      '<div class="form-group">' +
+          '<label for="spendingTime_'+ new_no +'" class="col-md-4 control-label">Hours spending: </label>' +
+      '<div class="col-md-8">' +
+        '<select class="form-control" id="spendingTime_'+ new_no +'">' +
+          '<option>1</option>' +
+          '<option>2</option>' +
+          '<option>3</option>' +
+          '<option>4</option>' +
+          '<option>5</option>' +
+        '</select>' +
+
+        '</div>' +
+
+
+        '</div>' +
+
+        '<div class="form-group">' +
+        '<div class="col-sm-offset-2 col-sm-10">' +
+        '<button type="submit" class="btn btn-default">Add to itinerary</button>' +
+        '</div>' +
+        '</div>' +
+        '</form>' +
+        '</div>' +
+        '<div class="col-md-5 itinerary-display">' +
+        '<ul class="sortable" id="sortable_'+ new_no +'">' +
+        '<li class="day_detail">' +
+        '<%= image_tag(asset_path("default_img.png"), height: "20") %>' +
+        'Ho Chi Minh' +
+        '</li>' +
+
+        '</ul>' +
+        '</div>' +
+        '</div>' +
+        '<div id="map_'+ new_no +'" class="tab-pane fade">' +
+        '<h3>Menu 1</h3>' +
+        '<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>' +
+        '</div>' +
+
+        '</div>' +
+        '</div>' +
+
+
+        '</div>';
+      $("#day-left-panel").append(append_vertical);
+      $(".itinerary-content").append(append_schedule);
+
+    });
+    $( ".sortable" ).sortable();
+    $( ".sortable" ).disableSelection();
+    $(".form-schedule").submit(function(e){
+      e.preventDefault();
+
+      var current_no = $(".days-tab").length;
+
+      var added_info_place = $("#attraction_" + current_no).val();
+      var added_info_time = $("#spendingTime_" + current_no).val();
+      var append = '<li class="day_detail">'+
+          '<div class="transport_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>2 hours driving</div>' +
+          '<div class="next_place">' + added_info_place +' - <strong>'+ added_info_time +' hour(s)</strong>' + '</div>' +
+          '</li>';
+
+      $("#sortable_" + current_no).append(append);
+      //alert(added_info);
+      this.reset();
+      $("#startPlace_" + current_no).val(added_info_place);
+      return false;
+
+    });
+  });
+</script>
