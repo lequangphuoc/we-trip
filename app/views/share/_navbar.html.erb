@@ -14,6 +14,7 @@
                 <div class="username-right-top"><%= current_user.name %></div> <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#trip-form">New Trip</a></li>
                 <li><%= link_to 'Logout', sessions_path, method: :delete %></li>
                 <li><%= link_to 'Profile', edit_user_path(current_user_id), method: :get %></li>
               </ul>
@@ -30,4 +31,5 @@
   </div>
   <%= render 'sessions/new' %>
   <%= render 'users/new' %>
+  <%= render 'trips/new_basic' %>
 </div>
