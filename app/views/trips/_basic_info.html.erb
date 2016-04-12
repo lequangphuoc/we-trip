@@ -3,7 +3,7 @@
       <%= render 'share/model_error', object: @trip %>
       <div>
         <div class="col-md-4">
-          <%= image_tag(asset_path("travel_colorful.jpg"), width:"270") %>
+          <%= image_tag(asset_path("travel_colorful.jpg"), width: "270") %>
         </div>
         <div class="col-md-8">
           <h2 class="fs-title">Trip Basic Information</h2>
@@ -14,8 +14,8 @@
 
           <fieldset class="form-group">
             <label for="description">Description</label>
-      <textarea class="form-control" id="description" rows="3" name="trip[description]"
-                placeholder="Enter description"><%= @trip.description %></textarea>
+            <textarea class="form-control" id="description" rows="3" name="trip[description]"
+                      placeholder="Enter description"><%= @trip.description %></textarea>
           </fieldset>
 
           <fieldset class="form-group">
@@ -49,8 +49,6 @@
         </div>
       </div>
 
-
-
       <input type="submit" name="save" class="btn btn-primary" value="Save"/>
       <input type="button" name="next" class="next action-button" value="Next"/>
   <% end %>
@@ -67,12 +65,6 @@
       url: '/users/friends',
       success: function (data) {
         $('#participantTags').tagit({
-          beforeTagRemoved: function (event, ui) {
-            removeTag(ui.tagLabel);
-          },
-          afterTagAdded: function (event, ui) {
-            addTag(ui.tagLabel);
-          },
           availableTags: data.map(function (user) {
             return user.name
           }),
@@ -83,6 +75,15 @@
         <% @trip.users.each do |user| %>
           $("#participantTags").tagit("createTag", "<%= user.name %>");
         <% end %>
+
+        $('#participantTags').tagit({
+          beforeTagRemoved: function (event, ui) {
+            removeTag(ui.tagLabel);
+          },
+          afterTagAdded: function (event, ui) {
+            addTag(ui.tagLabel);
+          }
+        })
       }
     });
 
@@ -103,7 +104,8 @@
         method: 'POST',
         url: '/user_trips',
         data: {trip_id: '<%= @trip.id %>', tag: tagLabel},
-        success: function (data) {}
+        success: function (data) {
+        }
       });
     };
 
