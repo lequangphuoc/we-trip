@@ -72,7 +72,7 @@
         });
 
         <% @trip.users.each do |user| %>
-        $("#participantTags").tagit("createTag", "<%= user.name %>");
+          $("#participantTags").tagit("createTag", "<%= user.name %>");
         <% end %>
       }
     });
@@ -94,8 +94,7 @@
         method: 'POST',
         url: '/user_trips',
         data: {trip_id: '<%= @trip.id %>', tag: tagLabel},
-        success: function (data) {
-        }
+        success: function (data) {}
       });
     };
 

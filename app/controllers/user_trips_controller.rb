@@ -1,18 +1,19 @@
 class UserTripsController < ApplicationController
+  before_action :require_login
+  before_action :get_user_trips
+
   def create
-    @user_trip = User.find_by(name: params[:tag])
-                     .user_trips.create(trip_id: params[:trip_id])
-    render json: JsonResponse.new(true, @user_trip)
+    @user_trip = @user_trips.new(trip_id: params[:trip_id])
+    render json: JsonResponse.new(@user_trip.save, @user_trip)
   end
 
   def destroy
-    @destroyed = User.find_by(name: params[:tag])
-                     .user_trips.find_by(trip_id: params[:trip_id]).destroy
-    render json: JsonResponse.new(true, @destroyed)
+    @user_trip = @user_trips.find_by(trip_id: params[:trip_id]).destroy
+    render json: JsonResponse.new(true, @user_trip)
   end
 
   private
-  def user_trip_params
-    params.require(:user_trip).permit(:user_id, :trip_id)
+  def get_user_trips
+    @user_trips = User.find_by(name: params[:tag]).user_trips
   end
 end
