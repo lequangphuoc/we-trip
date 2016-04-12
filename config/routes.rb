@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'user_trips/add'
-
-  get 'user_trips/remove'
-
   get 'home/index'
   root 'home#index'
 

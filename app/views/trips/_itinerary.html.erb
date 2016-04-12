@@ -1,11 +1,57 @@
 <div class="form-slide">
   <form>
     <h2 class="fs-title">Itinerary</h2>
-    <h3 class="fs-subtitle">Your presence on the social network</h3>
-    <input type="text" name="twitter" placeholder="Twitter"/>
-    <input type="text" name="facebook" placeholder="Facebook"/>
-    <input type="text" name="gplus" placeholder="Google Plus"/>
-    <input type="button" name="previous" class="previous action-button" value="Previous"/>
-    <input type="button" name="next" class="next action-button" value="Next"/>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-5">
+          <div class="tabs-left">
+            <ul class="nav nav-tabs-vertical">
+              <li class="active"><a href="#day1" data-toggle="tab">Day 1</a></li>
+              <li><a href="#day2" data-toggle="tab">Day 2</a></li>
+              <li><a href="#day3" data-toggle="tab">Day 3</a></li>
+
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="day1">
+                <div class="container">
+                  <h2>Dynamic Tabs</h2>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <h3>HOME</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      <h3>Menu 1</h3>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      <h3>Menu 2</h3>
+                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                      <h3>Menu 3</h3>
+                      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tab-pane" id="day2">
+
+              </div>
+              <div class="tab-pane" id="day3">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+              </div><!-- /tab-content -->
+          </div><!-- /tabbable -->
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
   </form>
 </div>

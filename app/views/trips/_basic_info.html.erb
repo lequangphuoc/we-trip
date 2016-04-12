@@ -8,73 +8,37 @@
 
     <fieldset class="form-group">
       <label for="description">Description</label>
-      <textarea class="form-control" id="description" rows="3"></textarea>
+      <textarea class="form-control" id="description" rows="3" placeholder="Enter description"></textarea>
     </fieldset>
+
     <fieldset class="form-group">
       <label for="expected_budget">Expected Budget</label>
-      <input type="number" class="form-control" id="expected_budget" min="0">
+      <input type="number" class="form-control" id="expected_budget" min="0" placeholder="Enter expected budget">
     </fieldset>
+
     <fieldset class="form-group">
       <label>Participants</label>
       <ul id="participantTags"></ul>
-      <%= hidden_field_tag 'participant' %>
     </fieldset>
+
     <fieldset class="form-group">
-      <label>Destination and Departure</label>
-      <div class="basic-info-schedule">
-        <div class="row">
-          <div class="col-md-3">Departure</div>
-          <div class="col-md-3">Destination</div>
-          <div class="col-md-3">Start Date</div>
-          <div class="col-md-3">End Date</div>
+      <label>Starting Information</label>
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <input class="typeahead form-control" type="text" placeholder="Departure" id="departure">
         </div>
 
-        <div class="row basic-schedule-detail">
-          <div class="col-md-3">
-            <input class="typeahead form-control" type="text" placeholder="Departure" id="departure_1">
-          </div>
-
-          <div class="col-md-3">
-            <input class="typeahead form-control" type="text" placeholder="Destination" id="destination_1">
-          </div>
-
-          <div class="col-md-3">
-            <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date_1"/>
-          </div>
-
-          <div class="col-md-3">
-            <input title="End Date" type="text" class="form-control datetimepicker" id="end-date_1"/>
-          </div>
+        <div class="col-md-6">
+          <input title="Start Date" type="text" class="form-control datetimepicker" id="start-date" placeholder="Enter Start Date"/>
         </div>
       </div>
-      <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">Add Schedule Details</button>
     </fieldset>
-    <input type="button" name="next" class="next action-button" value="Save & Next"/>
+
+    <input type="button" name="save" class="btn btn-primary" value="Save"/>
+    <input type="button" name="next" class="next action-button" value="Next"/>
   </form>
 
   <script>
-    // add schedule
-    $('#addSchedule').click(function () {
-      var current_schedule = $('.basic-schedule-detail').length;
-      var number_schedule = $('.basic-schedule-detail').length + 1;
-      var new_departure = $('#destination_' + current_schedule).val();
-      var new_start_date = $('#end-date_' + current_schedule).val();
-      var append = '<div class="row basic-schedule-detail">' +
-          '<div class="col-md-3"><input type="text" class="form-control" placeholder="Departure" id="departure_' + number_schedule + '" value= "' + new_departure + '"/></div>' +
-          '<div class="col-md-3"><input type="text" class="form-control" placeholder="Destination" id="destination_' + number_schedule + '" /></div>' +
-          '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="start-date_' + number_schedule + '" value="' + new_start_date + '"/></div>' +
-          '<div class="col-md-3"><input type="text" class="form-control datetimepicker" id="end-date_' + number_schedule + '" /></div>' +
-          '</div>';
-      $('.basic-info-schedule').append(append);
-      $('#start-date_' + number_schedule).datetimepicker({
-        format: 'DD-MMM-YYYY'
-      });
-      $('#end-date_' + number_schedule).datetimepicker({
-        format: 'DD-MMM-YYYY'
-      });
-      addTypeHead(numberOfRow++);
-    });
-
     // datetime picker
     $('.datetimepicker').datetimepicker({
       format: 'DD-MMM-YYYY'
@@ -86,7 +50,7 @@
       url: '/users/friends',
       success: function (data) {
         $('#participantTags').tagit({
-          availableTags: data.map(function(user) {
+          availableTags: data.map(function (user) {
             return user.name
           }),
           singleField: true,
@@ -95,9 +59,7 @@
       }
     });
 
-    // row typehead
-    var numberOfRow = 1;
-    var states;
+    // Departure
     $.ajax({
       method: 'GET',
       url: '/regions/all',
@@ -105,33 +67,20 @@
         states = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
-          local: data.map(function(region) {
+          local: data.map(function (region) {
             return region.name;
           })
         });
-        addTypeHead(numberOfRow++);
+        $('#departure').typeahead({
+              hint: true,
+              highlight: true,
+              minLength: 1
+            },
+            {
+              name: 'states',
+              source: states
+            });
       }
     });
-    addTypeHead = function (line_number) {
-      $('#departure_' + line_number).typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-          },
-          {
-            name: 'states',
-            source: states
-          });
-
-      $('#destination_' + line_number).typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-          },
-          {
-            name: 'states',
-            source: states
-          });
-    }
   </script>
 </div>
