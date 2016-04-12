@@ -466,3 +466,14 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     }
   }
 }
+
+/*typeahead*/
+.tt-menu{
+  width: 100%;
+  text-align: left;
+  border: 1px solid #BBBBBB;
+  background-color: #EFEFEF;
+  .tt-suggestion{
+    cursor: pointer;
+  }
+}
