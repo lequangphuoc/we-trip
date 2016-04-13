@@ -450,7 +450,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   min-height: 100px;
   width: 90px;
 
-  li{
+  li {
     float: none;
     margin: 0;
 
@@ -475,7 +475,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     color: #fff;
   }
 
-  li.active  a {
+  li.active a {
     background-color: #333;
     color: #fff;
     .glyphicon {
@@ -527,9 +527,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 /*itinerary*/
-.btn-add-schedule{
-  margin-top: 32px;
+.btn-add-schedule {
+  margin-top: 8px;
 }
+
 .itinerary-content {
   margin-left: 0;
 
@@ -576,7 +577,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   width: 100%;
   height: 150px;
 }
-.day-place-detail{
+
+.day-place-detail {
   background-color: #fbfaf7;
   box-shadow: 0 1px 3px rgba(2, 2, 2, 0.35);
   padding: 16px;
@@ -584,17 +586,17 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   z-index: 1;
   text-align: left;
   height: 85px;
-  .day-place-name{
+  .day-place-name {
     font-size: 25px;
     font-weight: 500;
     line-height: 21px;
     position: relative;
     top: 5px;
   }
-  .day-place-detail-middle{
+  .day-place-detail-middle {
     padding: 0;
   }
-  .tag{
+  .tag {
     background: #aaa;
     color: #fff;
     line-height: 14px;
@@ -603,7 +605,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     font-size: 12px;
     width: 50px;
   }
-  .remove-itinerary{
+  .remove-itinerary {
     margin-top: 10px;
   }
   .day-transfer {
