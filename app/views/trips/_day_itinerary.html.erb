@@ -7,7 +7,7 @@
 
     <div class="tab-content schedule-content" style="margin-top: 24px">
       <div id="schedule_<%= day_no %>" class="tab-pane fade in active schedule">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <form class="form-horizontal form-schedule form-card" id="form-schedule_<%= day_no %>">
             <div class="form-group">
               <label for="startPlace_<%= day_no %>" class="col-md-6 control-label">Departure From: </label>
@@ -42,11 +42,25 @@
           </form>
         </div>
 
-        <div class="col-md-7 itinerary-display">
+        <div class="col-md-6 itinerary-display">
           <ul class="sortable" id="sortable_<%= day_no %>">
             <li class="day_detail">
-              <%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>
-              Ho Chi Minh
+              <div class="day-place-detail">
+                <div class="col-md-3">
+                  <%= image_tag(asset_path('hcm_church.jpg'), height: '50', width: '50', style: 'vertical-align: bottom', class: "img-circle") %>
+
+                </div>
+                <div class="col-md-6 day-place-detail-middle">
+                    <p class="day-place-name">Ho Chi Minh</p>
+                  <h3 class="tag">30mins</h3>
+
+                </div>
+                <div class="col-md-3 text-center remove-itinerary">
+                  <a href="#"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                </div>
+
+              </div>
+
             </li>
           </ul>
         </div>
