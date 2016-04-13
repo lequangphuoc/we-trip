@@ -7,49 +7,24 @@
         <div class="tabs-left">
           <ul class="nav nav-tabs-vertical" id="day-left-panel">
             <li></li>
-            <li class="active" id="li-day1"><a href="#day1" data-toggle="tab" class="days-tab font-normal">Day 1</a></li>
+            <li class="active" id="li-day1"><a href="#day1" data-toggle="tab" class="days-tab font-normal">Day 1</a>
+            </li>
           </ul>
           <div class="tab-content itinerary-content">
-            <%= render "day_itinerary", day_no:1 %>
-          </div><!-- /tab-content -->
-        </div><!-- /tabbable -->
-      </div><!-- /col -->
-    </div><!-- /row -->
+            <%= render @trip.schedule_days %>
+          </div> <!-- /tab-content -->
+        </div> <!-- /tabbable -->
+      </div> <!-- /col -->
+    </div> <!-- /row -->
 
-    <button type="button" class="btn btn-primary btn-lg btn-block" id="addSchedule">
-      Add Day
-    </button>
-  </div><!-- /container -->
+    <%= link_to 'Add Day', trip_schedule_days_path(@trip), method: :post,
+                remote: true, class: 'btn btn-primary btn-lg btn-block' %>
+  </div> <!-- /container -->
 </div>
 
 <script>
   $(function () {
-    $("#addSchedule").click(function () {
-      var current_no = $(".days-tab").length;
-      var new_no = current_no + 1;
-      $("#li-day" + current_no).removeClass('active');
-      $("#day" + current_no).removeClass('active');
-      var append_vertical = '<li class="active" id="li-day' + new_no + '"><a href="#day' + new_no + '" data-toggle="tab" class="days-tab">Day ' + new_no + '</a></li>';
-      var append_schedule = "<%= escape_javascript(render partial: 'day_itinerary', locals: { day_no: session['count_temp'] } ) %>";
-      $("#day-left-panel").append(append_vertical);
-      $(".itinerary-content").append(append_schedule);
-    });
     $(".sortable").sortable();
     $(".sortable").disableSelection();
-    $(".form-schedule").submit(function (e) {
-      e.preventDefault();
-      var current_no = $(".days-tab").length;
-      var added_info_place = $("#attraction_" + current_no).val();
-      var added_info_time = $("#spendingTime_" + current_no).val();
-      var append = '<li class="day_detail">' +
-          '<div class="transport_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>2 hours driving</div>' +
-          '<div class="next_place"><%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>'
-          + added_info_place + ' - <strong>' + added_info_time + ' hour(s)</strong>' + '</div>' +
-          '</li>';
-      $("#sortable_" + current_no).append(append);
-      this.reset();
-      $("#startPlace_" + current_no).val(added_info_place);
-      return false;
-    });
   });
 </script>

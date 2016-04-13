@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160412080130) do
+ActiveRecord::Schema.define(version: 20160413170715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attractions", force: :cascade do |t|
+    t.integer  "schedule_day_id"
+    t.integer  "place_id"
+    t.integer  "index"
+    t.decimal  "hour_spend",      default: 1.0
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  add_index "attractions", ["index"], name: "index_attractions_on_index", using: :btree
+  add_index "attractions", ["place_id"], name: "index_attractions_on_place_id", using: :btree
+  add_index "attractions", ["schedule_day_id"], name: "index_attractions_on_schedule_day_id", using: :btree
 
   create_table "friend_relations", force: :cascade do |t|
     t.string   "status",     default: "pending"
@@ -64,6 +77,17 @@ ActiveRecord::Schema.define(version: 20160412080130) do
 
   add_index "regions", ["name"], name: "index_regions_on_name", using: :btree
 
+  create_table "schedule_days", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "index"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "schedule_days", ["index"], name: "index_schedule_days_on_index", using: :btree
+  add_index "schedule_days", ["trip_id"], name: "index_schedule_days_on_trip_id", using: :btree
+
   create_table "trips", force: :cascade do |t|
     t.datetime "start_date"
     t.integer  "departure_id"
@@ -99,7 +123,10 @@ ActiveRecord::Schema.define(version: 20160412080130) do
 
   add_index "users", ["name"], name: "index_users_on_name", using: :btree
 
+  add_foreign_key "attractions", "places"
+  add_foreign_key "attractions", "schedule_days"
   add_foreign_key "friend_relations", "users"
+  add_foreign_key "schedule_days", "trips"
   add_foreign_key "user_trips", "trips"
   add_foreign_key "user_trips", "users"
 end

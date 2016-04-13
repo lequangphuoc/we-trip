@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'attractions/create'
+
   get 'home/index'
   root 'home#index'
 
@@ -21,7 +23,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :trips, only: [:new, :edit, :create, :update, :show] do
+    resources :schedule_days, only: [:create] do
+      resources :attractions, only: [:create]
+    end
+  end
+
   resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
-  resources :trips, only: [:new, :edit, :create, :update, :show]
 end

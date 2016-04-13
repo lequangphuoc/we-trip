@@ -1,0 +1,79 @@
+<div class="tab-pane active" id="day<%= schedule_day.index %>">
+  <div class="schedule-form">
+    <ul class="nav nav-tabs">
+      <li class="active font-normal"><a data-toggle="tab" href="#schedule_<%= schedule_day.index %>">Schedule</a></li>
+      <li><a data-toggle="tab" href="#map_<%= schedule_day.index %>" class="font-normal">Map</a></li>
+    </ul>
+
+    <div class="tab-content schedule-content" style="margin-top: 24px">
+      <div id="schedule_<%= schedule_day.index %>" class="tab-pane fade in active schedule">
+        <div class="col-md-5">
+          <form class="form-horizontal form-schedule form-card" id="form-schedule_<%= schedule_day.index %>">
+            <div class="form-group">
+              <label for="startPlace_<%= schedule_day.index %>" class="col-md-6 control-label">Departure From: </label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="startPlace_<%= schedule_day.index %>" placeholder="Go From">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist Attraction: </label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="attraction_<%= schedule_day.index %>" placeholder="Where you love to visit">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours spending: </label>
+              <div class="col-md-6">
+                <select class="form-control" id="spendingTime_<%= schedule_day.index %>">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-6 control-label"></label>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-default" style="width: 100%">Add to itinerary</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-7 itinerary-display">
+          <ul class="sortable" id="sortable_<%= schedule_day.index %>">
+            <li class="day_detail">
+              <%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>
+              Ho Chi Minh
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="map_<%= schedule_day.index %>" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".form-schedule").submit(function (e) {
+    e.preventDefault();
+    var current_index = $(".days-tab").length;
+    var added_info_place = $("#attraction_" + current_index).val();
+    var added_info_time = $("#spendingTime_" + current_index).val();
+    var append = '<li class="day_detail">' +
+        '<div class="transport_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>2 hours driving</div>' +
+        '<div class="next_place"><%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>'
+        + added_info_place + ' - <strong>' + added_info_time + ' hour(s)</strong>' + '</div>' +
+        '</li>';
+    $("#sortable_" + current_index).append(append);
+    this.reset();
+    $("#startPlace_" + current_index).val(added_info_place);
+    return false;
+  });
+</script>
