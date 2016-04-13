@@ -20,7 +20,7 @@
     </div> <!-- /row -->
 
     <%= link_to 'Add Day', trip_schedule_days_path(@trip), method: :post,
-                remote: true, class: 'btn btn-primary btn-lg btn-block' %>
+                remote: true, class: 'btn btn-primary btn-lg btn-block btn-add-schedule' %>
   </div> <!-- /container -->
 </div>
 
@@ -28,5 +28,11 @@
   $(function () {
     $(".sortable").sortable();
     $(".sortable").disableSelection();
+    $(".remove-itinerary a").click(function(e){
+      e.preventDefault();
+        var removeEle = $(this).attr('rel');
+      $("#" + removeEle).remove();
+      return false;
+    });
   });
 </script>

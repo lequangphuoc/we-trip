@@ -450,7 +450,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   min-height: 100px;
   width: 90px;
 
-  li {
+  li{
     float: none;
     margin: 0;
 
@@ -475,7 +475,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     color: #fff;
   }
 
-  .active a {
+  li.active  a {
     background-color: #333;
     color: #fff;
     .glyphicon {
@@ -527,8 +527,12 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 /*itinerary*/
+.btn-add-schedule{
+  margin-top: 32px;
+}
 .itinerary-content {
   margin-left: 0;
+
   .tab-pane {
     padding: 0 10px;
   }
@@ -553,7 +557,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     padding: 0;
   }
   .sortable li {
-    margin: 0 3px 3px 3px;
+    margin: 0 3px 32px 3px;
 
     font-size: 18px;
     .next_place {
