@@ -6,22 +6,18 @@
       <div class="itinerary-details">
         <div class="tabs-left">
           <ul class="nav nav-tabs-vertical" id="day-left-panel">
-            <% @trip.schedule_days.each do |day| %>
-                <li class="<%= day.index == 1 && 'active' %>" id="li-day<%= day.index %>">
-                  <a href="#day<%= day.index %>" data-toggle="tab" class="days-tab font-normal"><%= day.title %></a>
-                </li>
-            <% end %>
+            <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :day %>
           </ul>
           <div class="tab-content itinerary-content">
-            <%= render @trip.schedule_days %>
-          </div> <!-- /tab-content -->
-        </div> <!-- /tabbable -->
-      </div> <!-- /col -->
-    </div> <!-- /row -->
+            <%= render @schedule_days %>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%= link_to 'Add Day', trip_schedule_days_path(@trip), method: :post,
                 remote: true, class: 'btn btn-primary btn-lg btn-block' %>
-  </div> <!-- /container -->
+  </div>
 </div>
 
 <script>
