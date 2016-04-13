@@ -1,4 +1,4 @@
-<div class="tab-pane active" id="day<%= schedule_day.index %>">
+<div class="tab-pane <%= schedule_day.index == 1 && 'active' %>" id="day<%= schedule_day.index %>">
   <div class="schedule-form">
     <ul class="nav nav-tabs">
       <li class="active font-normal"><a data-toggle="tab" href="#schedule_<%= schedule_day.index %>">Schedule</a></li>
