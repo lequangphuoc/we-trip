@@ -7,7 +7,7 @@
 
     <div class="tab-content schedule-content" style="margin-top: 24px">
       <div id="schedule_<%= schedule_day.index %>" class="tab-pane fade in active schedule">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <form class="form-horizontal form-schedule form-card" id="form-schedule_<%= schedule_day.index %>">
             <div class="form-group">
               <label for="startPlace_<%= schedule_day.index %>" class="col-md-6 control-label">Departure From: </label>
@@ -15,16 +15,12 @@
                 <input type="text" class="form-control" id="startPlace_<%= schedule_day.index %>" placeholder="Go From">
               </div>
             </div>
-
-            <!-- Place - Region -->
             <div class="form-group">
               <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist Attraction: </label>
               <div class="col-md-6">
                 <input type="text" class="form-control" id="attraction_<%= schedule_day.index %>" placeholder="Where you love to visit">
               </div>
             </div>
-
-            <!-- Hour spend -->
             <div class="form-group">
               <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours spending: </label>
               <div class="col-md-6">
@@ -37,8 +33,6 @@
                 </select>
               </div>
             </div>
-
-            <!-- Submit button -->
             <div class="form-group">
               <label class="col-md-6 control-label"></label>
               <div class="col-md-6">
@@ -48,12 +42,11 @@
           </form>
         </div>
 
-        <div class="col-md-7 itinerary-display">
+        <div class="col-md-6 itinerary-display">
           <ul class="sortable" id="sortable_<%= schedule_day.index %>">
-            <li class="day_detail">
-              <%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>
-              Ho Chi Minh
-            </li>
+            <%= render 'attractions/attraction' %>
+            <%= render 'attractions/attraction' %>
+            <%= render 'attractions/attraction' %>
           </ul>
         </div>
       </div>
