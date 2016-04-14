@@ -12,7 +12,7 @@ class DestroyAttractionService
   private
   def update_schedule_day_index
     @schedule_day.attractions.each do |attraction|
-      attraction.update_attributes(index: attraction.index - 1) if attraction.index > @attraction.id
+      attraction.decrement!(:index, by = 1) if attraction.index > @attraction.index
     end
   end
 
