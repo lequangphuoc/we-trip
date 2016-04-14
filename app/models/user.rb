@@ -31,6 +31,6 @@ class User < ActiveRecord::Base
   end
 
   def self.possible_friend(current_user, search_data)
-    where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%")
+    where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%").order(:name)
   end
 end
