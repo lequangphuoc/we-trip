@@ -26,7 +26,11 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true, format: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
   validates :point, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0}
 
-  def friends
-    User.where('id != (?)', self.id)
+  def self.friends
+    User.where('id = (?)', friends.id)
+  end
+
+  def self.possible_friend(current_user, search_data)
+    where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%")
   end
 end

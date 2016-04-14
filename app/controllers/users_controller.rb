@@ -15,7 +15,11 @@ class UsersController < ApplicationController
   end
 
   def friends
-    render json: current_user.friends
+      render json: current_user.friends
+  end
+
+  def available_friends
+      render json: get_possible_friend(params[:search_data])
   end
 
   def update
@@ -38,5 +42,10 @@ class UsersController < ApplicationController
 
   def get_user
     @user = User.find(params[:id])
+  end
+
+  def get_possible_friend(search_data)
+    puts(search_data)
+    @possible_friends = User.possible_friend(current_user, search_data)
   end
 end

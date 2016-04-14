@@ -5,13 +5,13 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback' => 'sessions#callback'
   resource :sessions, only: [:create, :destroy]
 
-  resources :friend_relations, only: [:create]
+  resources :friend_relations, only: [:create, :new]
   post 'friend_relations/confirm' => 'friend_relations#confirm'
   post 'friend_relations/reject' => 'friend_relations#reject'
 
   resources :users, only: [:create, :edit, :update] do
     collection do
-      get :friends
+      get :friends, :available_friends
     end
   end
 
