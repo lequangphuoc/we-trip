@@ -65,13 +65,17 @@
   $("#sortable_<%= schedule_day.index %>").disableSelection();
   $("#sortable_<%= schedule_day.index %>").sortable({
     update: function (event, ui) {
-      console.log("<%= schedule_day.index %>");
-      var values = $('#sortable_<%= schedule_day.index %> #attraction_index')
+      var indexes = $('#sortable_<%= schedule_day.index %> #attraction_index')
           .toArray()
           .map(function (ui) {
             return ui.value
           });
-      console.log(values);
+      $.ajax({
+        method: 'POST',
+        data: { 'indexes' : indexes },
+        url: '/schedule_days/<%= schedule_day.id %>/sort.js',
+        success: function (data) {}
+      });
     }
   });
 
@@ -80,23 +84,6 @@
     e.preventDefault();
     var removeEle = $(this).attr('rel');
     $("#" + removeEle).remove();
-    return false;
-  });
-
-  // Create attraction
-  $(".form-schedule").submit(function (e) {
-    e.preventDefault();
-    var current_index = $(".days-tab").length;
-    var added_info_place = $("#attraction_" + current_index).val();
-    var added_info_time = $("#spendingTime_" + current_index).val();
-    var append = '<li class="day_detail">' +
-        '<div class="transport_time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>2 hours driving</div>' +
-        '<div class="next_place"><%= image_tag(asset_path('default_img.png'), height: '24', style: 'vertical-align: bottom') %>'
-        + added_info_place + ' - <strong>' + added_info_time + ' hour(s)</strong>' + '</div>' +
-        '</li>';
-    $("#sortable_" + current_index).append(append);
-    this.reset();
-    $("#startPlace_" + current_index).val(added_info_place);
     return false;
   });
 </script>

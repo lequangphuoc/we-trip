@@ -24,8 +24,13 @@ Rails.application.routes.draw do
   end
 
   resources :trips, only: [:new, :edit, :create, :update, :show] do
-    resources :schedule_days, only: [:create] do
-      resources :attractions, only: [:create]
+    resources :schedule_days, only: [:create]
+  end
+
+  resources :schedule_days, only: [] do
+    resources :attractions, only: [:create]
+    member do
+      post :sort
     end
   end
 
