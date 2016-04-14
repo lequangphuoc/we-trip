@@ -1,7 +1,8 @@
-<li class="day_detail" id="day-detail_1">
+<li class="day_detail" id="day-detail_<%= attraction.index %>">
   <div class="transport-time">
     <div class="day-transfer icn-driving">1.5 km &nbsp;/&nbsp; 2 min</div>
   </div>
+  <input type="hidden" id="attraction_index" value="<%= attraction.index %>">
   <div class="day-place-detail">
     <div class="col-md-3">
       <%= image_tag(attraction.image_url, height: '50', width: '50', style: 'vertical-align: bottom', class: 'img-circle') %>
@@ -13,7 +14,9 @@
     </div>
 
     <div class="col-md-3 text-right remove-itinerary">
-      <a href="#" id="remove-itinerary_1" rel="day-detail_1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+      <a href="#" id="remove-itinerary_<%= attraction.index %>" rel="day-detail_<%= attraction.index %>">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </li>

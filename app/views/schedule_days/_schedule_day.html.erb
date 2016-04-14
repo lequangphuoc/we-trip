@@ -12,7 +12,8 @@
 
             <!-- Place to go to -->
             <div class="form-group">
-              <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist Attraction: </label>
+              <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist
+                Attraction: </label>
               <div class="col-md-6">
                 <input type="text" class="form-control" id="attraction_<%= schedule_day.index %>" placeholder="Where you love to visit">
               </div>
@@ -20,7 +21,8 @@
 
             <!-- Spending hours -->
             <div class="form-group">
-              <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours spending: </label>
+              <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours
+                spending: </label>
               <div class="col-md-6">
                 <select class="form-control" id="spendingTime_<%= schedule_day.index %>">
                   <option>1</option>
@@ -58,6 +60,30 @@
 </div>
 
 <script>
+  // Sort attraction
+  $("#sortable_<%= schedule_day.index %>").sortable();
+  $("#sortable_<%= schedule_day.index %>").disableSelection();
+  $("#sortable_<%= schedule_day.index %>").sortable({
+    update: function (event, ui) {
+      console.log("<%= schedule_day.index %>");
+      var values = $('#sortable_<%= schedule_day.index %> #attraction_index')
+          .toArray()
+          .map(function (ui) {
+            return ui.value
+          });
+      console.log(values);
+    }
+  });
+
+  // Remove attraction
+  $(".remove-itinerary a").click(function (e) {
+    e.preventDefault();
+    var removeEle = $(this).attr('rel');
+    $("#" + removeEle).remove();
+    return false;
+  });
+
+  // Create attraction
   $(".form-schedule").submit(function (e) {
     e.preventDefault();
     var current_index = $(".days-tab").length;

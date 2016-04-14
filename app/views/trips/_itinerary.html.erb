@@ -19,16 +19,3 @@
                 remote: true, class: 'btn btn-primary btn-lg btn-block btn-add-schedule' %>
   </div>
 </div>
-
-<script>
-  $(function () {
-    $(".sortable").sortable();
-    $(".sortable").disableSelection();
-    $(".remove-itinerary a").click(function(e){
-      e.preventDefault();
-        var removeEle = $(this).attr('rel');
-      $("#" + removeEle).remove();
-      return false;
-    });
-  });
-</script>
