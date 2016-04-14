@@ -9,10 +9,6 @@ class AttractionDecorator < Draper::Decorator
     object.place.name
   end
 
-  def suggest_title
-    "#{object.place.name} - #{object.place.region.name}"
-  end
-
   private
   def first_image_url
     place_photo = object.place.place_photos.first

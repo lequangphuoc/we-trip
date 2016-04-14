@@ -24,6 +24,9 @@ class TripsController < ApplicationController
 
   def edit
     @schedule_days = @trip.schedule_days.preload(:attractions).decorate
+    @places = Place.all.preload(:region).decorate
+    @place_names = @places.map { |place| place.suggest_title }
+    @place_ids = @places.map { |place| place.id }
   end
 
   def create
