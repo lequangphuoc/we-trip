@@ -9,18 +9,16 @@
       <div id="schedule_<%= schedule_day.index %>" class="tab-pane fade in active schedule">
         <div class="col-md-6">
           <form class="form-horizontal form-schedule form-card" id="form-schedule_<%= schedule_day.index %>">
-            <div class="form-group">
-              <label for="startPlace_<%= schedule_day.index %>" class="col-md-6 control-label">Departure From: </label>
-              <div class="col-md-6">
-                <input type="text" class="form-control" id="startPlace_<%= schedule_day.index %>" placeholder="Go From">
-              </div>
-            </div>
+
+            <!-- Place to go to -->
             <div class="form-group">
               <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist Attraction: </label>
               <div class="col-md-6">
                 <input type="text" class="form-control" id="attraction_<%= schedule_day.index %>" placeholder="Where you love to visit">
               </div>
             </div>
+
+            <!-- Spending hours -->
             <div class="form-group">
               <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours spending: </label>
               <div class="col-md-6">
@@ -33,6 +31,8 @@
                 </select>
               </div>
             </div>
+
+            <!-- Submit button -->
             <div class="form-group">
               <label class="col-md-6 control-label"></label>
               <div class="col-md-6">
@@ -44,9 +44,7 @@
 
         <div class="col-md-6 itinerary-display">
           <ul class="sortable" id="sortable_<%= schedule_day.index %>">
-            <%= render 'attractions/attraction' %>
-            <%= render 'attractions/attraction' %>
-            <%= render 'attractions/attraction' %>
+            <%= render schedule_day.attractions %>
           </ul>
         </div>
       </div>

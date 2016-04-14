@@ -23,7 +23,7 @@ class TripsController < ApplicationController
   end
 
   def edit
-    @schedule_days = @trip.schedule_days.decorate
+    @schedule_days = @trip.schedule_days.preload(:attractions).decorate
   end
 
   def create

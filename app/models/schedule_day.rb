@@ -12,7 +12,7 @@
 
 class ScheduleDay < ActiveRecord::Base
   belongs_to :trip
-  has_many :attractions
+  has_many :attractions, -> { order(:index) }
 
   validates_presence_of :title, :index, :trip_id
 end
