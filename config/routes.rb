@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   end
 
   resources :schedule_days, only: [] do
-    resources :attractions, only: [:create]
+    resources :attractions, only: [:create, :destroy]
     member do
       post :sort
     end

@@ -78,12 +78,4 @@
       });
     }
   });
-
-  // Remove attraction
-  $(".remove-itinerary a").click(function (e) {
-    e.preventDefault();
-    var removeEle = $(this).attr('rel');
-    $("#" + removeEle).remove();
-    return false;
-  });
 </script>
