@@ -1,8 +1,10 @@
 <%= link_to attraction.place do %>
     <li class="day_detail" id="day-detail_<%= attraction.index %>">
-      <div class="transport-time">
-        <div class="day-transfer icn-driving">1.5 km &nbsp;/&nbsp; 2 min</div>
-      </div>
+      <% if attraction.index != 1 %>
+          <div class="transport-time">
+            <div class="day-transfer icn-driving"><%= attraction.distance %> &nbsp;/&nbsp; <%= attraction.duration %></div>
+          </div>
+      <% end %>
       <input type="hidden" id="attraction_index" value="<%= attraction.index %>">
       <div class="day-place-detail">
         <div class="col-md-3">

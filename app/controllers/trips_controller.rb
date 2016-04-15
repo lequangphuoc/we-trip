@@ -15,7 +15,7 @@
 class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show]
-  before_action :prepare_data, only: [:update, :edit]
+  before_action :prepare_data, only: [:edit, :update]
 
   def show
   end
