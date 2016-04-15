@@ -36,7 +36,6 @@ class TripsController < ApplicationController
   end
 
   def update
-    session['count_temp'] = 2
     @trip.departure = Region.find_by(name: params[:trip][:departure])
     if @trip.update_attributes(trip_update_params)
       redirect_to edit_trip_path(@trip)
