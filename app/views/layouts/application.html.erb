@@ -9,13 +9,32 @@
 </head>
 <body>
 
-<%= render 'share/navbar' %>
-<%= render 'share/search' %>
+<% if params[:controller] == 'trips' %>
+    <div class="trip-top-header">
+      <div class="container">
+        <h1>WE TRIP</h1>
+        <span class="slogan">Travel in your way</span>
+        <div class="top-right-trip">
+          <%= render 'share/top_right_dropdown' %>
+        </div>
 
-<div class="container">
-  <%= yield %>
-</div>
-<%= image_tag(asset_path("foot_travel.jpg"), class:"image-foot") %>
+      </div>
+    </div>
+    <%= yield %>
+<% elsif params[:controller] == 'home' %>
+    <%= yield %>
+<% else %>
+    <%= render 'share/navbar' %>
+    <%= render 'share/search' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+<% end %>
+
+<%= render 'sessions/new' %>
+<%= render 'users/new' %>
+<%= render 'trips/new' %>
 
 </body>
 </html>

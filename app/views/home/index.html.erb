@@ -1,4 +1,25 @@
 <div class="image-search-home">
+  <div class="container">
+    <div class="home-top">
+      <% if sign_in? %>
+          <%= render 'share/top_right_dropdown' %>
+      <% else %>
+          <div class="top-before-login text-right">
+            <button type="button" class="btn" id="loginBtn" data-toggle="modal" data-target="#login-form">Login</button>
+            <button type="button" class="btn" id="registerBtn" data-toggle="modal" data-target="#register-form">Register</button>
+          </div>
+      <% end %>
+    </div>
+    <div class="header text-center">
+      <h1>WE TRIP</h1>
+      <h2>Travel in your way</h2>
+      <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">Create a trip</button>
+    </div>
+
+  </div>
+  <div class="main-search text-center">
+    <%= render 'share/search' %>
+  </div>
 </div>
 <div class="container">
 
