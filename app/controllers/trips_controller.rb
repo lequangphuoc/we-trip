@@ -48,9 +48,9 @@ class TripsController < ApplicationController
 
   def prepare_data
     @schedule_days = @trip.schedule_days.preload(:attractions).decorate
-    @places = Place.all.preload(:region).decorate
-    @place_names = @places.map { |place| place.suggest_title }
-    @place_ids = @places.map { |place| place.id }
+    places = Place.all.preload(:region).decorate
+    @place_names = places.map(&:suggest_title)
+    @place_ids = places.map(&:id)
   end
 
   def trip_params

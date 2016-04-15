@@ -1,21 +1,29 @@
 class CreateAttractionService
   def initialize(params)
     @params = params
-    @schedule_day = ScheduleDay.find(params[:schedule_day_id])
   end
 
   def execute
-    attraction = @schedule_day.attractions.new(attraction_params)
-    attraction.index = @schedule_day.attractions.count + 1
+    get_attractions
+    create_attraction
+  end
+
+  private
+  def get_attractions
+    @attractions = ScheduleDay.find(@params[:schedule_day_id]).attractions
+  end
+
+  def create_attraction
+    attraction = @attractions.new(attraction_params)
+    attraction.index = @attractions.count + 1
     if attraction.save
       calculate_distance(attraction)
       attraction.decorate
     end
   end
 
-  private
   def calculate_distance(attraction)
-    last_attraction = @schedule_day.attractions.find_by(index: attraction.index - 1)
+    last_attraction = @attractions.find_by(index: attraction.index - 1)
     CalculateDistanceService.new.calculate_distance(last_attraction, attraction) if last_attraction
   end
 
