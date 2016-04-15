@@ -1,8 +1,6 @@
 class CalculateDistanceService
   def initialize(schedule_day_id = nil)
-    if schedule_day_id
-      @attractions = ScheduleDay.find(schedule_day_id).attractions.preload(:place)
-    end
+    get_attrations(schedule_day_id) if schedule_day_id
   end
 
   def execute
@@ -12,7 +10,10 @@ class CalculateDistanceService
   def calculate_distance(current_attraction, attraction)
     current_place, place = current_attraction.place, attraction.place
     response = GoogleApiClient.calculate_distance(
-        current_place.latitude, current_place.longitude, place.latitude, place.longitude
+        current_place.latitude,
+        current_place.longitude,
+        place.latitude,
+        place.longitude
     )
     attraction.update_attributes(
         distance: response['distance']['text'],
@@ -21,10 +22,13 @@ class CalculateDistanceService
   end
 
   private
+  def get_attrations(schedule_day_id)
+    @attractions = ScheduleDay.find(schedule_day_id).attractions.preload(:place)
+  end
+
   def calculate_attractions_distance
     current_attraction = @attractions.first
-    @attractions.each do |attraction|
-      next if attraction == current_attraction
+    @attractions.drop(0).each do |attraction|
       calculate_distance(current_attraction, attraction)
       current_attraction = attraction
     end
