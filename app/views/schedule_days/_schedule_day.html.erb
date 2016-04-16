@@ -1,65 +1,76 @@
 <div class="tab-pane <%= schedule_day.index == 1 && 'active' %>" id="day<%= schedule_day.index %>">
   <div class="schedule-form">
-    <ul class="nav nav-tabs">
-      <li class="active font-normal"><a data-toggle="tab" href="#schedule_<%= schedule_day.index %>">Schedule</a></li>
-      <li><a data-toggle="tab" href="#map_<%= schedule_day.index %>" class="font-normal">Map</a></li>
-    </ul>
 
-    <div class="tab-content schedule-content" style="margin-top: 24px">
-      <div id="schedule_<%= schedule_day.index %>" class="tab-pane fade in active schedule">
-        <div class="col-md-6">
-          <form class="form-horizontal form-schedule form-card" id="form-schedule_<%= schedule_day.index %>">
+    <div class="schedule-content" style="margin-top: 24px">
+      <div id="schedule_<%= schedule_day.index %>" class="schedule">
+        <ul class="sortable" id="sortable_<%= schedule_day.index %>">
+          <%= render schedule_day.attractions %>
+        </ul>
+
+        <%= form_tag schedule_day_attractions_path(schedule_day), remote: true, method: :post,
+                     class: 'form-horizontal form-schedule form-card',
+                     id: "form-schedule_#{schedule_day.index}" do %>
 
             <!-- Place to go to -->
             <div class="form-group">
-              <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">Tourist
-                Attraction: </label>
-              <div class="col-md-6">
-                <input type="text" class="form-control" id="attraction_<%= schedule_day.index %>" placeholder="Where you love to visit">
-              </div>
+              <label for="attraction_<%= schedule_day.index %>" class="control-label">
+                Tourist Attraction:
+              </label>
+              <input class="typeahead form-control" type="text" placeholder="Where you love to visit"
+                     id="attraction_<%= schedule_day.index %>">
+              <input type="hidden" name="attraction[place_id]" id="place_<%= schedule_day.index %>" value="">
             </div>
 
             <!-- Spending hours -->
             <div class="form-group">
-              <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">Hours
-                spending: </label>
-              <div class="col-md-6">
-                <select class="form-control" id="spendingTime_<%= schedule_day.index %>">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
+              <label for="spendingTime_<%= schedule_day.index %>" class="control-label">
+                Hours spending:
+              </label>
+              <select class="form-control" name="attraction[hour_spend]" id="spendingTime_<%= schedule_day.index %>">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
             </div>
 
             <!-- Submit button -->
             <div class="form-group">
-              <label class="col-md-6 control-label"></label>
-              <div class="col-md-6">
-                <button type="submit" class="btn btn-default" style="width: 100%">Add to itinerary</button>
-              </div>
+              <button type="submit" class="btn addItineraryBtn">Add to itinerary</button>
             </div>
-          </form>
-        </div>
+        <% end %>
 
-        <div class="col-md-6 itinerary-display">
-          <ul class="sortable" id="sortable_<%= schedule_day.index %>">
-            <%= render schedule_day.attractions %>
-          </ul>
-        </div>
+
       </div>
-      <div id="map_<%= schedule_day.index %>" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-      </div>
+
     </div>
   </div>
 </div>
 
 <script>
+  // Typehead
+  var placeIds = <%= raw @place_ids.to_json %>;
+  var placeNames = <%= raw @place_names.to_json %>;
+  var states = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: placeNames
+  });
+  $('#attraction_<%= schedule_day.index %>').bind('typeahead:select', function (ev, suggestion) {
+    $("#place_<%= schedule_day.index %>").val(placeIds[placeNames.indexOf(suggestion)]);
+  });
+
+  $('#attraction_<%= schedule_day.index %>').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        source: states
+      });
+
   // Sort attraction
   $("#sortable_<%= schedule_day.index %>").sortable();
   $("#sortable_<%= schedule_day.index %>").disableSelection();
@@ -72,9 +83,10 @@
           });
       $.ajax({
         method: 'POST',
-        data: { 'indexes' : indexes },
+        data: {'indexes': indexes},
         url: '/schedule_days/<%= schedule_day.id %>/sort.js',
-        success: function (data) {}
+        success: function (data) {
+        }
       });
     }
   });

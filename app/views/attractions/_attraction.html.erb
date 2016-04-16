@@ -5,16 +5,16 @@
       </div>
       <input type="hidden" id="attraction_index" value="<%= attraction.index %>">
       <div class="day-place-detail">
-        <div class="col-md-3">
+        <div class="col-img">
           <%= image_tag(attraction.image_url, height: '50', width: '50', style: 'vertical-align: bottom', class: 'img-circle') %>
         </div>
 
-        <div class="col-md-6 day-place-detail-middle">
+        <div class="day-place-detail-middle col-name">
           <p class="day-place-name"><%= attraction.title %></p>
           <h3 class="tag"><%= attraction.hour_spend %> hour</h3>
         </div>
 
-        <div class="col-md-3 text-right remove-itinerary">
+        <div class="text-right remove-itinerary col-remove">
           <%= link_to schedule_day_attraction_path(attraction.schedule_day, attraction),
                       id: "remove-itinerary_#{attraction.index}", rel: "day-detail_#{attraction.index}",
                       remote: true, method: :delete do %>
