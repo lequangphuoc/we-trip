@@ -1,93 +1,104 @@
 <div class="tab-pane <%= schedule_day.index == 1 && 'active' %>" id="day<%= schedule_day.index %>">
   <div class="schedule-form">
-    <ul class="nav nav-tabs">
-      <li class="active font-normal"><a data-toggle="tab" href="#schedule_<%= schedule_day.index %>">Schedule</a></li>
-      <li><a data-toggle="tab" href="#map_<%= schedule_day.index %>" class="font-normal">Map</a></li>
-    </ul>
 
-    <div class="tab-content schedule-content" style="margin-top: 24px">
-      <div id="schedule_<%= schedule_day.index %>" class="tab-pane fade in active schedule">
-        <div class="col-md-6">
+    <div class="schedule-content" style="margin-top: 24px">
+      <div id="schedule_<%= schedule_day.index %>" class="schedule">
+        <ul class="sortable" id="sortable_<%= schedule_day.index %>">
+          <%= render schedule_day.attractions %>
+        </ul>
 
-          <%= form_tag schedule_day_attractions_path(schedule_day), remote: true, method: :post,
-                       class: 'form-horizontal form-schedule form-card',
-                       id: "form-schedule_#{schedule_day.index}" do %>
+        <button type="button" class="btn" id="addAttractionItineraryBtn" data-toggle="modal" data-target="#add-to-itinerary-form_<%= schedule_day.index %>">Add Attraction</button>
 
-              <!-- Place to go to -->
-              <div class="form-group">
-                <label for="attraction_<%= schedule_day.index %>" class="col-md-6 control-label">
-                  Tourist Attraction:
-                </label>
-                <div class="col-md-6">
-                  <input class="typeahead form-control" type="text" placeholder="Where you love to visit"
-                         id="attraction_<%= schedule_day.index %>">
-                  <input type="hidden" name="attraction[place_id]" id="place_<%= schedule_day.index %>" value="">
-                </div>
-              </div>
 
-              <!-- Spending hours -->
-              <div class="form-group">
-                <label for="spendingTime_<%= schedule_day.index %>" class="col-md-6 control-label">
-                  Hours spending:
-                </label>
-                <div class="col-md-6">
-                  <select class="form-control" name="attraction[hour_spend]" id="spendingTime_<%= schedule_day.index %>">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Submit button -->
-              <div class="form-group">
-                <label class="col-md-6 control-label"></label>
-                <div class="col-md-6">
-                  <button type="submit" class="btn btn-default" style="width: 100%">Add to itinerary</button>
-                </div>
-              </div>
-          <% end %>
-        </div>
-
-        <div class="col-md-6 itinerary-display">
-          <ul class="sortable" id="sortable_<%= schedule_day.index %>">
-            <%= render schedule_day.attractions %>
-          </ul>
-        </div>
       </div>
-      <div id="map_<%= schedule_day.index %>" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-      </div>
+
     </div>
   </div>
 </div>
 
+
+<!--trip form itinerary-->
+<div class="modal fade add-to-itinerary-form" id="add-to-itinerary-form_<%= schedule_day.index %>" tabindex="-1" role="dialog" aria-labelledby="addToItineraryFormLabel"
+     aria-hidden="true" xmlns="http://www.w3.org/1999/html">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="addToItineraryFormLabel">Add Attraction to Itinerary</h2>
+      </div>
+      <%= form_tag schedule_day_attractions_path(schedule_day), remote: true, method: :post,
+                   class: 'form-horizontal form-schedule form-card',
+                   id: "form-schedule_#{schedule_day.index}" do %>
+
+          <!-- Place to go to -->
+          <div class="form-group">
+            <label for="attraction_<%= schedule_day.index %>" class="form-control-label">
+              Tourist Attraction:
+            </label>
+            <input class="typeahead form-control" type="text" placeholder="Where you love to visit"
+                   id="attraction_<%= schedule_day.index %>">
+            <input type="hidden" name="attraction[place_id]" id="place_<%= schedule_day.index %>" value="">
+          </div>
+
+          <!-- Spending hours -->
+          <div class="form-group">
+            <label for="spendingTime_<%= schedule_day.index %>" class="form-control-label">
+              Hours spending:
+            </label>
+            <select class="form-control" name="attraction[hour_spend]" id="spendingTime_<%= schedule_day.index %>">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <!-- Submit button -->
+          <div class="form-group">
+            <button type="submit" class="btn addItineraryBtn">Add to itinerary</button>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<!--end-->
+
 <script>
   // Typehead
-  var placeIds = <%= raw @place_ids.to_json %>;
-  var placeNames = <%= raw @place_names.to_json %>;
-  var states = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
+  var places = <%= raw @places.to_json %>;
+  var placeEngine = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: placeNames
+    identify: function(obj) { return obj.id; },
+    local: places
   });
   $('#attraction_<%= schedule_day.index %>').bind('typeahead:select', function (ev, suggestion) {
-    $("#place_<%= schedule_day.index %>").val(placeIds[placeNames.indexOf(suggestion)]);
+    $("#place_<%= schedule_day.index %>").val(placeIds[placeNames.indexOf(suggestion.id)]);
   });
 
-  $('#attraction_<%= schedule_day.index %>').typeahead({
+  $('#attraction_<%= schedule_day.index %>').typeahead(
+      {
         hint: true,
         highlight: true,
         minLength: 1
       },
       {
         name: 'states',
-        source: states
-      });
+        source: placeEngine,
+        display: 'name',
+        templates: {
+          suggestion: Handlebars.compile("<div class='dropdown-suggestion'><div class='dropdown-suggestion-image'><image src='{{photo_url}}' width='50' height='50' class='img-circle' /></div><div class='dropdown-suggestion-name'>{{name}}</div></div>")
+        }
+      }
+  );
+
+  $('#attraction_<%= schedule_day.index %>').on('typeahead:render', function(e, suggestions, asyncFlag, setName) {
+    console.log(suggestions);
+
+  });
 
   // Sort attraction
   $("#sortable_<%= schedule_day.index %>").sortable();
