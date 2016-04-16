@@ -13,10 +13,19 @@
 #  duration        :string
 #
 
-class Attraction < ActiveRecord::Base
-  belongs_to :schedule_day
-  belongs_to :place
+FactoryGirl.define do
+  factory :attraction1, class: Attraction do
+    index 1
+    hour_spend 1
+  end
 
-  validates_presence_of :place_id, :schedule_day_id, :index
-  validates_numericality_of :hour_spend
+  factory :attraction2, class: Attraction do
+    index 2
+    hour_spend 2
+  end
+
+  factory :attraction3, class: Attraction do
+    index 3
+    hour_spend 3
+  end
 end

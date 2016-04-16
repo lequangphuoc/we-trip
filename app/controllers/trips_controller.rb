@@ -15,6 +15,7 @@
 class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show]
+  before_action :prepare_data, only: [:edit, :update]
 
   def show
   end
@@ -23,7 +24,6 @@ class TripsController < ApplicationController
   end
 
   def edit
-    @schedule_days = @trip.schedule_days.preload(:attractions).decorate
   end
 
   def create
@@ -33,8 +33,6 @@ class TripsController < ApplicationController
   end
 
   def update
-    session['count_temp'] = 2
-    byebug
     @trip.departure = Region.find_by(name: params[:trip][:departure])
     if @trip.update_attributes(trip_update_params)
       redirect_to edit_trip_path(@trip)
@@ -46,6 +44,13 @@ class TripsController < ApplicationController
   private
   def get_trip
     @trip = Trip.find(params[:id])
+  end
+
+  def prepare_data
+    @schedule_days = @trip.schedule_days.preload(:attractions).decorate
+    places = Place.all.preload(:region).decorate
+    @place_names = places.map(&:suggest_title)
+    @place_ids = places.map(&:id)
   end
 
   def trip_params

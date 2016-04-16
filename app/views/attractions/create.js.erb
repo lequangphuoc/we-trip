@@ -1,1 +1,9 @@
-$("#sortable_<%= @attraction %>").append('<%= j(render 'attractions/attraction', attraction: @attraction) %>');
+<% if @attraction %>
+  $("#place_<%= @attraction.schedule_day.index %>").val('');
+<% end %>
+
+<% if @attraction && @attraction.persisted? %>
+  $("#sortable_<%= @attraction.schedule_day_id %>").append(
+      '<%= j(render 'attractions/attraction', attraction: @attraction) %>'
+  );
+<% end %>

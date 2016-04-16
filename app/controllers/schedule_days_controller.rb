@@ -11,9 +11,7 @@ class ScheduleDaysController < ApplicationController
   end
 
   def sort
-    SortAttractionsService.new(@schedule_day, params[:indexes]).execute
-    @schedule_day.attractions.reload
-    @schedule_day = @schedule_day.decorate
+    SortAttractionsService.new(params).execute
     respond_to :js
   end
 
@@ -23,7 +21,7 @@ class ScheduleDaysController < ApplicationController
   end
 
   def get_schedule_day
-    @schedule_day = ScheduleDay.find(params[:id])
+    @schedule_day = ScheduleDay.find(params[:id]).decorate
   end
 
   def next_index

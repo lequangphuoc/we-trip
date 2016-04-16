@@ -9,6 +9,8 @@
 #  hour_spend      :decimal(, )      default("1")
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  distance        :string
+#  duration        :string
 #
 
 require 'rails_helper'

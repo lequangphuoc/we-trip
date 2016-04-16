@@ -33,6 +33,11 @@ class GoogleApiClient
     'https://www.google.com/maps/embed/v1/place' + params
   end
 
+  def self.calculate_distance(origin_latitude, origin_longitude, des_latitude, des_longitude)
+    params = "?units=metric&origins=#{origin_latitude},#{origin_longitude}&destinations=#{des_latitude},#{des_longitude}&key=#{API_KEY}"
+    get_method('https://maps.googleapis.com/maps/api/distancematrix/json' + params)['rows'][0]['elements'][0]
+  end
+
   private
   def self.get_method(url)
     HTTParty.get(URI.encode(url)).parsed_response

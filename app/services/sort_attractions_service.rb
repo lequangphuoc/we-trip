@@ -1,27 +1,39 @@
 class SortAttractionsService
-  def initialize(schedule_day, indexes)
-    @schedule_day = schedule_day
-    @indexes = indexes
+  def initialize(params)
+    @attractions = ScheduleDay.find(params[:id]).attractions
+    @schedule_day_id = params[:id]
+    @indexes = params[:indexes].map(&:to_i)
   end
 
   def execute
-    sort_attractions
+    if valid_indexes?
+      sort_attractions
+      calculate_distance
+    end
   end
 
   private
   def sort_attractions
-    if valid_indexes?
-      @schedule_day.attractions.zip(@indexes).each do |attraction, i|
-        handle_attraction_index(attraction, i.to_i)
+    Attraction.transaction do
+      current_attractions.each_with_index do |attraction, order|
+        handle_attraction_index(attraction, order + 1)
       end
     end
   end
 
-  def valid_indexes?
-    @indexes.map(&:to_i).uniq.sort == @schedule_day.attractions.pluck(:index).sort
+  def current_attractions
+    @indexes.map { |index| @attractions.find_by(index: index) }
   end
 
-  def handle_attraction_index(attraction, index)
-    attraction.update_attributes(index: index) if attraction.index != index
+  def valid_indexes?
+    @indexes.sort == @attractions.pluck(:index).sort
+  end
+
+  def calculate_distance
+    CalculateDistanceService.new(@schedule_day_id).execute
+  end
+
+  def handle_attraction_index(attraction, new_index)
+    attraction.update_attributes(index: new_index) if attraction.index != new_index
   end
 end
