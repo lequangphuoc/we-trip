@@ -2,7 +2,7 @@ class SortAttractionsService
   def initialize(params)
     @attractions = ScheduleDay.find(params[:id]).attractions
     @schedule_day_id = params[:id]
-    @indexes = params[:indexes]
+    @indexes = params[:indexes].map(&:to_i)
   end
 
   def execute
@@ -14,14 +14,19 @@ class SortAttractionsService
 
   private
   def sort_attractions
-    current_attractions = @indexes.map { |index| @attractions.find_by(index: index) }
-    current_attractions.each_with_index do |attraction, order|
-      handle_attraction_index(attraction, order + 1)
+    Attraction.transaction do
+      current_attractions.each_with_index do |attraction, order|
+        handle_attraction_index(attraction, order + 1)
+      end
     end
   end
 
+  def current_attractions
+    @indexes.map { |index| @attractions.find_by(index: index) }
+  end
+
   def valid_indexes?
-    @indexes.map(&:to_i).sort == @attractions.pluck(:index).sort
+    @indexes.sort == @attractions.pluck(:index).sort
   end
 
   def calculate_distance

@@ -27,10 +27,12 @@ class CalculateDistanceService
   end
 
   def calculate_attractions_distance
-    current_attraction = @attractions.first
-    @attractions.drop(0).each do |attraction|
-      calculate_distance(current_attraction, attraction)
-      current_attraction = attraction
+    Attraction.transaction do
+      current_attraction = @attractions.first
+      @attractions.drop(0).each do |attraction|
+        calculate_distance(current_attraction, attraction)
+        current_attraction = attraction
+      end
     end
   end
 
