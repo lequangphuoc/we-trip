@@ -35,22 +35,19 @@
     hideLoading();
 
     // jQuery time
-    var current_fs = $('#basic_info'), next_fs, previous_fs; // fieldsets
+    current_fs = $('#basic_info');
+    var previous_fs; // fieldsets
     var left, opacity, scale; // fieldset properties which we will animate
     var animating; // flag to prevent quick multi-click glitches
-
-    $(".next").click(function (e) {
-      e.preventDefault();
-      nextScreen();
-    });
 
     moveToNextScreen = function () {
       if (animating) return false;
       animating = true;
-      next_fs = current_fs.next();
+      var next_fs = current_fs.next();
       $("#progressbar li").eq($(".form-slide").index(next_fs)).addClass("active");
       next_fs.fadeIn(800);
       current_fs.fadeOut(800);
+      current_fs = next_fs;
     };
 
     $(".previous").click(function () {
