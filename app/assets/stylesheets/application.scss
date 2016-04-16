@@ -435,13 +435,15 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .form-schedule{
   box-shadow: none;
   background: transparent;
-  text-align: left;
+
   select{
     width: 324px;
     height: 30px;
+    margin: 0 auto;
   }
   label{
-    font-size: 20px;
+      font-size: 20px;
+      display: block;
   }
   input{
     position: relative;
@@ -523,4 +525,39 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .icn-driving:before {
     content: '\e08f';
   }
+}
+
+.add-to-itinerary-form{
+  .modal-header{
+    color: #fff;
+    background-color: #DEC698;
+  }
+}
+#addAttractionItineraryBtn {
+  width: 300px;
+  font-size: 24px;
+  background-color:  #DC4B32;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.dropdown-suggestion{
+  padding: 16px 8px;
+  float: left;
+  border-bottom: 1px solid #8F6618;
+  width: 100%;
+  image{
+
+  }
+  .dropdown-suggestion-image{
+    float: left;
+    width: 60px;
+  }
+  .dropdown-suggestion-name{
+    float: left;
+    width: 200px;
+  }
+}
+
+.tt-menu{
+  background-color: #FCF4CE;
 }

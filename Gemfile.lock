@@ -118,6 +118,11 @@ GEM
       thor (~> 0.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    handlebars_assets (0.23.0)
+      execjs (~> 2.0)
+      multi_json (~> 1.0)
+      sprockets (>= 2.0.0)
+      tilt (>= 1.2)
     hashie (3.4.3)
     httparty (0.13.7)
       json (~> 1.8)
@@ -334,6 +339,7 @@ DEPENDENCIES
   factory_girl_rails
   ffaker
   figaro
+  handlebars_assets
   httparty
   jbuilder (~> 2.0)
   jquery-easing-rails
