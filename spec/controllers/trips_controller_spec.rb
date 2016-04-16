@@ -82,12 +82,17 @@ RSpec.describe TripsController, type: :controller do
 
     it 'should update trip' do
       put_to_controller(@trip_params)
-      expect(response).to redirect_to edit_trip_path(@trip)
+      expect(assigns(:updated)).to eq(true)
     end
 
     it 'should redirect to edit' do
       put_to_controller({title: 'title'})
-      expect(response).to render_template(:edit)
+      expect(assigns(:updated)).to eq(false)
+    end
+
+    it 'should render js' do
+      put_to_controller(@trip_params)
+      expect(response).to render_template(:update)
     end
 
     it 'should update correct trip' do

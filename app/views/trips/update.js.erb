@@ -1,5 +1,8 @@
+hideLoading();
 <% if @updated %>
-  toastr.info('Update successfully');
+  $('#trip-error').html("");
+  $('#itinerary').html("<%= j(render 'trips/itinerary') %>");
+  moveToNextScreen();
 <% else %>
   $('#trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
 <% end %>

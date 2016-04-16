@@ -1,26 +1,31 @@
-<div class="form-slide">
-  <h2 class="fs-title short-border">Itinerary</h2>
+<h2 class="fs-title short-border">Itinerary</h2>
+<div class="panel with-nav-tabs panel-default">
+  <div class="panel-heading">
+    <ul class="nav nav-tabs" id="day-left-panel">
+      <li>
+        <%= link_to trip_schedule_days_path(@trip), method: :post,
+                    remote: true, class: 'btn-add-schedule' do %>
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Day
+        <% end %>
+      </li>
 
-  <div class="panel with-nav-tabs panel-default">
-    <div class="panel-heading">
-      <ul class="nav nav-tabs">
-        <li><a href="#" class="btn-add-schedule" remote="true"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Day</a></li>
-        <li class="active"><a href="#tab1default" data-toggle="tab">Day 1</a></li>
-        <li><a href="#tab2default" data-toggle="tab">Day 2</a></li>
-      </ul>
-    </div>
-    <div class="panel-body">
-      <div class="tab-content">
-        <div class="tab-pane fade in active" id="tab1default">
-          <div class="col-md-3">
-            <%= render @schedule_days %>
-          </div>
-          <div class="col-md-9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501702.60423629143!2d106.41416161190841!3d10.768999960193561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh+70000%2C+Vietnam!5e0!3m2!1sen!2s!4v1460734365430" width="1050" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="tab2default">Default 2</div>
-      </div>
+      <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :schedule_day %>
+    </ul>
+  </div>
+  <script>
+    places = <%= raw @places.to_json %>;
+    placeEngine = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('suggest_title'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      identify: function (obj) {
+        return obj.id;
+      },
+      local: places
+    });
+  </script>
+  <div class="panel-body">
+    <div class="tab-content" id="itinerary-content">
+      <%= render @schedule_days %>
     </div>
   </div>
 </div>

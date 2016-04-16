@@ -1,24 +1,31 @@
-<div class="tab-pane <%= schedule_day.index == 1 && 'active' %>" id="day<%= schedule_day.index %>">
-  <div class="schedule-form">
+<div class="tab-pane fade in <%= schedule_day.index == 1 && 'active' %> days-tab" id="day<%= schedule_day.index %>">
 
-    <div class="schedule-content" style="margin-top: 24px">
-      <div id="schedule_<%= schedule_day.index %>" class="schedule">
-        <ul class="sortable" id="sortable_<%= schedule_day.index %>">
-          <%= render schedule_day.attractions %>
-        </ul>
-
-        <button type="button" class="btn" id="addAttractionItineraryBtn" data-toggle="modal" data-target="#add-to-itinerary-form_<%= schedule_day.index %>">Add Attraction</button>
-
-
+  <!-- Attractions -->
+  <div class="col-md-3">
+    <div class="schedule-form">
+      <div class="schedule-content" style="margin-top: 24px">
+        <div id="schedule_<%= schedule_day.index %>" class="schedule">
+          <ul class="sortable" id="sortable_<%= schedule_day.index %>">
+            <%= render schedule_day.attractions %>
+          </ul>
+          <button type="button" class="btn" id="addAttractionItineraryBtn" data-toggle="modal"
+                  data-target="#add-to-itinerary-form_<%= schedule_day.index %>">
+            Add Attraction
+          </button>
+        </div>
       </div>
-
     </div>
+  </div>
+
+  <!-- Map -->
+  <div class="col-md-9">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501702.60423629143!2d106.41416161190841!3d10.768999960193561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Ho+Chi+Minh+70000%2C+Vietnam!5e0!3m2!1sen!2s!4v1460734365430" width="1050" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 </div>
 
-
-<!--trip form itinerary-->
-<div class="modal fade add-to-itinerary-form" id="add-to-itinerary-form_<%= schedule_day.index %>" tabindex="-1" role="dialog" aria-labelledby="addToItineraryFormLabel"
+<!-- Attraction Form -->
+<div class="modal fade add-to-itinerary-form" id="add-to-itinerary-form_<%= schedule_day.index %>" tabindex="-1"
+     role="dialog" aria-labelledby="addToItineraryFormLabel"
      aria-hidden="true" xmlns="http://www.w3.org/1999/html">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -58,25 +65,17 @@
 
           <!-- Submit button -->
           <div class="form-group">
-            <button type="submit" class="btn addItineraryBtn">Add to itinerary</button>
+            <button type="submit" class="btn addItineraryBtn" id="add_itinerary_btn">Add to itinerary</button>
           </div>
       <% end %>
     </div>
   </div>
 </div>
-<!--end-->
 
 <script>
   // Typehead
-  var places = <%= raw @places.to_json %>;
-  var placeEngine = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    identify: function(obj) { return obj.id; },
-    local: places
-  });
   $('#attraction_<%= schedule_day.index %>').bind('typeahead:select', function (ev, suggestion) {
-    $("#place_<%= schedule_day.index %>").val(placeIds[placeNames.indexOf(suggestion.id)]);
+    $("#place_<%= schedule_day.index %>").val(suggestion.id);
   });
 
   $('#attraction_<%= schedule_day.index %>').typeahead(
@@ -90,15 +89,14 @@
         source: placeEngine,
         display: 'name',
         templates: {
-          suggestion: Handlebars.compile("<div class='dropdown-suggestion'><div class='dropdown-suggestion-image'><image src='{{photo_url}}' width='50' height='50' class='img-circle' /></div><div class='dropdown-suggestion-name'>{{name}}</div></div>")
+          suggestion: Handlebars.compile("" +
+              "<div class='dropdown-suggestion'>" +
+              "<div class='dropdown-suggestion-image'>" +
+              "<image src='{{display_image_url}}' width='50' height='50' class='img-circle'/>" +
+              "</div><div class='dropdown-suggestion-name'>{{suggest_title}}</div></div>")
         }
       }
   );
-
-  $('#attraction_<%= schedule_day.index %>').on('typeahead:render', function(e, suggestions, asyncFlag, setName) {
-    console.log(suggestions);
-
-  });
 
   // Sort attraction
   $("#sortable_<%= schedule_day.index %>").sortable();
@@ -110,11 +108,13 @@
           .map(function (ui) {
             return ui.value
           });
+      showLoading();
       $.ajax({
         method: 'POST',
         data: {'indexes': indexes},
         url: '/schedule_days/<%= schedule_day.id %>/sort.js',
         success: function (data) {
+          hideLoading();
         }
       });
     }

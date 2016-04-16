@@ -9,6 +9,10 @@ class PlaceDecorator < Draper::Decorator
     "#{object.name} - #{object.region.name}"
   end
 
+  def as_json(options)
+    super.merge!({suggest_title: self.suggest_title, display_image_url: self.display_image_url})
+  end
+
   def display_image_url
     if object.display_photo
       object.display_photo.decorate.url

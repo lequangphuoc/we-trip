@@ -4,8 +4,8 @@ for (var i = 1; i <= day_count; i++) {
   $("#day" + i).removeClass('active');
 }
 
-// add new days
-$("#day-left-panel").append("<%= j(render 'schedule_days/li_schedule_day', day: @schedule_day) %>");
-$(".itinerary-content").append("<%= j(render @schedule_day ) %>");
-$("#li-day" + (day_count + 1)).addClass('active');
-$("#day" + (day_count + 1)).addClass('active');
+// add new day
+$("#day-left-panel").append("<%= j(render 'schedule_days/li_schedule_day', schedule_day: @schedule_day) %>");
+$("#itinerary-content").append("<%= j(render @schedule_day) %>");
+$("#li-day<%= @schedule_day.index %>").addClass('active');
+$("#day<%= @schedule_day.index %>").addClass('active');

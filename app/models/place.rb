@@ -19,12 +19,8 @@
 class Place < ActiveRecord::Base
   belongs_to :region
   has_many :place_photos, dependent: :destroy
-  attr_reader :display_photo
+  has_one :display_photo, -> { limit(1) }, class_name: PlacePhoto
 
   validates_presence_of :name, :latitude, :longitude, :vicinity,
                         :region_id, :description, :rating
-
-  def display_photo
-    self.place_photos.first
-  end
 end

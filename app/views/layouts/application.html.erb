@@ -17,10 +17,10 @@
         <div class="top-right-trip">
           <%= render 'share/top_right_dropdown' %>
         </div>
-
       </div>
     </div>
     <%= yield %>
+    <%= render 'share/loading' %>
 <% elsif params[:controller] == 'home' %>
     <%= yield %>
 <% else %>

@@ -34,11 +34,8 @@ class TripsController < ApplicationController
 
   def update
     @trip.departure = Region.find_by(name: params[:trip][:departure])
-    if @trip.update_attributes(trip_update_params)
-      redirect_to edit_trip_path(@trip)
-    else
-      render :edit
-    end
+    @updated = @trip.update_attributes(trip_update_params)
+    respond_to :js
   end
 
   private
@@ -48,10 +45,7 @@ class TripsController < ApplicationController
 
   def prepare_data
     @schedule_days = @trip.schedule_days.preload(:attractions).decorate
-    # places = Place.all.preload(:region).decorate
-    # @place_names = places.map(&:suggest_title)
-    # @place_ids = places.map(&:id)
-    @places = Place.all.preload(:region).decorate.map { |place| {id: place.id, name: place.suggest_title, photo_url: place.display_image_url} }
+    @places = Place.all.preload(:region, :display_photo).decorate
   end
 
   def trip_params
