@@ -14,7 +14,7 @@ class ScheduleDay < ActiveRecord::Base
   DEFAULT_LNG_AVG = 108.2772
 
   belongs_to :trip
-  has_many :attractions, -> { order(:index) }
+  has_many :attractions, -> { order(:index) }, dependent: :destroy
   has_many :places, through: :attractions
 
   validates_presence_of :index, :trip_id

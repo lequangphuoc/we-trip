@@ -13,13 +13,22 @@
     </ul>
   </div>
   <script>
+    DEFAULT_LAT_AVG = 14.0583;
+    DEFAULT_LNG_AVG = 108.2772;
+
     // Toggle maps
     maps = {};
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       var map = maps[e.target.id][0];
+      var bounds = maps[e.target.id][1];
       google.maps.event.trigger(map, 'resize');
       map.setZoom(15);
-      map.fitBounds(maps[e.target.id][1]);
+      if (bounds.isEmpty()) {
+        map.setZoom(5);
+        map.setCenter(new google.maps.LatLng(DEFAULT_LAT_AVG, DEFAULT_LNG_AVG));
+      } else {
+        map.fitBounds(bounds);
+      }
     });
 
     // Place engine

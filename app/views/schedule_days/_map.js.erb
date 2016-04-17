@@ -28,7 +28,12 @@ function addAttractionsToMap(map) {
     bounds.extend(markers[i].getPosition());
   }
   maps["li_tab<%= schedule_day.index %>"] = [map, bounds];
-  map.fitBounds(bounds);
+  if (bounds.isEmpty()) {
+    map.setZoom(5);
+    map.setCenter(new google.maps.LatLng(DEFAULT_LAT_AVG, DEFAULT_LNG_AVG));
+  } else {
+    map.fitBounds(bounds);
+  }
 }
 
 function calculateAndDisplayRoute(map, directionsService) {
