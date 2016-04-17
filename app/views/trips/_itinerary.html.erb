@@ -16,9 +16,10 @@
     // Toggle maps
     maps = {};
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-      var map = maps[e.target.id];
+      var map = maps[e.target.id][0];
       google.maps.event.trigger(map, 'resize');
-      map.setZoom(map.getZoom());
+      map.setZoom(15);
+      map.fitBounds(maps[e.target.id][1]);
     });
 
     // Place engine

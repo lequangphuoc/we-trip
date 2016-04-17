@@ -9,7 +9,6 @@ function initialize(mapId) {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(mapCanvas, mapOptions);
-  maps["li_tab<%= schedule_day.index %>"] = map;
   addAttractionsToMap(map);
   calculateAndDisplayRoute(map, directionsService);
 }
@@ -28,6 +27,7 @@ function addAttractionsToMap(map) {
   for (var i = 0; i < markers.length; i++) {
     bounds.extend(markers[i].getPosition());
   }
+  maps["li_tab<%= schedule_day.index %>"] = [map, bounds];
   map.fitBounds(bounds);
 }
 
