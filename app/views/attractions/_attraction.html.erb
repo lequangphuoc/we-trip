@@ -17,7 +17,7 @@
         </div>
 
         <div class="text-right remove-itinerary col-remove">
-          <%= link_to schedule_day_attraction_path(attraction.schedule_day, attraction),
+          <%= link_to schedule_day_attraction_path(attraction.schedule_day_id, attraction),
                       id: "remove-itinerary_#{attraction.index}", rel: "day-detail_#{attraction.index}",
                       remote: true, method: :delete do %>
               <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>

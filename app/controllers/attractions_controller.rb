@@ -1,6 +1,6 @@
 class AttractionsController < ApplicationController
   before_action :require_login
-  before_action :get_schedule_day, only: [:destroy]
+  before_action :get_schedule_day, only: [:destroy, :create]
 
   def create
     @attraction = CreateAttractionService.new(params).execute

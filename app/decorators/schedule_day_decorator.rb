@@ -5,4 +5,8 @@ class ScheduleDayDecorator < Draper::Decorator
   def default_active
     object.index == 1 && 'active'
   end
+
+  def title
+    "Day #{object.index}"
+  end
 end

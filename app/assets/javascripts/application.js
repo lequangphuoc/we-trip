@@ -31,3 +31,4 @@
 //= require bootstrap-datetimepicker
 //= require twitter/typeahead.min
 //= require handlebars
+//= require custom_marker

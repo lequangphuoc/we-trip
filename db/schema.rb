@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160414171019) do
+ActiveRecord::Schema.define(version: 20160417111942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,7 +80,6 @@ ActiveRecord::Schema.define(version: 20160414171019) do
   add_index "regions", ["name"], name: "index_regions_on_name", using: :btree
 
   create_table "schedule_days", force: :cascade do |t|
-    t.string   "title"
     t.integer  "index"
     t.integer  "trip_id"
     t.datetime "created_at", null: false

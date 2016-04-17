@@ -1,2 +1,3 @@
 hideLoading();
 $('#sortable_<%= @schedule_day.index %>').html('<%= j(render @schedule_day.attractions) %>');
+<%= render 'schedule_days/map', schedule_day: @schedule_day %>

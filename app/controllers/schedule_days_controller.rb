@@ -1,12 +1,21 @@
+# == Schema Information
+#
+# Table name: schedule_days
+#
+#  id         :integer          not null, primary key
+#  index      :integer
+#  trip_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class ScheduleDaysController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:create]
   before_action :get_schedule_day, only: [:sort]
 
   def create
-    @schedule_day = @trip.schedule_days.create(
-        index: next_index, title: "Day #{next_index}"
-    ).decorate
+    @schedule_day = @trip.schedule_days.create(index: next_index).decorate
     respond_to :js
   end
 

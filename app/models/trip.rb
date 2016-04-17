@@ -25,6 +25,6 @@ class Trip < ActiveRecord::Base
   after_create :create_default_schedule_day
 
   def create_default_schedule_day
-    self.schedule_days.create(index: 1, title: 'Day 1')
+    self.schedule_days.create(index: 1)
   end
 end

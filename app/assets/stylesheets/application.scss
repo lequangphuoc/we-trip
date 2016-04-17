@@ -494,7 +494,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   position: relative;
   z-index: 1;
   text-align: left;
-  height: 85px;
+  height: auto;
+  overflow: hidden;
   font-size: 18px;
   .col-img {
     float: left;
