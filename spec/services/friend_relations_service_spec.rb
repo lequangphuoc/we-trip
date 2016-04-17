@@ -30,6 +30,9 @@ RSpec.describe FriendRelationsService do
   describe '#confirm' do
     before(:each) do
       FriendRelation.create(user_id: target.id, target_id: user.id)
+      @notification = Notification.create(name: "Friend Request", description: "I want to be your friend.", category: "request")
+      UserNotification.create(sender_id: target.id, user_id: user.id, notification_id: @notification.id)
+
       @service.confirm
     end
 
@@ -50,6 +53,9 @@ RSpec.describe FriendRelationsService do
   describe '#reject' do
     before(:each) do
       FriendRelation.create(user_id: target.id, target_id: user.id)
+      @notification = Notification.create(name: "Friend Request", description: "I want to be your friend.", category: "request")
+      UserNotification.create(sender_id: target.id, user_id: user.id, notification_id: @notification.id)
+
       @service.reject
     end
 
