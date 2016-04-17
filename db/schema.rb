@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160412080130) do
+ActiveRecord::Schema.define(version: 20160414134105) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20160412080130) do
   end
 
   add_index "friend_relations", ["user_id"], name: "index_friend_relations_on_user_id", using: :btree
+
+  create_table "notifications", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "category"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "place_photos", force: :cascade do |t|
     t.integer  "place_id"
@@ -76,6 +84,17 @@ ActiveRecord::Schema.define(version: 20160412080130) do
 
   add_index "trips", ["departure_id"], name: "index_trips_on_departure_id", using: :btree
 
+  create_table "user_notifications", force: :cascade do |t|
+    t.integer  "notification_id"
+    t.integer  "user_id"
+    t.integer  "sender_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "user_notifications", ["notification_id"], name: "index_user_notifications_on_notification_id", using: :btree
+  add_index "user_notifications", ["user_id"], name: "index_user_notifications_on_user_id", using: :btree
+
   create_table "user_trips", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "trip_id"
@@ -100,6 +119,8 @@ ActiveRecord::Schema.define(version: 20160412080130) do
   add_index "users", ["name"], name: "index_users_on_name", using: :btree
 
   add_foreign_key "friend_relations", "users"
+  add_foreign_key "user_notifications", "notifications"
+  add_foreign_key "user_notifications", "users"
   add_foreign_key "user_trips", "trips"
   add_foreign_key "user_trips", "users"
 end

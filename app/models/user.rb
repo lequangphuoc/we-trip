@@ -18,6 +18,8 @@ class User < ActiveRecord::Base
   has_many :user_trips
   has_many :trips, through: :user_trips
   has_many :friends, through: :friend_relations, class_name: User, foreign_key: :target_id
+  has_many :user_notifications
+  has_many :notifications, through: :user_notifications, class_name: Notification, foreign_key: :notification_id
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader

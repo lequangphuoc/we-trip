@@ -486,3 +486,14 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .result_name{
   margin-right: 3px;
 }
+
+.notification{
+  border: 1px solid #A9A9A9;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.notification-box{
+  min-width: 250px !important;
+}

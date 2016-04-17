@@ -10,7 +10,6 @@ $('#result_users .add_friend_result_wraper .add_to_query').on('click', function(
 		url: '/friend_relations',
 		data: { 'target_id': $(this).parent().find('.result_id').text() },
 		success: function (){
-			alert('success');
 		}
 	});
 });

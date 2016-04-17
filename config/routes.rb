@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :notifications
   resources :places, only: [:show, :index]
   resources :user_trips, only: [:create, :destroy]
   resources :trips, only: [:new, :edit, :create, :update, :show]

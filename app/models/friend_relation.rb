@@ -12,7 +12,7 @@
 
 class FriendRelation < ActiveRecord::Base
   belongs_to :user
-  has_one :target, class_name: User, foreign_key: :target_id
+  has_one :target, class_name: User, foreign_key: :id
 
   validates_presence_of :user_id, :target_id, :status
   validates_inclusion_of :status, in: %w(pending accepted)

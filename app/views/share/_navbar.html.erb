@@ -6,27 +6,39 @@
     <div class="info-right">
       <% if sign_in? %>
 
-          <ul class="nav nav-pills top-after-login">
+      <ul class="nav nav-pills top-after-login">
 
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <%= image_tag current_user.avatar, width: 30, class: "img-rounded" %>
-                <div class="username-right-top"><%= current_user.name %></div> <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="modal" data-target="#trip-form">New Trip</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#friend-form">Add Friend</a></li>
-                <li><%= link_to 'Logout', sessions_path, method: :delete %></li>
-                <li><%= link_to 'Profile', edit_user_path(current_user_id), method: :get %></li>
-              </ul>
-            </li>
-
-          </ul>
-      <% else %>
-          <div class="top-before-login">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
+        <li>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Notification
+            </button>
+            <div class="dropdown-menu notification-box">
+                  <%= render 'notifications/notification' %>
+            </div>
           </div>
+        </li>
+
+
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <%= image_tag current_user.avatar, width: 30, class: "img-rounded" %>
+            <div class="username-right-top"><%= current_user.name %></div> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-toggle="modal" data-target="#trip-form">New Trip</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#friend-form">Add Friend</a></li>
+            <li><%= link_to 'Logout', sessions_path, method: :delete %></li>
+            <li><%= link_to 'Profile', edit_user_path(current_user_id), method: :get %></li>
+          </ul>
+        </li>
+
+      </ul>
+      <% else %>
+      <div class="top-before-login">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-form">Login</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register-form">Register</button>
+      </div>
       <% end %>
     </div>
   </div>
