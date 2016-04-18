@@ -18,8 +18,8 @@ CustomMarker.prototype.draw = function () {
         root.style.position = 'absolute';
         root.style.cursor = 'pointer';
         root.style.border = '3px solid red';
-        root.width = '50';
-        root.height = '50';
+        root.width = '56';
+        root.height = '56';
         root.src = encodeURI(this.url.replace(/&amp;/g, '&'));
         var panes = this.getPanes();
         panes.overlayImage.appendChild(root);

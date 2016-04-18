@@ -19,7 +19,7 @@ function addAttractionsToMap(map) {
   var lat = parseFloat("<%= attraction.place.latitude %>");
   var lng = parseFloat("<%= attraction.place.longitude %>");
   var overlay = new CustomMarker(
-      new google.maps.LatLng(lat, lng), map, "<%= attraction.image_url(48) %>"
+      new google.maps.LatLng(lat, lng), map, "<%= attraction.image_url(56) %>"
   );
   markers.push(overlay);
   <% end %>
