@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'attractions/create'
+
   get 'home/index'
   root 'home#index'
 
@@ -21,8 +23,21 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :trips, only: [:new, :edit, :create, :update, :show] do
+    resources :schedule_days, only: [:create]
+    member do
+      get :friends_in_trip
+    end
+  end
+
+  resources :schedule_days, only: [] do
+    resources :attractions, only: [:create, :destroy]
+    member do
+      post :sort
+    end
+  end
+
   resources :notifications
+  resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
-  resources :user_trips, only: [:create, :destroy]
-  resources :trips, only: [:new, :edit, :create, :update, :show]
 end

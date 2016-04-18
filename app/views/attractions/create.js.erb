@@ -1,0 +1,8 @@
+<% if @attraction && @attraction.persisted? %>
+  $("#place_<%= @attraction.schedule_day.index %>").val('');
+  $("#add-to-itinerary-form_<%= @attraction.schedule_day.index %>").modal('hide');
+  $("#sortable_<%= @attraction.schedule_day.index %>").append(
+      '<%= j(render 'attractions/attraction', attraction: @attraction) %>'
+  );
+  <%= render 'schedule_days/map', schedule_day: @schedule_day %>
+<% end %>

@@ -14,7 +14,7 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-  context 'POST #create' do
+  describe 'POST #create' do
     context 'create account successfully' do
       before(:each) do
         post :create, user: attributes_for(:user), format: :js
@@ -51,7 +51,7 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  context 'GET #edit' do
+  describe 'GET #edit' do
     before(:each) do
       @user = create(:user)
     end
@@ -74,7 +74,7 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 
-  context 'POST #update' do
+  describe 'POST #update' do
     before(:each) do
       @user = create(:user)
     end

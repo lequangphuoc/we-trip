@@ -8,7 +8,7 @@ regions:
   - longitude
   - created_at
   - updated_at
-  records: 
+  records:
   - - '171'
     - An Giang
     - '10.5215836'
@@ -398,7 +398,7 @@ place_photos:
   - width
   - created_at
   - updated_at
-  records: 
+  records:
   - - '1443'
     - '948'
     - CmRdAAAA4glM4kWn4e_ksX14FSXRzFXmRyYmgqFlq3O3nyjmE_MTfIRat0TIaji5MWTPJTldEE-mTyPTqighACc2mpSSdRMWNtLJBCyc8vp4eDTQLOarG1TRtS3lwOboEwtye8NjEhB_Y-0m9cPlZEGAXhSk3PAzGhQgp9bD2-cGeW7re04Znt96EgiURA
@@ -10929,11 +10929,11 @@ places:
   - default_budget
   - created_at
   - updated_at
-  records: 
+  records:
   - - '947'
     - Trà Sữa KN
     - ChIJDTv6_P71CTERgQ_AI_bUi38
-    - 
+    -
     - '10.529531'
     - '105.0292207'
     - tt. Chi Lăng
@@ -10956,7 +10956,7 @@ places:
   - - '948'
     - Cafe Mai Trang
     - ChIJf6_Hqy_2CTERIVHg1TNB7AI
-    - 
+    -
     - '10.492539'
     - '105.023724'
     - 366, Đường lên Núi Cấm - Chùa Vạn Linh, An Hảo
@@ -10981,7 +10981,7 @@ places:
   - - '949'
     - Công Ty TNHH Thương Mại Du Lịch Smulhoek
     - ChIJMcfUYjL2CTERo0mT89ua9EM
-    - 
+    -
     - '10.4858707'
     - '105.0199411'
     - Tổ 1, Ấp An Hòa, Huyện Tịnh Biên
@@ -11031,7 +11031,7 @@ places:
   - - '951'
     - Cà Phê Thanh Phong
     - ChIJ2bYRIgccCjERmAEVIVNsezQ
-    - 
+    -
     - '10.5149238'
     - '105.1233965'
     - "Đào Hữu Cảnh"
@@ -11057,7 +11057,7 @@ places:
   - - '952'
     - Nguyen Thi Kim Kha Coffee Shop
     - ChIJRTOy1vQbCjERdv7URdmyRGQ
-    - 
+    -
     - '10.499965'
     - '105.129166'
     - Tổ 6, Ấp Hưng Trung, Xã Đào Hữu Cảnh, Huyện Châu Phú
@@ -11081,7 +11081,7 @@ places:
   - - '953'
     - Quán Cà Phê Đặng Văn Vũ
     - ChIJY5r7_3MeCjEROhXvWzWdSUA
-    - 
+    -
     - '10.530195'
     - '105.06156'
     - "Ấp Mỹ Á, Xã Núi Voi, Huyện Tịnh Biên"
@@ -11105,7 +11105,7 @@ places:
   - - '954'
     - Quán Karaoke Lê Văn Ngoan
     - ChIJj7giNOkdCjERVhEZ0sCkeHY
-    - 
+    -
     - '10.5104674'
     - '105.05022'
     - "Ấp Tân Long, Xã Tân Lợi, Huyện Tịnh Biên"
@@ -11128,7 +11128,7 @@ places:
   - - '955'
     - Quán Cà Phê Chí Huyền
     - ChIJtU8bWy8bCjERw_fjj7T4cHE
-    - 
+    -
     - '10.442629'
     - '105.1658926'
     - 3092, Tỉnh Lộ 941, Ấp Vĩnh Phước, Xã Vĩnh Bình, Huyện Châu Thành
@@ -11152,7 +11152,7 @@ places:
   - - '956'
     - Nhà Trọ - Karaoke - Cà Phê Tiên Tiến
     - ChIJlaKV4tcaCjERx4yGpWSkAI4
-    - 
+    -
     - '10.4420803'
     - '105.1727591'
     - 820, Tỉnh Lộ 941, Ấp Vĩnh Phước, Xã Vĩnh Bình, Huyện Châu Thành
@@ -11177,7 +11177,7 @@ places:
   - - '957'
     - Nhà Nghỉ Vương Linh
     - ChIJwy-1PigbCjER9mJ-UCdCybE
-    - 
+    -
     - '10.4412108'
     - '105.1715023'
     - Vĩnh Bình
@@ -11203,7 +11203,7 @@ places:
   - - '958'
     - My Duyen Coffee Shop
     - ChIJmfnzS9caCjERSvXiNXNLNHM
-    - 
+    -
     - '10.441543'
     - '105.178236'
     - 3091, Vinh Binh Commune, Chau Than Ward
@@ -11228,7 +11228,7 @@ places:
   - - '959'
     - Quán Cà Phê - Điểm Tâm Duy
     - ChIJzbRbFP71CTERtwhbaQqNCbg
-    - 
+    -
     - '10.5275002'
     - '105.0277407'
     - 44 Thị Trấn Chi Lăng, Huyện Tịnh Biên
@@ -11253,7 +11253,7 @@ places:
   - - '960'
     - Quán Cà Phê Tiến
     - ChIJDaMokv71CTER-kTWN-XbqLk
-    - 
+    -
     - '10.5298841'
     - '105.0276334'
     - 57 Thị Trấn Chi Lăng, Huyện Tịnh Biên
@@ -11276,7 +11276,7 @@ places:
   - - '961'
     - Quán Cà Phê Tùng Xuân
     - ChIJ2y_Aov71CTERA9wY7bADyQA
-    - 
+    -
     - '10.5305539'
     - '105.0271614'
     - 47 Thị Trấn Chi Lăng, Huyện Tịnh Biên
@@ -11301,7 +11301,7 @@ places:
   - - '962'
     - Quán Cà Phê Hồng Muội
     - ChIJARLspf71CTERRvYh1tntvvM
-    - 
+    -
     - '10.5310918'
     - '105.0269575'
     - 39 Thị Trấn Chi Lăng, Huyện Tịnh Biên
@@ -11327,7 +11327,7 @@ places:
   - - '963'
     - Ho Thi Roi Coffee Shop
     - ChIJdz2IZPn1CTERAD5VY3y1-YM
-    - 
+    -
     - '10.5337202'
     - '105.0269363'
     - Chi Lang Market, Chi Lang Town, Tinh Bien District
@@ -11350,7 +11350,7 @@ places:
   - - '964'
     - Pham Thi Tien Coffee Shop
     - ChIJc-S28vv1CTERd-XZur3F6gY
-    - 
+    -
     - '10.5325389'
     - '105.0250912'
     - 67, Le Loi Street, Team 1, Residential Quarter 1, Chi Lang Town, Tinh Bien District
@@ -11373,7 +11373,7 @@ places:
   - - '965'
     - CafeMaiTrang
     - ChIJ8___vy32CTERb1SQnm6lWps
-    - 
+    -
     - '10.492906'
     - '105.024011'
     - 366, An Hòa, An Hảo
@@ -11397,7 +11397,7 @@ places:
   - - '966'
     - Cafe Tam Hỷ Quán
     - ChIJQZE42iz2CTERFWfyMe7NUIg
-    - 
+    -
     - '10.4835828'
     - '105.0240501'
     - An Hòa, An Hảo
@@ -11422,7 +11422,7 @@ places:
   - - '967'
     - Gala Cinema
     - ChIJPfcH_DVzdTER3ST81qHaLtc
-    - 
+    -
     - '10.4965975'
     - '107.1710462'
     - 160 Nguyễn Thanh Đằng, Phước Hiệp, tp. Bà Rịa
@@ -11446,7 +11446,7 @@ places:
   - - '968'
     - Cafe MiMoSa Bà Rịa
     - ChIJ0V8ri1FzdTERcreu_I_D1Jo
-    - 
+    -
     - '10.493924'
     - '107.188614'
     - "Điện Biên Phủ, tp. Bà Rịa"
@@ -11469,7 +11469,7 @@ places:
   - - '969'
     - TRÀ THỦY TINH
     - ChIJ265nmDdzdTERLa_WI4_Vh-4
-    - 
+    -
     - '10.492903'
     - '107.1697038'
     - 14 Nguyễn Thanh Đằng, Phước Hiệp, Bà Rịa
@@ -11494,7 +11494,7 @@ places:
   - - '970'
     - Karaoke - Coffee Vì Em Là Nắng
     - ChIJAxu9u-QLdTERKhnewRFwMuo
-    - 
+    -
     - '10.580705'
     - '107.208545'
     - "Đường 29, thôn Quảng Thành 1, xã Nghĩa Thành"
@@ -11519,7 +11519,7 @@ places:
   - - '971'
     - Trà Quán Cá Con
     - ChIJu4xedUF1dTERBD2Z3phgqqQ
-    - 
+    -
     - '10.477907'
     - '107.2711519'
     - khu phố hoà hội tỉnh bà rịa vũng tàu, tt. Đất Đỏ
@@ -11544,7 +11544,7 @@ places:
   - - '972'
     - Kem Ngọc Diễm
     - ChIJsUj-P7YMdTERveON8Zs2aNg
-    - 
+    -
     - '10.509039'
     - '107.173548'
     - 367 đường 27 tháng 4, Bà Rịa
@@ -11568,10 +11568,10 @@ places:
   - - '973'
     - Coffee Kyo
     - ChIJDftmllRxdTERLHxYxH6Vosk
-    - 
+    -
     - '10.4100302'
     - '107.1940907'
-    - 31 Hương lộ 5, Phước Tỉnh, Long Điền Phước Tỉnh Long Điền Bà Rịa - Vũng Tàu
+    - 31 Hương lộ 5, Phước Tỉnh, Long Điền Phước Tỉnh Long Điền Bà Rịa - Vũng Tàu
     - Autem et velit dolorem voluptatum. Consectetur harum adipisci dicta nisi ut
       dolorum. Recusandae corrupti perspiciatis alias rerum quo occaecati. Numquam
       nostrum sed est dolor ab aut. Non pariatur voluptates perferendis accusantium
@@ -11592,7 +11592,7 @@ places:
   - - '974'
     - Suricoffee
     - ChIJ9SCHirajdTERTXHSseSOqSc
-    - 
+    -
     - '10.5388948'
     - '107.4115236'
     - 328 Quốc lộ 55, Xuyên Mộc
@@ -11616,7 +11616,7 @@ places:
   - - '975'
     - Cafe Hoa Viên
     - ChIJh0iW28kPdTEREdk5wi-xZpc
-    - 
+    -
     - '10.642326'
     - '107.1243281'
     - Hắc Dịch
@@ -11639,7 +11639,7 @@ places:
   - - '976'
     - cafe nguyen chat BA LAI
     - ChIJi-7Y5cyjdTERQobcL9ik_cc
-    - 
+    -
     - '10.5346188'
     - '107.4002833'
     - 05 Bach dang, Phước Bửu, Xuyên Mộc, Bà Rịa - Vũng Tàu, Vietnam
@@ -11664,7 +11664,7 @@ places:
   - - '977'
     - Cà Phê Hà Kio
     - ChIJReN1JW6mdTER7KSsBhZvcVQ
-    - 
+    -
     - '10.6354501'
     - '107.3724988'
     - Tỉnh lộ 328 Ngãi Giao - Hòa Bình, Hòa Bình
@@ -11689,7 +11689,7 @@ places:
   - - '978'
     - trà sữa Cosbi
     - ChIJBbydu55xdTERkjCFfG_ORKI
-    - 
+    -
     - '10.409165'
     - '107.135806'
     - "Đô Lương"
@@ -11713,7 +11713,7 @@ places:
   - - '979'
     - Cosbitea
     - ChIJ-XP1no9xdTERnxZbwxHX2UQ
-    - 
+    -
     - '10.409154'
     - '107.135796'
     - "Đô Lương"
@@ -11737,7 +11737,7 @@ places:
   - - '980'
     - Cafe Bida LEGEND (Coffee Billiards )
     - ChIJDS5RZ5JxdTERcLWdtHByVPY
-    - 
+    -
     - '10.406014'
     - '107.128232'
     - Hẻm 524 Đường 30 Tháng 4, Rạch Dừa, tp. Vũng Tàu
@@ -11761,7 +11761,7 @@ places:
   - - '981'
     - Cà phê Bida Legend
     - ChIJXVQdauhxdTER-NYz9gyw6l0
-    - 
+    -
     - '10.405988'
     - '107.128141'
     - 830 Ba Mươi Tháng Tư, Rạch Dừa, tp. Vũng Tàu
@@ -11783,7 +11783,7 @@ places:
   - - '982'
     - Diggers Rest
     - ChIJtzvAH5oLdTER2etrspXBPgw
-    - 
+    -
     - '10.5529643'
     - '107.2133637'
     - "Đường số 28, quốc lộ 56, Ba Ria Vung Tau, Nghĩa Thành"
@@ -11809,7 +11809,7 @@ places:
   - - '983'
     - Quán Cafe BomBoola's
     - ChIJ_QaK9WMLdTERsLj_lq3IEUY
-    - 
+    -
     - '10.5289104'
     - '107.2016287'
     - "Ấp Tây, Xã Hòa Long, tp. Bà Rịa"
@@ -11831,9 +11831,9 @@ places:
     - '2016-04-07 12:54:17.475332'
     - '2016-04-10 00:53:32.102345'
   - - '984'
-    - Cafê Phố Quen
+    - Cafê Phố Quen
     - ChIJB3V-QtkLdTERZWBrNiWyyrM
-    - 
+    -
     - '10.581438'
     - '107.2267225'
     - "Đá Bạc"
@@ -11857,7 +11857,7 @@ places:
   - - '985'
     - Tran Van Tung Coffee Shop
     - ChIJ5TKaYGELdTERX-7bN6KI67w
-    - 
+    -
     - '10.527645'
     - '107.200117'
     - "Ấp Đông, Phường Hòa Long, tp. Bà Rịa"
@@ -11881,7 +11881,7 @@ places:
   - - '986'
     - Le Hung Trieu Coffee Shop
     - ChIJ98xftWELdTERFKoZ4RJBJIQ
-    - 
+    -
     - '10.5254084'
     - '107.1972084'
     - National Road 56, Tay Hamlet, Hoa Long Ward, Ba Ria City
@@ -11904,7 +11904,7 @@ places:
   - - '987'
     - "ở nhà"
     - ChIJZefwxAmZSjER1Jw7Yq2J8xI
-    - 
+    -
     - '21.3276345'
     - '106.6753997'
     - Lục Ngạn District
@@ -11930,7 +11930,7 @@ places:
   - - '988'
     - Cafe nhà Thu
     - ChIJhdkJ9YJhNTER4n51PYyar00
-    - 
+    -
     - '21.3243586'
     - '106.4893627'
     - Phượng Sơn
@@ -11954,7 +11954,7 @@ places:
   - - '989'
     - Cây thị cổ đại
     - ChIJyzo4Gm9hNTERdFxXPHMAQc0
-    - 
+    -
     - '21.3311745'
     - '106.4719605'
     - Lục Ngạn District
@@ -11978,7 +11978,7 @@ places:
   - - '990'
     - Thanh bình cafe
     - ChIJ903yBzWQSjERTHRhHY1I_xQ
-    - 
+    -
     - '21.2158704'
     - '106.7677324'
     - tt. Thanh Sơn
@@ -12002,7 +12002,7 @@ places:
   - - '991'
     - Quán Cà Phê Giải Khát Nguyễn Văn Vũ
     - ChIJBerPnMFgNTERAxkzJt7VAZc
-    - 
+    -
     - '21.3827381'
     - '106.4614354'
     - Xã Đông Hưng, Huyện Lục Nam
@@ -12026,7 +12026,7 @@ places:
   - - '992'
     - Cafe Bản
     - ChIJR8SMieHeyjYR4YqV73qdhX0
-    - 
+    -
     - '22.1512866'
     - '105.8301944'
     - Sông Cầu, tp. Bắc Kạn
@@ -12051,7 +12051,7 @@ places:
   - - '993'
     - Cafe Lệ
     - ChIJT_C4RuHeyjYRYb9IrnH_0PI
-    - 
+    -
     - '22.1498091'
     - '105.8338598'
     - 14 Hùng Vương, tp. Bắc Kạn
@@ -12078,7 +12078,7 @@ places:
   - - '994'
     - Cafe Lệ
     - ChIJaTO0RuHeyjYR6OGD32Hp0u8
-    - 
+    -
     - '22.1498129'
     - '105.8338256'
     - 14 Hùng Vương, tp. Bắc Kạn
@@ -12102,7 +12102,7 @@ places:
   - - '995'
     - Cafe Mý
     - ChIJob0QbOHeyjYRRhz40ulef34
-    - 
+    -
     - '22.1499277'
     - '105.8330027'
     - tổ 4 phuong sông câu
@@ -12127,7 +12127,7 @@ places:
   - - '996'
     - Xu coffe
     - ChIJMfq6kOHeyjYRPETNphDMCUQ
-    - 
+    -
     - '22.1502119'
     - '105.8311758'
     - bac kan, 65 Hùng Vương, Sông Cầu, tp. Bắc Kạn
@@ -12151,7 +12151,7 @@ places:
   - - '997'
     - Bảo Tàng Bắc Kạn
     - ChIJmbTJ5x_fyjYRXaAA_riCmYE
-    - 
+    -
     - '22.1470258'
     - '105.8283806'
     - Phường Sông Cầu, Thị Xã Bắc Kạn
@@ -12174,7 +12174,7 @@ places:
   - - '998'
     - Quán Karaoke Trần Thị Uyên
     - ChIJdd2T793eyjYR9wYDoJju2Co
-    - 
+    -
     - '22.144164'
     - '105.8356976'
     - 11, Đường Trần Hưng Đạo, Phường Đức Xuân, Thị Xã Bắc Kạn
@@ -12198,7 +12198,7 @@ places:
   - - '999'
     - Quán Cafe Tây Đô
     - ChIJDwqO793eyjYRNmYkUGgBMHY
-    - 
+    -
     - '22.1441638'
     - '105.8356762'
     - 68, Đường Trần Hưng Đạo, Phường Đức Xuân, tp. Bắc Kạn
@@ -12222,7 +12222,7 @@ places:
   - - '1000'
     - Quán Cafe 68
     - ChIJIyu_ZcHeyjYR_JWtT8rlXUw
-    - 
+    -
     - '22.1399696'
     - '105.8472633'
     - 19, Đường Hùng Vương, Phường Đức Xuân, Thị Xã Bắc Kạn
@@ -12245,7 +12245,7 @@ places:
   - - '1001'
     - Cafe - Karaoke Quỳnh Trang
     - ChIJicNK9N7eyjYRippCAQnbk_U
-    - 
+    -
     - '22.1422331'
     - '105.8332062'
     - Mạc Hiếu, Đức Xuân, tp. Bắc Kạn
@@ -12269,7 +12269,7 @@ places:
   - - '1002'
     - Caffe Minh Thuỳ
     - ChIJYbSky_XwyjYRSrI2R6WyN2A
-    - 
+    -
     - '22.432735'
     - '105.998041'
     - Khu 1, tt. Nà Phặc
@@ -12294,7 +12294,7 @@ places:
   - - '1003'
     - Karaoke 89 - Cơ Sở 2
     - ChIJ2Zfk3T7fyjYRGWASUuvlz1E
-    - 
+    -
     - '22.1431238'
     - '105.808832'
     - "Đường tỉnh 257, Sông Cầu, tp. Bắc Kạn"
@@ -12319,7 +12319,7 @@ places:
   - - '1004'
     - Cafe Thảo Nguyên
     - ChIJw5pquj7fyjYR__8qKbKxa5o
-    - 
+    -
     - '22.1425167'
     - '105.8104168'
     - Sông Cầu, tp. Bắc Kạn
@@ -12343,7 +12343,7 @@ places:
   - - '1005'
     - Quán GÓC TEEN
     - ChIJz99Z_BwVoTERX1hSlnm_B0Y
-    - 
+    -
     - '9.2361968'
     - '105.450513'
     - 438 Quốc lộ 1A, tt. Giá Rai Giá Rai, tt. Giá Rai
@@ -12366,7 +12366,7 @@ places:
   - - '1006'
     - Càfê Muối
     - ChIJpyaDUshyoTERIC325-E71-Q
-    - 
+    -
     - '9.1905425'
     - '105.6200061'
     - Mới, Vĩnh, Vĩnh Thịnh
@@ -12390,7 +12390,7 @@ places:
   - - '1007'
     - Quán Cà Phê Trúc Linh
     - ChIJL0sdSPcToTERJXH68fc8Fkk
-    - 
+    -
     - '9.2776234'
     - '105.5057221'
     - Quốc Lộ 1A, Ấp 2, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12415,7 +12415,7 @@ places:
   - - '1008'
     - Quán Cà Phê Yến Nhi
     - ChIJ83_ks_AToTERwMWlthQ-gxg
-    - 
+    -
     - '9.2779622'
     - '105.506752'
     - Quốc Lộ 1A, Ấp 1, Chợ Xóm Lung, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12440,7 +12440,7 @@ places:
   - - '1009'
     - Quán Cafe Anh Hiếu
     - ChIJM0utTPcToTER4LUihblPPBA
-    - 
+    -
     - '9.2779622'
     - '105.5064087'
     - Quốc Lộ 1A, Ấp 2, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12465,7 +12465,7 @@ places:
   - - '1010'
     - Quán Cà Phê Ngọc Linh
     - ChIJVwcETPcToTEReyCRz1gX6p8
-    - 
+    -
     - '9.2779622'
     - '105.5060654'
     - Quốc Lộ 1A, Ấp 3, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12489,7 +12489,7 @@ places:
   - - '1011'
     - Quán Cà Phê Thảo Phương
     - ChIJVwcETPcToTER8gHCzs1N42c
-    - 
+    -
     - '9.2779622'
     - '105.5060654'
     - Quốc Lộ 1A, Ấp 3, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12514,7 +12514,7 @@ places:
   - - '1012'
     - Quán Karaoke Tô Thị Đẩm
     - ChIJWXDwo_AToTERT1LCdmbM2xs
-    - 
+    -
     - '9.2785023'
     - '105.5075453'
     - Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12538,7 +12538,7 @@ places:
   - - '1013'
     - Quán Cafe Kim Chi
     - ChIJU1OtUvcToTERnrav_yumGOg
-    - 
+    -
     - '9.2783011'
     - '105.5064087'
     - Quốc Lộ 1A, Ấp 3, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12562,7 +12562,7 @@ places:
   - - '1014'
     - Quán Cà Phê Hồng Gấm
     - ChIJU1OtUvcToTER3dKWVIWPTZs
-    - 
+    -
     - '9.2783011'
     - '105.5064087'
     - 52, Quốc Lộ 1A, Ấp 2, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12585,7 +12585,7 @@ places:
   - - '1015'
     - Quán Cà Phê Huỳnh Y
     - ChIJdwoEUvcToTERYBBM0Ce_EZc
-    - 
+    -
     - '9.2783011'
     - '105.5060654'
     - 63, Quốc Lộ 1A, Ấp 2, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12609,7 +12609,7 @@ places:
   - - '1016'
     - Quán Ăn - Giải Khát Phúc Hân
     - ChIJsSodUPcToTEReB8AoMjElr0
-    - 
+    -
     - '9.2783011'
     - '105.5057221'
     - Quốc Lộ 1A, Ấp 3, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12634,7 +12634,7 @@ places:
   - - '1017'
     - Quán Cà Phê Thùy
     - ChIJsSodUPcToTER5h49JSyF4DA
-    - 
+    -
     - '9.2783011'
     - '105.5057221'
     - 209, Quốc Lộ 1A, Ấp 3, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12659,7 +12659,7 @@ places:
   - - '1018'
     - Karaoke Thanh Liêm
     - ChIJrayyVPcToTER_MlPx7dfv70
-    - 
+    -
     - '9.2786399'
     - '105.5064087'
     - 252, Quốc Lộ 1A, Ấp 1, Chợ Xóm Lung, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12684,7 +12684,7 @@ places:
   - - '1019'
     - Quán Cà Phê Bảo Trân
     - ChIJrayyVPcToTERqlOThwHPqxg
-    - 
+    -
     - '9.2786399'
     - '105.5064087'
     - Quốc Lộ 1A, Ấp 1, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12708,7 +12708,7 @@ places:
   - - '1020'
     - Quán Cà Phê Diễm Sương
     - ChIJ1XcEVPcToTERe_nz9diAbeI
-    - 
+    -
     - '9.2786399'
     - '105.5060654'
     - Quốc Lộ 1A, Ấp 1, Chợ Xóm Lung, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12732,7 +12732,7 @@ places:
   - - '1021'
     - Quán Cafe Thiên Kim
     - ChIJ1XcEVPcToTERGno5jTiirYc
-    - 
+    -
     - '9.2786399'
     - '105.5060654'
     - Quốc Lộ 1A, Ấp 2, Chợ Láng Tròn, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12755,7 +12755,7 @@ places:
   - - '1022'
     - Quán Cà Phê Anh Thư
     - ChIJlwDKQvcToTER2EVLFvufjiI
-    - 
+    -
     - '9.2783011'
     - '105.5050354'
     - Quốc Lộ 1A, Ấp 3, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12781,7 +12781,7 @@ places:
   - - '1023'
     - Karaoke Sắc Màu
     - ChIJUXW7YQwUoTERRKjsGyaVC_I
-    - 
+    -
     - '9.2715562'
     - '105.4934692'
     - 396, Quốc Lộ 1A, Phường 8, Tp Bạc Liêu
@@ -12805,7 +12805,7 @@ places:
   - - '1024'
     - Quán Cà Phê Bích Thảo
     - ChIJG1axAPoToTER5du5Rurxp8g
-    - 
+    -
     - '9.2789787'
     - '105.506752'
     - 135, Quốc Lộ 1A, Ấp 1, Chợ Xóm Lung, Xã Phong Thạnh Đông A, Huyện Giá Rai
@@ -12829,7 +12829,7 @@ places:
   - - '1025'
     - Cafe 3D - 131
     - ChIJvXcVQxsMNTERq32IvcyJWac
-    - 
+    -
     - '21.1845191'
     - '106.0706658'
     - 131, Nguyễn Gia Thiều, tp. Bắc Ninh
@@ -12854,7 +12854,7 @@ places:
   - - '1026'
     - Bảo tàng Bắc Ninh
     - ChIJt532oRoMNTERFlcYDk1_dxg
-    - 
+    -
     - '21.1841867'
     - '106.0754228'
     - tp. Bắc Ninh
@@ -12879,7 +12879,7 @@ places:
   - - '1027'
     - Karaoke Tâm
     - ChIJ2ZjRCQcMNTER3qeMqKiRWMs
-    - 
+    -
     - '21.1733336'
     - '106.0727233'
     - 82 Nguyễn Đăng Đạo, Đại Phúc, Bắc Ninh
@@ -12904,7 +12904,7 @@ places:
   - - '1028'
     - CLB Billiards Quang Trường
     - ChIJCVoWqXsLNTERfS_qE1-Cbfg
-    - 
+    -
     - '21.1690451'
     - '106.1077595'
     - Quốc lộ 18, Phương Liễu
@@ -12928,7 +12928,7 @@ places:
   - - '1029'
     - Rosana Legend Apartment Hotel in Bac Ninh City
     - ChIJ1zQlerlUNDERzigTJurRhos
-    - 
+    -
     - '21.1871678'
     - '106.0661558'
     - 16 Bùi Xuân Phái, Phường Kinh Bắc, Thành phố Bắc Ninh, Hồ Ngọc Lân, tp. Bắc
@@ -12977,7 +12977,7 @@ places:
   - - '1031'
     - Trà sữa Toco Toco
     - ChIJRwzx4sIHNTERSXf7LpeL1S0
-    - 
+    -
     - '21.1101925'
     - '105.9457943'
     - 305, Trần Phú, Đông Ngàn, tx. Từ Sơn
@@ -13000,7 +13000,7 @@ places:
   - - '1032'
     - Lotte Cinema Bac Giang
     - ChIJt-hkSpxtNTERMCIhq65dl0g
-    - 
+    -
     - '21.2667501'
     - '106.2083048'
     - Tầng trệt, Trung tâm Thương mại Big C Bắc Giang, xã Tân Tiến, thành phố Bắc
@@ -13024,7 +13024,7 @@ places:
   - - '1033'
     - Sông Thương Cinema
     - ChIJ4SwvkBJtNTERg_2WLR9eRAI
-    - 
+    -
     - '21.2772535'
     - '106.1922152'
     - 02, Nguyễn Gia Thiều, tp. Bắc Giang
@@ -13048,7 +13048,7 @@ places:
   - - '1034'
     - cafe ngã ba đường
     - ChIJG0ydNHULNTERCdLqtvbl30Y
-    - 
+    -
     - '21.1445597'
     - '106.1128835'
     - ngã ba sơn đông
@@ -13071,7 +13071,7 @@ places:
   - - '1035'
     - Nhà văn hóa Mao Yên
     - ChIJxeOMk0ALNTERpx5uJH5dGdY
-    - 
+    -
     - '21.1431091'
     - '106.1385798'
     - Phượng Mao
@@ -13096,7 +13096,7 @@ places:
   - - '1036'
     - Quán Cà Phê Giải Khát Đào Hữu Giang
     - ChIJQzkJ4cAKNTERgeOrWzC0PbY
-    - 
+    -
     - '21.098292'
     - '106.1387351'
     - Thôn Quế Ổ, Xã Chi Lăng, Huyện Quế Võ
@@ -13121,7 +13121,7 @@ places:
   - - '1037'
     - Cafe Mộc
     - ChIJSx5tOk4LNTERvm-e7r8y6x4
-    - 
+    -
     - '21.1513971'
     - '106.1500643'
     - tt. Phố Mới
@@ -13146,7 +13146,7 @@ places:
   - - '1038'
     - Trà Đá Dũng Lanh
     - ChIJbdWn_nUKNTER8yji-eofxyc
-    - 
+    -
     - '21.0772169'
     - '106.0930905'
     - Quốc lộ 38
@@ -13170,7 +13170,7 @@ places:
   - - '1039'
     - Cafe Bon. Que Vo, Bac Ninh
     - ChIJ____P1ILNTERW6-en00ZD88
-    - 
+    -
     - '21.1534803'
     - '106.1536828'
     - tt. Phố Mới
@@ -13193,10 +13193,10 @@ places:
   - - '1040'
     - Khu Đoài
     - ChIJ4TBNXWMJNTERLQly8noDlGM
-    - 
+    -
     - '21.1394788'
     - '106.0588722'
-    - khu đoài phường, Khắc Niệm, tp. Bắc Ninh
+    - khu đoài phường, Khắc Niệm, tp. Bắc Ninh
     - Ipsam quae odit sed molestiae exercitationem qui aut deserunt. Ullam et ab laborum
       libero enim. Neque autem asperiores dicta explicabo non. Recusandae corrupti
       ut fugiat enim officiis. Voluptates dolorem sed pariatur rem nemo vero. Maiores
@@ -13218,7 +13218,7 @@ places:
   - - '1041'
     - Coffee phố núi
     - ChIJy0WzzAcMNTERTsuYyX0nDRQ
-    - 
+    -
     - '21.1741831'
     - '106.0747375'
     - Bắc Ninh, 12 Bình Than, Đại Phúc
@@ -13242,7 +13242,7 @@ places:
   - - '1042'
     - Nha Hang Cafe Son Thao
     - ChIJ9WFC8b2gNTERQj3zBd7b0RA
-    - 
+    -
     - '21.0611064'
     - '106.0870776'
     - 185 Phố Hồ, tt. Hồ, Thuận Thành tt. Hồ Thuận Thành Bắc Ninh
@@ -13267,7 +13267,7 @@ places:
   - - '1043'
     - M Coffee
     - ChIJhWwWCJagNTERC1wcOwd93io
-    - 
+    -
     - '21.060018'
     - '106.088353'
     - Lô 1/2, tt. Hồ
@@ -13291,7 +13291,7 @@ places:
   - - '1044'
     - Cách giải rượu nhanh
     - ChIJL_HxalUJNTERLxyUL_gxetc
-    - 
+    -
     - '21.1708975'
     - '106.0626898'
     - Nguyễn Trãi
@@ -13316,7 +13316,7 @@ places:
   - - '1045'
     - cafe út tâm
     - ChIJJZ4JpAAEoDERH_vKHCys4SA
-    - 
+    -
     - '10.1036862'
     - '106.4401353'
     - 0753, Bến Tre, Xuân Đường
@@ -13341,7 +13341,7 @@ places:
   - - '1046'
     - Zen Cafe
     - ChIJdwqjP2aoCjER56n3vpa6Bco
-    - 
+    -
     - '10.232357'
     - '106.365661'
     - 234 Hung Vuong Street, Ward 7, Ben Tre City
@@ -13366,7 +13366,7 @@ places:
   - - '1047'
     - Cafe Van Phong Dat Sai Gon
     - ChIJE1WajF6oCjER9KJJnqnsaxY
-    - 
+    -
     - '10.2373688'
     - '106.3732737'
     - 3, Bến Tre, 35 3 Tháng 2
@@ -13390,7 +13390,7 @@ places:
   - - '1048'
     - Cafe Thảo Ngân
     - ChIJ7xIdwbD5nzERPR7mwVjUeLY
-    - 
+    -
     - '10.042088'
     - '106.592102'
     - tt. Ba Tri
@@ -13439,7 +13439,7 @@ places:
   - - '1050'
     - Cỏ Nhỏ
     - ChIJq506LhgBoDER-8gil9igDSo
-    - 
+    -
     - '10.1399145'
     - '106.4665854'
     - "Đường huyện 11, Tân Hào"
@@ -13463,7 +13463,7 @@ places:
   - - '1051'
     - Cafe Ngọc Trinh
     - ChIJFQiUejQCoDERJ5t0K413WRQ
-    - 
+    -
     - '10.0887715'
     - '106.4913167'
     - Liên ấp 2-3 Hưng Nhượng
@@ -13487,7 +13487,7 @@ places:
   - - '1052'
     - Quán Kem Tuoi . TUONG VI
     - ChIJceg1kPEEoDERmc2FkI8LYAU
-    - 
+    -
     - '10.0574888'
     - '106.4103197'
     - Cầu, Minh Đức
@@ -13511,7 +13511,7 @@ places:
   - - '1053'
     - Cafe Giang Linh
     - ChIJn-yAliQCoDERD71UYPyuYi8
-    - 
+    -
     - '10.0956126'
     - '106.5042912'
     - "ấp 1,, Hưng Nhượng"
@@ -13535,7 +13535,7 @@ places:
   - - '1054'
     - Quán Phở Việt
     - ChIJVVVVVekEoDERKFOE4mFCssw
-    - 
+    -
     - '10.0501636'
     - '106.4111425'
     - Minh Đức
@@ -13560,7 +13560,7 @@ places:
   - - '1055'
     - Trà Bắc -Cà Phê. Nam Bắc
     - ChIJqRKExLABoDERPeOhxzCSvq8
-    - 
+    -
     - '10.133885'
     - '106.504076'
     - "Đường Song Hành Tỉnh Lộ 885"
@@ -13585,7 +13585,7 @@ places:
   - - '1056'
     - Quán Cà Phê Giải Khát Huỳnh Văn Phúc
     - ChIJuZKXx0IDoDERML0MCPM2_Oo
-    - 
+    -
     - '10.0411952'
     - '106.4532373'
     - 37/1, Ấp Phú Long Phụng, Xã Phú Khánh, Huyện Thạnh Phú
@@ -13610,7 +13610,7 @@ places:
   - - '1057'
     - Cafe9x Thanh Long
     - ChIJq6qqqkYDoDERNYdCkx3HGLs
-    - 
+    -
     - '10.0369662'
     - '106.458256'
     - "Đại Điền"
@@ -13634,7 +13634,7 @@ places:
   - - '1058'
     - Cà Phê 7 Thật
     - ChIJZ7xHTUsAoDERMmhvsLA9DZM
-    - 
+    -
     - '10.1481258'
     - '106.5062016'
     - "Đường tỉnh 885, Bình Thành"
@@ -13659,7 +13659,7 @@ places:
   - - '1059'
     - Cà Phê Bảo Châu
     - ChIJEwvDak8AoDERRaTF3sPilng
-    - 
+    -
     - '10.1577391'
     - '106.5037796'
     - tt. Giồng Trôm
@@ -13684,7 +13684,7 @@ places:
   - - '1060'
     - Trà Sữa Kiều Diễm
     - ChIJ9SLTh0UAoDERc6_KfOScVz0
-    - 
+    -
     - '10.1592199'
     - '106.5031385'
     - "Đường tỉnh 885, tt. Giồng Trôm"
@@ -13707,7 +13707,7 @@ places:
   - - '1061'
     - Quán Trà Sữa Phượng Vĩ
     - ChIJ2659o1wAoDERQoheK0u0Zfc
-    - 
+    -
     - '10.1652499'
     - '106.4983749'
     - "Ấp 5A Đường tỉnh 885, tt. Giồng Trôm"
@@ -13731,7 +13731,7 @@ places:
   - - '1062'
     - CF GUITAR
     - ChIJI9O1sV0AoDER6fc3lp_LPyI
-    - 
+    -
     - '10.1680438'
     - '106.4957038'
     - "Đường tỉnh 885, tt. Giồng Trôm"
@@ -13755,7 +13755,7 @@ places:
   - - '1063'
     - Quán Cà Phê Giải Khát Toại Cửa Hàng
     - ChIJrfr1kl0AoDERGds2sB9wlGk
-    - 
+    -
     - '10.1695053'
     - '106.495252'
     - 501, Khu Phố 1, Thị Trấn Giồng Trôm, Huyện Giồng Trôm, Tỉnh Bến Tre
@@ -13779,7 +13779,7 @@ places:
   - - '1064'
     - Le Quang Hieu Karaoke Store
     - ChIJj5m2LhEFoDER5A5khjYSMOs
-    - 
+    -
     - '10.0522286'
     - '106.3783649'
     - Residential Quarter 3, Ngai Dang Commune, Mo Cay Nam District
@@ -13803,7 +13803,7 @@ places:
   - - '1065'
     - Rubic 7 Coffee
     - ChIJ-0OSY-utdDERy1ETwCNY1r4
-    - 
+    -
     - '11.423236'
     - '106.607503'
     - 114, Nguyễn Huệ, tt. Chơn Thành
@@ -13827,7 +13827,7 @@ places:
   - - '1066'
     - Caffe-Kem Anh Vũ
     - ChIJk9fR94dLCzERsWuPN14-NIw
-    - 
+    -
     - '11.3262108'
     - '106.4768147'
     - Long Hoa
@@ -13851,7 +13851,7 @@ places:
   - - '1067'
     - Nguyen Van Xuan Coffee Shop
     - ChIJY2VbNXZLCzERA8u4WfrOBnM
-    - 
+    -
     - '11.3117844'
     - '106.489142'
     - Long Dien Hamlet, Long Hoa Commune, Dau Tieng District
@@ -13877,7 +13877,7 @@ places:
   - - '1068'
     - Le Hai Yen Coffee Shop
     - ChIJmfjcp-pLCzERqUvyGdE6htU
-    - 
+    -
     - '11.305187'
     - '106.463375'
     - 32, Ấp Rạch Đá, Xã Định Thành, Huyện Dầu Tiếng
@@ -13902,7 +13902,7 @@ places:
   - - '1069'
     - Coffee Shop
     - ChIJAQAAAEBMCzERhBAAJCsI9Cs
-    - 
+    -
     - '11.348909'
     - '106.4641459'
     - "Ấp Rạch Đá, Xã Định Thành, Huyện Dầu Tiếng"
@@ -13926,7 +13926,7 @@ places:
   - - '1070'
     - Nguyen Van Rinh Karaoke
     - ChIJlQ6kO79LCzERMhRn3_vcqvY
-    - 
+    -
     - '11.3003691'
     - '106.4661436'
     - 525, Ben Chua Hamlet, Thanh An Commune, Dau Tieng District
@@ -13949,7 +13949,7 @@ places:
   - - '1071'
     - Quán Cà Phê Giải Khát Phạm Thị Hồng
     - ChIJGdQGWW5LCzEReCl_pt2AV14
-    - 
+    -
     - '11.3102326'
     - '106.502226'
     - Xã Long Hòa, Huyện Dầu Tiếng
@@ -13972,7 +13972,7 @@ places:
   - - '1072'
     - Cà phê Hoài Thương
     - ChIJY-N6eilMCzERc_LTuEkCY4o
-    - 
+    -
     - '11.3658641'
     - '106.443905'
     - "Định An"
@@ -13994,9 +13994,9 @@ places:
     - '2016-04-07 12:55:02.463313'
     - '2016-04-10 00:53:31.056903'
   - - '1073'
-    - Cà Phê Phương Đông
+    - Cà Phê Phương Đông
     - ChIJZ5BWDNK0dDERvepwRy9j-2k
-    - 
+    -
     - '11.289309'
     - '106.539456'
     - "Đường tỉnh 749A, Long Tân"
@@ -14019,7 +14019,7 @@ places:
   - - '1074'
     - Cafe Hữu Duyên
     - ChIJKTNWTHFOCzER5pVVZUqTp_I
-    - 
+    -
     - '11.3881107'
     - '106.4345102'
     - "Định An"
@@ -14042,7 +14042,7 @@ places:
   - - '1075'
     - Tong Thanh Viec Karaoke
     - ChIJSYeF39dOCzER5hcSH3frwHI
-    - 
+    -
     - '11.3404563'
     - '106.3935107'
     - 325, Khanh Long Residential Quarter, Tan Phuoc Khanh Town, Tan Uyen District
@@ -14067,7 +14067,7 @@ places:
   - - '1076'
     - Nguyen Thi Thuy Linh Coffee Shop
     - ChIJ5VcPdjG1dDERYJuXq-nPkBs
-    - 
+    -
     - '11.2649686'
     - '106.541809'
     - Vung Tay Hamlet, Long Tan Commune, Dau Tieng District
@@ -14093,7 +14093,7 @@ places:
   - - '1077'
     - Nguyen Thi Tu Coffee Shop
     - ChIJ0-klvH81CzERKWvqcx0unxc
-    - 
+    -
     - '11.236122'
     - '106.4894156'
     - 247, Group 8, Bau Khai Hamlet, An Lap Commune, Dau Tieng District
@@ -14117,7 +14117,7 @@ places:
   - - '1078'
     - Quán Cà Phê Giải Khát Dốc Tình
     - ChIJewRFDPlICzERRqAKrQDCpjw
-    - 
+    -
     - '11.2914792'
     - '106.385142'
     - 72, Khu Phố 5, Thị Trấn Dầu Tiếng, Huyện Dầu Tiếng
@@ -14141,7 +14141,7 @@ places:
   - - '1079'
     - Quán Cà Phê Giải Khát Nguyễn Thị Kim Phượng
     - ChIJ6Tp-5DpPCzEROnw6g-21vec
-    - 
+    -
     - '11.3451269'
     - '106.3796815'
     - "Ấp Suối Sâu, Xã Định Thành, Huyện Dầu Tiếng"
@@ -14165,7 +14165,7 @@ places:
   - - '1080'
     - Quán Cà Phê Giải Khát Bùi Thị Thúy Hằng
     - ChIJuxmAVwFPCzERfKz5KnMUYKc
-    - 
+    -
     - '11.369852'
     - '106.388321'
     - Thôn An Phước, Xã Định An, Huyện Dầu Tiếng
@@ -14190,7 +14190,7 @@ places:
   - - '1081'
     - An Dien cashew STK
     - ChIJlyD3pnA1CzERFTl_fnzf_Hw
-    - 
+    -
     - '11.2263906'
     - '106.4945367'
     - An Điền - An Lập
@@ -14215,7 +14215,7 @@ places:
   - - '1082'
     - Nguyen Le Hong Minh Karaoke
     - ChIJKWVZ_r5ICzER1CoeE4Gb8xM
-    - 
+    -
     - '11.3135281'
     - '106.3668202'
     - Rach Da Hamlet, Dinh Thanh Commune, Dau Tieng District
@@ -14240,7 +14240,7 @@ places:
   - - '1083'
     - Quán Cà Phê Giải Khát Nguyễn Minh Hùng
     - ChIJT26vPIpICzERke4dR6USX1g
-    - 
+    -
     - '11.290421'
     - '106.364818'
     - 15/12, Khu Phố 4B, Thị Trấn Dầu Tiếng, Huyện Dầu Tiếng
@@ -14264,7 +14264,7 @@ places:
   - - '1084'
     - Thùy Vy 10A1
     - ChIJdxjJ-VtSCzERLpoaJEfHx9Y
-    - 
+    -
     - '11.4413021'
     - '106.4811928'
     - "Đường tỉnh 744, Minh Hòa"
@@ -14289,7 +14289,7 @@ places:
   - - '1085'
     - donglan-cafe
     - ChIJmfsbG15IczERNTQv3DOZsLk
-    - 
+    -
     - '11.889467'
     - '106.699349'
     - 104, Hiệp Thành, Lộc Hiệp, tt. Lộc Ninh
@@ -14312,7 +14312,7 @@ places:
   - - '1086'
     - Cafe Ánh Trăng
     - ChIJVVVVVVVFczER-cj2uBW6_7M
-    - 
+    -
     - '11.7511894'
     - '106.7234639'
     - Binh Phuoc
@@ -14336,7 +14336,7 @@ places:
   - - '1087'
     - Bui Thi Trung Dung Coffee Shop
     - ChIJdenSXbtaczERd7soz0TCuKM
-    - 
+    -
     - '11.7342843'
     - '106.736555'
     - "Ấp Trung Sơn, Xã Thanh An, Huyện Hớn Quản"
@@ -14360,7 +14360,7 @@ places:
   - - '1088'
     - Doan Van Minh Coffee Shop
     - ChIJQXgeE6VRczERn4IDH6AuRoA
-    - 
+    -
     - '11.7199189'
     - '106.662912'
     - Xã An Khương, Huyện Hớn Quản
@@ -14384,7 +14384,7 @@ places:
   - - '1089'
     - Duong Van Quang Karaoke
     - ChIJS9h8n-pZczERLPOn2aKAwEY
-    - 
+    -
     - '11.640131'
     - '106.745567'
     - "Ấp Sở Xiêm, Xã Tân Hưng, Huyện Hớn Quản"
@@ -14408,7 +14408,7 @@ places:
   - - '1090'
     - Cafe Giọt Đắng
     - ChIJydfTAm5cczERPu2JtTgeXzI
-    - 
+    -
     - '11.6850051'
     - '106.8297894'
     - Long Tân
@@ -14432,7 +14432,7 @@ places:
   - - '1091'
     - Cafe Cây Xanh
     - ChIJhRu4iW5cczERVIbjhzhP3js
-    - 
+    -
     - '11.6850688'
     - '106.8326831'
     - Long Tân
@@ -14456,7 +14456,7 @@ places:
   - - '1092'
     - Huynh Thi Kieu Karaoke Service
     - ChIJk7TaWOlTczERFc3PAYVMYCQ
-    - 
+    -
     - '11.68733'
     - '106.611586'
     - Thanh Hoa Hamlet, Thanh Phu Commune, Binh Long Town
@@ -14480,7 +14480,7 @@ places:
   - - '1093'
     - Caffe Út Hiên
     - ChIJsYT-EvZTczERqPQYnu6nF_0
-    - 
+    -
     - '11.6710252'
     - '106.6123541'
     - Quốc lộ 13, Thanh Phú
@@ -14505,7 +14505,7 @@ places:
   - - '1094'
     - Quán Cà Phê Giải Khát Nguyễn Thị Kim Oanh
     - ChIJL4NMFa9NczER5MBrAUmMO2I
-    - 
+    -
     - '11.7936054'
     - '106.5894139'
     - Xã Lộc Hưng, Huyện Lộc Ninh
@@ -14553,7 +14553,7 @@ places:
   - - '1096'
     - Quán Cà Phê Giải Khát Trần Thị Thuý Loan
     - ChIJR3wpVkRMczERbbVj_VIlh8o
-    - 
+    -
     - '11.8170588'
     - '106.596726'
     - Kios 1, Chợ Lộc Thái, Ấp 5, Xã Lộc Thái, Huyện Lộc Ninh
@@ -14578,7 +14578,7 @@ places:
   - - '1097'
     - Ca Fe Gia Huy
     - ChIJr8rPVShdczERbo2cqdqbiOo
-    - 
+    -
     - '11.7339627'
     - '106.8678402'
     - Bù Gia Mập
@@ -14604,7 +14604,7 @@ places:
   - - '1098'
     - cafe sân vườn Ngọc Trúc
     - ChIJkR2w7y5dczERicQg-UElhws
-    - 
+    -
     - '11.734765'
     - '106.8730152'
     - Tân Lực , Bù Nho, Đường tỉnh 741
@@ -14629,7 +14629,7 @@ places:
   - - '1099'
     - Hi Coffee
     - ChIJgVp3jCVdczERtmJNYoDj7SQ
-    - 
+    -
     - '11.7308572'
     - '106.8726484'
     - Bù Gia Mập
@@ -14653,7 +14653,7 @@ places:
   - - '1100'
     - Quán Cà Phê Sân Vườn 168
     - ChIJr2fggC9dczERyZN5GrHmwgA
-    - 
+    -
     - '11.7312913'
     - '106.8741623'
     - Tân Hiệp 2, Xã Bù Nho, Huyện Bù Gia Mập
@@ -14677,7 +14677,7 @@ places:
   - - '1101'
     - quán phú chè
     - ChIJD3Uy9xRUczERnXQV4qU-mmk
-    - 
+    -
     - '11.6512695'
     - '106.6106422'
     - 166 Trần Hưng Đạo, tx. Bình Long
@@ -14701,7 +14701,7 @@ places:
   - - '1102'
     - Camera Thái Hoàng
     - ChIJ37aT0xRUczEREcPYF7mvRgQ
-    - 
+    -
     - '11.6514837'
     - '106.6058738'
     - Phạm Ngọc Thạch, An Lôc, tx. Bình Long
@@ -14750,7 +14750,7 @@ places:
   - - '1104'
     - Quán Cà Phê Giải Khát Đặng Thị Hiền
     - ChIJP45TXxVUczER1tfP68x1Dl8
-    - 
+    -
     - '11.6481681'
     - '106.6066739'
     - "Đường Lê Quý Đôn, Phường An Lộc, Thị Xã Bình Long"
@@ -14844,7 +14844,7 @@ places:
   - - '1108'
     - Hells Bells
     - ChIJ8c3kVjqFdjERJ9Urp2jcOlQ
-    - 
+    -
     - '10.9491668'
     - '108.2052886'
     - 101, Nguyễn Đình Chiểu, Hàm Tiến, tp. Phan Thiết
@@ -14893,7 +14893,7 @@ places:
   - - '1110'
     - Cà Phê - Điểm Tâm Sáng/Trưa ( Suri Coffee )
     - ChIJt8vpMDWOdjERFiWbCh7n0Iw
-    - 
+    -
     - '10.937399'
     - '108.28582'
     - 321 Huỳnh Thúc Kháng, Mũi Né, tp. Phan Thiết
@@ -14965,7 +14965,7 @@ places:
   - - '1113'
     - Cà phê Tin Tin
     - ChIJGzS9noOUdjERQQz5sp8DJZk
-    - 
+    -
     - '11.041954'
     - '108.388747'
     - 523 thôn Hồng Chính - xã Hòa Thắng
@@ -14988,7 +14988,7 @@ places:
   - - '1114'
     - hd coffee
     - ChIJGyejnBGDdjERtLzs7QSREhs
-    - 
+    -
     - '10.9378104'
     - '108.1123996'
     - lô B, 6 Hùng Vương, Phú Thủy, tp. Phan Thiết
@@ -15013,7 +15013,7 @@ places:
   - - '1115'
     - Cf K Lauege
     - ChIJVZK60BaDdjERBGRHZCCuDbA
-    - 
+    -
     - '10.9415536'
     - '108.1106786'
     - 59 Tôn Đức Thắng, Phú Thủy, tp. Phan Thiết Phú Thủy tp. Phan Thiết Bình Thuận
@@ -15038,7 +15038,7 @@ places:
   - - '1116'
     - Hoang Linh House
     - ChIJqVL35BGDdjERsi3F0X--ly4
-    - 
+    -
     - '10.9358682'
     - '108.1123178'
     - 32 Lâm Đình Trúc, phường Phú Thủy, thành phố Phan Thiết, Việt Nam, 32 Lâm Đình
@@ -15064,7 +15064,7 @@ places:
   - - '1117'
     - Phan Thiết City Land
     - ChIJbyH81hCDdjER6B2WlDdBp7I
-    - 
+    -
     - '10.9403991'
     - '108.1089633'
     - Việt Nam, Phú Thủy, tp. Phan Thiết
@@ -15112,7 +15112,7 @@ places:
   - - '1119'
     - Khoa Cà phê
     - ChIJ_Q_Z-A6DdjERKjubQ3rIGMg
-    - 
+    -
     - '10.9325467'
     - '108.1103551'
     - 182 Thủ Khoa Huân, Phú Thủy, tp. Phan Thiết
@@ -15136,7 +15136,7 @@ places:
   - - '1120'
     - Karaoke Doremi
     - ChIJofU6mQ-DdjERpsNpBUcs7eY
-    - 
+    -
     - '10.9333144'
     - '108.1085864'
     - 96 Tuyên Quang, Phú Thủy, tp. Phan Thiết
@@ -15161,7 +15161,7 @@ places:
   - - '1121'
     - Bảo tàng Hồ Chí Minh
     - ChIJCXuG1QGDdjERqB-Mr9gNCpk
-    - 
+    -
     - '10.9287751'
     - '108.0965496'
     - Trưng Nhị, Đức Nghĩa, tp. Phan Thiết
@@ -15184,7 +15184,7 @@ places:
   - - '1122'
     - Cà phê Đất Sài Gòn
     - ChIJfTk9zQSDdjERaMpWGyplzE0
-    - 
+    -
     - '10.9358669'
     - '108.1034517'
     - Lê Hồng Phong, tp. Phan Thiết
@@ -15207,7 +15207,7 @@ places:
   - - '1123'
     - Кафе "СИБИРЯЧКА"
     - ChIJG7tvPeSPdjERp-52yqHxg3s
-    - 
+    -
     - '10.9523815'
     - '108.2546737'
     - 47 Huỳnh Thúc Kháng khu phố 4 Hàm Tiến tp. Phan Thiết khu phố 4 Hàm Tiến tp.
@@ -15233,7 +15233,7 @@ places:
   - - '1124'
     - "Кафе Белоснежка"
     - ChIJu51_auSPdjERftGn05fQDxs
-    - 
+    -
     - '10.9524842'
     - '108.2538667'
     - 45 Huỳnh Thúc Kháng, khu phố 4, Hàm Tiến, tp. Phan Thiết
@@ -15284,7 +15284,7 @@ places:
   - - '1126'
     - Ngoc linh hotel
     - ChIJY3G-2ehsbzER1b_PXGGid_o
-    - 
+    -
     - '13.755181'
     - '109.216525'
     - 06 Trần Văn Ơn, Phường Nguyễn Văn Cừ, Thành phố Quy Nhơn
@@ -15334,7 +15334,7 @@ places:
   - - '1128'
     - Café Dạ Khúc
     - ChIJHd3EzYNsbzERIaxlWc73dVg
-    - 
+    -
     - '13.7817004'
     - '109.2287496'
     - 7 Huỳnh Thúc Kháng, tp. Quy Nhơn
@@ -15357,7 +15357,7 @@ places:
   - - '1129'
     - Trà Bão
     - ChIJIyoZZoVsbzER7kWd3scRYzs
-    - 
+    -
     - '13.7743787'
     - '109.2254786'
     - 69 Trần Phú, tp. Quy Nhơn
@@ -15381,7 +15381,7 @@ places:
   - - '1130'
     - Buratino Pizza
     - ChIJQzsVL5VsbzERW2qGWhVyZQ0
-    - 
+    -
     - '13.7643985'
     - '109.2142903'
     - Nguyễn Thái Học, tp. Quy Nhơn
@@ -15406,7 +15406,7 @@ places:
   - - '1131'
     - Bánh Mì - Cafe 54 Lý Thái Tổ
     - ChIJTdsdEcJsbzERY-kWsUdzi5Q
-    - 
+    -
     - '13.7576666'
     - '109.210794'
     - 54 Lý Thái Tổ, Nguyễn Văn Cừ, tp. Quy Nhơn Nguyễn Văn Cừ tp. Quy Nhơn Bình Định
@@ -15428,9 +15428,9 @@ places:
     - '2016-04-07 12:55:35.518158'
     - '2016-04-10 00:53:31.138765'
   - - '1132'
-    - Càfê Đất Việt
+    - Càfê Đất Việt
     - ChIJrRK0ccJsbzERfRQSYbL09Fc
-    - 
+    -
     - '13.7566219'
     - '109.2111598'
     - Trần Lương, Nguyễn Văn Cừ, tp. Quy Nhơn
@@ -15454,7 +15454,7 @@ places:
   - - '1133'
     - Cafe's 395 Nguyễn Thị Minh Khai
     - ChIJ2atuc2VsbzERgnG5jyS0_Fo
-    - 
+    -
     - '13.76995'
     - '109.246101'
     - 395 nguyễn thị minh khai, khu vực 5, phường nguyễn văn cừ, quy nhơn, tp. Quy
@@ -15504,7 +15504,7 @@ places:
   - - '1135'
     - Công Ty TNHH DV Phương Nghi
     - ChIJzew1ON1sbzERDK6I1eOh8A4
-    - 
+    -
     - '13.752278'
     - '109.210135'
     - 115 Tây Sơn, Quang Trung, tp. Quy Nhơn
@@ -15528,7 +15528,7 @@ places:
   - - '1136'
     - Phan Gia Trà Quán
     - ChIJd-GpCSBtbzERapzil_E8upM
-    - 
+    -
     - '13.7417466'
     - '109.2108371'
     - 44 Lê Công Miễn, tp. Quy Nhơn
@@ -15553,7 +15553,7 @@ places:
   - - '1137'
     - Cafe Vườn Dốc Ông Phật
     - ChIJ_Xk-y-QSbzERSWvTu0vPIi8
-    - 
+    -
     - '13.7394466'
     - '109.1524134'
     - khu vực 7, Bùi Thị Xuân, tp. Quy Nhơn
@@ -15577,7 +15577,7 @@ places:
   - - '1138'
     - Cafe 568
     - ChIJgQdSPu0NbzERoSeWiXU5p_E
-    - 
+    -
     - '13.6926072'
     - '109.1153097'
     - Quy Nhon
@@ -15601,7 +15601,7 @@ places:
   - - '1139'
     - cafe 97
     - ChIJpfmHO5tsbzERtNj-WkXw71c
-    - 
+    -
     - '13.777884'
     - '109.222569'
     - 97, Phó Đức Chính, quy nhơn
@@ -15625,7 +15625,7 @@ places:
   - - '1140'
     - Le Thi Thanh Coffee Shop
     - ChIJNbUyCYNsbzERN-Djo1M63U0
-    - 
+    -
     - '13.7813032'
     - '109.2262848'
     - Lot 19, Hoang Quoc Viet Street, Quy Nhon City
@@ -15649,7 +15649,7 @@ places:
   - - '1141'
     - Cafe Legend
     - ChIJlQlWwZpsbzERQFXQXAKB1t0
-    - 
+    -
     - '13.7759282'
     - '109.2225342'
     - Nguyễn Tất Thành, Lê Hồng Phong, tp. Quy Nhơn
@@ -15673,7 +15673,7 @@ places:
   - - '1142'
     - Cafe Jerry
     - ChIJA3MYl5psbzERiqgeIdf_hSY
-    - 
+    -
     - '13.7750882'
     - '109.2219198'
     - 50/28, Nguyễn Thái Học, tp. Quy Nhơn
@@ -15698,7 +15698,7 @@ places:
   - - '1143'
     - Quán Cà Phê Giải Khát Nguyễn Thị Mộng Trinh
     - ChIJ--8LFoVsbzERhV0eluiBYu4
-    - 
+    -
     - '13.7757419'
     - '109.2252424'
     - 68, Đường Mai Xuân Thưởng, Thành Phố Quy Nhơn
@@ -15721,7 +15721,7 @@ places:
   - - '1144'
     - Doanh Nghiệp Tư Nhân Thuý Dương
     - ChIJW_vKcJBsbzERBwhsPiaChRw
-    - 
+    -
     - '13.7739348'
     - '109.221556'
     - 9, Đường Lê Duẩn, Phường Lê Hồng Phong, Thành Phố Quy Nhơn
@@ -15745,7 +15745,7 @@ places:
   - - '1145'
     - Trương Sang
     - ChIJKZOb-b9QoTERJxgRQ-uMDug
-    - 
+    -
     - '8.9803541'
     - '105.1964242'
     - Dương Thị Cẩm Vân, Vùng 2, tt. Đầm Dơi
@@ -15767,7 +15767,7 @@ places:
   - - '1146'
     - Cà Phê Tiến Lên
     - ChIJ4ZtqI-1QoTER5vqKYoZrBUI
-    - 
+    -
     - '8.9896018'
     - '105.1948985'
     - Vùng 1, tt. Đầm Dơi
@@ -15791,7 +15791,7 @@ places:
   - - '1147'
     - Cafe Tân
     - ChIJ3_cGMO1QoTERFBzOnTypryU
-    - 
+    -
     - '8.989699'
     - '105.195363'
     - Vùng 1, tt. Đầm Dơi
@@ -15815,7 +15815,7 @@ places:
   - - '1148'
     - Trà Sữa Kitty
     - ChIJ-XkTk4xQoTERjvy-HhzrcdU
-    - 
+    -
     - '8.995696'
     - '105.1980091'
     - duong Nguyen Mai, khom 4,, tt. Đầm Dơi
@@ -15839,7 +15839,7 @@ places:
   - - '1149'
     - Cà Phê Ngọc Trang
     - ChIJMZXY84xQoTERHpEH-1VnWtM
-    - 
+    -
     - '8.9952374'
     - '105.1985184'
     - 89 Dương Thị Cẩm Vân, Vùng 4, tt. Đầm Dơi
@@ -15864,7 +15864,7 @@ places:
   - - '1150'
     - Xì Trum
     - ChIJPZRPj4xQoTERRuwxuyvLh0M
-    - 
+    -
     - '8.9961861'
     - '105.1985979'
     - tt. Đầm Dơi
@@ -15913,7 +15913,7 @@ places:
   - - '1152'
     - Cafe Sao Dem
     - ChIJ2Y4KgmFQoTER2QF3uU_vUoQ
-    - 
+    -
     - '9.0048238'
     - '105.2014823'
     - "Đầm Dơi District"
@@ -15938,7 +15938,7 @@ places:
   - - '1153'
     - Quán Cà Phê Giải Khát Đỗ Hồng Thắm
     - ChIJ3c9DnGVQoTERqS8Ssb77_pA
-    - 
+    -
     - '9.0118426'
     - '105.2045943'
     - 100, Khóm 4, Thị Trấn Đầm Dơi, Huyện Đầm Dơi
@@ -15963,7 +15963,7 @@ places:
   - - '1154'
     - Quán Cà Phê Giải Khát Nguyễn Hồng Huệ
     - ChIJMZMV7cxUoTEResthsGlE5Qg
-    - 
+    -
     - '8.9379623'
     - '105.0344467'
     - Khu Vực Chợ, Thị Trấn Cái Nước, Huyện Cái Nước
@@ -15987,9 +15987,9 @@ places:
     - '2016-04-07 12:55:48.047548'
     - '2016-04-10 00:53:31.167306'
   - - '1155'
-    - Karaoke Mai Quỳnh
+    - Karaoke Mai Quỳnh
     - ChIJtZgupDurpjERmC7ROA3Dy3Q
-    - 
+    -
     - '8.937797'
     - '105.0168166'
     - tt. Cái Nước
@@ -16014,7 +16014,7 @@ places:
   - - '1156'
     - Nhu Thao Coffee Shop
     - ChIJlRVo3TurpjERD7tNK42pseg
-    - 
+    -
     - '8.9395537'
     - '105.0163441'
     - 417, Group 1, Cai Nuoc Town, Cai Nuoc District
@@ -16038,12 +16038,12 @@ places:
     - '2016-04-07 12:55:48.923017'
     - '2016-04-10 00:53:31.17114'
   - - '1157'
-    - Cafe Góc Phố
+    - Cafe Góc Phố
     - ChIJ9aApVT-rpjERAEjpNcXIKC8
-    - 
+    -
     - '8.9454041'
     - '105.0148029'
-    - "đường 19 tháng 5,, tt. Cái Nước"
+    - "đường 19 tháng 5,, tt. Cái Nước"
     - Qui animi quo architecto ut sint fugiat rerum qui. Repellendus aut aliquam corporis
       quia nesciunt sapiente harum. Est dolore vel culpa aut id autem. Ea nesciunt
       suscipit culpa asperiores atque occaecati voluptatem quibusdam. Quo vero soluta
@@ -16064,7 +16064,7 @@ places:
   - - '1158'
     - Quán Cà Phê Nguyễn Cường
     - ChIJz-a7mTurpjERkKGlLaUSDEo
-    - 
+    -
     - '8.9380312'
     - '105.0160467'
     - Lộ Tân Duyệt, tt. Cái Nước
@@ -16087,7 +16087,7 @@ places:
   - - '1159'
     - Quán Cà Phê Dũng Liêm
     - ChIJb2aYmTurpjER3sWke8GHX4w
-    - 
+    -
     - '8.9380047'
     - '105.0160146'
     - Lộ Tân Duyệt, tt. Cái Nước
@@ -16112,7 +16112,7 @@ places:
   - - '1160'
     - Nước Mía Siêu Sạch
     - ChIJ3ZKkaT-rpjER3ygnLDRJ5eQ
-    - 
+    -
     - '8.9446631'
     - '105.0132458'
     - 141 Cách Mạng Tháng Tám, tt. Cái Nước
@@ -16136,7 +16136,7 @@ places:
   - - '1161'
     - Quoc Khoi Coffee Shop
     - ChIJqeoYmj-rpjER5vHTXBwNZIk
-    - 
+    -
     - '8.944728'
     - '105.0112655'
     - 241, Group 2, Cai Nuoc Town, Cai Nuoc District
@@ -16161,7 +16161,7 @@ places:
   - - '1162'
     - Coffee Karaoke MyMy
     - ChIJS3qaWz6rpjER9FmYlKqHmF4
-    - 
+    -
     - '8.9464987'
     - '105.0107154'
     - 320 Quốc lộ 1A, tt. Cái Nước
@@ -16181,9 +16181,9 @@ places:
     - '2016-04-07 12:55:51.613217'
     - '2016-04-10 00:53:31.179215'
   - - '1163'
-    - Coffee Thanh Sắc
+    - Coffee Thanh Sắc
     - ChIJ62Aukj-rpjERGzlpatssj6E
-    - 
+    -
     - '8.9449152'
     - '105.0107796'
     - 315 QL1A, tt. Cái Nước, Cái Nước tt. Cái Nước Cái Nước Cà Mau
@@ -16205,9 +16205,9 @@ places:
     - '2016-04-07 12:55:52.042275'
     - '2016-04-10 00:53:31.181074'
   - - '1164'
-    - Cafe Lộc Vừng
+    - Cafe Lộc Vừng
     - ChIJoU7xkz-rpjER6AGc3qNeHgs
-    - 
+    -
     - '8.9447453'
     - '105.0107504'
     - Quốc lộ 1A, tt. Cái Nước
@@ -16351,7 +16351,7 @@ places:
   - - '1170'
     - Quán Café 24h
     - ChIJOXOLiqBioDERr1q9W9zgjI4
-    - 
+    -
     - '10.0354133'
     - '105.7837389'
     - 8 Nguyễn Khuyến, An Cư
@@ -16374,7 +16374,7 @@ places:
   - - '1171'
     - Hoàng Tú Shop
     - ChIJN8UCS7WJoDER-1wdEHnKP3w
-    - 
+    -
     - '10.017441'
     - '105.760983'
     - "Đường số 1, Hưng Lợi"
@@ -16423,7 +16423,7 @@ places:
   - - '1173'
     - HD Can Tho
     - ChIJT1vHgB2IoDERmU515AlqaoM
-    - 
+    -
     - '10.0405001'
     - '105.7820066'
     - 172 Xô Viết Nghệ Tĩnh, An Hội
@@ -16473,7 +16473,7 @@ places:
   - - '1175'
     - Công Ty Cp Vận Tải Sài Gòn - Cn Cần Thơ
     - ChIJn2V14gKIoDER2XjinBOViAE
-    - 
+    -
     - '10.0454875'
     - '105.7791996'
     - 73 Phan Đăng Lưu, Thới Bình
@@ -16496,7 +16496,7 @@ places:
   - - '1176'
     - Cafe Kem Solution24H
     - ChIJJf3a6keIoDERPJ3zfTyh1lc
-    - 
+    -
     - '10.0242796'
     - '105.7572699'
     - A1-27, Khu dân cư 91B, An Khánh
@@ -16521,7 +16521,7 @@ places:
   - - '1177'
     - Trung Nguyen Cafe
     - ChIJT0dV8uOHoDERLEMIDWFqeiU
-    - 
+    -
     - '10.0601455'
     - '105.7655663'
     - 69, Cách Mạng Tháng Tám, phường An Thới, quận Bình Thủy, TP. Cần Thơ
@@ -16545,7 +16545,7 @@ places:
   - - '1178'
     - Tô Châu * Massage Can Tho - Karaoke - Hotel
     - ChIJn5FrPH1ioDERxZHVn9S5Y34
-    - 
+    -
     - '10.0085543'
     - '105.7926'
     - Quang Trung
@@ -16570,7 +16570,7 @@ places:
   - - '1179'
     - Trà sữa Lắng
     - ChIJM_Vk4jSIoDERyS4vAweexIE
-    - 
+    -
     - '10.013767'
     - '105.761582'
     - 108 Đường 30 Tháng 4, Hưng Lợi
@@ -16594,7 +16594,7 @@ places:
   - - '1180'
     - Hội Quán Game
     - ChIJC9GKSrqJoDEROA012oBLEOM
-    - 
+    -
     - '9.9990508'
     - '105.7515568'
     - 363 Lê Bình
@@ -16618,7 +16618,7 @@ places:
   - - '1181'
     - Cafe Hoa Nắng
     - ChIJR8zsxkOIoDERlxCWlfCzV3o
-    - 
+    -
     - '10.0302079'
     - '105.7513127'
     - 299 C, Nguyễn Văn Cừ
@@ -16641,7 +16641,7 @@ places:
   - - '1182'
     - Cafe Không Gian Riêng
     - ChIJ3yFmVGqIoDERBx2oJqEmjEk
-    - 
+    -
     - '10.036408'
     - '105.7553641'
     - 171C, Đường 24, An Khánh
@@ -16665,7 +16665,7 @@ places:
   - - '1183'
     - Baristo cà phê
     - ChIJ53J9tGyIoDERBFvy-lrQXSk
-    - 
+    -
     - '10.040232'
     - '105.758402'
     - 8,, Ngô Thì Nhậm, An Khánh
@@ -16690,7 +16690,7 @@ places:
   - - '1184'
     - Suri Tea Café
     - ChIJa52L60SIoDER3hfFwaKRUOo
-    - 
+    -
     - '10.0378929'
     - '105.7592893'
     - 390d/10 Nguyễn Văn Cừ nối dài, An Khánh
@@ -16714,7 +16714,7 @@ places:
   - - '1185'
     - Trà đá Cây Đa
     - ChIJv_TYfiRkyjYR5dLL4PqFCWE
-    - 
+    -
     - '22.6639175'
     - '106.2607621'
     - Cao Bang Forecast Hydrometeorological Centre, Cao Bằng
@@ -16737,7 +16737,7 @@ places:
   - - '1186'
     - Quán Cafe 109
     - ChIJA8k9AhNkyjYRg5ai65l03JE
-    - 
+    -
     - '22.6480763'
     - '106.273241'
     - 109, Quốc Lộ 4A, Phường Hợp Giang, Thị Xã Cao Bằng
@@ -16761,7 +16761,7 @@ places:
   - - '1187'
     - Quán Karaoke Trung Black
     - ChIJg7Qe5T1kyjYRRp9XNtu1lA4
-    - 
+    -
     - '22.6578982'
     - '106.2692928'
     - Tổ 11, Phường Sông Bằng, Thị Xã Cao Bằng
@@ -16785,7 +16785,7 @@ places:
   - - '1188'
     - Cafe Vườn Phố
     - ChIJF8CmwCNkyjYRB6kzNzGjnds
-    - 
+    -
     - '22.6621171'
     - '106.2595524'
     - Quốc lộ 4A, Hợp Giang, tp. Cao Bằng
@@ -16810,7 +16810,7 @@ places:
   - - '1189'
     - Quán Cà Phê Nguyễn Thị Thu Hường
     - ChIJNw2XBz1kyjYRX0uvvCx3EoA
-    - 
+    -
     - '22.6596197'
     - '106.2668467'
     - 33, Phường Sông Bằng, Thị Xã Cao Bằng
@@ -16834,7 +16834,7 @@ places:
   - - '1190'
     - Quán Cafe Siu
     - ChIJw6btyXdkyjYRgfga0mbuE4A
-    - 
+    -
     - '22.6336589'
     - '106.2849998'
     - Quốc Lộ 4A, Xã Chu Trinh, Thị Xã Cao Bằng
@@ -16858,7 +16858,7 @@ places:
   - - '1191'
     - Quán Cà Phê Ngô Ngọc Khánh
     - ChIJyTrCbidkyjYR-wal_AtDERs
-    - 
+    -
     - '22.6664126'
     - '106.2531996'
     - 12, Phường Sông Hiến, Thị Xã Cao Bằng, Tỉnh Cao Bằng
@@ -16883,7 +16883,7 @@ places:
   - - '1192'
     - Tran Thi Lien Karaoke
     - ChIJLSuUDSdkyjYRMxt-iOVme1o
-    - 
+    -
     - '22.6666943'
     - '106.253939'
     - Group 17, Song Hien Ward, Cao Bang City
@@ -16907,7 +16907,7 @@ places:
   - - '1193'
     - Vu Thi Thinh Coffee Shop
     - ChIJ22HMZZxmyjYRFihmlXIH-b0
-    - 
+    -
     - '22.6674656'
     - '106.2473695'
     - Group 1, Song Hien Ward, Cao Bang Town, Hoa An District
@@ -16931,7 +16931,7 @@ places:
   - - '1194'
     - Quán Cà Phê Đinh Thị Yến
     - ChIJ58m4aSZkyjYRF6gcm9hprqc
-    - 
+    -
     - '22.66802'
     - '106.2567251'
     - 63, Đường Bế Văn Đàn, Phường Hợp Giang, Thị Xã Cao Bằng
@@ -16978,7 +16978,7 @@ places:
   - - '1196'
     - Quán Cafe Phố Nhỏ
     - ChIJD4i59CdkyjYRy7gZLYhRmX4
-    - 
+    -
     - '22.6689867'
     - '106.2525129'
     - "Đường Phai Khắt Nà Ngần, Phường Đề Thám, Thị Xã Cao Bằng"
@@ -17004,7 +17004,7 @@ places:
   - - '1197'
     - Quán Cafe Thu Ngân
     - ChIJQwQ5BCZkyjYRHpV50kYGG3A
-    - 
+    -
     - '22.6693629'
     - '106.257652'
     - 21, Đường Vườn Cam, Phường Hợp Giang, Thị Xã Cao Bằng
@@ -17028,7 +17028,7 @@ places:
   - - '1198'
     - Quán Cafe Thủy Phương
     - ChIJqzTyy4JmyjYRBGyM0B_lMHU
-    - 
+    -
     - '22.6708875'
     - '106.2504101'
     - "Đường Phai Khắt Nà Ngần, Phường Đề Thám, Thị Xã Cao Bằng"
@@ -17052,7 +17052,7 @@ places:
   - - '1199'
     - Quán Giải Khát Nguyễn Tiến Cường
     - ChIJgcrZ4pNmyjYRY_m7w9B2GIw
-    - 
+    -
     - '22.6672446'
     - '106.2343916'
     - Tổ 9, Phường Sông Hiến, tp. Cao Bằng
@@ -17077,7 +17077,7 @@ places:
   - - '1200'
     - Karaoke KTV
     - ChIJQRS-poJmyjYRT6F3OgR7_sU
-    - 
+    -
     - '22.6714406'
     - '106.2519202'
     - Quốc lộ 4A, Sông Hiến, tp. Cao Bằng
@@ -17102,7 +17102,7 @@ places:
   - - '1201'
     - Cafe Hương Bưởi
     - ChIJX64NxihkyjYRdBmZs3K57PU
-    - 
+    -
     - '22.6716578'
     - '106.2572846'
     - Hợp Giang, tp. Cao Bằng
@@ -17126,7 +17126,7 @@ places:
   - - '1202'
     - Luong Thien
     - ChIJtSnfsS9kyjYRUVWEuXocw2Y
-    - 
+    -
     - '22.6718388'
     - '106.261787'
     - tổ 1, Sông Bằng, tp. Cao Bằng
@@ -17148,7 +17148,7 @@ places:
   - - '1203'
     - Quán Cà Phê Triệu Thanh Hải
     - ChIJZSOM_i5kyjYRHNSeeA5we8s
-    - 
+    -
     - '22.67263'
     - '106.260744'
     - Tổ 6
@@ -17173,7 +17173,7 @@ places:
   - - '1204'
     - Quán Cà Phê Đinh Ngọc Chung
     - ChIJyXFV0S5kyjYRBfetNMrcdoY
-    - 
+    -
     - '22.673026'
     - '106.2584698'
     - 64, Xã Đề Thám, Thị Xã Cao Bằng
@@ -17197,7 +17197,7 @@ places:
   - - '1205'
     - Cafe Phú Gia
     - ChIJ77hNTeacbjER9xyRQDDqGUo
-    - 
+    -
     - '13.8088464'
     - '108.1051231'
     - thôn 16, Bờ Ngoong, Chư Sê, Gia Lai
@@ -17221,7 +17221,7 @@ places:
   - - '1206'
     - cà phê Hùng Duyên
     - ChIJv6WFMfAnbDERej60pT21_Yk
-    - 
+    -
     - '13.802459'
     - '108.0370436'
     - Ia Tiêm
@@ -17246,7 +17246,7 @@ places:
   - - '1207'
     - Coffee K+ HD
     - ChIJ51mKGxSCbjERjrMnREaSoi8
-    - 
+    -
     - '13.714642'
     - '108.0668'
     - My Thach
@@ -17269,9 +17269,9 @@ places:
     - '2016-04-07 12:56:17.07012'
     - '2016-04-10 00:53:31.237021'
   - - '1208'
-    - C.ty TNHH, TM, XNK CAFE Tuyết Long Gia Lai
+    - C.ty TNHH, TM, XNK CAFE Tuyết Long Gia Lai
     - ChIJ8RLmb9MnbDERiM55J_3rZMw
-    - 
+    -
     - '13.7978287'
     - '108.0027747'
     - Ia Băng, tp. Pleiku
@@ -17295,7 +17295,7 @@ places:
   - - '1209'
     - Cafe Phương Thảo
     - ChIJh_FXdiWCbjER2xw6KXLlN9E
-    - 
+    -
     - '13.7049195'
     - '108.0826079'
     - Chư Sê
@@ -17319,7 +17319,7 @@ places:
   - - '1210'
     - ca phe may
     - ChIJ385c74mBbjERf0sgL5mf400
-    - 
+    -
     - '13.6971556'
     - '108.0793129'
     - Phạm Văn Đồng, Chư Sê
@@ -17344,7 +17344,7 @@ places:
   - - '1211'
     - Cà phê Phương Đông
     - ChIJ94B7xomBbjER9nhFudg3JFk
-    - 
+    -
     - '13.6950718'
     - '108.0792364'
     - Chư Sê
@@ -17370,7 +17370,7 @@ places:
   - - '1212'
     - Cherry Coffee & Milk Tea
     - ChIJaf1OvomBbjERMlVrqr50WDA
-    - 
+    -
     - '13.695056'
     - '108.0792569'
     - Nguyễn Tri Phương, Chư Sê
@@ -17395,7 +17395,7 @@ places:
   - - '1213'
     - vờ cờ lờ quán
     - ChIJv3E_pImBbjER40NvRHRVWj4
-    - 
+    -
     - '13.6942757'
     - '108.0796092'
     - Trần Hưng Đạo, Chư Sê
@@ -17418,7 +17418,7 @@ places:
   - - '1214'
     - "Ăn Vặt VCI"
     - ChIJN6Q3Y4mBbjER0dVfUKTNI1s
-    - 
+    -
     - '13.6932398'
     - '108.0779181'
     - Công viên KPă KLơng, Hùng Vương,, Chư Sê
@@ -17441,7 +17441,7 @@ places:
   - - '1215'
     - Cafe Giot Dang
     - ChIJw8zEDYuBbjER2ASYlOoFdVY
-    - 
+    -
     - '13.6931733'
     - '108.0740685'
     - Chư Sê
@@ -17467,7 +17467,7 @@ places:
   - - '1216'
     - Cafe Thảo Nguyên Chư Sê
     - ChIJVUo9Mo-BbjERpXEwUNMUebM
-    - 
+    -
     - '13.6906201'
     - '108.0814529'
     - 43, 17 Tháng 3, Chư Sê
@@ -17493,7 +17493,7 @@ places:
   - - '1217'
     - Quán Cafe Giải Khát Vy Hạ
     - ChIJm2r0FE8gbDERgbzdsUvPt9M
-    - 
+    -
     - '13.9397527'
     - '108.0107975'
     - Quốc Lộ 14, Tổ 2, Phường Chi Lăng, Thành Phố Pleiku
@@ -17518,7 +17518,7 @@ places:
   - - '1218'
     - Noi Khao Sat Lap Viettel
     - ChIJyUQtDD4gbDERF0NkonjCeBc
-    - 
+    -
     - '13.9510891'
     - '108.0231464'
     - Chư HDrông, tp. Pleiku
@@ -17541,7 +17541,7 @@ places:
   - - '1219'
     - Giọt Đắng Cafe
     - ChIJ6wRn_kcgbDERCfb9rq8Eh_M
-    - 
+    -
     - '13.9465626'
     - '108.0125999'
     - 535, Truong Chinh Street, Pleiku City
@@ -17564,7 +17564,7 @@ places:
   - - '1220'
     - Vĩ Dạ
     - ChIJZ5_lgiMkbDERYNQfPTnubj8
-    - 
+    -
     - '13.8577681'
     - '107.9444396'
     - Quốc lộ 19, Bàu Cạn
@@ -17614,7 +17614,7 @@ places:
   - - '1222'
     - Cafe Diễm
     - ChIJ7YMVLTggbDER--J_ZILazV4
-    - 
+    -
     - '13.9494965'
     - '108.0130824'
     - 16 Lý Chính Thắng, tp. Pleiku
@@ -17638,7 +17638,7 @@ places:
   - - '1223'
     - Cà Phê 2 Cây Dù
     - ChIJ1fbggDcgbDER-yZWVFoqqaQ
-    - 
+    -
     - '13.9493928'
     - '108.0122747'
     - 431, 431 Trường Chinh, Trà Bá, tp. Pleiku
@@ -17661,7 +17661,7 @@ places:
   - - '1224'
     - Cà Phê - Giải Khát Kim Liên
     - ChIJAQAAADugbjER7y03ENcHUIw
-    - 
+    -
     - '13.9778979'
     - '108.0806141'
     - Thôn 5, Xã An Phú, tp. Pleiku
@@ -17710,7 +17710,7 @@ places:
   - - '1226'
     - Cafe SAM - Patbingsu
     - ChIJWb6ICqx5zDYRVH5ulg9GY64
-    - 
+    -
     - '22.8145435'
     - '104.9810711'
     - số 157, tổ 15,, Nguyễn Trãi, tp. Hà Giang
@@ -17735,7 +17735,7 @@ places:
   - - '1227'
     - Cà phê Sắc Màu
     - ChIJLd4pw615zDYRpqg2AXS3NRY
-    - 
+    -
     - '22.8184826'
     - '104.9810958'
     - Nguyễn Trãi, tp. Hà Giang
@@ -17759,7 +17759,7 @@ places:
   - - '1228'
     - Cafe Sắc Màu
     - ChIJe3kAwK15zDYRFHTKpSpz9LM
-    - 
+    -
     - '22.8188274'
     - '104.9812346'
     - 274-282, Phòng Giáo dục Thành phố, Nguyễn Trãi, tp. Hà Giang
@@ -17783,7 +17783,7 @@ places:
   - - '1229'
     - Hiệu ảnh
     - ChIJY4h_WrJ5zDYR7EWsya_T2W8
-    - 
+    -
     - '22.8220985'
     - '104.9826908'
     - 344 Nguyễn Trãi, hà giang
@@ -17807,7 +17807,7 @@ places:
   - - '1230'
     - Cafe Apple
     - ChIJd5PiSrR5zDYRAs12MT_mK1Y
-    - 
+    -
     - '22.8288618'
     - '104.9814134'
     - Số nhà 93 đường P., Lê Quý Đôn, Nguyễn Trãi, tp. Hà Giang
@@ -17855,7 +17855,7 @@ places:
   - - '1232'
     - Cafe tung beo
     - ChIJP5flNBJoBxQR84kYELHnTos
-    - 
+    -
     - '22.8253223'
     - '104.988699'
     - 32 Lê Hồng Phong, Hà Giang
@@ -17881,7 +17881,7 @@ places:
   - - '1233'
     - Cafe Travel
     - ChIJH4TCkEp4zDYRJG2O6QiKcaU
-    - 
+    -
     - '22.8296757'
     - '104.9820508'
     - 165 Trần Hưng Đạo, Nguyễn Trãi, tp. Hà Giang
@@ -17904,7 +17904,7 @@ places:
   - - '1234'
     - cafe' Phố Đá
     - ChIJN-jbhLV5zDYRKNP0uGpOcdc
-    - 
+    -
     - '22.8308632'
     - '104.9828538'
     - 1st, tp. Hà Giang
@@ -17929,7 +17929,7 @@ places:
   - - '1235'
     - Cà phê Phố Đá
     - ChIJ0dTKhLV5zDYRGs6W6-sV1qQ
-    - 
+    -
     - '22.8308648'
     - '104.9828571'
     - tp. Hà Giang
@@ -17954,7 +17954,7 @@ places:
   - - '1236'
     - A...lo Cafe
     - ChIJX17EgrV5zDYRrxViWdCnQV8
-    - 
+    -
     - '22.8310128'
     - '104.9831166'
     - 545 Nguyễn Trãi, tp. Hà Giang
@@ -17977,7 +17977,7 @@ places:
   - - '1237'
     - Quán Karaoke X3
     - ChIJQdFsSrV5zDYRFb2vsAjQkkg
-    - 
+    -
     - '22.8301258'
     - '104.9853455'
     - 123, Đường Nguyễn Thái Học, Phường Trần Phú, tp. Hà Giang
@@ -18002,7 +18002,7 @@ places:
   - - '1238'
     - Cà phê Tùng Dương
     - ChIJx1eYyUp4zDYRPouvFOXXFl4
-    - 
+    -
     - '22.8298162'
     - '104.9860582'
     - Hoàng Hoa Thám, Trần Phú, tp. Hà Giang
@@ -18028,7 +18028,7 @@ places:
     - '3.9'
     - '22.8348379'
     - '104.9889735'
-    - Số 04. đường Lý Thường Kiệt, Thành phố Hà Giang
+    - Số 04. đường Lý Thường Kiệt, Thành phố Hà Giang
     - Nostrum ea suscipit eos pariatur placeat. Illum est minima nobis illo et et
       esse dolorum. Cupiditate maiores delectus expedita consequatur dolores cumque.
       Iure sed facere ipsum voluptas porro. Quibusdam tenetur ut neque eum id. Reiciendis
@@ -18048,7 +18048,7 @@ places:
   - - '1240'
     - Karaoke Family
     - ChIJj7WPgYCAzDYRbs4tQ1pYXbE
-    - 
+    -
     - '22.6654675'
     - '104.9861324'
     - Quốc lộ 2, tt. Vị Xuyên
@@ -18073,7 +18073,7 @@ places:
   - - '1241'
     - Cafe ANHVU
     - ChIJ_ceMhDqHzDYRTemo3yjj4Gs
-    - 
+    -
     - '22.641794'
     - '104.926751'
     - Việt Lâm
@@ -18095,9 +18095,9 @@ places:
     - '2016-04-07 12:56:32.741344'
     - '2016-04-10 00:53:32.276818'
   - - '1242'
-    - Quán Karaoke Trường Đượm
+    - Quán Karaoke Trường Đượm
     - ChIJOePK3dpxzDYRRWs5jJvd_ew
-    - 
+    -
     - '22.9277235'
     - '104.8558515'
     - Quốc Lộ 2, Xã Thanh Thủy, Huyện Vị Xuyên
@@ -18122,7 +18122,7 @@ places:
   - - '1243'
     - Coffe 1986
     - ChIJk569XU14zDYR55G24UABfR0
-    - 
+    -
     - '22.8202591'
     - '104.986985'
     - Số 6, ngõ 77 Trần Phú, Minh Khai, tp. Hà Giang
@@ -18147,7 +18147,7 @@ places:
   - - '1244'
     - Cafe Phuc
     - ChIJjem7ZrN5zDYRA5Re7XHJWg8
-    - 
+    -
     - '22.8254249'
     - '104.9838562'
     - 221 Nguyễn Trãi, tp. Hà Giang
@@ -18171,7 +18171,7 @@ places:
   - - '1245'
     - sakura karaoke
     - ChIJn28O2SbMNTER-kV0f26igb0
-    - 
+    -
     - '20.604657'
     - '105.872819'
     - '711'
@@ -18195,7 +18195,7 @@ places:
   - - '1246'
     - sakura karaoke
     - ChIJmf8Q2SbMNTERSBBJm9ZWHwk
-    - 
+    -
     - '20.6046565'
     - '105.872806'
     - 711, Lạc Nhuế, Đồng Hóa
@@ -18219,7 +18219,7 @@ places:
   - - '1247'
     - Café Phúc Hưng Yên
     - ChIJoTI5dNXGNTERr1jhVTOfn6A
-    - 
+    -
     - '20.6622231'
     - '106.0609497'
     - Tuệ Tĩnh, tp. Hưng Yên
@@ -18271,7 +18271,7 @@ places:
   - - '1249'
     - Quán nước Quốc Trưởng
     - ChIJ84jgNejONTER6K4z3EQbBMU
-    - 
+    -
     - '20.6066687'
     - '105.9086604'
     - Hoàng Tây, tp. Phủ Lý
@@ -18295,7 +18295,7 @@ places:
   - - '1250'
     - Cafe_ Ca Nhạc Đất Hà Nam.
     - ChIJQ_FtKC_ONTERR2Qi4tvo-hk
-    - 
+    -
     - '20.5444978'
     - '105.9140686'
     - 22 Biên Hòa, Minh Khai, tp. Phủ Lý
@@ -18320,7 +18320,7 @@ places:
   - - '1251'
     - Cafe Đất Hà Nam
     - ChIJ3UZ2sS7ONTERT2PBf7kzB8Y
-    - 
+    -
     - '20.5440444'
     - '105.9161917'
     - 55 Biên Hòa, Lương Khánh Thiện, tp. Phủ Lý
@@ -18345,7 +18345,7 @@ places:
   - - '1252'
     - Cà phê Không Gian Số
     - ChIJm-berS7ONTERuAT9AK-VgFs
-    - 
+    -
     - '20.5439059'
     - '105.91648'
     - Biên Hòa, Minh Khai, Phủ Lý
@@ -18370,7 +18370,7 @@ places:
   - - '1253'
     - Trà Đá Nguyệt Già.
     - ChIJj8jKDinONTERJ33DAPju1rw
-    - 
+    -
     - '20.5411858'
     - '105.9151822'
     - 162, Nguyễn Văn Trỗi, tp. Phủ Lý
@@ -18395,7 +18395,7 @@ places:
   - - '1254'
     - Like 3D Coffee
     - ChIJk6-gtSfONTERRXtIrb4ebr4
-    - 
+    -
     - '20.541155'
     - '105.909286'
     - Lê Hồng Phong, Phủ Lý
@@ -18421,7 +18421,7 @@ places:
   - - '1255'
     - Bảo tàng Hà Nam
     - ChIJ-9CZLCHONTERMOW8ybrLBik
-    - 
+    -
     - '20.5413178'
     - '105.9040841'
     - Lý Thái Tổ, Thắng Lợi, Lê Hồng Phong, Phủ Lý
@@ -18445,7 +18445,7 @@ places:
   - - '1256'
     - Cà Phê Mộc Quán
     - ChIJ8TOtudbNNTERtLUSBhsN6Ew
-    - 
+    -
     - '20.5813347'
     - '105.8710106'
     - Nhà Văn Hóa, tt. Quế, tp. Phủ Lý
@@ -18470,7 +18470,7 @@ places:
   - - '1257'
     - Anthony's Trà Đá
     - ChIJyaAfKNfNNTERir-6faADOTs
-    - 
+    -
     - '20.5797151'
     - '105.8707809'
     - Văn Lâm, tt. Quế
@@ -18493,7 +18493,7 @@ places:
   - - '1258'
     - Cà phê Hương Tình 1
     - ChIJo1dWeNPRNTEROw5ceC51M-M
-    - 
+    -
     - '20.5311112'
     - '105.9202047'
     - Số 228 Đinh Tiên Hoàng, Thanh Châu, tp. Phủ Lý
@@ -18518,7 +18518,7 @@ places:
   - - '1259'
     - Hoang Tay Hotel Company Limited
     - ChIJU4h8zSnJNTER-sRMdNiAUX0
-    - 
+    -
     - '20.6384586'
     - '105.9222364'
     - 113, Đường Nguyễn Hữu Tiến, Thị Trấn Đồng Văn, Huyện Duy Tiên
@@ -18542,7 +18542,7 @@ places:
   - - '1260'
     - Cafe Hòa Bình
     - ChIJQ7koqdvRNTERdQIw2Nf--yE
-    - 
+    -
     - '20.5302547'
     - '105.907774'
     - 116 Trần Phú - Quang Trung - Phủ Lý - Hà Nam, Trần Phú, tp. Phủ Lý
@@ -18565,7 +18565,7 @@ places:
   - - '1261'
     - CTy Thiên Quân Trang
     - ChIJX03rdNjRNTERZL3VbTzuciE
-    - 
+    -
     - '20.5288395'
     - '105.9100099'
     - "Đường Phủ Lý - Kiện Khê, Thắng Lợi, Phủ Lý"
@@ -18590,7 +18590,7 @@ places:
   - - '1262'
     - Cafe 69
     - ChIJwWADm63INTER5Pu0iiHlj84
-    - 
+    -
     - '20.6298618'
     - '105.9591155'
     - Xóm Trì, Tiên Nội
@@ -18615,7 +18615,7 @@ places:
   - - '1263'
     - Rạp Biên Hoà
     - ChIJ74U2tSPQNTERD6BtBpFCG7k
-    - 
+    -
     - '20.5279276'
     - '105.9435245'
     - "Đường Biên Hòa, Phường Lương Khánh Thiện, Thành Phố Phủ Lý, Tỉnh Hà Nam"
@@ -18638,7 +18638,7 @@ places:
   - - '1264'
     - Xa Van Ly
     - ChIJAQAAAJnFNTERVsoNxpRfzJw
-    - 
+    -
     - '20.5858463'
     - '105.9905529'
     - Văn Lý
@@ -18662,7 +18662,7 @@ places:
   - - '1265'
     - Camellia Hotel 6
     - ChIJM9PWf7-rNTERnUG3QY4aniQ
-    - 
+    -
     - '21.0335639'
     - '105.8524997'
     - 16 Trung Yên, Hàng Bạc
@@ -18807,7 +18807,7 @@ places:
   - - '1271'
     - HC - Asia Tower
     - ChIJE1XVC5WrNTERu6xnIePqtso
-    - 
+    -
     - '21.0288941'
     - '105.8497635'
     - Quan Hoan Kiem
@@ -18830,7 +18830,7 @@ places:
   - - '1272'
     - Kem Snowball
     - ChIJ0f8yJcCrNTER6n_h5k10kcg
-    - 
+    -
     - '21.0309677'
     - '105.85462'
     - 20 Lý Thái Tổ
@@ -18853,7 +18853,7 @@ places:
   - - '1273'
     - Cafe HD 360 Wifi free
     - ChIJ69cIn5KrNTERlM1_GehUTrU
-    - 
+    -
     - '21.0192595'
     - '105.8509404'
     - 20 Trần Quốc Toản
@@ -18878,7 +18878,7 @@ places:
   - - '1274'
     - Trà Thiên Sơn
     - ChIJJ4Conn2rNTERlDR-83vH-YM
-    - 
+    -
     - '21.0116086'
     - '105.8205818'
     - Trung Liệt
@@ -18924,7 +18924,7 @@ places:
   - - '1276'
     - Oppa Coffee & Store
     - ChIJ15VIaJirNTERTQWQrsktzB8
-    - 
+    -
     - '21.0304913'
     - '105.8387271'
     - 32 Cao Bá Quát, Điện Biên
@@ -18947,7 +18947,7 @@ places:
   - - '1277'
     - Brother's Cafe
     - ChIJW_FoKJirNTERyjNFxu1OwV0
-    - 
+    -
     - '21.0290349'
     - '105.8411937'
     - 26 Nguyễn Thái Học, Điện Biên
@@ -18997,7 +18997,7 @@ places:
   - - '1279'
     - Clb Jazz
     - ChIJ-1dppr-rNTERB85vQCLrxHM
-    - 
+    -
     - '21.0332292'
     - '105.8503741'
     - 31 Lương Văn Can, Hàng Đào
@@ -19048,7 +19048,7 @@ places:
     - '4.2'
     - '21.0253432'
     - '105.8568558'
-    - 12 Lý Đạo Thành
+    - 12 Lý Đạo Thành
     - Molestiae dolores qui non esse. Quisquam nihil aliquid dolores magni. Reprehenderit
       esse repellendus modi in assumenda et hic. Recusandae et dolorem qui esse at
       perspiciatis. Earum at aspernatur magni veniam dignissimos consequatur. Voluptatum
@@ -19117,7 +19117,7 @@ places:
   - - '1284'
     - Blue Bird cafe
     - ChIJO-vhd6KrNTERfBng4Um1mZo
-    - 
+    -
     - '21.0318925'
     - '105.8370995'
     - Quan Ba Dinh
@@ -19141,7 +19141,7 @@ places:
   - - '1285'
     - Cong Ty Co Phan Nam Khanh
     - ChIJj8Lpk2KuOTER1UNwuNpMzDQ
-    - 
+    -
     - '18.2943776'
     - '105.6745247'
     - Ha Tinh Province
@@ -19165,7 +19165,7 @@ places:
   - - '1286'
     - Việt Coffee
     - ChIJx-7-H4SpOTERSpn2JWRvwFY
-    - 
+    -
     - '18.1931845'
     - '105.6822874'
     - Hồ Chí Minh, Gia Phố
@@ -19187,7 +19187,7 @@ places:
   - - '1287'
     - KARAOKE NEW STAR
     - ChIJae5NGheqOTERy0B6VD8W5xQ
-    - 
+    -
     - '18.1717911'
     - '105.7022767'
     - tt. Hương Khê
@@ -19211,7 +19211,7 @@ places:
   - - '1288'
     - Ngã 3 Xom 4
     - ChIJld0m6BaqOTERDFCVmGYo3D0
-    - 
+    -
     - '18.1711937'
     - '105.7036991'
     - Phú Phong,, tt. Hương Khê
@@ -19235,7 +19235,7 @@ places:
   - - '1289'
     - Quán Cafe Công Nga
     - ChIJSVIlwhaqOTERYY4HG_60VDc
-    - 
+    -
     - '18.171031'
     - '105.703901'
     - Phú Phong,, tt. Hương Khê
@@ -19282,7 +19282,7 @@ places:
   - - '1291'
     - Hyundai Hải Dương
     - ChIJXwhca0ebNTERe9KuaDfCfO0
-    - 
+    -
     - '20.9367616'
     - '106.3028041'
     - Nguyễn Lương Bằng, tp. Hải Dương
@@ -19306,7 +19306,7 @@ places:
   - - '1292'
     - MAX cafe
     - ChIJQ8s29BObNTERzukw-IIZwPQ
-    - 
+    -
     - '20.934736'
     - '106.316734'
     - Nguyễn Hới, tp. Hải Dương
@@ -19331,7 +19331,7 @@ places:
   - - '1293'
     - Cà phê Anh Huy
     - ChIJ0-L7bxKbNTERx8BHAXFFGdk
-    - 
+    -
     - '20.9361268'
     - '106.3157087'
     - 103 Đỗ Ngọc Du, tp. Hải Dương
@@ -19353,9 +19353,9 @@ places:
     - '2016-04-07 12:57:02.765143'
     - '2016-04-10 00:53:31.34709'
   - - '1294'
-    - Công ty Tnhh Qc Thời Đại
+    - Công ty Tnhh Qc Thời Đại
     - ChIJb8qe72mbNTERSbNkygTMd2o
-    - 
+    -
     - '20.9455176'
     - '106.322023'
     - 182 Điện Biên Phủ, Phạm Ngũ Lão, tp. Hải Dương
@@ -19378,7 +19378,7 @@ places:
   - - '1295'
     - Mark Coffee
     - ChIJ7QqxmNKFNTERQ4XvIBvlna0
-    - 
+    -
     - '20.9037101'
     - '106.4292061'
     - xóm Chợ, tt. Thanh Hà
@@ -19425,7 +19425,7 @@ places:
   - - '1297'
     - Seoul Karaoke & Cafe
     - ChIJF8CZq6SiNTER70DBXBSwMjE
-    - 
+    -
     - '20.903528'
     - '106.146556'
     - Kẻ Sặt
@@ -19472,7 +19472,7 @@ places:
   - - '1299'
     - Cafe Rock Race
     - ChIJxwbqzGqbNTERvLvnW9FEe58
-    - 
+    -
     - '20.939054'
     - '106.3208811'
     - 182 Điện Biên Phủ, tp. Hải Dương
@@ -19497,7 +19497,7 @@ places:
   - - '1300'
     - Quán Karaoke V-pop 2
     - ChIJz5DzdhSbNTER61U0iG-A6t4
-    - 
+    -
     - '20.9354544'
     - '106.317159'
     - 137, Đường Bà Triệu, Phường Tân Bình, tp. Hải Dương
@@ -19521,7 +19521,7 @@ places:
   - - '1301'
     - Papaicoffee
     - ChIJ7eUAtxObNTERN954QI7R0cw
-    - 
+    -
     - '20.9354314'
     - '106.3146501'
     - 150 Ngô Quyền, tp. Hải Dương
@@ -19546,7 +19546,7 @@ places:
   - - '1302'
     - Cafe - Karaoke Sức Sống Mới
     - ChIJI4Mbo0KbNTERHu01Yd4ab_U
-    - 
+    -
     - '20.9465121'
     - '106.3223321'
     - Số 338, Điện Biên Phủ, Bình Hàn, tp. Hải Dương
@@ -19570,7 +19570,7 @@ places:
   - - '1303'
     - Rubik 193 Nguyen Luong Bang
     - ChIJz7fTYhKbNTERrOAjSwckkE8
-    - 
+    -
     - '20.9368549'
     - '106.3118069'
     - 193 Nguyễn Lương Bằng, Hải Dương
@@ -19595,7 +19595,7 @@ places:
   - - '1304'
     - Cafe Gia Tý
     - ChIJZ1b6P0ebNTER4k7SIPPL1QM
-    - 
+    -
     - '20.9395353'
     - '106.3301552'
     - "Đại lộ Hồ Chí Minh, Nguyễn Trãi, tp. Hải Dương"
@@ -19619,7 +19619,7 @@ places:
   - - '1305'
     - Linh Cà phê 264
     - ChIJkdmjeQ2bNTERzdgiSd7Sc0Q
-    - 
+    -
     - '20.9373825'
     - '106.3104366'
     - 264 Nguyễn Lương Bằng, Thanh Bình, Hải Dương
@@ -19643,7 +19643,7 @@ places:
   - - '1306'
     - Bảo Tàng Hải Dương
     - ChIJB4j3mEabNTERn3FJA4TA7fM
-    - 
+    -
     - '20.9431726'
     - '106.3300834'
     - Bảo tàng tỉnh Hải Dương, Số 11 Hồng Quang, Nguyễn Trãi, tp. Hải Dương
@@ -19666,7 +19666,7 @@ places:
   - - '1307'
     - Cafe Linh Hạ
     - ChIJyfESQTmbNTERxjxi6nawQ68
-    - 
+    -
     - '20.9334751'
     - '106.3299537'
     - Tôn Đức Thắng, Lê Thanh Nghị, tp. Hải Dương
@@ -19691,7 +19691,7 @@ places:
   - - '1308'
     - Coffee Queen
     - ChIJMyZPiDibNTER11w9nEBpyfU
-    - 
+    -
     - '20.9370509'
     - '106.3315449'
     - 155, Bạch Đằng, tp. Hải Dương
@@ -19714,7 +19714,7 @@ places:
   - - '1309'
     - Cafe Thôi được rồi
     - ChIJVxcVbQqbNTERL86UIgKrQgI
-    - 
+    -
     - '20.9373537'
     - '106.3099043'
     - 296 Nguyễn Lương Bằng, tp. Hải Dương
@@ -19785,7 +19785,7 @@ places:
   - - '1312'
     - Karaoke Doremi
     - ChIJf4zIXex6SjERFa1JII5dZdQ
-    - 
+    -
     - '20.8593606'
     - '106.6924551'
     - 25 Phạm Minh Đức, Lương Khánh Thiện
@@ -19809,7 +19809,7 @@ places:
   - - '1313'
     - Diemdenvn.com ( nhà hàng, khách sạn, karaoke, làm đẹp và tuyển dụng )
     - ChIJke7GpmN6SjERKu0-lWCSkjw
-    - 
+    -
     - '20.849528'
     - '106.6720367'
     - 385 Tô Hiệu
@@ -19833,7 +19833,7 @@ places:
   - - '1314'
     - Quán Cafe Nhớ
     - ChIJn-g7TyVwSjERDM2PQ-5ZqqU
-    - 
+    -
     - '20.797314'
     - '106.712289'
     - "Đường tỉnh 353"
@@ -19858,7 +19858,7 @@ places:
   - - '1315'
     - Doremi Karaoke
     - ChIJgWumNLZ6SjERnovyO7IpwJE
-    - 
+    -
     - '20.847209'
     - '106.710738'
     - 1 Phương Lưu, Đông Hải
@@ -19882,7 +19882,7 @@ places:
   - - '1316'
     - Highlands Coffee
     - ChIJhzLYnbt6SjERWLkIsFsrGHE
-    - 
+    -
     - '20.846058'
     - '106.706868'
     - Vietnam
@@ -19906,7 +19906,7 @@ places:
   - - '1317'
     - Karaoke Tiamo
     - ChIJm6U4xDN3SjEReUY0S68K3wk
-    - 
+    -
     - '20.8088673'
     - '106.624181'
     - 166 Phan Đăng Lưu, Trần Thành Ngọ
@@ -19930,7 +19930,7 @@ places:
   - - '1318'
     - Secret Garden Cafe
     - ChIJExspWKB6SjERDtPALlmyRZA
-    - 
+    -
     - '20.8340564'
     - '106.7026734'
     - Lối vào chùa An Khê
@@ -19956,7 +19956,7 @@ places:
   - - '1319'
     - Cà phê Muối
     - ChIJRzAzpvZ6SjERbWcIBaZ-gQk
-    - 
+    -
     - '20.8636138'
     - '106.6814194'
     - 5 Hoàng Văn Thụ, Minh Khai
@@ -19981,7 +19981,7 @@ places:
   - - '1320'
     - CT thuyền viên việt
     - ChIJgxABtfR6SjERtIRY-bBjC3s
-    - 
+    -
     - '20.8573328'
     - '106.6808864'
     - 13 Phan Bội Châu
@@ -20004,7 +20004,7 @@ places:
   - - '1321'
     - Papa's Pizzeria
     - ChIJ6VQMdop6SjERzfdCFVwI6V4
-    - 
+    -
     - '20.8536791'
     - '106.6763618'
     - 41B Cát Cụt, An Biên
@@ -20029,7 +20029,7 @@ places:
   - - '1322'
     - Cafe Trà Cúc - 13 Phan Bội Châu
     - ChIJychltfR6SjER7g0M1eCEyI4
-    - 
+    -
     - '20.8573067'
     - '106.6807522'
     - 13 Phan Bội Châu
@@ -20053,7 +20053,7 @@ places:
   - - '1323'
     - Karaoke Celsius
     - ChIJ68luSux6SjER3j0Tav0Ewkg
-    - 
+    -
     - '20.8603626'
     - '106.691329'
     - 13 Lương Khánh Thiện
@@ -20077,7 +20077,7 @@ places:
   - - '1324'
     - Paris Night
     - ChIJI9ax5Y16SjERTCyBRH3oZ0o
-    - 
+    -
     - '20.851355'
     - '106.6871142'
     - 7 Lạch Tray
@@ -20101,7 +20101,7 @@ places:
   - - '1325'
     - Cà phê Khanh
     - ChIJ6RpzFPN6SjERyabC15PxvHg
-    - 
+    -
     - '20.8586514'
     - '106.6839301'
     - 2 Phan Chu Trinh, Hoàng Văn Thụ
@@ -20126,7 +20126,7 @@ places:
   - - '1326'
     - YUM
     - ChIJDbrplpx6SjERCH8y2Rmn-dA
-    - 
+    -
     - '20.838434'
     - '106.690658'
     - 137 Nguyễn Văn Linh
@@ -20150,7 +20150,7 @@ places:
   - - '1327'
     - Green Bit Coffee & Drinks
     - ChIJ6anRLIl6SjERiMZVAv77nqo
-    - 
+    -
     - '20.848898'
     - '106.6821552'
     - 27 Đường vòng, Hồ Sen
@@ -20174,7 +20174,7 @@ places:
   - - '1328'
     - Jimmy loves Mocha Coffee Restaurant
     - ChIJA_CVBIx6SjERflsaoiZ3IkE
-    - 
+    -
     - '20.851643'
     - '106.68283'
     - 200 Tô Hiệu, Trại Cau
@@ -20198,7 +20198,7 @@ places:
   - - '1329'
     - Kho Bac Nha Nuoc
     - ChIJq6qquvJ6SjERxX8OOZESL0s
-    - 
+    -
     - '20.8572591'
     - '106.687347'
     - Lương Khánh Thiện
@@ -20222,7 +20222,7 @@ places:
   - - '1330'
     - Nguyên chất Bảo Trân (NAVICoffee)
     - ChIJHdC0TSLloDERRhHXFktRBOk
-    - 
+    -
     - '9.6818633'
     - '105.5735573'
     - Ba Mươi Tháng Tư, Long Mỹ
@@ -20247,7 +20247,7 @@ places:
   - - '1331'
     - Cà Phê Đông Du
     - ChIJSU8mXmTpoDERGI2_q29IrA0
-    - 
+    -
     - '9.8024353'
     - '105.4685555'
     - Võ Nguyên Giáp, tp. Vị Thanh
@@ -20272,7 +20272,7 @@ places:
   - - '1332'
     - Karaoke An Bình
     - ChIJ2xJ7xQXpoDERUESa5dSUrhU
-    - 
+    -
     - '9.7749867'
     - '105.4604184'
     - Trần Hoàng Na, Phường 3, Vị Thanh
@@ -20296,7 +20296,7 @@ places:
   - - '1333'
     - Ngoc Trang Coffee Shop
     - ChIJQQJ27sTxoDER8xsEOyBCG34
-    - 
+    -
     - '9.7739723'
     - '105.6081487'
     - 476, National Road 61, Hoa Duc Hamlet, Hoa An Commune, Phung Hiep District
@@ -20320,7 +20320,7 @@ places:
   - - '1334'
     - Bao Tran Coffee Shop
     - ChIJE-Xwyy3yoDERlyrUFIYtGw4
-    - 
+    -
     - '9.809767'
     - '105.6365184'
     - 135, National Road 61, Hoa Phung B Hamlet, Kinh Cung Town, Phung Hiep District
@@ -20342,7 +20342,7 @@ places:
   - - '1335'
     - cafe 99
     - ChIJLTcoIc7zoDERKlj8_x2qCAE
-    - 
+    -
     - '9.8117737'
     - '105.648914'
     - h, 35 Quốc lộ 61, Kinh Cùng, tx. Ngã Bảy
@@ -20365,7 +20365,7 @@ places:
   - - '1336'
     - Cafe Karaoke Tuyết Sơn
     - ChIJDZeLkevvoDERvaa6vDo2_C4
-    - 
+    -
     - '9.7347418'
     - '105.5748991'
     - Hồng Phương
@@ -20390,7 +20390,7 @@ places:
   - - '1337'
     - Ngoc Giau Coffee Shop
     - ChIJrfip2LXvoDERh5fG25yavZM
-    - 
+    -
     - '9.7558631'
     - '105.5690314'
     - 246A, National Road 61, Tan Binh Hamlet, Long Binh Commune, Long My District
@@ -20413,7 +20413,7 @@ places:
   - - '1338'
     - Karaoke Hàng Cau
     - ChIJ79agZK7zoDERZVfmgc3xgrs
-    - 
+    -
     - '9.8291376'
     - '105.6492761'
     - Quốc lộ 61
@@ -20436,7 +20436,7 @@ places:
   - - '1339'
     - Quán Cà Phê Vũ
     - ChIJ30Y6YJP2oDERRAm9emHfQ5Y
-    - 
+    -
     - '9.7774042'
     - '105.7175761'
     - 222, Ấp Mỹ Quới, Thị Trấn Cây Dương, Huyện Phụng Hiệp
@@ -20460,7 +20460,7 @@ places:
   - - '1340'
     - Như Thảo
     - ChIJTWleuYz2oDERrRCOSW5kjCw
-    - 
+    -
     - '9.7763718'
     - '105.7281303'
     - tt. Cây Dương
@@ -20483,7 +20483,7 @@ places:
   - - '1341'
     - Quán Cà Phê Hồng Gấm
     - ChIJ52vj-4v2oDER3o0PlS0CSk8
-    - 
+    -
     - '9.780383'
     - '105.7296344'
     - 150, Ấp Mỹ Qưới, Thị Trấn Cây Dương, Huyện Phụng Hiệp
@@ -20507,7 +20507,7 @@ places:
   - - '1342'
     - Cà Phê Diệu Kỳ
     - ChIJQyM5jGv0oDER7Hu4v8p12Tk
-    - 
+    -
     - '9.823501'
     - '105.706265'
     - "ấp Mỹ Thành, xã Hoà Mỹ, Phụng Hiệp,Hậu Giang"
@@ -20531,7 +20531,7 @@ places:
   - - '1343'
     - Quán Cà Phê Út Thiêm
     - ChIJIb8rfYn2oDERl8Nuq5R4TDA
-    - 
+    -
     - '9.780837'
     - '105.7314661'
     - 140, Ấp Mỹ Qưới, Thị Trấn Cây Dương, Huyện Phụng Hiệp
@@ -20554,9 +20554,9 @@ places:
     - '2016-04-07 12:57:27.391244'
     - '2016-04-10 00:53:31.421111'
   - - '1344'
-    - Cafê Yến Nhi
+    - Cafê Yến Nhi
     - ChIJEVGVTIr2oDERQgjFbfMFcKk
-    - 
+    -
     - '9.7788733'
     - '105.7322767'
     - tt. Cây Dương
@@ -20581,7 +20581,7 @@ places:
   - - '1345'
     - Bình Khôi
     - ChIJ85RApG70oDERXonTsos7vzA
-    - 
+    -
     - '9.8256163'
     - '105.704787'
     - "Đường tỉnh 928, Hòa Mỹ"
@@ -20606,7 +20606,7 @@ places:
   - - '1346'
     - Xuan Phat Coffee Store
     - ChIJQYzJrmL2oDERIftFSz3cpQo
-    - 
+    -
     - '9.785468'
     - '105.7355086'
     - 134, Phung Hiep District, Cay Duong Town
@@ -20631,7 +20631,7 @@ places:
   - - '1347'
     - Cà phê Thái
     - ChIJaZFHhWH2oDERbKrwc4pewq0
-    - 
+    -
     - '9.779812'
     - '105.7373799'
     - Số nhà 492, Đường tỉnh 927, tt. Cây Dương
@@ -20655,7 +20655,7 @@ places:
   - - '1348'
     - Cà phê Hợp Phố
     - ChIJzYkMOmL2oDERcK7AiHhcnBc
-    - 
+    -
     - '9.7813474'
     - '105.7372911'
     - "ĐT928, tt. Cây Dương"
@@ -20681,7 +20681,7 @@ places:
   - - '1349'
     - Quán Cà Phê Trường
     - ChIJO72_Xj3loDER2uVVHAN-I-I
-    - 
+    -
     - '9.6866052'
     - '105.5711675'
     - "Ấp 2, Thị Trấn Long Mỹ, Huyện Long Mỹ"
@@ -20729,7 +20729,7 @@ places:
   - - '1351'
     - Diep Anh Hotel
     - ChIJIwGmRx4pdTERw1MjrnqbHI4
-    - 
+    -
     - '10.815897'
     - '106.674681'
     - 145 Bạch Đằng, 2, Hồ Chí Minh
@@ -20875,7 +20875,7 @@ places:
   - - '1357'
     - The Bean Store
     - ChIJgRlFUCIvdTERlrjo7rddrzQ
-    - 
+    -
     - '10.7704347'
     - '106.6844795'
     - 399 Võ Văn Tần, 5, Hồ Chí Minh
@@ -21042,7 +21042,7 @@ places:
   - - '1364'
     - ABC
     - ChIJoXfK1cQodTERWhaux7GL8n4
-    - 
+    -
     - '10.8031879'
     - '106.6881788'
     - 77 Phan Đăng Lưu, 7, TPHCM
@@ -21066,7 +21066,7 @@ places:
   - - '1365'
     - Cà phê Phát Triển Bản Thân
     - ChIJPUJ7FJ8pdTERPWKMtMK6Pok
-    - 
+    -
     - '10.839312'
     - '106.651078'
     - 878/7 (97/7A) Quang Trung, Phường 8
@@ -21211,7 +21211,7 @@ places:
   - - '1371'
     - Khách Sạn 3HG
     - ChIJk129iaFrNDERmIbZOr7WqME
-    - 
+    -
     - '20.8286357'
     - '105.3385847'
     - 118 Đường chi lăng, tp. Hòa Bình
@@ -21234,7 +21234,7 @@ places:
   - - '1372'
     - Trung Tâm Thương Mại Phú Thành Phát
     - ChIJk9Kc9KFrNDERSzPm0vMaASw
-    - 
+    -
     - '20.828637'
     - '105.337863'
     - 129 đường Lê Thánh Tông, tổ 5 phường Tân Thịnh, Hòa Bình
@@ -21283,7 +21283,7 @@ places:
   - - '1374'
     - Karaoke Phương Mai
     - ChIJ50wlgiVrNDERXjXTJdFMSXg
-    - 
+    -
     - '20.7875393'
     - '105.3513071'
     - Chăm Mát, tp. Hòa Bình
@@ -21308,7 +21308,7 @@ places:
   - - '1375'
     - Cafe Minh Thanh
     - ChIJ6b92kj5rNDERFUqs72i9HQA
-    - 
+    -
     - '20.7960202'
     - '105.3412757'
     - 689, An Dương Vương, Thái Bình, tp. Hòa Bình
@@ -21333,7 +21333,7 @@ places:
   - - '1376'
     - Giải khát Tiến Lực
     - ChIJTc85MHJrNDER0T2LWYx9-nU
-    - 
+    -
     - '20.8144617'
     - '105.3314906'
     - Hòa Bình, Phương Lâm, tp. Hòa Bình
@@ -21358,7 +21358,7 @@ places:
   - - '1377'
     - Trung tâm giải trí Sao Mai
     - ChIJE-pc6HJrNDERQKJMv6Fgblc
-    - 
+    -
     - '20.814564'
     - '105.335525'
     - Trần Hưng Đạo, Hòa Bình, Phương Lâm, tp. Hòa Bình
@@ -21380,9 +21380,9 @@ places:
     - '2016-04-07 12:57:46.085565'
     - '2016-04-10 00:53:32.366757'
   - - '1378'
-    - Cafe Sao Mai, Hòa Bình
+    - Cafe Sao Mai, Hòa Bình
     - ChIJuxO1KHNrNDERfoB8XFIk-E4
-    - 
+    -
     - '20.81501'
     - '105.335889'
     - Phương Lâm, tp. Hòa Bình
@@ -21407,7 +21407,7 @@ places:
   - - '1379'
     - Cà phê vườn lan
     - ChIJqfiOvnNrNDERAdc3OY3N3jg
-    - 
+    -
     - '20.8161741'
     - '105.3335104'
     - Phương Lâm, tp. Hòa Bình
@@ -21433,7 +21433,7 @@ places:
   - - '1380'
     - Cafe Chợt Nhớ 2
     - ChIJReoPswxrNDERt9J1JznuAps
-    - 
+    -
     - '20.8165276'
     - '105.336678'
     - Cù Chính Lan, Phương Lâm, tp. Hòa Bình
@@ -21458,7 +21458,7 @@ places:
   - - '1381'
     - The Fly Coffee - Fast food
     - ChIJobCArQxrNDEReQlkQ1pasyo
-    - 
+    -
     - '20.8167579'
     - '105.336739'
     - Hai Bà Trưng, Phương Lâm, tp. Hòa Bình
@@ -21484,7 +21484,7 @@ places:
   - - '1382'
     - Cafe Tuấn
     - ChIJFcnkCQxrNDERmHEgP9Fl5OM
-    - 
+    -
     - '20.8170309'
     - '105.3413407'
     - cafe tuấn
@@ -21509,7 +21509,7 @@ places:
   - - '1383'
     - The Cafe
     - ChIJb5eVSwtrNDERa3sg6bmwwr4
-    - 
+    -
     - '20.8186486'
     - '105.336796'
     - Trần Hưng Đạo, Phương Lâm, tp. Hòa Bình
@@ -21533,7 +21533,7 @@ places:
   - - '1384'
     - Cà phê Jackson
     - ChIJGZDAnQtrNDERgTqLVqVo_Xc
-    - 
+    -
     - '20.8182224'
     - '105.3395694'
     - 45, Ngô Quyền, Phương Lâm, tp. Hòa Bình
@@ -21558,7 +21558,7 @@ places:
   - - '1385'
     - Cafe Chợt Nhớ 1
     - ChIJM24fuwdrNDERSAwm6Q1lu1E
-    - 
+    -
     - '20.8200626'
     - '105.3503466'
     - Trần Hưng Đạo, tp. Hòa Bình
@@ -21581,7 +21581,7 @@ places:
   - - '1386'
     - Trà Hoa Quán
     - ChIJgcid_qlrNDERHRH818b0mKc
-    - 
+    -
     - '20.821978'
     - '105.353744'
     - Ngõ 177 đường Trần Hưng Đạo, tp. Hòa Bình
@@ -21606,7 +21606,7 @@ places:
   - - '1387'
     - Karaoke Táo Đỏ
     - ChIJHbsf5alrNDERQnYM8Lc8m0M
-    - 
+    -
     - '20.8222462'
     - '105.3532889'
     - 181 Trần Hưng Đạo, Sủ Ngòi, Hòa Bình
@@ -21630,7 +21630,7 @@ places:
   - - '1388'
     - Chat Cafe
     - ChIJzSAToKFrNDERcV84kqQsEoY
-    - 
+    -
     - '20.8273003'
     - '105.339387'
     - Trương Hán Siêu, phường Tân Thịnh, tp. Hòa Bình
@@ -21656,10 +21656,10 @@ places:
   - - '1389'
     - Cafe Moon's
     - ChIJGRwzO6RrNDERPYd89GS_Sn8
-    - 
+    -
     - '20.8275522'
     - '105.3399996'
-    - Tổ 1A, Trương Hán Siêu, phường Tân Thịnh, tp. Hòa Bình
+    - Tổ 1A, Trương Hán Siêu, phường Tân Thịnh, tp. Hòa Bình
     - Harum ut ea nam voluptate dolorem officia minima non. Similique laborum perspiciatis
       in impedit est sed. Consequatur provident nostrum vero qui dolore ab natus.
       Iste voluptatum molestiae vel porro cumque ex consequatur et. Non sunt porro
@@ -21682,7 +21682,7 @@ places:
   - - '1390'
     - Quán Karaoke, Cafe Sân Vườn Thủy Tạ
     - ChIJeS0oNJmkNTER0-xNfxOpRCo
-    - 
+    -
     - '20.922114'
     - '106.058199'
     - Liêu Xá
@@ -21728,7 +21728,7 @@ places:
   - - '1392'
     - Seoul Karaoke & Cafe
     - ChIJF8CZq6SiNTER70DBXBSwMjE
-    - 
+    -
     - '20.903528'
     - '106.146556'
     - Kẻ Sặt
@@ -21780,7 +21780,7 @@ places:
   - - '1394'
     - Hồn Việt
     - ChIJaYnUKR6vNTERs6iROjRWijw
-    - 
+    -
     - '20.9739476'
     - '105.9230089'
     - Khu đô thị Ecopark, Xuân Quan
@@ -21805,7 +21805,7 @@ places:
   - - '1395'
     - Ciao Cafe
     - ChIJf-MDzuGuNTERdB46sJyc0Gs
-    - 
+    -
     - '20.974168'
     - '105.9222364'
     - Khu đô thị Ecopark, Xuân Quan
@@ -21828,7 +21828,7 @@ places:
   - - '1396'
     - TMP
     - ChIJVVVVVdyuNTERWMAXyhBew3Q
-    - 
+    -
     - '20.9811155'
     - '105.9141793'
     - Bát Tràng
@@ -21877,7 +21877,7 @@ places:
   - - '1398'
     - Ceramic Making
     - ChIJf_DOs4ytNTERxehU_ShQkVY
-    - 
+    -
     - '20.920888'
     - '105.852162'
     - Team 7, Ngochoi Commune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -21901,7 +21901,7 @@ places:
   - - '1399'
     - Making Ceramics
     - ChIJIdf6rYytNTERxwwJOMv89P4
-    - 
+    -
     - '20.920988'
     - '105.852184'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -21926,7 +21926,7 @@ places:
   - - '1400'
     - Vietnam Lacquer
     - ChIJvdYasoytNTERn9g0ry17c80
-    - 
+    -
     - '20.920988'
     - '105.852162'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -21950,7 +21950,7 @@ places:
   - - '1401'
     - Queen Lacquer
     - ChIJVX73rYytNTERPeC8EhUTuJU
-    - 
+    -
     - '20.921008'
     - '105.852162'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -21975,7 +21975,7 @@ places:
   - - '1402'
     - King Lacquerware
     - ChIJJ3kbsoytNTERZoOr6aQQMhw
-    - 
+    -
     - '20.920928'
     - '105.852119'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -22000,7 +22000,7 @@ places:
   - - '1403'
     - Pottery Mosaic
     - ChIJQWP4rYytNTERyCi0L4oTdgo
-    - 
+    -
     - '20.921014'
     - '105.852151'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngcoj Hồi, Huyện Thanh
@@ -22027,7 +22027,7 @@ places:
   - - '1404'
     - Queen Handicarft
     - ChIJz2iAsYytNTERc8OvO0rzBw0
-    - 
+    -
     - '20.921068'
     - '105.852173'
     - Team 7, Ngochoi Commune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -22051,7 +22051,7 @@ places:
   - - '1405'
     - Ceramics Mosaic
     - ChIJIdf6rYytNTER6tGxMv-pmW8
-    - 
+    -
     - '20.920968'
     - '105.852119'
     - Ngọc Hồi
@@ -22077,7 +22077,7 @@ places:
   - - '1406'
     - Mỹ Thuật Gia
     - ChIJNfDXs4ytNTERC8uRShhtSu0
-    - 
+    -
     - '20.921088'
     - '105.852172'
     - "Đội 7, Xã Ngọc Hồi, Huyện Thanh Trì"
@@ -22100,7 +22100,7 @@ places:
   - - '1407'
     - Queen Sculpture
     - ChIJLeYOroytNTERu_rbux8giq8
-    - 
+    -
     - '20.921048'
     - '105.852152'
     - Team 7, Ngochoi Conmune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -22127,7 +22127,7 @@ places:
   - - '1408'
     - King Handicrafts
     - ChIJ7VP7rYytNTERPejPGNIvHuA
-    - 
+    -
     - '20.921078'
     - '105.852162'
     - Team 7, Ngochoi Commune, Thanhtri District, Đội 7, Xã Ngọc Hồi, Huyện Thanh
@@ -22153,7 +22153,7 @@ places:
   - - '1409'
     - Mỹ Thuật Gia
     - ChIJg_0orIytNTERT6M7vAItXfE
-    - 
+    -
     - '20.921058'
     - '105.852151'
     - "Đội 7, Xã Ngọc Hồi, Huyện Thanh Trì"
@@ -22178,7 +22178,7 @@ places:
   - - '1410'
     - Hanh Cafe Hotel
     - ChIJZ8TGV3lncDERlaNS2ymytmA
-    - 
+    -
     - '12.2406546'
     - '109.194711'
     - 10 Hung Vuong Street, Loc Tho Ward,, Nha Trang City, Khanh Hoa Province
@@ -22250,7 +22250,7 @@ places:
   - - '1413'
     - National Oceanographic Museum of Vietnam
     - ChIJ____YjZncDERt86c7qnjPnw
-    - 
+    -
     - '12.2074691'
     - '109.2145774'
     - Institute of Oceanography, Trần Phú, tp. Nha Trang
@@ -22274,7 +22274,7 @@ places:
   - - '1414'
     - Jennie Jenna Apartments
     - ChIJ8SbOhGRncDERP_qnxvtQ3V4
-    - 
+    -
     - '12.2333164'
     - '109.1944436'
     - 120/34 Nguyễn Thiện Thuật, tp. Nha Trang
@@ -22298,7 +22298,7 @@ places:
   - - '1415'
     - Cafe Đồng Dao
     - ChIJ1QivmYtccDER8xKjDCKeMrY
-    - 
+    -
     - '12.2564874'
     - '109.1130932'
     - Diên An
@@ -22349,7 +22349,7 @@ places:
   - - '1417'
     - Thuần Việt
     - ChIJHbXGU4RncDER0kPKgE3bWds
-    - 
+    -
     - '12.2540943'
     - '109.1965008'
     - 2 Trần Phú, Xương Huân, tp. Nha Trang
@@ -22421,7 +22421,7 @@ places:
   - - '1420'
     - sharephim
     - ChIJ0ScSRPpncDERohLZ2ZZkbYg
-    - 
+    -
     - '12.2808483'
     - '109.1958594'
     - 57 Phạm Ngọc Thạch, tp. Nha Trang
@@ -22446,7 +22446,7 @@ places:
   - - '1421'
     - Tornado Coffee
     - ChIJ_cn90YZdcDERgc36i4Ifw5k
-    - 
+    -
     - '12.2412184'
     - '109.1842984'
     - 05, Cao Bá Quát, Phước Tân, tp. Nha Trang
@@ -22470,7 +22470,7 @@ places:
   - - '1422'
     - Câu lạc bộ khiêu vũ 8-3HLV Kh Minh 0976395497
     - ChIJ5YSGNIddcDERZSeuNJ4ohpI
-    - 
+    -
     - '12.241276'
     - '109.186089'
     - 6, Mê Linh, tp. Nha Trang
@@ -22495,7 +22495,7 @@ places:
   - - '1423'
     - Chè Khúc Bạch
     - ChIJQWz6WH5dcDERQJdkeK2swt8
-    - 
+    -
     - '12.265257'
     - '109.19959'
     - 52c, Hồ Tùng Mậu, tp. Nha Trang
@@ -22519,7 +22519,7 @@ places:
   - - '1424'
     - Cafe Xóm Nhà Lá 18b Lam Sơn, Tp Nha Trang
     - ChIJxYrhnIhdcDERRiI_0-CfMus
-    - 
+    -
     - '12.2359534'
     - '109.1841728'
     - 18 Lam Sơn, tp. Nha Trang
@@ -22543,7 +22543,7 @@ places:
   - - '1425'
     - Napoli
     - ChIJFxsaTIddcDERtzv-XRtD9Bw
-    - 
+    -
     - '12.241093'
     - '109.1869576'
     - Phước Tiến tp. Nha Trang, 82 Trần Bình Trọng, Phước Tiến, tp. Nha Trang
@@ -22567,7 +22567,7 @@ places:
   - - '1426'
     - 3D Home Theater
     - ChIJf2TipGRncDERndJ9N3Ni4R0
-    - 
+    -
     - '12.2347076'
     - '109.1946053'
     - 97 Nguyễn Thiện Thuật, Lộc Thọ, tp. Nha Trang
@@ -22591,7 +22591,7 @@ places:
   - - '1427'
     - Tornado Coffee
     - ChIJd5ZOFH5ncDERioTlB3riM38
-    - 
+    -
     - '12.2424007'
     - '109.1892421'
     - 70 Ngô Gia Tự Phước Tiến tp. Nha Trang Phước Tiến tp. Nha Trang Khánh Hoà
@@ -22662,7 +22662,7 @@ places:
   - - '1430'
     - Coffee Anh Thi
     - ChIJPRczWGrHoDERYogUvXWoORk
-    - 
+    -
     - '9.8854642'
     - '105.2875698'
     - Giồng Riềng
@@ -22734,7 +22734,7 @@ places:
   - - '1433'
     - TIFFANY Shake and Blend
     - ChIJowCCaX-0oDERo21dcNIsu_Y
-    - 
+    -
     - '9.9996171'
     - '105.0834748'
     - 3 Tháng 2, Rạch Giá
@@ -22759,7 +22759,7 @@ places:
   - - '1434'
     - Quán Cà Phê Mỹ Loan
     - ChIJJabAos_LoDERmkTERRXXbAw
-    - 
+    -
     - '9.8595624'
     - '105.111937'
     - 66, Ấp Xẻo Rô, Xã Hưng Yên, Huyện An Biên
@@ -22783,7 +22783,7 @@ places:
   - - '1435'
     - Quán Cà Phê 64
     - ChIJPd4-IM_LoDER8bjyYJZ6cbA
-    - 
+    -
     - '9.8608318'
     - '105.109737'
     - 64, Chợ Xẻo Rô, Xã Hưng Yên, Huyện An Biên
@@ -22803,9 +22803,9 @@ places:
     - '2016-04-07 12:58:16.311696'
     - '2016-04-10 00:53:31.539618'
   - - '1436'
-    - "Đảng Ủy Xã Bình An"
+    - "Đảng Ủy Xã Bình An"
     - ChIJx6Z3m4DJoDERsoJftn_zkVA
-    - 
+    -
     - '9.8718601'
     - '105.126314'
     - Bình An
@@ -22829,7 +22829,7 @@ places:
   - - '1437'
     - Café Thảo Nguyên
     - ChIJszeYSofJoDER5HOXw5E_2IE
-    - 
+    -
     - '9.8737176'
     - '105.1275398'
     - QL 63, Bình An
@@ -22854,7 +22854,7 @@ places:
   - - '1438'
     - Sy Hung Coffee
     - ChIJUVQFNIfJoDERbRDzENpa3Qo
-    - 
+    -
     - '9.873969'
     - '105.127678'
     - 124, National Highway 63, An Binh Hamlet, Binh An Ward, Chau Thanh District
@@ -22878,7 +22878,7 @@ places:
   - - '1439'
     - Cà Phê Gia Hân
     - ChIJdYmJwobJoDERNxeMXvgTY4c
-    - 
+    -
     - '9.874871'
     - '105.1297255'
     - "ấp An Bình,, Bình An"
@@ -22903,7 +22903,7 @@ places:
   - - '1440'
     - Cà phê lôn
     - ChIJ_Ynf3IHMoDERdDfAHkZ4Jng
-    - 
+    -
     - '9.8266718'
     - '105.0749213'
     - Quốc lộ 63, Thứ Ba
@@ -22928,7 +22928,7 @@ places:
   - - '1441'
     - Cà Phê Trung Nguyên
     - ChIJ_Ynf3IHMoDER8pyt2FbX5W4
-    - 
+    -
     - '9.8266718'
     - '105.0749213'
     - Quốc lộ 63, Thứ Ba
@@ -22952,7 +22952,7 @@ places:
   - - '1442'
     - Karaoke Minh Vu
     - ChIJg8H5HofJoDERj_dMs19pBiA
-    - 
+    -
     - '9.8751921'
     - '105.1286201'
     - Tac Cau Proccessing Flour Fish Factory, Bình An, tỉnh Kiên Giang
@@ -22976,7 +22976,7 @@ places:
   - - '1443'
     - Quán Giải Khát Gia Hân 2
     - ChIJg20O5YbJoDERCSBPLui8i3I
-    - 
+    -
     - '9.875492'
     - '105.129433'
     - 70, Quốc Lộ 63 Ấp An Thành Xã Bình An, Huyện Châu Thành
@@ -23000,7 +23000,7 @@ places:
   - - '1444'
     - Quán Karaoke Tường Vy
     - ChIJoSA64YXJoDERj1iWpG63BGo
-    - 
+    -
     - '9.877772'
     - '105.132056'
     - "Ấp Minh Phong, Xã Bình An, Huyện Châu Thành"
@@ -23023,7 +23023,7 @@ places:
   - - '1445'
     - Quán Cà Phê Ngọc Giàu
     - ChIJkYfaO4bJoDERSJfR3B8AP1Q
-    - 
+    -
     - '9.8780139'
     - '105.129781'
     - 107, Quốc Lộ 63 Ấp An Bình Xã Bình An, Huyện Châu Thành
@@ -23048,7 +23048,7 @@ places:
   - - '1446'
     - Cà Phê Góc Xuân
     - ChIJkxCcgYPMoDER1uN35XHJ3JI
-    - 
+    -
     - '9.822328'
     - '105.070518'
     - Khu phố 5,, Thứ Ba
@@ -23073,7 +23073,7 @@ places:
   - - '1447'
     - Hồng Nhung
     - ChIJ5_O4gYPMoDERzgNjZ3Iftu0
-    - 
+    -
     - '9.8221043'
     - '105.0704391'
     - Quốc lộ 63, Thứ Ba
@@ -23097,7 +23097,7 @@ places:
   - - '1448'
     - Cà Phê Ngọc Thủy
     - ChIJIWRQm4PMoDERVgWTHP1VI1k
-    - 
+    -
     - '9.8219807'
     - '105.0701496'
     - Quốc lộ 63, Thứ Ba, An Biên
@@ -23121,7 +23121,7 @@ places:
   - - '1449'
     - Ngoc Nga Café
     - ChIJA_HPkZrMoDERNnzHfZd7teQ
-    - 
+    -
     - '9.817753'
     - '105.065289'
     - 371, National Highway 63 Third Town, An Bien District
@@ -23144,9 +23144,9 @@ places:
     - '2016-04-07 12:58:22.11285'
     - '2016-04-10 00:53:32.410184'
   - - '1450'
-    - Ủy Ban Nhân Dân Xã Đăk Mar
+    - Ủy Ban Nhân Dân Xã Đăk Mar
     - ChIJSy5HU-jkazERfinzPVcwrII
-    - 
+    -
     - '14.5378045'
     - '107.9205264'
     - "Đắk Mar"
@@ -23170,7 +23170,7 @@ places:
   - - '1451'
     - Quá Cafê, Giải Khác, PassionCoffee
     - ChIJYbj6VIjoazERYIFuKKbvVw8
-    - 
+    -
     - '14.651035'
     - '107.84372'
     - PassionCoffee Khối 5 Nguyễn Văn Cừ, Đăk Tô
@@ -23195,7 +23195,7 @@ places:
   - - '1452'
     - Sy Hoang Cafe
     - ChIJH36nWFHoazERGPr_b07EDCU
-    - 
+    -
     - '14.6623443'
     - '107.8169229'
     - Thị Trấn Đắk Tô, Huyện Đắk Tô
@@ -23219,7 +23219,7 @@ places:
   - - '1453'
     - Ly VI Cafe
     - ChIJ5cRm41PoazERllUnmyo6t4M
-    - 
+    -
     - '14.6621783'
     - '107.8165796'
     - Thị Trấn Đắk Tô, Huyện Đắk Tô
@@ -23244,7 +23244,7 @@ places:
   - - '1454'
     - Thanh Ngan Cafe
     - ChIJVVVVVVXoazERw4GhSutlvh0
-    - 
+    -
     - '14.6562021'
     - '107.811'
     - Tran Hung Dao Street, Dak To Town, Dak To District
@@ -23269,7 +23269,7 @@ places:
   - - '1455'
     - Karaoke168
     - ChIJLZ-CWDDkazERjKYs8jS6BW4
-    - 
+    -
     - '14.5890696'
     - '107.9156344'
     - thon10 dakhring
@@ -23292,7 +23292,7 @@ places:
   - - '1456'
     - Karaoke Long Bình
     - ChIJcbdhbaXqazERstK2pHM6pUw
-    - 
+    -
     - '14.7065634'
     - '107.6935216'
     - 734, Đường Hùng Vương, Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23314,7 +23314,7 @@ places:
   - - '1457'
     - Ca Phe Gian Hoa Giay
     - ChIJy1Ql_aHqazERB-BmgN_btyM
-    - 
+    -
     - '14.7055074'
     - '107.6923023'
     - duong hai ba trung thi tran playkan huyen
@@ -23339,7 +23339,7 @@ places:
   - - '1458'
     - Cà Phê Thiên Đường
     - ChIJ2crZaqLqazERFHG1qLgy5TU
-    - 
+    -
     - '14.7034457'
     - '107.6912606'
     - Plei Cần
@@ -23363,7 +23363,7 @@ places:
   - - '1459'
     - Bình Tây Nguyên Coffee
     - ChIJkdIH3KHqazERNp3mKgca9xg
-    - 
+    -
     - '14.7056783'
     - '107.6907295'
     - 70, Nguyễn Trung Trực, Plei Cần
@@ -23387,7 +23387,7 @@ places:
   - - '1460'
     - Cà Phê Hương Trầm
     - ChIJo3DopaPqazERy5lECExUIsY
-    - 
+    -
     - '14.7026809'
     - '107.6887833'
     - Plei Cần
@@ -23410,9 +23410,9 @@ places:
     - '2016-04-07 12:58:28.205702'
     - '2016-04-10 00:53:31.573294'
   - - '1461'
-    - Cafe Gia Phố
+    - Cafe Gia Phố
     - ChIJz1AqccPkazERs2cy752jO5c
-    - 
+    -
     - '14.5307365'
     - '107.9202102'
     - Dak Ha
@@ -23436,7 +23436,7 @@ places:
   - - '1462'
     - Hang Cafe
     - ChIJVVVVVaXqazERD9hMD86bGvg
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23460,7 +23460,7 @@ places:
   - - '1463'
     - Tre Xanh Cafe
     - ChIJVVVVVaXqazER_0SfK_aA3J4
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23483,7 +23483,7 @@ places:
   - - '1464'
     - Thanh Van Cafe
     - ChIJVVVVVaXqazERZwoW5G6PG48
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23507,7 +23507,7 @@ places:
   - - '1465'
     - Lam Nguyen Cafe
     - ChIJVVVVVaXqazERRUPWRey-toc
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23532,7 +23532,7 @@ places:
   - - '1466'
     - Ha Dung Cafe
     - ChIJVVVVVaXqazERFYDiKs99808
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23556,7 +23556,7 @@ places:
   - - '1467'
     - Tuong Vi Cafe
     - ChIJVVVVVaXqazER0vqHqFd0V0Q
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23579,7 +23579,7 @@ places:
   - - '1468'
     - Thu Phong Cafe
     - ChIJVVVVVaXqazER-n8zPMZGPys
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23601,7 +23601,7 @@ places:
   - - '1469'
     - Tuyet Mai Cafe
     - ChIJVVVVVaXqazERgesTWERUoQo
-    - 
+    -
     - '14.7001065'
     - '107.680727'
     - Thị Trấn Plei Cần, Huyện Ngọc Hồi
@@ -23625,7 +23625,7 @@ places:
   - - '1470'
     - Nami Caffee
     - ChIJZ50aLYSh0jYR4clO219uaDo
-    - 
+    -
     - '22.394882'
     - '103.457544'
     - Ngô Quyền, Đoàn Kết, tp. Lai Châu
@@ -23650,7 +23650,7 @@ places:
   - - '1471'
     - Cửa Hàng Khu Hài
     - ChIJaXmqyoih0jYRmbZkxUpvPMw
-    - 
+    -
     - '22.399444'
     - '103.456944'
     - Trần Hưng Đạo, Phường Đoàn Kết, Thị Xã Lai Châu, Tỉnh Lai Châu
@@ -23676,7 +23676,7 @@ places:
   - - '1472'
     - Quán Cafe Huyền Vy
     - ChIJYT_BuIWh0jYRuO_Liph2reQ
-    - 
+    -
     - '22.3959516'
     - '103.4585094'
     - "Đường Nguyễn Trãi, Thị Xã Lai Châu"
@@ -23700,7 +23700,7 @@ places:
   - - '1473'
     - Quán Trà Đại Gia
     - ChIJVSV1_YSh0jYRKn0qK-QNiuY
-    - 
+    -
     - '22.3946818'
     - '103.4603977'
     - "Đường Nguyễn Trãi, Thị Xã Lai Châu"
@@ -23724,7 +23724,7 @@ places:
   - - '1474'
     - Nôi Dalat Club
     - ChIJlSTrxckScTERR6OW1nQ01CA
-    - 
+    -
     - '11.9702766'
     - '108.4356862'
     - Tô Hiệu, Phường 8, tp. Đà Lạt
@@ -23749,7 +23749,7 @@ places:
   - - '1475'
     - Yummy Dalat - Ăn vặt, Café, Xem Phim 3D,HD tự chọn
     - ChIJaT9uDtYScTERlT49qJY2nBg
-    - 
+    -
     - '11.950647'
     - '108.433781'
     - 353 Phan Đình Phùng, Phường 2, tp. Đà Lạt
@@ -23774,7 +23774,7 @@ places:
   - - '1476'
     - Cà phê sân vườn Hoàng Hôn
     - ChIJeXBFHxgTcTERJMDws3e3Zts
-    - 
+    -
     - '11.9365536'
     - '108.4523776'
     - 11A Khởi Nghĩa Bắc Sơn, Phường 10, tp. Đà Lạt
@@ -23797,7 +23797,7 @@ places:
   - - '1477'
     - HD07.com
     - ChIJxzTPw8xscTER1g-mxPRXjME
-    - 
+    -
     - '11.935332'
     - '108.426346'
     - Pasteur, Phường 4, tp. Đà Lạt
@@ -23845,7 +23845,7 @@ places:
   - - '1479'
     - CMTclub
     - ChIJy1URri8TcTERQFUQR1FVMKs
-    - 
+    -
     - '11.94053'
     - '108.4370743'
     - 2 Lê Đại Hành, tp. Đà Lạt
@@ -23869,7 +23869,7 @@ places:
   - - '1480'
     - Cafe Serenade
     - ChIJZY9VusxscTERNwRAsKXHR44
-    - 
+    -
     - '11.9344083'
     - '108.4266023'
     - Pasteur, 4, tp. Đà Lạt
@@ -23940,7 +23940,7 @@ places:
   - - '1483'
     - Hoang Anh Restaurants- Nhà Hàng Hoàng Anh
     - ChIJ2Wye-NcScTEReOjreXYDUtk
-    - 
+    -
     - '11.9479605'
     - '108.4406483'
     - Lô H100, Nguyễn Thị Nghĩa, Phường 2, tp. Đà Lạt
@@ -23964,7 +23964,7 @@ places:
   - - '1484'
     - Karaoke NABITO
     - ChIJYdIPlxgTcTERbDKBwDOdKGc
-    - 
+    -
     - '11.9411735'
     - '108.452214'
     - 2 Nguyễn Trãi, 10, tp. Đà Lạt
@@ -23987,7 +23987,7 @@ places:
   - - '1485'
     - Gallery Vi Quoc Hiep
     - ChIJiTBLVB4TcTERhTNW15BosgU
-    - 
+    -
     - '11.9455099'
     - '108.4545553'
     - 72 Khu Quy Hoạch Yersin, 72 Yersin, Phường 9, tp. Đà Lạt
@@ -24011,7 +24011,7 @@ places:
   - - '1486'
     - Karaoke Quỳnh Hương
     - ChIJRzCobeIScTERruDsoxkiqMo
-    - 
+    -
     - '11.9485865'
     - '108.4589514'
     - "/2, 3 Cô Giang, tp. Đà Lạt"
@@ -24036,7 +24036,7 @@ places:
   - - '1487'
     - Coffee Xoay
     - ChIJbwSj6joTcTER5VI8mpkfZJI
-    - 
+    -
     - '11.9366648'
     - '108.4411113'
     - 1 Hà Huy Tập, 3, tp. Đà Lạt
@@ -24060,7 +24060,7 @@ places:
   - - '1488'
     - TREE & WIND Coffee
     - ChIJsT5AJ_oScTERSfzjzewlKV0
-    - 
+    -
     - '11.956207'
     - '108.4690609'
     - 10, Lý Thường Kiệt, Phường 9, tp. Đà Lạt
@@ -24085,7 +24085,7 @@ places:
   - - '1489'
     - Cafe Thiên Hương
     - ChIJdf0OKSYTcTERxkX9gGyL9rs
-    - 
+    -
     - '11.9458735'
     - '108.4396921'
     - 2 Bùi Thị Xuân, tp. Đà Lạt
@@ -24110,7 +24110,7 @@ places:
   - - '1490'
     - Minh Quan Coffee Shop
     - ChIJkd0lrjETcTERG_YcrnRtnEI
-    - 
+    -
     - '11.936303'
     - '108.4360027'
     - 561 - 567, Ward 3, Da Lat City
@@ -24134,7 +24134,7 @@ places:
   - - '1491'
     - Qbar Coffee
     - ChIJ-bkTaikTcTERgsWvM6p2HSM
-    - 
+    -
     - '11.9453564'
     - '108.4347288'
     - 242 Phan Đình Phùng, Phường 2, tp. Đà Lạt
@@ -24182,7 +24182,7 @@ places:
   - - '1493'
     - Hi Coffee Đà Lạt
     - ChIJOaVTgC4TcTER0OKMk6ZO7hs
-    - 
+    -
     - '11.9413915'
     - '108.433713'
     - 71 Thủ Khoa Huân, Phường 1, tp. Đà Lạt
@@ -24206,7 +24206,7 @@ places:
   - - '1494'
     - Trung Nguyên Coffee
     - ChIJfyvSzKCsNTERSYlDZtxVzT0
-    - 
+    -
     - '21.9444493'
     - '106.694493'
     - 2 Hoàng Đạo Thúy, Nhân Chính
@@ -24231,7 +24231,7 @@ places:
   - - '1495'
     - Khu lưu niệm Hoàng Văn Thụ
     - ChIJl-PQ1gBatTYRoui6Mm2bzXI
-    - 
+    -
     - '21.9508123'
     - '106.6346566'
     - "Đường tỉnh 233, Phạc Lạng"
@@ -24254,9 +24254,9 @@ places:
     - '2016-04-07 12:58:46.656354'
     - '2016-04-10 00:53:31.615465'
   - - '1496'
-    - Tàng Khảm
+    - Tàng Khảm
     - ChIJeweGmTJOtTYRNBIvi2i_4-c
-    - 
+    -
     - '21.8897625'
     - '106.7358554'
     - Tàng Khảm, Hoàng Đồng, tp. Lạng Sơn
@@ -24281,7 +24281,7 @@ places:
   - - '1497'
     - Gja Lãng Tử
     - ChIJHSdCczROtTYRc3ioaFZbyZ0
-    - 
+    -
     - '21.8866981'
     - '106.741593'
     - po khau trang
@@ -24305,7 +24305,7 @@ places:
   - - '1498'
     - Lomo Cafe
     - ChIJkSIphHFOtTYRN1L00ZVQBHg
-    - 
+    -
     - '21.8524751'
     - '106.7531967'
     - 86 Nhị Thanh, Tam Thanh, tp. Lạng Sơn
@@ -24330,7 +24330,7 @@ places:
   - - '1499'
     - Quán Cà Phê - Karaoke Nguyễn Thị Nghĩa
     - ChIJBZ8UjG5OtTYRleBbdh7gh6U
-    - 
+    -
     - '21.8585092'
     - '106.7538025'
     - 6, Đảo Hồ Phai Loạn, tp. Lạng Sơn
@@ -24354,7 +24354,7 @@ places:
   - - '1500'
     - Quán Cafe Capuccino
     - ChIJA8TqJm9OtTYRoWKxlBCp6vI
-    - 
+    -
     - '21.8594637'
     - '106.7567089'
     - 3, Đường Minh Khai, tp. Lạng Sơn
@@ -24380,7 +24380,7 @@ places:
   - - '1501'
     - Guitar Coffee
     - ChIJZeScSG9OtTYR3lNxzYWx6Rg
-    - 
+    -
     - '21.8596839'
     - '106.7576131'
     - Minh Khai, Hoàng Văn Thụ, tp. Lạng Sơn
@@ -24404,7 +24404,7 @@ places:
   - - '1502'
     - Bảo Tàng Tỉnh
     - ChIJqcwlvndOtTYRV6W0SLuGZjA
-    - 
+    -
     - '21.8447695'
     - '106.7573476'
     - tp. Lạng Sơn
@@ -24429,7 +24429,7 @@ places:
   - - '1503'
     - Quán Cafe Romantic
     - ChIJUc5KNGZOtTYRxuJb9iesEGg
-    - 
+    -
     - '21.8627563'
     - '106.7601376'
     - 253, Đường Bà Triệu, Phường Hoàng Văn Thụ, tp. Lạng Sơn
@@ -24454,7 +24454,7 @@ places:
   - - '1504'
     - Vu Thi Mai Phuong Coffee Shop
     - ChIJcRSsB9pNtTYR6pVguTWGOlA
-    - 
+    -
     - '21.8366033'
     - '106.7586833'
     - Số 61C, Đường Hùng Vương, tp. Lạng Sơn
@@ -24479,7 +24479,7 @@ places:
   - - '1505'
     - Rạp Chiếu Phim Đông Kinh và Siêu thị Sách Thành Nghĩa
     - ChIJDQ7VmXpOtTYRVMROHriJjZI
-    - 
+    -
     - '21.8524992'
     - '106.7603818'
     - 2 Nguyễn Du, Vĩnh Trại, tp. Lạng Sơn
@@ -24503,7 +24503,7 @@ places:
   - - '1506'
     - Càfê Hồng Ngọc
     - ChIJMxjK4GROtTYRoqc8WNvLUmw
-    - 
+    -
     - '21.8556836'
     - '106.761444'
     - 331 Bà Triệu, Vĩnh Trại, tp. Lạng Sơn Vĩnh Trại tp. Lạng Sơn Lạng Sơn
@@ -24528,7 +24528,7 @@ places:
   - - '1507'
     - Angel Deli Coffee
     - ChIJm9OYpXtOtTYRG3IbWuwhkWY
-    - 
+    -
     - '21.850688'
     - '106.762618'
     - Phai Vệ, tp. Lạng Sơn
@@ -24554,7 +24554,7 @@ places:
   - - '1508'
     - Quán Cafe Mạnh Tùng
     - ChIJg_SQA3lOtTYR_RS8uyeXMR8
-    - 
+    -
     - '21.8457653'
     - '106.762299'
     - 8, Đường Lý Thái Tổ, Phường Đông Kinh, tp. Lạng Sơn
@@ -24577,7 +24577,7 @@ places:
   - - '1509'
     - Tran Duc Hien Coffee Shop
     - ChIJ07pfxntOtTYRQq342vJ0aTc
-    - 
+    -
     - '21.8494897'
     - '106.762712'
     - Số 386A, Đường Bà Triệu, tp. Lạng Sơn
@@ -24602,7 +24602,7 @@ places:
   - - '1510'
     - Karaoke Queen
     - ChIJBaHgDGROtTYRA9CVgPxvWdo
-    - 
+    -
     - '21.8583531'
     - '106.7642127'
     - Vĩnh Trại, tp. Lạng Sơn
@@ -24627,7 +24627,7 @@ places:
   - - '1511'
     - Underpub
     - ChIJV0FplWNOtTYRSSBJZWL56-o
-    - 
+    -
     - '21.8579511'
     - '106.7661573'
     - Vĩnh Trại, tp. Lạng Sơn
@@ -24651,7 +24651,7 @@ places:
   - - '1512'
     - Karaoke BigBang (Bống 2)
     - ChIJq4Bfl3tOtTYR9KKTw4wOXgA
-    - 
+    -
     - '21.8493437'
     - '106.7668252'
     - 50 Phai Vệ, tp. Lạng Sơn
@@ -24675,7 +24675,7 @@ places:
   - - '1513'
     - Quán Cafe Hải Yến
     - ChIJP2EHIGNOtTYRwl3Eb-u-dkQ
-    - 
+    -
     - '21.8549815'
     - '106.7676955'
     - 108, Đường Lê Lợi, Phường Hoàng Văn Thụ, tp. Lạng Sơn
@@ -24700,7 +24700,7 @@ places:
   - - '1514'
     - Ks Lan Chi
     - ChIJO9wUiFcizTYRrtLbwbRzGwg
-    - 
+    -
     - '22.3380865'
     - '104.1487055'
     - Lao Cai
@@ -24723,7 +24723,7 @@ places:
   - - '1515'
     - Karaoke 108
     - ChIJmzOOGD4jzTYR3-A0ALkFOXc
-    - 
+    -
     - '22.3099103'
     - '104.1228634'
     - tổ 5 tằng loong,Huyện Mậu Thắng
@@ -24748,7 +24748,7 @@ places:
   - - '1516'
     - "Đội Đz 110kv Lào Cai"
     - ChIJq6qqatMjzTYRqbEp9p7RJ-o
-    - 
+    -
     - '22.3217635'
     - '104.1858272'
     - Phố Lu
@@ -24771,7 +24771,7 @@ places:
   - - '1517'
     - Karaoke Bản
     - ChIJ4SJ1-xYkzTYRGOW2h1z69HU
-    - 
+    -
     - '22.2574251'
     - '104.1781139'
     - "Đường tỉnh 151"
@@ -24794,7 +24794,7 @@ places:
     - '2016-04-07 12:58:58.942983'
     - '2016-04-10 00:53:31.640934'
   - - '1518'
-    - Lăng Mộ Mỹ Thuật Tạo Hình
+    - Lăng Mộ Mỹ Thuật Tạo Hình
     - ChIJ_-vPIzMWzTYRJ0MZRNgHBrM
     - '4.9'
     - '22.3966829'
@@ -24820,7 +24820,7 @@ places:
   - - '1519'
     - Cam Cọn- Bảo Yên - Lào Cai
     - ChIJLVXEQjcnzTYRdisOY4LawfQ
-    - 
+    -
     - '22.2632799'
     - '104.2518815'
     - Phố Ràng
@@ -24843,7 +24843,7 @@ places:
   - - '1520'
     - Phòng csgt lao cai
     - ChIJP8R6ECcUzTYRUo-1Nj2p4As
-    - 
+    -
     - '22.4479379'
     - '104.0050997'
     - Nam Cường, tp. Lào Cai
@@ -24867,7 +24867,7 @@ places:
   - - '1521'
     - Nhà Văn Hóa Thôn Bản Cầm
     - ChIJMdRfJIIQzTYRCTlnKrQFRHk
-    - 
+    -
     - '22.5111811'
     - '104.098226'
     - Rôi nán, Thôn Bản Cầm
@@ -24942,7 +24942,7 @@ places:
   - - '1524'
     - Cafe Thuận
     - ChIJMyMNvjyyCjER9WWTCd62Ye4
-    - 
+    -
     - '10.393652'
     - '106.4537805'
     - "Đường tỉnh 879C, Bình Phú Quới, Đăng Hưng Phước"
@@ -24966,7 +24966,7 @@ places:
   - - '1525'
     - Hồng Lan Coffee Shop
     - ChIJIYtUM7LMCjER4vFaCZ2WzlY
-    - 
+    -
     - '10.6378354'
     - '106.5300331'
     - Long Hiệp
@@ -24991,7 +24991,7 @@ places:
   - - '1526'
     - LAPATINI COFFEE
     - ChIJAQAAAKk0dTERO9bYkvyT76c
-    - 
+    -
     - '10.6207911'
     - '106.543676'
     - Phước Lợi
@@ -25012,9 +25012,9 @@ places:
     - '2016-04-07 12:59:05.520446'
     - '2016-04-10 00:53:31.653556'
   - - '1527'
-    - Trà Sữa ANH MẬP
+    - Trà Sữa ANH MẬP
     - ChIJCZiVnuavCjERGB9YDarJiVE
-    - 
+    -
     - '10.3651305'
     - '106.3643101'
     - 444 Nguyễn Tri Phương, Phường 7, tp. Mỹ Tho
@@ -25038,7 +25038,7 @@ places:
   - - '1528'
     - MOCA COFFEE
     - ChIJgSiPjeivCjERfseTK5jbn5w
-    - 
+    -
     - '10.3600905'
     - '106.3662733'
     - 86B Ngô Quyền, tp. Mỹ Tho
@@ -25063,7 +25063,7 @@ places:
   - - '1529'
     - MOCA COFFEE
     - ChIJg9nZ9OivCjERm5X4VFzHoVY
-    - 
+    -
     - '10.3597985'
     - '106.3667844'
     - 86 Ngô Quyền, Phường 1, tp. Mỹ Tho
@@ -25112,7 +25112,7 @@ places:
   - - '1531'
     - Câu Lạc Bộ ABC
     - ChIJ5WlP6y-2CjERsma3P-_4FSk
-    - 
+    -
     - '10.5343921'
     - '106.4040869'
     - 32 1c, Trần Phong Sắc, Phường 4, tp. Tân An
@@ -25136,7 +25136,7 @@ places:
   - - '1532'
     - Noi Nho
     - ChIJcwirPzC2CjERoIE4obciN14
-    - 
+    -
     - '10.531897'
     - '106.4036126'
     - Trần Phong Sắc, Phường 4, tp. Tân An
@@ -25159,7 +25159,7 @@ places:
   - - '1533'
     - Cà phê 09
     - ChIJjQJGeSW2CjERm-0weehNAl4
-    - 
+    -
     - '10.5354324'
     - '106.4056684'
     - 32/6 Trần Phong Sắc, Phường 4, tp. Tân An
@@ -25184,7 +25184,7 @@ places:
   - - '1534'
     - Cà phê Thư Ngọc
     - ChIJn_KGRDq2CjERsr2uZLlr_P8
-    - 
+    -
     - '10.5293583'
     - '106.4071259'
     - 65, Nguyễn Cửu Vân, Phường 4, tp. Tân An
@@ -25210,7 +25210,7 @@ places:
   - - '1535'
     - Cafe Nhật Thanh
     - ChIJtW8zEjq2CjER3YKc4d8kbM8
-    - 
+    -
     - '10.5285927'
     - '106.4061782'
     - 70 Nguyễn Cửu Vân, 4, tp. Tân An
@@ -25234,7 +25234,7 @@ places:
   - - '1536'
     - Cà phê Mỹ Đình
     - ChIJq48Q8CW2CjERfdIPch3W88Y
-    - 
+    -
     - '10.537685'
     - '106.4059373'
     - Trà Quý Bình, Phường 2, tp. Tân An
@@ -25259,7 +25259,7 @@ places:
   - - '1537'
     - Cà phê Đồng Dao
     - ChIJo1JYrzu2CjERviRgFJwaUaw
-    - 
+    -
     - '10.5297404'
     - '106.4088982'
     - 93 Huỳnh Văn Nhứt, tp. Tân An
@@ -25284,7 +25284,7 @@ places:
   - - '1538'
     - Mộc Miên
     - ChIJldGlwiW2CjER0JoUuTKTzDA
-    - 
+    -
     - '10.5376366'
     - '106.4067517'
     - Phường 2, Tân An
@@ -25308,7 +25308,7 @@ places:
   - - '1539'
     - Bảo tàng Long An
     - ChIJITi3ZC62CjERneUveXIf0R0
-    - 
+    -
     - '10.5355926'
     - '106.4001417'
     - 400, Phường 4, tp. Tân An
@@ -25331,7 +25331,7 @@ places:
   - - '1540'
     - Phim 4D
     - ChIJJWConSS2CjERlsvAMxegTyM
-    - 
+    -
     - '10.5345642'
     - '106.4109993'
     - Mai Thị Tốt, Phường 2, tp. Tân An
@@ -25356,7 +25356,7 @@ places:
   - - '1541'
     - Cà phê Cát Tường
     - ChIJM5H6hCa2CjERb0GYR6XPyXI
-    - 
+    -
     - '10.5387306'
     - '106.4087891'
     - 56, Võ Văn Tần, Phường 2, tp. Tân An
@@ -25380,7 +25380,7 @@ places:
   - - '1542'
     - Karaoke Sao Sáng
     - ChIJpW3_RqcKNjERAIVtB_AQ144
-    - 
+    -
     - '20.327099'
     - '106.174827'
     - 107 Quán Chiền, Nam Dương, Nam Định
@@ -25428,7 +25428,7 @@ places:
   - - '1544'
     - Caffe 137
     - ChIJr5_Sd-oMNjER09V-meebSjc
-    - 
+    -
     - '20.208162'
     - '106.180997'
     - tt. Liễu Đề
@@ -25452,7 +25452,7 @@ places:
   - - '1545'
     - Bảo tàng Nam Định
     - ChIJn33omUznNTERTLFyA5tads0
-    - 
+    -
     - '20.4233712'
     - '106.1739918'
     - Cột Cờ, tp. Nam Định
@@ -25474,12 +25474,12 @@ places:
     - '2016-04-07 12:59:14.637354'
     - '2016-04-10 00:53:32.472703'
   - - '1546'
-    - Trà Sữa PHIM
+    - Trà Sữa PHIM
     - ChIJexsfWRZzNjERRGwRLy1mxf4
-    - 
+    -
     - '20.208996'
     - '106.131829'
-    - Xóm 7 thôn Đông Cường, Khánh Cường, Ninh Bình
+    - Xóm 7 thôn Đông Cường, Khánh Cường, Ninh Bình
     - Cumque numquam dignissimos quasi cupiditate. Illum dolore voluptas enim qui
       delectus nobis et voluptatum. Odit deleniti est ad aperiam voluptates. Quis
       nihil suscipit dolor excepturi itaque repellat voluptas eum. Exercitationem
@@ -25502,7 +25502,7 @@ places:
   - - '1547'
     - Nhà Hàng Rừng Xanh (rungxanhclub.com.vn)
     - ChIJB4X0Aw4INjERTUKyNXXicVY
-    - 
+    -
     - '20.2961813'
     - '106.334901'
     - Xuân Ngọc
@@ -25527,7 +25527,7 @@ places:
   - - '1548'
     - Quán cafe Duy Linh
     - ChIJcfZECwLjNTER-FR7AE4LNSo
-    - 
+    -
     - '20.3623609'
     - '106.3065863'
     - Vũ Tiến
@@ -25551,7 +25551,7 @@ places:
   - - '1549'
     - Ruby Coffee
     - ChIJX4FPna_gNTER-WhtRgHFgUo
-    - 
+    -
     - '20.4107588'
     - '106.1670586'
     - Trần Bích San, Trần Quang Khải, trần quang khải
@@ -25575,7 +25575,7 @@ places:
   - - '1550'
     - Công Ty Cp Dược Phẩm Fresh Life
     - ChIJr_KeWP3dNTERM2agPlgIRSA
-    - 
+    -
     - '20.4234718'
     - '106.1473254'
     - Mỹ Xá, tp. Nam Định
@@ -25600,7 +25600,7 @@ places:
   - - '1551'
     - Coffee Smile
     - ChIJJZE9dkjnNTERexh9qUxO8BI
-    - 
+    -
     - '20.4341977'
     - '106.183128'
     - 187 Nguyễn Du, Vị Hoàng, tp. Nam Định
@@ -25624,7 +25624,7 @@ places:
   - - '1552'
     - Say...cafe
     - ChIJ5ZtzJUbnNTER5h539MH7lus
-    - 
+    -
     - '20.432716'
     - '106.177876'
     - 114 Mạc Thị Bưởi, Quang Trung, tp. Nam Định
@@ -25647,7 +25647,7 @@ places:
   - - '1553'
     - Cafe Karaoke Tùng Thương
     - ChIJ_XPhJ74MNjERKswxlZpUGn4
-    - 
+    -
     - '20.2156434'
     - '106.1815464'
     - "Đường tỉnh 490C, tt. Liễu Đề"
@@ -25670,7 +25670,7 @@ places:
   - - '1554'
     - Như Ý Garden Coffee
     - ChIJGf6GTOIJNjER-Hv62MGW8OI
-    - 
+    -
     - '20.3135298'
     - '106.269958'
     - Thích Thế Long, Trung Đông, tp. Nam Định
@@ -25695,7 +25695,7 @@ places:
   - - '1555'
     - Cà phê Minh Nguyệt
     - ChIJA6NX_OMJNjERZ0baS6MbNx8
-    - 
+    -
     - '20.3141102'
     - '106.269614'
     - Thích Thế Long, Trung Đông
@@ -25718,7 +25718,7 @@ places:
   - - '1556'
     - "Đại lý Internet Trường Giang"
     - ChIJVUfxaQ0JNjERbmKQwhVNe9g
-    - 
+    -
     - '20.2618449'
     - '106.2772858'
     - Bắc Thịnh TT Cát Thành Trực Ninh Nam Định, Đường mới, Bắc Thịnh, tt. Cát Thành
@@ -25744,7 +25744,7 @@ places:
   - - '1557'
     - Cà phê 68 Đồng Đội
     - ChIJh3JtbeIJNjERArYWXDtNEzI
-    - 
+    -
     - '20.3179713'
     - '106.2687942'
     - Hữu Nghị, tt. Cổ Lễ
@@ -25769,7 +25769,7 @@ places:
   - - '1558'
     - Karaoke
     - ChIJI-2drrQONjERjl8s13sL6aA
-    - 
+    -
     - '20.2260435'
     - '106.2705347'
     - Xóm 3, Hải Anh
@@ -25794,7 +25794,7 @@ places:
   - - '1559'
     - game internet Hà Chinh
     - ChIJMe46v-gINjER8ZB00s2Dd-c
-    - 
+    -
     - '20.2505365'
     - '106.312404'
     - "Đê tả Ninh Cơ, Xuân Ninh"
@@ -25816,7 +25816,7 @@ places:
   - - '1560'
     - UBNN XA HAI LONG
     - ChIJ85nMlYwONjERwz44aVgEW0A
-    - 
+    -
     - '20.1870922'
     - '106.2741034'
     - Xóm 10, Hải Long
@@ -25841,7 +25841,7 @@ places:
   - - '1561'
     - Ga Trình Xuyên
     - ChIJkSKhcrbfNTER9sy2rRCxPGU
-    - 
+    -
     - '20.3720368'
     - '106.1330259'
     - Quốc lộ 10, Liên Bảo
@@ -25866,7 +25866,7 @@ places:
   - - '1562'
     - Karaoke 45 Phong Vân
     - ChIJ-1wtY1V3NjERp72ErhLbLQA
-    - 
+    -
     - '20.256915'
     - '105.9701868'
     - 45 Cù Chính Lan, Tân Thành, Ninh Bình
@@ -25890,7 +25890,7 @@ places:
   - - '1563'
     - Bingo coffee
     - ChIJIT5Dd_15NjERGvI1ig_3roE
-    - 
+    -
     - '20.263981'
     - '105.9692017'
     - "Đào Duy Từ, Đông Thành, tp. Ninh Bình"
@@ -25915,7 +25915,7 @@ places:
   - - '1564'
     - Cafe Hiền
     - ChIJWRhwAlp3NjER_TivERZfNrY
-    - 
+    -
     - '20.266355'
     - '105.975671'
     - "Đào Duy Từ, Ninh bình"
@@ -25964,7 +25964,7 @@ places:
   - - '1566'
     - Lotte Cinema Ninh Bình
     - ChIJI2wtxM9wNjER88Gj-qS5-F8
-    - 
+    -
     - '20.2421667'
     - '106.0041833'
     - Trần Nhân Tông, Ninh Phúc, tp. Ninh Bình
@@ -26012,7 +26012,7 @@ places:
   - - '1568'
     - Cà phê Hồng
     - ChIJN4lDVwR6NjERBSBr3YYJq-4
-    - 
+    -
     - '20.247713'
     - '105.9614718'
     - Nam Thành, tp. Ninh Bình
@@ -26036,7 +26036,7 @@ places:
   - - '1569'
     - Cafe Giọt Đắng
     - ChIJN2yD0gl6NjER_muu0xI0BsA
-    - 
+    -
     - '20.240395'
     - '105.9692717'
     - Phan Chu Trinh, Phố Phúc Trì, Nam Thành, tp. Ninh Bình
@@ -26061,7 +26061,7 @@ places:
   - - '1570'
     - Cafe Milano
     - ChIJxcxBPtBkNjERstNJsUpkWPM
-    - 
+    -
     - '20.1576428'
     - '105.9124393'
     - Thanh Niên, tp. Tam Điệp
@@ -26086,7 +26086,7 @@ places:
   - - '1571'
     - Duong Hoang Van Thu - Trung Son
     - ChIJqV_UjdBkNjERRPZhpfocHfI
-    - 
+    -
     - '20.156983'
     - '105.914742'
     - Trần Phú, Bắc Sơn, tp. Tam Điệp
@@ -26109,7 +26109,7 @@ places:
   - - '1572'
     - New Moon Coffee
     - ChIJfx8NB6pwNjERh7fnEL9dIy0
-    - 
+    -
     - '20.2496513'
     - '105.9700854'
     - Phúc Thành, tp. Ninh Bình
@@ -26134,7 +26134,7 @@ places:
   - - '1573'
     - Rạp chiếu Phim Ninh Bình
     - ChIJqXZPH6lwNjER2dehJSPyLXY
-    - 
+    -
     - '20.2461292'
     - '105.9743026'
     - Nguyễn Huệ, Nam Bình, tp. Ninh Bình
@@ -26158,7 +26158,7 @@ places:
   - - '1574'
     - Trung Nguyen Coffee Shop
     - ChIJO6NopKtwNjERf_EcgeCFZYE
-    - 
+    -
     - '20.2511828'
     - '105.9739535'
     - 337, Đường Trần Hưng Đạo, Phường Vân Giang, Thành Phố Ninh Bình
@@ -26182,7 +26182,7 @@ places:
   - - '1575'
     - 51 KTV Karaoke
     - ChIJj1nr2P95NjERPGHKzihPgg8
-    - 
+    -
     - '20.2569182'
     - '105.9698728'
     - Cù Chính Lan, Tân Thành, tp. Ninh Bình
@@ -26205,7 +26205,7 @@ places:
   - - '1576'
     - Coffe Ven Hồ
     - ChIJIY2Ed6twNjEROkKweB4OZRQ
-    - 
+    -
     - '20.2517245'
     - '105.9750922'
     - Dương Vân Nga, Phúc Thành, tp. Ninh Bình
@@ -26228,7 +26228,7 @@ places:
   - - '1577'
     - Quán cafe Lọ
     - ChIJmaHvWaxwNjERi-OmnBBTfkE
-    - 
+    -
     - '20.2509937'
     - '105.9780145'
     - Trương Định, Thanh Bình, tp. Ninh Bình
@@ -26254,7 +26254,7 @@ places:
   - - '1578'
     - coffee Phong
     - ChIJF1XqBlV3NjERjCotIEpotpI
-    - 
+    -
     - '20.2573395'
     - '105.9724581'
     - 27 Lê Hồng Phong, tp. Ninh Bình
@@ -26276,9 +26276,9 @@ places:
     - '2016-04-07 12:59:31.782124'
     - '2016-04-10 00:53:31.712754'
   - - '1579'
-    - Cafe Phố
+    - Cafe Phố
     - ChIJ7_rMs1R3NjER5MZhG_Lt8b0
-    - 
+    -
     - '20.2547826'
     - '105.9749362'
     - Vân Giang, tp. Ninh Bình
@@ -26302,7 +26302,7 @@ places:
   - - '1580'
     - Times Cafe
     - ChIJ6xHXA1V3NjERQvVaTE44dpo
-    - 
+    -
     - '20.2572048'
     - '105.9727035'
     - Lê Hồng Phong, Vân Giang, tp. Ninh Bình
@@ -26326,7 +26326,7 @@ places:
   - - '1581'
     - Tào Phớ Kem Ý
     - ChIJ4YSuV6xwNjERkCmh2x69M9w
-    - 
+    -
     - '20.251131'
     - '105.9782252'
     - 81, Trương Định, Thanh Bình, tp. Ninh Bình
@@ -26351,7 +26351,7 @@ places:
   - - '1582'
     - Bazar Coffee Phan Rang
     - ChIJKSHMZCzQcDERl5s-5hpQN6U
-    - 
+    -
     - '11.5660359'
     - '108.99106'
     - Việt Nam 22 Việt Nam, Mười Sáu Tháng Tư, Kinh Dinh, tp. Phan Rang - Tháp Chàm
@@ -26422,7 +26422,7 @@ places:
   - - '1585'
     - Cafe Ken
     - ChIJVVVVJQXZcDERzNBI77p4IGA
-    - 
+    -
     - '11.6686277'
     - '108.8648034'
     - Mỹ Sơn
@@ -26447,7 +26447,7 @@ places:
   - - '1586'
     - Quán Cà Phê Hoa Cỏ May
     - ChIJudWhxI4gcTER6nuQFGSQEck
-    - 
+    -
     - '11.744042'
     - '108.791933'
     - Quốc Lộ 27, Thôn Hạnh Trí, Xã Quảng Sơn, Huyện Ninh Sơn
@@ -26470,7 +26470,7 @@ places:
   - - '1587'
     - Quán Cà Phê Út Nhi
     - ChIJ16yexI4gcTERdgBdehzJgLE
-    - 
+    -
     - '11.744053'
     - '108.7919114'
     - Quốc Lộ 27, Xã Quảng Sơn, Huyện Ninh Sơn
@@ -26495,7 +26495,7 @@ places:
   - - '1588'
     - Quán Cà Phê Tuấn Lan
     - ChIJ19cTXoTQcDERceDX-vmVAbk
-    - 
+    -
     - '11.6028388'
     - '108.9416201'
     - 967, Đường Hai Mươi Mốt Tháng Tám, Phường Đô Vinh, Thành Phố Phan Rang
@@ -26520,7 +26520,7 @@ places:
   - - '1589'
     - Quán Cà Phê Thu Anh
     - ChIJE0kcnWLQcDERmPFIjHnVErk
-    - 
+    -
     - '11.5963043'
     - '108.9503955'
     - 44, Đường Minh Mạng, tp. Phan Rang - Tháp Chàm
@@ -26544,7 +26544,7 @@ places:
   - - '1590'
     - Truc Linh Karaoke
     - ChIJC7L2m2LQcDER5gP7W6pbU6M
-    - 
+    -
     - '11.5964558'
     - '108.9506167'
     - Minh Mang Street, Do Vinh Ward, Phan Rang - Thap Cham City
@@ -26568,7 +26568,7 @@ places:
   - - '1591'
     - Quán Cà Phê Thanh Vy
     - ChIJH2Wh54nQcDERU8jKd-QE_1s
-    - 
+    -
     - '11.5941051'
     - '108.9496451'
     - 12, Đường Tự Đức, tp. Phan Rang - Tháp Chàm
@@ -26591,7 +26591,7 @@ places:
   - - '1592'
     - Quán Cà Phê Quỳnh Như
     - ChIJs0qWZWLQcDER40XlaUrr6Ck
-    - 
+    -
     - '11.594857'
     - '108.9512099'
     - 763, Đường Hai Mươi Mốt Tháng Tám, Phường Đô Vinh, Thành Phố Phan Rang
@@ -26638,7 +26638,7 @@ places:
   - - '1594'
     - Quán Cà Phê Hiền
     - ChIJF-rK82HQcDERv6TjIXp0Qt8
-    - 
+    -
     - '11.5922201'
     - '108.9514233'
     - 68, Đường Nguyễn Du, tp. Phan Rang - Tháp Chàm
@@ -26662,7 +26662,7 @@ places:
   - - '1595'
     - coffee 48
     - ChIJU2mYjGHQcDER9vvjV1CiQf8
-    - 
+    -
     - '11.5923228'
     - '108.9518062'
     - 48 Nguyễn Du, tp. Phan Rang - Tháp Chàm
@@ -26683,9 +26683,9 @@ places:
     - '2016-04-07 12:59:40.930298'
     - '2016-04-10 00:53:32.504264'
   - - '1596'
-    - Quán Kem Nha Trang
+    - Quán Kem Nha Trang
     - ChIJ12ag1mPQcDERo53Ga__vmbg
-    - 
+    -
     - '11.5928653'
     - '108.9531061'
     - Hai Mươi Mốt Tháng Tám, Bảo An, tp. Phan Rang - Tháp Chàm
@@ -26709,7 +26709,7 @@ places:
   - - '1597'
     - Quán Cà Fê Giải Khát
     - ChIJPxcr6GPQcDERsRzHHSL0UKs
-    - 
+    -
     - '11.5933462'
     - '108.9546953'
     - 562, Đường Hai Mươi Mốt Tháng Tám, Phường Bảo An, Thành Phố Phan Rang
@@ -26732,7 +26732,7 @@ places:
   - - '1598'
     - Bao 685 Coffee Shop
     - ChIJD3AzY2HQcDERYUvnrqVSTy8
-    - 
+    -
     - '11.5923228'
     - '108.9539465'
     - 685, Street 21/8, Do Vinh Ward, Phan Rang City
@@ -26757,7 +26757,7 @@ places:
   - - '1599'
     - Hoa Binh Coffee Shop
     - ChIJbTgnGPXQcDERxlPtwhwtP7I
-    - 
+    -
     - '11.5860508'
     - '108.9479886'
     - Cau Mong, Bao An Ward, Phan Rang - Thap Cham City
@@ -26805,7 +26805,7 @@ places:
   - - '1601'
     - Phu My Karaoke
     - ChIJxaHF02XQcDERk9F4_uw7wYM
-    - 
+    -
     - '11.5926432'
     - '108.9594501'
     - 509A, Đường 21 Tháng 8, Phường Phước Mỹ, tp. Phan Rang - Tháp Chàm
@@ -26855,7 +26855,7 @@ places:
   - - '1603'
     - Trung Du coffee
     - ChIJ2ZlDtV2NNDERDnqLWfmOCnk
-    - 
+    -
     - '21.3222541'
     - '105.3862355'
     - Gia Cẩm, tp. Việt Trì
@@ -26880,7 +26880,7 @@ places:
   - - '1604'
     - Hưng ĐT 46 Tân Thịnh
     - ChIJbaZ5wVCGNDERuPGbZfwwIag
-    - 
+    -
     - '21.2190993'
     - '105.1797956'
     - tt. Thanh Sơn
@@ -26903,7 +26903,7 @@ places:
   - - '1605'
     - Cafe Núi
     - ChIJk1dND1OGNDER_oc_A6Hpj4M
-    - 
+    -
     - '21.211719'
     - '105.1806781'
     - tt. Thanh Sơn
@@ -26927,7 +26927,7 @@ places:
   - - '1606'
     - Cà phê Phiến Vân
     - ChIJT4ezza6GNDERatd2TIqEQ8I
-    - 
+    -
     - '21.2538893'
     - '105.1337662'
     - ATK số 1, làng Chèo, Ngọc Đồng
@@ -26951,7 +26951,7 @@ places:
   - - '1607'
     - Giải Khát Phúc Hiền
     - ChIJyUEBg-uENDERSk3lXn3YLJ4
-    - 
+    -
     - '21.3227183'
     - '105.1524113'
     - Yên Dưỡng
@@ -26976,7 +26976,7 @@ places:
   - - '1608'
     - Quán Coffe Karaoke Ngọc Hưng
     - ChIJOZoL3USBNDERA0WOiT2HAMs
-    - 
+    -
     - '21.2490847'
     - '105.1107106'
     - Ngọc Lập
@@ -27000,7 +27000,7 @@ places:
   - - '1609'
     - Quán Karaoke Cà Phê Giang
     - ChIJ_____zyONDERm8Nk-wBH3aU
-    - 
+    -
     - '21.3242951'
     - '105.2867776'
     - Chợ Cao Mại, Khu Tân Tiến, Thị Trấn Lâm Thao, Huyện Lâm Thao
@@ -27023,7 +27023,7 @@ places:
   - - '1610'
     - Quán Cà Phê, Kem, Bia Hà Nội
     - ChIJ_____zyONDERLz6Eet75RHk
-    - 
+    -
     - '21.3242951'
     - '105.2867776'
     - Thị Trấn Lâm Thao, Huyện Lâm Thao
@@ -27047,7 +27047,7 @@ places:
   - - '1611'
     - ngô kiên 92
     - ChIJM1VVxROONDERB0Nz-xbCBJk
-    - 
+    -
     - '21.3231658'
     - '105.291696'
     - Lâm Nghĩa, tt. Lâm Thao
@@ -27071,7 +27071,7 @@ places:
   - - '1612'
     - "ĐÌNH LÀNG SƠN VI"
     - ChIJr6-9_3OONDERji4W5S8OoDw
-    - 
+    -
     - '21.308011'
     - '105.307164'
     - Khu 11., Sơn Vi
@@ -27098,7 +27098,7 @@ places:
   - - '1613'
     - Quán Bia Hơi Giải Khát Mai Hòa
     - ChIJC4Ep43SONDERS61jHyGc698
-    - 
+    -
     - '21.311279'
     - '105.3099979'
     - Khu 18, Xã Sơn Vi, Huyện Lâm Thao
@@ -27121,7 +27121,7 @@ places:
   - - '1614'
     - Trạm Y tế Xã Thượng Nông
     - ChIJCQMRi_yLNDERQlv-U-zJHC0
-    - 
+    -
     - '21.2340945'
     - '105.3176327'
     - Trung Nông, Thượng Nông
@@ -27145,7 +27145,7 @@ places:
   - - '1615'
     - nhà nghỉ Duy Khánh
     - ChIJa81pTn-JNDERUHsuO1lKDok
-    - 
+    -
     - '21.1983561'
     - '105.3077188'
     - Việt Nam, Thạch Đồng
@@ -27168,7 +27168,7 @@ places:
   - - '1616'
     - Quán Cà Phê Lâm
     - ChIJYTX8en6aNDERUz1GWHNP7Sw
-    - 
+    -
     - '21.3943422'
     - '105.2142072'
     - Phố Cao Bang, Phường Trường Thịnh, Thị Xã Phú Thọ
@@ -27193,7 +27193,7 @@ places:
   - - '1617'
     - Cà phê Bến Đá
     - ChIJVcbWZIGQNDER6sZGFsZ0FJo
-    - 
+    -
     - '21.3964498'
     - '105.2231669'
     - tx. Phú Thọ
@@ -27217,7 +27217,7 @@ places:
   - - '1618'
     - Quán Cà Phê Liên
     - ChIJrWKrgIGQNDER9cOBPOdjbmc
-    - 
+    -
     - '21.397056'
     - '105.222049'
     - 24, Cao Du, Phường Âu Cơ, Thị Xã Phú Thọ
@@ -27242,7 +27242,7 @@ places:
   - - '1619'
     - Quán Cà Phê Bống
     - ChIJgVLaK4KQNDER3hAFrjiyEwY
-    - 
+    -
     - '21.397314'
     - '105.222072'
     - 15, Cao Du, Phường Âu Cơ, Thị Xã Phú Thọ
@@ -27266,7 +27266,7 @@ places:
   - - '1620'
     - Cafe Mộc
     - ChIJ8XrnmXiaNDERix00UCnHMc0
-    - 
+    -
     - '21.3991075'
     - '105.2187815'
     - Phú Thọ, 12 Hòa Bình, Âu Cơ
@@ -27288,9 +27288,9 @@ places:
     - '2016-04-07 12:59:55.750928'
     - '2016-04-10 00:53:32.521766'
   - - '1621'
-    - Cafe Quang Khải
+    - Cafe Quang Khải
     - ChIJdXrU0XuaNDERPBuXjLPk7c0
-    - 
+    -
     - '21.4002963'
     - '105.2129199'
     - "Âu Cơ, tx. Phú Thọ"
@@ -27314,7 +27314,7 @@ places:
   - - '1622'
     - Cafe Chợt Nhớ
     - ChIJxx5A5bncbzERCXTIiF3_uHc
-    - 
+    -
     - '12.9870061'
     - '109.1115462'
     - Tây Hòa
@@ -27338,7 +27338,7 @@ places:
   - - '1623'
     - Cafe Hương Xưa
     - ChIJSaBrzKbcbzERePnmgSfK64U
-    - 
+    -
     - '12.9834653'
     - '109.0968876'
     - Tây Hòa
@@ -27363,7 +27363,7 @@ places:
   - - '1624'
     - Cafe Duy Quang
     - ChIJ5ZGO4KDcbzERSGu2M5ARNj0
-    - 
+    -
     - '12.9818765'
     - '109.0956314'
     - Sơn Thành Đông,
@@ -27387,7 +27387,7 @@ places:
   - - '1625'
     - Cà Phê Tuổi Ngọc
     - ChIJT41pqgzPbzERVWjt3G0Ipws
-    - 
+    -
     - '13.0587384'
     - '108.9737427'
     - Trần Phú, Củng Sơn
@@ -27410,7 +27410,7 @@ places:
   - - '1626'
     - Cafe A Sử
     - ChIJw4DmzbLpbzERsq1Jkyk4teY
-    - 
+    -
     - '13.0345945'
     - '109.2215239'
     - Hòa Định Đông
@@ -27434,7 +27434,7 @@ places:
   - - '1627'
     - coffee Song Sanh
     - ChIJBdmHGkbobzER3vZmicJyMDc
-    - 
+    -
     - '13.0229869'
     - '109.2168152'
     - Quốc lộ 25, Hòa Định Đông
@@ -27458,7 +27458,7 @@ places:
   - - '1628'
     - Huynh Thi Thuy Lan Cafe
     - ChIJVVVVVarPbzEREoNx9q6yE9s
-    - 
+    -
     - '13.0519421'
     - '108.9531947'
     - Trung Hoa Quarter, Cung Son Town, Son Hoa District
@@ -27480,7 +27480,7 @@ places:
   - - '1629'
     - Cafe Không Tên
     - ChIJc6flKMzrbzERstl8k1PnZ1I
-    - 
+    -
     - '13.0911326'
     - '109.241279'
     - thôn long ng ,xã trị Hòa, Phú
@@ -27503,7 +27503,7 @@ places:
   - - '1630'
     - Quán Giải Khát Lê Thị Thư
     - ChIJ____73zdbzERphb0G6whUqM
-    - 
+    -
     - '12.9580069'
     - '109.1842884'
     - Thôn Quảng Mỹ, Xã Hoà Mỹ Tây, Huyện Tây Hoà
@@ -27525,9 +27525,9 @@ places:
     - '2016-04-07 13:00:01.108796'
     - '2016-04-10 00:53:31.773926'
   - - '1631'
-    - Chí Thạnh
+    - Chí Thạnh
     - ChIJySHg05brbzERm7lTJlxH8R8
-    - 
+    -
     - '13.1048539'
     - '109.2649404'
     - Tuyến Tránh Tuy Hòa, tp. Tuy Hòa
@@ -27549,9 +27549,9 @@ places:
     - '2016-04-07 13:00:01.503447'
     - '2016-04-10 00:53:31.77579'
   - - '1632'
-    - Cà phê
+    - Cà phê
     - ChIJYc865obobzERYtnJV1bxLiU
-    - 
+    -
     - '12.995996'
     - '109.2392439'
     - Phú Yên Province
@@ -27578,7 +27578,7 @@ places:
   - - '1633'
     - Huỳnh Đăng Khuyến Garden!
     - ChIJ1_pjoyrmbzERHQMesga90kg
-    - 
+    -
     - '12.9885109'
     - '109.2367119'
     - Tây Hòa
@@ -27602,9 +27602,9 @@ places:
     - '2016-04-07 13:00:02.417828'
     - '2016-04-10 00:53:31.777591'
   - - '1634'
-    - nhà lê thành sỹ
+    - nhà lê thành sỹ
     - ChIJCQribY_rbzERVYzKcjH5Mjk
-    - 
+    -
     - '13.1062197'
     - '109.2750406'
     - "đường lên chùa Khánh Sơn, Phường 9, tp. Tuy Hòa"
@@ -27651,7 +27651,7 @@ places:
   - - '1636'
     - Nhà hàng Quê Nhà - Công ty TNHH Khôi Nguyên
     - ChIJHywW5tBWRzERHitcef-DQzE
-    - 
+    -
     - '17.4701487'
     - '106.6196108'
     - 40 Trần Hưng Đạo, Đồng Phú, Đồng Hới
@@ -27676,7 +27676,7 @@ places:
   - - '1637'
     - Cafe Mạnh Oanh
     - ChIJ_fah5OVWRzERdgbVWczlSkY
-    - 
+    -
     - '17.468721'
     - '106.599059'
     - Thuận Lý, tp. Đồng Hới
@@ -27700,7 +27700,7 @@ places:
   - - '1638'
     - Cafe K-RisTa Creamsmoothies
     - ChIJnfKz591WRzER-5sw3kCmHqo
-    - 
+    -
     - '17.4715868'
     - '106.6070213'
     - Phong Nha, Nam Lý, tp. Đồng Hới
@@ -27749,7 +27749,7 @@ places:
   - - '1640'
     - Paven Café
     - ChIJy9GqDttWRzEREHospmP4nhs
-    - 
+    -
     - '17.4691662'
     - '106.6132982'
     - 156 Trần Hưng Đạo, 156 Trần Hưng Đạo, Đồng Phú, tp. Đồng Hới
@@ -27797,7 +27797,7 @@ places:
   - - '1642'
     - Cafe Xom Vang
     - ChIJKbUmJv5WRzERhusJqOs9sNc
-    - 
+    -
     - '17.4802314'
     - '106.5856802'
     - to 7 bac ly dong doi, tiểu khu 7, tp. Đồng Hới
@@ -27820,7 +27820,7 @@ places:
   - - '1643'
     - Karaoke Tân Lộc Phát
     - ChIJq7vdDMxWRzER4J7o2JS_A_Q
-    - 
+    -
     - '17.4604735'
     - '106.6246252'
     - 28 Mạc Đĩnh Chi, Hải Đinh, tp. Đồng Hới
@@ -27867,9 +27867,9 @@ places:
     - '2016-04-07 13:00:09.459336'
     - '2016-04-10 00:53:32.536656'
   - - '1645'
-    - Tím Acoustic Coffee
+    - Tím Acoustic Coffee
     - ChIJKe-clSlXRzERLs50UNX_5wo
-    - 
+    -
     - '17.4790213'
     - '106.621766'
     - 126 Dương Văn An, Đồng Mỹ, tp. Đồng Hới
@@ -27894,7 +27894,7 @@ places:
   - - '1646'
     - Bảo Tàng Tổng Hợp Quảng Bình
     - ChIJYfde7kpRRzERccRhIQg9s0M
-    - 
+    -
     - '17.451788'
     - '106.6311711'
     - "Đường Hùng Vương, tp. Đồng Hới"
@@ -27919,7 +27919,7 @@ places:
   - - '1647'
     - Công Ty TNHH Thương Mại Dịch Vụ V&B
     - ChIJS5N6Ye9WRzERBuqBhfAgE3Y
-    - 
+    -
     - '17.4677641'
     - '106.597858'
     - 33, Đường Hoàng Diệu, Phường Nam Lý, tp. Đồng Hới
@@ -27943,7 +27943,7 @@ places:
   - - '1648'
     - Hội quán trẻ coffee
     - ChIJ1Qy8RuVWRzEReKMvDsugZpg
-    - 
+    -
     - '17.4693773'
     - '106.5947997'
     - Nam Lý, tp. Đồng Hới
@@ -27966,7 +27966,7 @@ places:
   - - '1649'
     - cà phê Phong Nha
     - ChIJ9_Zj2OZWRzERa0kHInjWHN0
-    - 
+    -
     - '17.4724462'
     - '106.602494'
     - Võ Thị Sáu, Nam Lý, Đồng Hới
@@ -27990,7 +27990,7 @@ places:
   - - '1650'
     - Doanh Nghiệp Tư nhân Thuốc Lá, Nước Giải Khát Hữu Ngọc
     - ChIJz9qxXOdWRzERQETDnXCa9WQ
-    - 
+    -
     - '17.4719908'
     - '106.6048478'
     - 129, Hữu Nghị, tp. Đồng Hới
@@ -28040,7 +28040,7 @@ places:
   - - '1652'
     - Threeseasons-Ba mua
     - ChIJc6ZS5t1WRzERZlGW7nZ-x4g
-    - 
+    -
     - '17.4723617'
     - '106.6068394'
     - Phong Nha, Nam Lý, tp. Đồng Hới
@@ -28064,7 +28064,7 @@ places:
   - - '1653'
     - Hi! Coffee
     - ChIJz7jEwtpWRzERjZS7Lnz-0kE
-    - 
+    -
     - '17.4678697'
     - '106.6152594'
     - Nguyễn Hữu Cảnh, Đồng Hới
@@ -28087,7 +28087,7 @@ places:
   - - '1654'
     - Trà Sữa Berry
     - ChIJ83I5d9pWRzERm6dYwKWsGZA
-    - 
+    -
     - '17.47003'
     - '106.6170332'
     - 132 Hai Bà Trưng, Đồng Phú, tp. Đồng Hới
@@ -28112,7 +28112,7 @@ places:
   - - '1655'
     - TIỆM CÀ PHÊ TIẾN HẢI
     - ChIJn_gEiZ73aTERWjRd1xYyMEo
-    - 
+    -
     - '15.5605351'
     - '108.0922508'
     - XÃ BÌNH LÂM, HUYỆN HIỆP ĐỨC, TỈNH QUẢNG NAM
@@ -28136,7 +28136,7 @@ places:
   - - '1656'
     - Huy
     - ChIJFZ7e1N35aTER8lKOl2brfIs
-    - 
+    -
     - '15.5822364'
     - '108.1162718'
     - Quốc lộ 14E, tt. Tân An
@@ -28162,7 +28162,7 @@ places:
   - - '1657'
     - Tập đoàn 30S
     - ChIJAQAAAJ-yaTEREMKeNPx5NoE
-    - 
+    -
     - '15.1626452'
     - '108.780887'
     - Thôn độc lập, tịnh ấn tây
@@ -28186,7 +28186,7 @@ places:
   - - '1658'
     - Central Hotel Quang Ngai
     - ChIJ20YLRdVSaDERIqn_XsXP4jE
-    - 
+    -
     - '15.1135203'
     - '108.8080553'
     - 784 Quang Trung, Nghĩa Chánh, tp. Quảng Ngãi
@@ -28209,7 +28209,7 @@ places:
   - - '1659'
     - Cafe TUẾ MAI VIÊN(new)
     - ChIJoUQYFCmtaTER2AdAXXqS3S8
-    - 
+    -
     - '15.117334'
     - '108.799899'
     - Hẻm 79, Nguyễn Công Phương, Chánh Lộ, tp. Quảng Ngãi
@@ -28232,7 +28232,7 @@ places:
   - - '1660'
     - Cà Phê Romance
     - ChIJYfKdbzqtaTERYQu_L9TJWIA
-    - 
+    -
     - '15.1285767'
     - '108.7948125'
     - Phan Bội Châu, Lê Hồng Phong, tp. Quảng Ngãi
@@ -28282,7 +28282,7 @@ places:
   - - '1662'
     - Thien An Sky Coffee & Bar
     - ChIJm4yunDetaTER2ULuUti03ms
-    - 
+    -
     - '15.1335937'
     - '108.7965092'
     - 1 An Dương Vương, Trần Phú, tp. Quảng Ngãi
@@ -28305,7 +28305,7 @@ places:
   - - '1663'
     - cafe hồng hà
     - ChIJ4-aj8wdNaDERZoiXfi6lVI8
-    - 
+    -
     - '15.18833'
     - '108.854666'
     - Tịnh Thiện, sơn tịnh
@@ -28330,7 +28330,7 @@ places:
   - - '1664'
     - Hoang Phuc Karaoke Service
     - ChIJWwhzqSitaTERSZIjpKIhRVw
-    - 
+    -
     - '15.1179085'
     - '108.7937387'
     - 104 Đường Trần Quang Diệu, Phường Nghĩa Lộ, Thành Phố Quảng Ngãi, Tỉnh Quảng
@@ -28358,7 +28358,7 @@ places:
   - - '1665'
     - Cà phê Thêm Nguyễn
     - ChIJM7TTN82raTERE7oivxVRXUI
-    - 
+    -
     - '15.0305523'
     - '108.7259763'
     - "Đường tỉnh 628"
@@ -28382,7 +28382,7 @@ places:
   - - '1666'
     - Trà Sữa Topping
     - ChIJnVu6YrWtaTER3fWGAOJ6R9M
-    - 
+    -
     - '15.1208512'
     - '108.7363971'
     - Ngã Gà Nghĩa kỳ, №3
@@ -28405,7 +28405,7 @@ places:
   - - '1667'
     - Cafe Thiện Nghĩa
     - ChIJ7eM7u8utaTERtdOpPM14HGU
-    - 
+    -
     - '15.1227094'
     - '108.7323707'
     - "Đường tỉnh 623B"
@@ -28429,7 +28429,7 @@ places:
   - - '1668'
     - Cafe Quỳnh Trâm
     - ChIJf4-0cs6taTERJ7rXCrJkD9c
-    - 
+    -
     - '15.1259305'
     - '108.7259522'
     - "Đường tỉnh 623B, thôn Đông"
@@ -28453,7 +28453,7 @@ places:
   - - '1669'
     - Cà phê Hạ trắng
     - ChIJE8rxQrOtaTERf6lzfnq75X8
-    - 
+    -
     - '15.1195038'
     - '108.7431639'
     - "Đường tỉnh 623B"
@@ -28477,7 +28477,7 @@ places:
   - - '1670'
     - Cafe Long phụng
     - ChIJp2qNPbOtaTER7seMGFsbJls
-    - 
+    -
     - '15.1194934'
     - '108.7442315'
     - "Đường tỉnh 623B"
@@ -28502,7 +28502,7 @@ places:
   - - '1671'
     - Cà phê trà sữa XuKa
     - ChIJ4ZMyulKsaTERfKi4quDUWY8
-    - 
+    -
     - '15.1168303'
     - '108.7492794'
     - "Đường tỉnh 623B"
@@ -28526,7 +28526,7 @@ places:
   - - '1672'
     - Cà Phê Tuấn Vĩ
     - ChIJ-VVrxmmuaTERijfsMdOFEQQ
-    - 
+    -
     - '15.1375664'
     - '108.6900059'
     - "Đường tỉnh 623B"
@@ -28550,7 +28550,7 @@ places:
   - - '1673'
     - vườn Thành Nghĩa
     - ChIJ14cvAg6raTERSvvVY8pwI-k
-    - 
+    -
     - '15.042613'
     - '108.7717523'
     - Chợ Chùa
@@ -28575,7 +28575,7 @@ places:
   - - '1674'
     - Cà phê Cát Tiên
     - ChIJr_RAq26raTERnD-QG88QUe4
-    - 
+    -
     - '15.0538818'
     - '108.7778369'
     - 624, Chợ Chùa
@@ -28598,7 +28598,7 @@ places:
   - - '1675'
     - Quán cà phê hớt tóc Anh Tuấn
     - ChIJ3_Z8U2mraTERuj4IKXeZAzU
-    - 
+    -
     - '15.0539586'
     - '108.7780665'
     - "Đường tỉnh 624, Chợ Chùa"
@@ -28623,7 +28623,7 @@ places:
   - - '1676'
     - Karaoke Hương Sen
     - ChIJk4XhQBOuaTERx1Rri8zOKcc
-    - 
+    -
     - '15.1458308'
     - '108.6960697'
     - Xóm 1 , Thôn An lạc , Nghĩa thắng, An Lạc Bắc
@@ -28671,7 +28671,7 @@ places:
   - - '1678'
     - Rạp Công Nhân
     - ChIJU_jgMC_-SjERCFTwnvA2xbA
-    - 
+    -
     - '21.012964'
     - '107.2837723'
     - Trần Phú, Cẩm Tây, tp. Cẩm Phả
@@ -28695,7 +28695,7 @@ places:
   - - '1679'
     - MetalSoud Cafe
     - ChIJ5XjMYTP-SjERJ7FRDXQkjm0
-    - 
+    -
     - '21.0062582'
     - '107.2726192'
     - 169, Bái Tử Long, tp. Cẩm Phả
@@ -28719,7 +28719,7 @@ places:
   - - '1680'
     - Taiwan Fresh Tea
     - ChIJ0RqP9TX-SjERHWoQk06xO5A
-    - 
+    -
     - '21.0098223'
     - '107.265829'
     - Cẩm Thủy, tp. Cẩm Phả
@@ -28743,7 +28743,7 @@ places:
   - - '1681'
     - Cafe 801 Trần Phú
     - ChIJL2ABdEz-SjERSzt3XbUkQMc
-    - 
+    -
     - '21.0098759'
     - '107.2603825'
     - Trần Phú, Cẩm Thủy, tp. Cẩm Phả
@@ -28767,9 +28767,9 @@ places:
     - '2016-04-07 13:00:28.361648'
     - '2016-04-10 00:53:32.560369'
   - - '1682'
-    - Cúcku Quán
+    - Cúcku Quán
     - ChIJK5tFNqYBSzERwHe1DlFTxuY
-    - 
+    -
     - '21.0110574'
     - '107.3341177'
     - 9 Cẩm Phú, tp. Cẩm Phả
@@ -28792,7 +28792,7 @@ places:
   - - '1683'
     - Cafe Linh Chi
     - ChIJObovuQUBSzERt61Xgpr4l-M
-    - 
+    -
     - '21.0067435'
     - '107.3451933'
     - Cẩm Thịnh, tp. Cẩm Phả
@@ -28817,7 +28817,7 @@ places:
   - - '1684'
     - "Đồi Xanh Quán"
     - ChIJpwr021wBSzERe7Vd_4cQBK8
-    - 
+    -
     - '21.030653'
     - '107.364631'
     - 424 đường Lý Thường Kiệt, phường Cửa Ông, thành phố Cẩm Phả, tỉnh Quảng Ninh
@@ -28842,7 +28842,7 @@ places:
   - - '1685'
     - Nam Phong Coffee Cua Ong
     - ChIJ71t3iUQBSzERcp745nUep_w
-    - 
+    -
     - '21.0265387'
     - '107.3682039'
     - Cửa Ông, tp. Cẩm Phả
@@ -28867,7 +28867,7 @@ places:
   - - '1686'
     - Hương Giang Coffee
     - ChIJH47FoFwBSzERaE14aaUxUYE
-    - 
+    -
     - '21.030473'
     - '107.3670201'
     - Cửa Ông, tp. Cẩm Phả
@@ -28891,7 +28891,7 @@ places:
   - - '1687'
     - "린씨 마사지"
     - ChIJTTW2ucUDSzERMCsWBN_KM7w
-    - 
+    -
     - '21.058124'
     - '107.3515236'
     - Trần Hưng Đạo, tp. Cẩm Phả
@@ -28916,7 +28916,7 @@ places:
   - - '1688'
     - "Đỗ Quang Huấn"
     - ChIJ662uCTf_SjERqpJ7rb8L8UA
-    - 
+    -
     - '20.9915688'
     - '107.2055331'
     - 242 Đặng Châu Tuệ, tp. Cẩm Phả
@@ -28941,7 +28941,7 @@ places:
   - - '1689'
     - Hai Van Quan
     - ChIJ6bcFLQcESzERVt2rTE4iFes
-    - 
+    -
     - '21.0446603'
     - '107.3872483'
     - "Đường tỉnh 334"
@@ -28965,7 +28965,7 @@ places:
   - - '1690'
     - "Đại Lý Internet Net Sơn Ánh"
     - ChIJ827B5wYESzERn3BbtD1QHi4
-    - 
+    -
     - '21.0458931'
     - '107.3885059'
     - "Đường tỉnh 334, Đông Xá"
@@ -28990,7 +28990,7 @@ places:
   - - '1691'
     - Bảo Tàng huyện Vân Đồn
     - ChIJ1ZBuclAESzERA964V0e4pL4
-    - 
+    -
     - '21.0706298'
     - '107.4201885'
     - "Đường tỉnh 334, tt. Cái Rồng"
@@ -29015,7 +29015,7 @@ places:
   - - '1692'
     - Công Ty Trách Nhiệm Hữu Hạn Vận Tải Quang Minh
     - ChIJeabBA08ESzERVZ50KZLFJoY
-    - 
+    -
     - '21.066234'
     - '107.423057'
     - Khu đô thị mới, tt. Cái Rồng, Vân Đồn
@@ -29039,7 +29039,7 @@ places:
   - - '1693'
     - Cafe Nắng Bóng Đá K+
     - ChIJZ2toBVAESzERF0aeYg-G8SM
-    - 
+    -
     - '21.0704362'
     - '107.4210076'
     - Khu 5, H., tt. Cái Rồng
@@ -29063,7 +29063,7 @@ places:
   - - '1694'
     - Cafe Công Kính (Kính Trăng)
     - ChIJEbH9WFAESzERGDGXTCyUGqs
-    - 
+    -
     - '21.0723318'
     - '107.4223691'
     - "Đường tỉnh 334, tt. Cái Rồng"
@@ -29087,7 +29087,7 @@ places:
   - - '1695'
     - Quán Cà Phê Trà Thế Kỷ
     - ChIJhYQYYslXSjERAWXNtcg_gig
-    - 
+    -
     - '20.9528504'
     - '107.1424535'
     - Hà Tu, tp. Hạ Long
@@ -29112,7 +29112,7 @@ places:
   - - '1696'
     - Cafe Tây Nguyên 273
     - ChIJw8FwBZZXSjERQN1NC19lY8c
-    - 
+    -
     - '20.9444677'
     - '107.124136'
     - số 273, p. hạ long,, Nguyễn Văn Cừ, Hồng Hà
@@ -29137,7 +29137,7 @@ places:
   - - '1697'
     - Góc Sài Gòn
     - ChIJ18zl2mHvQDER8Dm1NZqu84o
-    - 
+    -
     - '16.8154393'
     - '107.1002085'
     - Hùng Vương, Phường 1, tp. Đông Hà
@@ -29162,7 +29162,7 @@ places:
   - - '1698'
     - Mine Action Visitor Center
     - ChIJHbmIHoHlQDERScU-dcY_ygM
-    - 
+    -
     - '16.798703'
     - '107.105858'
     - tp. Đông Hà
@@ -29212,7 +29212,7 @@ places:
   - - '1700'
     - Dolphin Movie
     - ChIJHw21sl3vQDERB7rJw7pf1sc
-    - 
+    -
     - '16.8228137'
     - '107.0931575'
     - 78, Trần Hưng Đạo, tp. Đông Hà
@@ -29235,7 +29235,7 @@ places:
   - - '1701'
     - Truong THPT Dong Ha
     - ChIJhWPPymbvQDERWaT799Fegd8
-    - 
+    -
     - '16.8156135'
     - '107.0952367'
     - 103 Nguyễn Trãi, TP Dong Ha
@@ -29260,7 +29260,7 @@ places:
   - - '1702'
     - Cafe Mai Thanh
     - ChIJFTdsmmHvQDERCuYBPDOe00I
-    - 
+    -
     - '16.8147431'
     - '107.0989178'
     - Phường 1, tp. Đông Hà
@@ -29285,7 +29285,7 @@ places:
   - - '1703'
     - Cafe ĐEN
     - ChIJEXBw52HvQDERYZNkfS04VqI
-    - 
+    -
     - '16.8150041'
     - '107.1009291'
     - Lê Thế Hiếu, tp. Đông Hà
@@ -29309,7 +29309,7 @@ places:
   - - '1704'
     - MooYo Coffee
     - ChIJMfm2XZ7CQDERJFKljx47wgY
-    - 
+    -
     - '16.93809'
     - '107.073106'
     - Dốc Miếu Quốc lộ 1A, tt. Gio Linh
@@ -29333,7 +29333,7 @@ places:
   - - '1705'
     - Cafe Hạ Trắng
     - ChIJ21ecVMrtQDERxvntlaIb0ME
-    - 
+    -
     - '16.803072'
     - '106.9859117'
     - Cam Lộ, Cam Thanh, tp. Đông Hà
@@ -29357,7 +29357,7 @@ places:
   - - '1706'
     - Cafe Dư Âm
     - ChIJIcQ-2IHuQDERQfvmryXaUOo
-    - 
+    -
     - '16.8081563'
     - '107.0069567'
     - Quốc lộ 9
@@ -29382,7 +29382,7 @@ places:
   - - '1707'
     - Cà phê Vườn Hồng
     - ChIJFZ3d3oHuQDERgWmpXbXt4kQ
-    - 
+    -
     - '16.808449'
     - '107.0069432'
     - Quốc lộ 9, tt. Cam Lộ
@@ -29406,7 +29406,7 @@ places:
   - - '1708'
     - Nhà nghỉ Văn
     - ChIJ36gM_EnuQDERPQDUjjXlbS8
-    - 
+    -
     - '16.7785725'
     - '107.0475787'
     - Khe lap - Phuong 3 - Dong Ha - Quang Tri, phường 3, tp. Đông Hà
@@ -29431,7 +29431,7 @@ places:
   - - '1709'
     - Cafe Ken
     - ChIJS7u55xDvQDERVsVVuf-6rjY
-    - 
+    -
     - '16.8148551'
     - '107.0680775'
     - 74a, Quốc lộ 9, tp. Đông Hà
@@ -29456,7 +29456,7 @@ places:
   - - '1710'
     - Coffee Golden
     - ChIJfT5qGBPvQDERk6WJkhGdAhs
-    - 
+    -
     - '16.8134866'
     - '107.0760047'
     - 28, Nguyễn Đình Chiểu, phường 3, tp. Đông Hà
@@ -29479,7 +29479,7 @@ places:
   - - '1711'
     - Quán Cà Phê Đồng Giao
     - ChIJ5dgzZmnvQDERZ9GRrN8jLFE
-    - 
+    -
     - '16.8166635'
     - '107.0841501'
     - KM3, Đường Quốc Lộ 9, tp. Đông Hà
@@ -29503,7 +29503,7 @@ places:
   - - '1712'
     - Quán Cà Phê Khánh Linh
     - ChIJH3eecGnvQDER7l8hHWY5NS8
-    - 
+    -
     - '16.8174163'
     - '107.0842196'
     - 307, Đường Quốc Lộ 9, tp. Đông Hà
@@ -29528,7 +29528,7 @@ places:
   - - '1713'
     - Ha Trang Coffee Shop
     - ChIJPzmdd2nvQDER_dBznEJLZRc
-    - 
+    -
     - '16.8177078'
     - '107.0842618'
     - Ational Road 9, Dong Ha City
@@ -29552,7 +29552,7 @@ places:
   - - '1714'
     - Quán Cà Phê 327
     - ChIJUejMoGnvQDERluQYCkwQcR4
-    - 
+    -
     - '16.817909'
     - '107.0853127'
     - 327, Đường Quốc Lộ 9, tp. Đông Hà
@@ -29576,7 +29576,7 @@ places:
   - - '1715'
     - Quán Cà Phê Bóng Đá Paris
     - ChIJK6jUV2jvQDERgmmsAKU-M1w
-    - 
+    -
     - '16.81767'
     - '107.0869825'
     - 409, Đường Quốc Lộ 9, tp. Đông Hà
@@ -29601,7 +29601,7 @@ places:
   - - '1716'
     - Quán Cà Phê Bản Phước
     - ChIJK6jUV2jvQDERTYgJuGDt40o
-    - 
+    -
     - '16.81767'
     - '107.0869825'
     - 168, Đường Quốc Lộ 9, tp. Đông Hà
@@ -29626,7 +29626,7 @@ places:
   - - '1717'
     - Bảo tàng tỉnh Sóc Trăng
     - ChIJAYZ1-f9NoDER7bU3MX-8elc
-    - 
+    -
     - '9.6121133'
     - '105.9697172'
     - Hùng Vương, tp. Sóc Trăng
@@ -29675,7 +29675,7 @@ places:
   - - '1719'
     - Yaourt đá Lập Vĩ
     - ChIJDYurBflNoDERElt-qgKCf0E
-    - 
+    -
     - '9.6051866'
     - '105.9735366'
     - 24 Nguyễn Văn Cừ, phường 1, Phường 1
@@ -29700,7 +29700,7 @@ places:
   - - '1720'
     - Quán Cafê DORA
     - ChIJcTzUBP9RoDERsJyjhlVZaVI
-    - 
+    -
     - '9.6153346'
     - '105.9663347'
     - 135/36 Hùng Vương, phường 6, tp. Sóc Trăng
@@ -29747,10 +29747,10 @@ places:
   - - '1722'
     - Quán Cà Phê Huỳnh Giao
     - ChIJVWgaaw5SoDERlLm3rivvG-I
-    - 
+    -
     - '9.5984165'
     - '105.9598287'
-    - 122, Đường Quốc Lộ 1A, Khóm 1, tp. Sóc Trăng
+    - 122, Đường Quốc Lộ 1A, Khóm 1, tp. Sóc Trăng
     - Alias aut nam enim ipsam sint id et doloribus. Dolor voluptate fuga illo esse
       et ut consequuntur. Atque consequatur dolor esse dolorem. Doloribus expedita
       magni voluptatem non earum eaque laborum. Asperiores et non ut enim alias aperiam.
@@ -29770,7 +29770,7 @@ places:
   - - '1723'
     - Quán Cà Phê Dạ Thảo
     - ChIJifQDzg5SoDERtwFAvm0RiCA
-    - 
+    -
     - '9.5990929'
     - '105.9637172'
     - 184, Đường Phú Lợi, Phường 2, Thành Phố Sóc Trăng
@@ -29794,7 +29794,7 @@ places:
   - - '1724'
     - Ngoc Nhan Coffee Shop
     - ChIJ8c-W9A1SoDERf4V812Q0ddY
-    - 
+    -
     - '9.596092'
     - '105.958544'
     - 713, National Road 1A, Hamlet 3, Ward 2, Soc Trang City
@@ -29843,7 +29843,7 @@ places:
   - - '1726'
     - Caphephuong
     - ChIJ03VeTwlSoDERAhZ_N0789LU
-    - 
+    -
     - '9.597973'
     - '105.9648245'
     - 2 soc trang, 150 Phú Lợi, 2, Sóc Trăng
@@ -29867,7 +29867,7 @@ places:
   - - '1727'
     - Quán Cà Phê Thanh Xuân
     - ChIJzQNORwlSoDERc2o2mrNeASE
-    - 
+    -
     - '9.5983274'
     - '105.9651894'
     - 138, Đường Phú Lợi, Phường 2, Thành Phố Sóc Trăng
@@ -29893,7 +29893,7 @@ places:
   - - '1728'
     - Quán Cà Phê Gia Đình G7
     - ChIJ836-fhJSoDERN2MhcH6rJZM
-    - 
+    -
     - '9.5949332'
     - '105.9579399'
     - 754, Quốc Lộ 1A, Phường 2, Thị Xã Sóc Trăng
@@ -29918,7 +29918,7 @@ places:
   - - '1729'
     - Quán Cà Phê Võng 79
     - ChIJh_uXaglSoDERRBH6eKE7s4c
-    - 
+    -
     - '9.598264'
     - '105.9656291'
     - 179, Đường Phú Lợi, Phường 2, tp. Sóc Trăng
@@ -29943,7 +29943,7 @@ places:
   - - '1730'
     - Xuan Tuoi Coffee Shop
     - ChIJVTt4NwRSoDERZafqEFB7um4
-    - 
+    -
     - '9.6058488'
     - '105.9628344'
     - 278, Truong Cong Dinh Street, Ward 2, Soc Trang City
@@ -29968,7 +29968,7 @@ places:
   - - '1731'
     - Cafe Cầu Vồng
     - ChIJdZaZFgZSoDER8Dd5F1WepQM
-    - 
+    -
     - '9.6036259'
     - '105.965443'
     - Nguyễn Văn Linh, Phường 2, tp. Sóc Trăng
@@ -29992,7 +29992,7 @@ places:
   - - '1732'
     - Cafe Tino
     - ChIJPSl7fQlSoDERtK4J4tgcOeM
-    - 
+    -
     - '9.5969945'
     - '105.9664553'
     - 127 2 soc trang, 125 Phú Lợi, 2, Sóc Trăng
@@ -30016,7 +30016,7 @@ places:
   - - '1733'
     - cà phê Thái Duong
     - ChIJuQtVbglSoDERGvd9ep2Q3co
-    - 
+    -
     - '9.5971875'
     - '105.9669354'
     - 68 Phú Lợi, Phường 2, tp. Sóc Trăng
@@ -30039,7 +30039,7 @@ places:
   - - '1734'
     - Quán cà phê Trà Mi
     - ChIJSzsXfglSoDERpGM59vthKC4
-    - 
+    -
     - '9.5972535'
     - '105.9668361'
     - 72 Phú Lợi, Phường 2, tp. Sóc Trăng
@@ -30062,7 +30062,7 @@ places:
   - - '1735'
     - Quán Cà Phê Kim Ý
     - ChIJIX301gtSoDERhdCtg0lfUxc
-    - 
+    -
     - '9.5967711'
     - '105.9665789'
     - 103, Đường Phú Lợi, Phường 2, tp. Sóc Trăng
@@ -30087,7 +30087,7 @@ places:
   - - '1736'
     - Cà Phê Thái Dương
     - ChIJ24QqfglSoDERQxVMbZnneAI
-    - 
+    -
     - '9.5969469'
     - '105.9668576'
     - 68 Phú Lợi, 2, tp. Sóc Trăng
@@ -30112,10 +30112,10 @@ places:
   - - '1737'
     - Bean Sai Gon Coffee
     - ChIJ_97XlqtrCzERl-t6xFApLus
-    - 
+    -
     - '11.3075542'
     - '106.1072129'
-    - 22 Hoàng Lê Kha, khu phố 3, phường 3
+    - 22 Hoàng Lê Kha, khu phố 3, phường 3
     - Sit expedita dolores adipisci inventore autem quae quia aut. Nesciunt saepe
       similique deserunt vitae optio natus. Doloribus beatae ea at voluptatibus sint
       inventore perspiciatis. Quidem hic cumque nulla ut ea fugit. Beatae impedit
@@ -30187,7 +30187,7 @@ places:
   - - '1740'
     - Cà Phê Mộc Miên Tây Ninh
     - ChIJU7MKxi1qCzERD4_Q9eV_WAs
-    - 
+    -
     - '11.3375839'
     - '106.1158233'
     - Ninh Thọ, Ninh Sơn, tp. Tây Ninh
@@ -30210,7 +30210,7 @@ places:
   - - '1741'
     - Trà sữa YoYo
     - ChIJ4XgCDq5rCzER6S5SiLK66yM
-    - 
+    -
     - '11.3132813'
     - '106.1044362'
     - Khu phố 6,, 58 Nguyễn Chí Thanh, Khu phố 1, Phường 3, tp. Tây Ninh
@@ -30234,7 +30234,7 @@ places:
   - - '1742'
     - Trà sữa Lí Lắc
     - ChIJCQx8o7xrCzER47vPfLUAdRc
-    - 
+    -
     - '11.315974'
     - '106.092833'
     - 009 Phan Chu Trinh Tp Tây Ninh, Phường 2, tp. Tây Ninh
@@ -30256,7 +30256,7 @@ places:
   - - '1743'
     - Duc Anh Karaoke
     - ChIJc-SB7_ZqCzER2MOH0fxrbcA
-    - 
+    -
     - '11.2985138'
     - '106.126531'
     - Hiệp Định, Hiệp Tân
@@ -30280,7 +30280,7 @@ places:
   - - '1744'
     - Cà phê Nguyễn Duy
     - ChIJu6Fns5prCzER9XQBkm9YE2w
-    - 
+    -
     - '11.3148688'
     - '106.075873'
     - 781, Bình Hòa, Thái Bình
@@ -30304,7 +30304,7 @@ places:
   - - '1745'
     - Cà phê Awada
     - ChIJvYq5HOxqCzER0fSKNHC2Nb0
-    - 
+    -
     - '11.2862644'
     - '106.1287927'
     - Khu phố 2, tt. Hoà Thành
@@ -30329,7 +30329,7 @@ places:
   - - '1746'
     - trãng bàng
     - ChIJN0Suj5hpCzER3_QMIWaKtt4
-    - 
+    -
     - '11.3675415'
     - '106.1192802'
     - Tây Ninh
@@ -30353,7 +30353,7 @@ places:
   - - '1747'
     - the gioi di dong
     - ChIJN0Suj5hpCzERm3uoW4KZ2NI
-    - 
+    -
     - '11.3675415'
     - '106.1192802'
     - Tây Ninh
@@ -30377,7 +30377,7 @@ places:
   - - '1748'
     - Quán Cà Phê Trần Mỹ Lệ
     - ChIJE3A4UphpCzER3bmSZNM2-xU
-    - 
+    -
     - '11.3658177'
     - '106.1204755'
     - 30, Khu Phố 5, Thị Xã Tây Ninh
@@ -30401,7 +30401,7 @@ places:
   - - '1749'
     - cf Hoàng Sơn
     - ChIJAQAAAJtpCzERMhtGvUTj6kQ
-    - 
+    -
     - '11.3600988'
     - '106.1198699'
     - Ninh Trung, Ninh Sơn, tp. Tây Ninh
@@ -30424,9 +30424,9 @@ places:
     - '2016-04-07 13:01:02.527063'
     - '2016-04-10 00:53:31.92088'
   - - '1750'
-    - Cà Phê Trà Phí
+    - Cà Phê Trà Phí
     - ChIJ21Udn39pCzEREnwoMTzVefY
-    - 
+    -
     - '11.3493974'
     - '106.109863'
     - Khu phố, Hẻm 106 Trần Phú, Ninh Trung, Ninh Sơn, tp. Tây Ninh
@@ -30450,7 +30450,7 @@ places:
   - - '1751'
     - Cà phê Tình Cây Và Đất
     - ChIJl6Kl3yZqCzERSzR3JOa3da0
-    - 
+    -
     - '11.3430665'
     - '106.1273787'
     - Bời Lời, Ninh Sơn, tp. Tây Ninh
@@ -30474,7 +30474,7 @@ places:
   - - '1752'
     - Cà phê Nguyễn Minh
     - ChIJ5UxRBiZqCzERzze7xm66ceA
-    - 
+    -
     - '11.3408161'
     - '106.1234227'
     - Bời Lời, Ninh Thọ, Ninh Sơn, tx. Tây Ninh
@@ -30498,7 +30498,7 @@ places:
   - - '1753'
     - Karaoke La Sương Sương
     - ChIJIQ1zuCZqCzERjo5HnADjcWc
-    - 
+    -
     - '11.3417772'
     - '106.1278539'
     - Ninh Tân, Ninh Sơn, tp. Tây Ninh
@@ -30523,7 +30523,7 @@ places:
   - - '1754'
     - Cafe Dì Gái
     - ChIJuXNuS_RpCzERKFobf5I24PQ
-    - 
+    -
     - '11.348187'
     - '106.1386803'
     - Ninh Lợi, Ninh Thạnh, tp. Tây Ninh
@@ -30546,9 +30546,9 @@ places:
     - '2016-04-07 13:01:04.642106'
     - '2016-04-10 00:53:31.926441'
   - - '1755'
-    - Cafe Mỹ Dung
+    - Cafe Mỹ Dung
     - ChIJ74rABTVoCzERv9hPWU0zibA
-    - 
+    -
     - '11.3916837'
     - '106.1368795'
     - Trần Phú, Ninh Sơn, tp. Tây Ninh
@@ -30571,7 +30571,7 @@ places:
   - - '1756'
     - Cà phê Ấn Tượng
     - ChIJ-XXOdCRqCzERs-gN_Xth6t0
-    - 
+    -
     - '11.3390037'
     - '106.1284534'
     - "Đường số 59 Điện Biên Phủ, Ninh Tân, Ninh Sơn, tp. Tây Ninh"
@@ -30619,7 +30619,7 @@ places:
   - - '1758'
     - Nhà Hàng - Cafe Điểm Hẹn
     - ChIJs5UCjOz2NTERx1UgjTOCjuk
-    - 
+    -
     - '20.5517948'
     - '106.4711452'
     - "Đường tỉnh 216, Thụy Phong"
@@ -30643,7 +30643,7 @@ places:
   - - '1759'
     - Coffee - Karaoke AMIGO
     - ChIJU7ypiuz2NTERo4GIzzeiMNc
-    - 
+    -
     - '20.55137'
     - '106.471479'
     - Thái Bình, Thụy Phong, Thái Bình
@@ -30668,7 +30668,7 @@ places:
   - - '1760'
     - Rạp chiếu phim 3D Tân Bình
     - ChIJbTYmfBblNTERmCwaCug7lYg
-    - 
+    -
     - '20.4702297'
     - '106.3201261'
     - Lý Bôn, Tân Bình, tp. Thái Bình
@@ -30693,7 +30693,7 @@ places:
   - - '1761'
     - Kem Ống Kỳ Diệu 399 Lê Quý Đôn
     - ChIJGU5VqdXkNTER2-EiMFPGCOQ
-    - 
+    -
     - '20.4485323'
     - '106.3430696'
     - 399 Lê Quý Đôn, tp. Thái Bình
@@ -30716,7 +30716,7 @@ places:
   - - '1762'
     - Karaoke Minh Đức 123
     - ChIJ66sJopIJSjERp3i8lPVS-2g
-    - 
+    -
     - '20.5567725'
     - '106.5598699'
     - Quốc lộ 39A, Bao Hàm
@@ -30742,7 +30742,7 @@ places:
   - - '1763'
     - "Đoàn Thanh Niên Thôn Bắc Đồng Hải"
     - ChIJo7NlT_jwNTER-3BUwM9z-Zo
-    - 
+    -
     - '20.5288427'
     - '106.3957211'
     - "Đông Vinh"
@@ -30766,7 +30766,7 @@ places:
   - - '1764'
     - Cafe Dân Huề
     - ChIJzRaU0vDwNTERifhI4Qn9KX8
-    - 
+    -
     - '20.524314'
     - '106.3994765'
     - Unnamed Rd,, Đông Vinh
@@ -30790,7 +30790,7 @@ places:
   - - '1765'
     - LAN ANH KARAOKE
     - ChIJa1YWcZbxNTER53hNa819LWw
-    - 
+    -
     - '20.5654071'
     - '106.3762855'
     - Thôn Đồng Vi, Đông La, Đông Hưng, Thái Binh
@@ -30814,7 +30814,7 @@ places:
   - - '1766'
     - Phí Như Hùng cafe số
     - ChIJg2LyAIXwNTERRjTHdpJVy94
-    - 
+    -
     - '20.5004813'
     - '106.4024135'
     - Quốc lộ 39A, Đông Á
@@ -30838,7 +30838,7 @@ places:
   - - '1767'
     - Cafe Cau Nguyen
     - ChIJu0t8n9zxNTER3mx5rW8ZIQQ
-    - 
+    -
     - '20.5598012'
     - '106.3566685'
     - Sinh vật cảnh và sinh thái Hà Thành, Cụm công nghiệp Đông La - Chân cầu Nguyễn
@@ -30863,7 +30863,7 @@ places:
   - - '1768'
     - Cafe Duy Hiền
     - ChIJV30iMNrxNTERkKg6PSJNBTs
-    - 
+    -
     - '20.5564215'
     - '106.3530361'
     - Tổ 8, tt. Đông Hưng
@@ -30888,7 +30888,7 @@ places:
   - - '1769'
     - Karaoke Thu Huyen
     - ChIJG7nnhtvxNTER-n6BDL3y-sY
-    - 
+    -
     - '20.559558'
     - '106.3547416'
     - To 7, tt. Đông Hưng
@@ -30912,7 +30912,7 @@ places:
   - - '1770'
     - Trung Tâm VHTT Huyện Đông Hưng
     - ChIJnXMoLdrxNTERiLF4NVe_BYo
-    - 
+    -
     - '20.557028'
     - '106.3528242'
     - UBND huyện Đông Hưng, Quốc lộ 39A, Cầu Nguyễn, tt. Đông Hưng
@@ -30936,7 +30936,7 @@ places:
   - - '1771'
     - Vu Trong Manh Coffee Shop
     - ChIJiylckc36NTERwoRCGQ0mYyE
-    - 
+    -
     - '20.4629222'
     - '106.3504028'
     - 117, Long Hung Street, Hoang Dieu Ward, Thai Binh City
@@ -30961,7 +30961,7 @@ places:
   - - '1772'
     - Cửa Hàng Giải Khát Lê Thị Thảo
     - ChIJJegzeM36NTERyh1Q7SR0XOg
-    - 
+    -
     - '20.4626958'
     - '106.3491581'
     - 41, Đường Long Hưng, Phường Hoàng Diệu, Thành Phố Thái Bình
@@ -30988,7 +30988,7 @@ places:
   - - '1773'
     - Coffee time square
     - ChIJ8VxjWNXkNTERTDF55PIqObg
-    - 
+    -
     - '20.4507772'
     - '106.34548'
     - Lê Hồng Phong, tp. Thái Bình
@@ -31011,9 +31011,9 @@ places:
     - '2016-04-07 13:01:14.528253'
     - '2016-04-10 00:53:31.950122'
   - - '1774'
-    - Quán Chè Ngon
+    - Quán Chè Ngon
     - ChIJ4Z_4FCrlNTERSGtMGX3k89Q
-    - 
+    -
     - '20.4524183'
     - '106.3417802'
     - 223 Bồ Xuyên, tp. Thái Bình
@@ -31062,7 +31062,7 @@ places:
   - - '1776'
     - Happy Boy Coffee Shop
     - ChIJi6p2AyrlNTER9NLoggEeIJQ
-    - 
+    -
     - '20.451841'
     - '106.3407917'
     - 299, Le Quy Don Street, Thai Binh City
@@ -31086,7 +31086,7 @@ places:
   - - '1777'
     - "北美新天地御苑"
     - ChIJnbbUlMirCjYRR-coQCL9wQ8
-    - 
+    -
     - '37.8171109'
     - '112.558301'
     - 116 Changfeng Street, Xiaodian, Taiyuan
@@ -31111,7 +31111,7 @@ places:
   - - '1778'
     - Chongqing Snacks
     - ChIJwcSomAapCjYR7KXDrreatbc
-    - 
+    -
     - '37.8667208'
     - '112.5666397'
     - Middle Xiaoweiying, Yingze, Taiyuan
@@ -31136,7 +31136,7 @@ places:
   - - '1779'
     - Chongqing Snacks
     - ChIJV1oAw3epCjYR6zTol_wrP-k
-    - 
+    -
     - '37.8432297'
     - '112.5712473'
     - 3 Dongpo Sideling Alley, Yingze, Taiyuan
@@ -31184,7 +31184,7 @@ places:
   - - '1781'
     - Xi'an Characteristic Snack
     - ChIJ37YZTWCpCjYRECQKYn8Acnk
-    - 
+    -
     - '37.8376777'
     - '112.5511597'
     - "-6, 148 South Inner Ring Street, Xiaodian, Taiyuan"
@@ -31208,7 +31208,7 @@ places:
   - - '1782'
     - "未来世界"
     - ChIJPVZkaSupCjYRlTrEiOc8Uls
-    - 
+    -
     - '37.877237'
     - '112.526656'
     - "西渠路88, Wanbailin, Taiyuan"
@@ -31233,7 +31233,7 @@ places:
   - - '1783'
     - "山西省政府办公厅"
     - ChIJrWnK2_2oCjYRKPR_8NpLVx8
-    - 
+    -
     - '37.873429'
     - '112.562725'
     - "府东街101号, Xinghualing, Taiyuan"
@@ -31256,7 +31256,7 @@ places:
   - - '1784'
     - "太原师范学院-图书馆"
     - ChIJxQH8NHipCjYRiOHnJZ95C4w
-    - 
+    -
     - '37.840307'
     - '112.570225'
     - Yingze, Taiyuan
@@ -31281,7 +31281,7 @@ places:
   - - '1785'
     - "山西工商职业学院"
     - ChIJq7p-Ct2qCjYRPp3b-wvgvfQ
-    - 
+    -
     - '37.767798'
     - '112.581148'
     - "坞城南路99号, Xiaodian, Taiyuan"
@@ -31307,7 +31307,7 @@ places:
   - - '1786'
     - "横店电影城"
     - ChIJCVa9O8WrCjYRMFQUum82NsU
-    - 
+    -
     - '37.823547'
     - '112.560423'
     - "王府井6层, Xiaodian, Taiyuan"
@@ -31331,7 +31331,7 @@ places:
   - - '1787'
     - Taiyuan Cinemas
     - ChIJzWhC-aepCjYRyRDIyyg2ylw
-    - 
+    -
     - '37.861348'
     - '112.572499'
     - "五一广场115号, Qifeng Street, Yingze, Taiyuan"
@@ -31356,7 +31356,7 @@ places:
   - - '1788'
     - "欢乐迪"
     - ChIJ-S5cqqWuCjYRItbBVYbRiEI
-    - 
+    -
     - '37.8553374'
     - '112.5109242'
     - 11 Heping South Road, Wanbailin, Taiyuan
@@ -31381,7 +31381,7 @@ places:
   - - '1789'
     - Shanxi Theater
     - ChIJV0-OawGpCjYRrWJ5H41yX6Y
-    - 
+    -
     - '37.8693634'
     - '112.5674736'
     - 29 Liuxiang Alley, Yingze, Taiyuan
@@ -31406,7 +31406,7 @@ places:
   - - '1790'
     - "太原理工大学迎西校区-图书馆"
     - ChIJR5oiZ7WuCjYRilEudns9AEQ
-    - 
+    -
     - '37.861251'
     - '112.522874'
     - "迎泽西大街79号, Wanbailin, Taiyuan"
@@ -31429,7 +31429,7 @@ places:
   - - '1791'
     - Shanxi Song and Dance Theater
     - ChIJ73Vv-RKpCjYRe1QvSvrBPec
-    - 
+    -
     - '37.8567766'
     - '112.5577449'
     - 5 Jiefang South Road, Yingze, Taiyuan
@@ -31452,7 +31452,7 @@ places:
   - - '1792'
     - Xingmei Film City
     - ChIJgfmN196rCjYRpRIS-kGWT5g
-    - 
+    -
     - '37.8325917'
     - '112.5536092'
     - Wangcun North Street, Xiaodian, Taiyuan
@@ -31475,7 +31475,7 @@ places:
   - - '1793'
     - Shanxi Library
     - ChIJM2CnNBOpCjYRbDBN0Vg3TQA
-    - 
+    -
     - '37.8549054'
     - '112.556234'
     - 23 Wenyuan Alley, Yingze, Taiyuan
@@ -31521,7 +31521,7 @@ places:
   - - '1795'
     - Jiefang Yingzhi Digital Cinema
     - ChIJCYvG4_qoCjYRxNIO1D-n57s
-    - 
+    -
     - '37.8810913'
     - '112.5614209'
     - 149 Jiefang Road, Xinghualing, Taiyuan
@@ -31545,7 +31545,7 @@ places:
   - - '1796'
     - "山西省博物馆"
     - ChIJPVsbAKipCjYRXIju_JomAF8
-    - 
+    -
     - '37.861838'
     - '112.572214'
     - "起凤街, Yingze, Taiyuan"
@@ -31568,7 +31568,7 @@ places:
   - - '1797'
     - Cà Phê Miền Tây
     - ChIJPSl-KkW-NjERtqrNsLn-Ows
-    - 
+    -
     - '20.0920172'
     - '105.3718525'
     - 52 Tỉnh Lộ 15, Ngọc Lặc
@@ -31592,7 +31592,7 @@ places:
   - - '1798'
     - Quán Café Hoàng Lâm
     - ChIJYZhVREu-NjER8G3h7Gtgi9I
-    - 
+    -
     - '20.07787'
     - '105.3784449'
     - 35, Phố Nguyễn Trãi, Thị Trấn Ngọc Lạc
@@ -31616,7 +31616,7 @@ places:
   - - '1799'
     - Quán Café Karaoke Chi Chi
     - ChIJF-enCFaVNjER9UYY_c1PpOA
-    - 
+    -
     - '20.0341028'
     - '105.4075453'
     - Xã Minh Sơn, Huyện Ngọc Lặc
@@ -31641,7 +31641,7 @@ places:
   - - '1800'
     - Karaoke Hà Vân
     - ChIJ-_4pO6vqNjERcFPkVhABxs8
-    - 
+    -
     - '20.0268529'
     - '105.4105568'
     - Hồ Chí Minh, làng Ban, Lam Sơn
@@ -31666,7 +31666,7 @@ places:
   - - '1801'
     - Quán Cafe Những Người Bạn
     - ChIJofiIiBWXNjER22YciJ2gNak
-    - 
+    -
     - '20.1804405'
     - '105.4769138'
     - Xã Cẩm Sơn, Huyện Cẩm Thủy
@@ -31763,7 +31763,7 @@ places:
   - - '1805'
     - Le Ba Dang Art Museum
     - ChIJQatdOzqhQTERYDoPQsyoTgI
-    - 
+    -
     - '16.4654261'
     - '107.5879043'
     - Lê Lợi, tp. Huế
@@ -31786,7 +31786,7 @@ places:
   - - '1806'
     - Little House Coffee
     - ChIJRxcxBiyhQTERK9Go0jpsXAk
-    - 
+    -
     - '16.4759696'
     - '107.5784895'
     - 108 Nhật Lệ, tp. Huế
@@ -31810,7 +31810,7 @@ places:
   - - '1807'
     - Cafe Sông Hương
     - ChIJKalNzTuhQTERZvpl0ZJhDio
-    - 
+    -
     - '16.4653434'
     - '107.5890415'
     - 9 Phạm Hồng Thái, Vĩnh Ninh, tp. Huế
@@ -31836,7 +31836,7 @@ places:
   - - '1808'
     - King's Restaurant
     - ChIJ8wLXAhmhQTERCedvX3IdsL4
-    - 
+    -
     - '16.47574'
     - '107.602597'
     - 27 Nguyen Sinh Sac, Pham Van Dong
@@ -31885,7 +31885,7 @@ places:
   - - '1810'
     - An Nhiên Coffee
     - ChIJHUaidRehQTERfN5MDkJnG8g
-    - 
+    -
     - '16.467985'
     - '107.600888'
     - 4 Văn Cao, tp. Huế
@@ -31908,7 +31908,7 @@ places:
   - - '1811'
     - Nhà hàng tiệc cưới Thùy Miên
     - ChIJMTf4QNWmQTERwf6GYX7xuO8
-    - 
+    -
     - '16.4817761'
     - '107.5728447'
     - 67 Lê Trung Định, tp. Huế
@@ -31933,7 +31933,7 @@ places:
   - - '1812'
     - Sunshine cafe
     - ChIJb20EPSyhQTERelDOTfqdU2Y
-    - 
+    -
     - '16.475174'
     - '107.579208'
     - 15 Ngô Sĩ Liên, p.Thuận Thành,, tp. Huế
@@ -31957,7 +31957,7 @@ places:
   - - '1813'
     - Karaoke Ngọc Anh
     - ChIJK-SWxi6hQTERSWkYG5PteHk
-    - 
+    -
     - '16.4732909'
     - '107.5837548'
     - 3 Lê Thánh Tôn, Thuận Thành, tp. Huế
@@ -31981,7 +31981,7 @@ places:
   - - '1814'
     - Coffee Kick
     - ChIJf9BHNCyhQTERyo-c7o6jV0c
-    - 
+    -
     - '16.4741835'
     - '107.5788004'
     - 186 Mai Thúc Loan, 186 Mai Thúc Loan, Thuận Thành, tp. Huế
@@ -32006,7 +32006,7 @@ places:
   - - '1815'
     - Bingsu King
     - ChIJvRvi_zuhQTERsfK7CC-B5NI
-    - 
+    -
     - '16.4646885'
     - '107.5923467'
     - P., 26 Nguyễn Tri Phương, Phú Nhuận, tp. Huế
@@ -32029,7 +32029,7 @@ places:
   - - '1816'
     - Ancient Town Bar-Cafe-Restaurant
     - ChIJscwxGDqhQTERG8v6LJO0mXs
-    - 
+    -
     - '16.4657243'
     - '107.5877581'
     - Nguyễn Đình Chiểu, Vĩnh Ninh, tp. Huế
@@ -32050,9 +32050,9 @@ places:
     - '2016-04-07 13:01:37.661971'
     - '2016-04-10 00:53:32.000924'
   - - '1817'
-    - Thiên Trúc cafe
+    - Thiên Trúc cafe
     - ChIJ8Qe9HTChQTERSeZe9lvRu08
-    - 
+    -
     - '16.470467'
     - '107.585039'
     - 74 Ông Ích Khiêm, tp. Huế
@@ -32077,7 +32077,7 @@ places:
   - - '1818'
     - Haycafe
     - ChIJg-bpTD2hQTERm7jS2fL1nYk
-    - 
+    -
     - '16.469454'
     - '107.596868'
     - 30 Nguyễn Công Trứ, Phú Hội, tp. Huế
@@ -32102,7 +32102,7 @@ places:
   - - '1819'
     - PANNA COTTA HUẾ
     - ChIJqc6k5z2hQTERz6kSIiNcEiM
-    - 
+    -
     - '16.4644727'
     - '107.5965011'
     - 9D Lê Quý Đôn, phường 14, Hồ Chí Minh
@@ -32125,7 +32125,7 @@ places:
   - - '1820'
     - Miss Cafeteria
     - ChIJY7mPehWhQTERBILjzFPz4Gc
-    - 
+    -
     - '16.4603121'
     - '107.5985436'
     - Phong Châu, Phú Hội, tp. Huế
@@ -32150,7 +32150,7 @@ places:
   - - '1821'
     - Kafein
     - ChIJN-lTMBShQTER6yZr6M1z-iM
-    - 
+    -
     - '16.462615'
     - '107.601391'
     - 10 Hà Huy Tập, tp. Huế
@@ -32201,7 +32201,7 @@ places:
   - - '1823'
     - Cafe 3DSTAR
     - ChIJJxY8xvSvCjERaA_mJqG8JAc
-    - 
+    -
     - '10.3522401'
     - '106.3524406'
     - 272 Lê Thị Hồng Gấm, 6, tp. Mỹ Tho
@@ -32223,9 +32223,9 @@ places:
     - '2016-04-07 13:01:41.409067'
     - '2016-04-10 00:53:32.010038'
   - - '1824'
-    - Trà Sữa ANH MẬP
+    - Trà Sữa ANH MẬP
     - ChIJCZiVnuavCjERGB9YDarJiVE
-    - 
+    -
     - '10.3651305'
     - '106.3643101'
     - 444 Nguyễn Tri Phương, Phường 7, tp. Mỹ Tho
@@ -32274,7 +32274,7 @@ places:
   - - '1826'
     - MOCA COFFEE
     - ChIJgSiPjeivCjERfseTK5jbn5w
-    - 
+    -
     - '10.3600905'
     - '106.3662733'
     - 86B Ngô Quyền, tp. Mỹ Tho
@@ -32299,7 +32299,7 @@ places:
   - - '1827'
     - MOCA COFFEE
     - ChIJg9nZ9OivCjERm5X4VFzHoVY
-    - 
+    -
     - '10.3597985'
     - '106.3667844'
     - 86 Ngô Quyền, Phường 1, tp. Mỹ Tho
@@ -32324,7 +32324,7 @@ places:
   - - '1828'
     - MOCA COFFEE
     - ChIJBcA7AsKvCjERTWV1z6sNoi4
-    - 
+    -
     - '10.3556976'
     - '106.3703584'
     - 52 Đinh Bộ Lĩnh, tp. Mỹ Tho
@@ -32347,7 +32347,7 @@ places:
   - - '1829'
     - Myth coffee
     - ChIJCfLi_OyvCjERx3lwrShXVLo
-    - 
+    -
     - '10.3528496'
     - '106.3611931'
     - 25 Nam Kỳ Khởi Nghĩa, tp. Mỹ Tho
@@ -32372,7 +32372,7 @@ places:
   - - '1830'
     - Cafe Thuận
     - ChIJMyMNvjyyCjER9WWTCd62Ye4
-    - 
+    -
     - '10.393652'
     - '106.4537805'
     - "Đường tỉnh 879C, Bình Phú Quới, Đăng Hưng Phước"
@@ -32395,7 +32395,7 @@ places:
   - - '1831'
     - BA LAI CAFE
     - ChIJhXFG52ivCjERZNpXb-2KO90
-    - 
+    -
     - '10.311262'
     - '106.360675'
     - 10°18'40. 106°21'38., 4 Puerto Rico 5, Cataño
@@ -32418,7 +32418,7 @@ places:
   - - '1832'
     - Quán Bà Năm
     - ChIJ4d_HkN68CjERT6cHQJPaukg
-    - 
+    -
     - '10.398198'
     - '106.210198'
     - 160 tổ 7, ấp hòa , xã dưỡng điềm
@@ -32441,7 +32441,7 @@ places:
   - - '1833'
     - Cafe Sương Tình
     - ChIJM3xKN3G-CjERddxdU0mc0_0
-    - 
+    -
     - '10.4742323'
     - '106.1893275'
     - 33 khu 4,, tt. Mỹ Phước
@@ -32465,7 +32465,7 @@ places:
   - - '1834'
     - Cà Phê 3 Miền- Kẹo Dừa Yến Nguyên
     - ChIJR_9XTFGvCjERByHEQWd7ZV4
-    - 
+    -
     - '10.292303'
     - '106.352451'
     - 321/2, Quốc lộ 60, Tam Phước
@@ -32490,7 +32490,7 @@ places:
   - - '1835'
     - Vườn Lan A&U
     - ChIJVVVVVQi6CjERD9SgXKG2CfI
-    - 
+    -
     - '10.4465831'
     - '106.3434358'
     - 180/1 ấp cá, Tân Hiệp
@@ -32514,7 +32514,7 @@ places:
   - - '1836'
     - Quán Cà Phê
     - ChIJVVVVVQi6CjERwVO301YiZ3I
-    - 
+    -
     - '10.4465831'
     - '106.3434358'
     - "Ấp Ga, Thị Trấn Tân Hiệp, Huyện Châu Thành"
@@ -32539,7 +32539,7 @@ places:
   - - '1837'
     - Quán Cà Phê Yến
     - ChIJad9oTAi6CjER98LWFQtEwtA
-    - 
+    -
     - '10.4467519'
     - '106.3444658'
     - 163/3, Ấp Me, Thị Trấn Tân Hiệp, Huyện Châu Thành
@@ -32564,7 +32564,7 @@ places:
   - - '1838'
     - Cafe Phúc
     - ChIJrWs8Ywm6CjER7b7G4HymSus
-    - 
+    -
     - '10.4441363'
     - '106.342626'
     - 31/1 Tân Hiệp, Châu Thành, Tiền Giang
@@ -32588,7 +32588,7 @@ places:
   - - '1839'
     - Cafe Phúc
     - ChIJrWs8Ywm6CjERF4kpJfRpUCY
-    - 
+    -
     - '10.4441363'
     - '106.342626'
     - 31/1 Tân Hiệp, Châu Thành, Tiền Giang
@@ -32614,7 +32614,7 @@ places:
   - - '1840'
     - Caf̀e Hoa Nang
     - ChIJ4zxnxgu6CjERu3q4We5Tcfk
-    - 
+    -
     - '10.4428172'
     - '106.342544'
     - 236 Thân cuu nghia
@@ -32638,7 +32638,7 @@ places:
   - - '1841'
     - Tiệm Cà Phê Cát Trắng
     - ChIJedLPGwq6CjERhHW3O__kAoQ
-    - 
+    -
     - '10.4432912'
     - '106.3453241'
     - Quốc Lộ 1A, Ấp Rẫy, Thị Trấn Tân Hiệp, Huyện Châu Thành
@@ -32663,7 +32663,7 @@ places:
   - - '1842'
     - Khu Du Lịch Sinh Thái Phượng Hoàng
     - ChIJfbqfMfoWoDER73CHuF-WKNk
-    - 
+    -
     - '9.908129'
     - '106.300557'
     - Số 8, Quốc Lộ 60, Ấp Ba Se A
@@ -32685,7 +32685,7 @@ places:
   - - '1843'
     - Lavender Cafe Tra Vinh
     - ChIJh4FP3VMXoDERrkZ9keRw-Cg
-    - 
+    -
     - '9.935545'
     - '106.338964'
     - 42 Nguyễn Thái Học, Trà Vinh
@@ -32709,7 +32709,7 @@ places:
   - - '1844'
     - Kim Sơn Coffee 2
     - ChIJJ2K59fgZoDER6H10b-5rIEA
-    - 
+    -
     - '9.9379249'
     - '106.355087'
     - Hòa Thuận Châu Thành, 90 Hùng Vương, Hòa Thuận
@@ -32734,7 +32734,7 @@ places:
   - - '1845'
     - COC Cafe Trà Vinh
     - ChIJz3B4rq4QoDERNihIAkbOWkg
-    - 
+    -
     - '9.9491833'
     - '106.3409876'
     - 441, Phạm Ngũ Lão, Trà Vinh
@@ -32756,7 +32756,7 @@ places:
   - - '1846'
     - Nhu Ngoc Coffee Shop
     - ChIJEfsjKx0YoDER-WI3pRBdg7E
-    - 
+    -
     - '9.8642959'
     - '106.3491135'
     - 418, My Chanh Commune, Chau Thanh District
@@ -32780,7 +32780,7 @@ places:
   - - '1847'
     - Hoang Phuc Coffee Shop
     - ChIJQ0OLIh0YoDERpuTP62TWfl8
-    - 
+    -
     - '9.8655173'
     - '106.3487507'
     - 412, Hamlet 2, Chau Thanh Town, Chau Thanh District
@@ -32804,7 +32804,7 @@ places:
   - - '1848'
     - Quán Cà Phê Sân Vườn Sáu Định
     - ChIJZSC1pR0YoDER5Hp920UAn2A
-    - 
+    -
     - '9.8673953'
     - '106.3484078'
     - 284, Khóm 2, Thị Trấn Châu Thành, Huyện Châu Thành
@@ -32829,7 +32829,7 @@ places:
   - - '1849'
     - Quán Cà Phê Huỳnh Lan
     - ChIJc1H-pB0YoDERgvvN1Ext93A
-    - 
+    -
     - '9.8674821'
     - '106.3483931'
     - 370, Khóm 2, Thị Trấn Châu Thành, Huyện Châu Thành
@@ -32854,7 +32854,7 @@ places:
   - - '1850'
     - My Thanh Coffee Shop
     - ChIJ0e7lNh4YoDERaoSXbuwt21o
-    - 
+    -
     - '9.8719319'
     - '106.3476015'
     - 201, Hamlet 2, Chau Thanh Town, Chau Thanh District
@@ -32878,7 +32878,7 @@ places:
   - - '1851'
     - Rạp hát Châu Thanh
     - ChIJI3NeZx4YoDERVHPJ-OOTJ04
-    - 
+    -
     - '9.8709684'
     - '106.3488686'
     - tt. Châu Thành
@@ -32903,7 +32903,7 @@ places:
   - - '1852'
     - Quán Cà Phê Duyên
     - ChIJ06A-zB8YoDERL5filr3e8aQ
-    - 
+    -
     - '9.8726843'
     - '106.3473722'
     - 205, Khóm 2, Thị Trấn Châu Thành, Huyện Châu Thành
@@ -32926,7 +32926,7 @@ places:
   - - '1853'
     - Quán 2 Con Cầy
     - ChIJIWvStGAjoDER0RPokkabtUs
-    - 
+    -
     - '9.7714553'
     - '106.3711739'
     - 158, Đường huyện 17
@@ -32947,9 +32947,9 @@ places:
     - '2016-04-07 13:01:56.658349'
     - '2016-04-10 00:53:32.047033'
   - - '1854'
-    - Cà Phê Nguyễn Nhân
+    - Cà Phê Nguyễn Nhân
     - ChIJV-bh79A7oDERoBsQ_4UeWa8
-    - 
+    -
     - '9.7372116'
     - '106.2603027'
     - Tập Sơn
@@ -32974,7 +32974,7 @@ places:
   - - '1855'
     - Nhat Thanh Cafe
     - ChIJc6e5MYcXoDEROGfNFROQf1k
-    - 
+    -
     - '9.891'
     - '106.3442788'
     - 149, Dong Khoi Street, Ward 6, Tra Vinh City
@@ -32998,7 +32998,7 @@ places:
   - - '1856'
     - Quán Cà Phê Thùy Dương
     - ChIJQ8sv2YAXoDERRP4dKS-M-Lc
-    - 
+    -
     - '9.8924644'
     - '106.3436612'
     - 28, Đường Điện Biên Phủ, Phường 9, Thành Phố Trà Vinh
@@ -33021,9 +33021,9 @@ places:
     - '2016-04-07 13:01:58.113842'
     - '2016-04-10 00:53:32.050858'
   - - '1857'
-    - Coffee VÒNG XOAY
+    - Coffee VÒNG XOAY
     - ChIJf3S1wHwXoDERb-70bCD287M
-    - 
+    -
     - '9.9067373'
     - '106.3420511'
     - Nguyễn Chí Thanh, tp. Trà Vinh
@@ -33049,7 +33049,7 @@ places:
   - - '1858'
     - "សារះមន្ទីរជនជាតិខ្មែរខេត្តត្រាវិញ"
     - ChIJ7zXOtR4XoDERo3Gg4t175x4
-    - 
+    -
     - '9.9161797'
     - '106.3049927'
     - Châu Thành
@@ -33072,7 +33072,7 @@ places:
   - - '1859'
     - Hoa Canh Coffee Shop
     - ChIJATGRwxYXoDERZt0qSkYyM-k
-    - 
+    -
     - '9.9155763'
     - '106.3149858'
     - 65, Nguyen Thi Minh Khai Street, Group 1, Ward 8, Tra Vinh City
@@ -33095,7 +33095,7 @@ places:
   - - '1860'
     - Cà Phê Yeay Uk
     - ChIJkwEJa2MXoDER7rsu4F6Hj-I
-    - 
+    -
     - '9.9093432'
     - '106.3417929'
     - "Điện Biên Phủ, phường 9, tp. Trà Vinh"
@@ -33119,7 +33119,7 @@ places:
   - - '1861'
     - Quán Cà Phê Hoàng Phong
     - ChIJ38xpMxQXoDERjankZaR1uk8
-    - 
+    -
     - '9.9169654'
     - '106.3179937'
     - 36, Đường Nguyễn Thị Minh Khai, Khóm 9, Phường 7, Thành Phố Trà Vinh
@@ -33144,7 +33144,7 @@ places:
   - - '1862'
     - Quán cà phê Lưu Hùng
     - ChIJKxv_tPBEyzYR0ToaNFd6DkM
-    - 
+    -
     - '22.145233'
     - '105.2563502'
     - "Đường tỉnh 190, tt. Vĩnh Lộc"
@@ -33169,7 +33169,7 @@ places:
   - - '1863'
     - Thuoc Tay Minh Thuy
     - ChIJreXY8sFzoDERzsfdKXvsK4A
-    - 
+    -
     - '10.1033428'
     - '106.0820545'
     - Quốc lộ 53, Tân An Luông
@@ -33195,7 +33195,7 @@ places:
   - - '1864'
     - Vu's Coffee
     - ChIJ8XBQauF3oDER7ErCM0taNkI
-    - 
+    -
     - '10.2130343'
     - '105.989002'
     - Long Phước
@@ -33220,7 +33220,7 @@ places:
   - - '1865'
     - Mekko Paint Co.
     - ChIJleQJsUydCjERe57PK-yxtiY
-    - 
+    -
     - '10.233923'
     - '105.9704604'
     - 69/20A Phó Cơ Điều, Phường 3, tp. Vĩnh Long
@@ -33244,7 +33244,7 @@ places:
   - - '1866'
     - Ken House
     - ChIJR-CvAEidCjERsjW-zxlYm-U
-    - 
+    -
     - '10.244387'
     - '105.978515'
     - 51E, Phạm Thái Bường, Phường 4, Vĩnh Long
@@ -33269,7 +33269,7 @@ places:
   - - '1867'
     - 1987 Coffee
     - ChIJn3mD3jCdCjERWoqemxsjAiY
-    - 
+    -
     - '10.2464387'
     - '105.9791476'
     - 44 39, Bạch Đàn, Phường 4, tp. Vĩnh Long
@@ -33292,7 +33292,7 @@ places:
   - - '1868'
     - Cafe Hợp Phố
     - ChIJ5dzTpM-CCjERpMqBeOx2I_s
-    - 
+    -
     - '10.249606'
     - '105.9602273'
     - Phường 9, tp. Vĩnh Long
@@ -33341,7 +33341,7 @@ places:
   - - '1870'
     - Cafe Hàn Huyên
     - ChIJIzFwSSFwoDERq73d654amG0
-    - 
+    -
     - '10.047957'
     - '105.9989446'
     - Tam Bình
@@ -33365,7 +33365,7 @@ places:
   - - '1871'
     - Cafe Minh Nhựt
     - ChIJ8cJk3R1uoDERcDHAGWwMHds
-    - 
+    -
     - '10.0399366'
     - '106.046986'
     - Hoà Bình
@@ -33390,7 +33390,7 @@ places:
   - - '1872'
     - Nguyễn Hoài Nhân
     - ChIJ90t6VYZ6oDERRdHgmEMj28w
-    - 
+    -
     - '10.086037'
     - '105.9611392'
     - Mỹ Lộc
@@ -33413,7 +33413,7 @@ places:
   - - '1873'
     - Khu Di Tích Cái Ngang
     - ChIJRxkTyHF6oDEREjxBqtTeGU4
-    - 
+    -
     - '10.1031348'
     - '105.9596211'
     - "Ấp 4,, Phú Lộc"
@@ -33438,7 +33438,7 @@ places:
   - - '1874'
     - Cà Phê Minh Thư
     - ChIJzzwoZsdzoDER7T1IBC-cZ5k
-    - 
+    -
     - '10.0970705'
     - '106.0867538'
     - Quốc lộ 53, Tân An Luông
@@ -33463,7 +33463,7 @@ places:
   - - '1875'
     - Kem cuộn thái lan HaLu
     - ChIJRU_n0fh2oDERbc1VNZ_6bf8
-    - 
+    -
     - '10.1704812'
     - '106.0233291'
     - "Đường tỉnh 903"
@@ -33488,7 +33488,7 @@ places:
   - - '1876'
     - Cà Phê Suri
     - ChIJ55k2qkx2oDEReir4Fvbxrlc
-    - 
+    -
     - '10.1889652'
     - '106.0172886'
     - Vietnam
@@ -33513,7 +33513,7 @@ places:
   - - '1877'
     - Cà phê Thiên Phát
     - ChIJTQNayLR3oDER59rDfjaSnm8
-    - 
+    -
     - '10.1906588'
     - '106.0163974'
     - Vietnam
@@ -33537,7 +33537,7 @@ places:
   - - '1878'
     - Cafe Điểm tâm sáng Hàn Anh
     - ChIJDW3OTLR3oDERstzsH6ZFa9k
-    - 
+    -
     - '10.1920644'
     - '106.0131285'
     - Quốc lộ 53, tt. Long Hồ
@@ -33562,7 +33562,7 @@ places:
   - - '1879'
     - Karaoke - Nhà Trọ Hồng Phúc
     - ChIJE78WDX55oDERFilC2cGm4N0
-    - 
+    -
     - '10.135653'
     - '105.91773'
     - Quốc lộ 1A, Song Phú
@@ -33586,7 +33586,7 @@ places:
   - - '1880'
     - Chùa Gò Xoài
     - ChIJVVVVVRVvoDERy78MErNDBMk
-    - 
+    -
     - '9.9789961'
     - '105.993491'
     - Trà Ôn District
@@ -33610,7 +33610,7 @@ places:
   - - '1881'
     - Quán Cà Phê Giải Khát Gia Hân
     - ChIJ6UQhup15oDERuzkNSdAYxAs
-    - 
+    -
     - '10.1485922'
     - '105.9250819'
     - "Ấp Phú Hưng, Xã Hòa Phú, Huyện Long Hổ"
@@ -33633,7 +33633,7 @@ places:
   - - '1882'
     - Cafe.Nguyên
     - ChIJoyBtkcN7oDER8S36gj4G6og
-    - 
+    -
     - '10.1205015'
     - '105.904444'
     - Quốc Lộ 1A, Phú An, Phú Thịnh, Tam Bình
@@ -33667,12 +33667,12 @@ users:
   - avatar
   - created_at
   - updated_at
-  records: 
+  records:
   - - '1'
     - Vu Huy Quan
     - quan_deptrai14@yahoo.com
     - "$2a$10$5eOdCVEDG4S361ybAmZLu.ztz7Gv0u92Jxm4QnQJHeUSJXp.16Ney"
-    - 
+    -
     - '0'
     - 1909562_10154677777238275_1713724074777125924_n.jpg
     - '2016-04-09 01:04:14.177841'
@@ -33681,16 +33681,16 @@ users:
     - Vũ Huy Quân
     - nongdenchet@gmail.com
     - "$2a$10$P/jGkPt1MNtT.3THuNCMv.O/ZHBnOO.h6AdtXa.PqryREvRP05QFO"
-    - 
+    -
     - '0'
-    - 
+    -
     - '2016-04-09 01:14:14.391946'
     - '2016-04-09 01:14:14.391946'
   - - '3'
     - nongdenchet
     - nongdenchet123@gmail.com
     - "$2a$10$HGr1m15ZV29U3G44XqhlV.a00SsSQysJqnSyexiOgLCAByug/BlHq"
-    - 
+    -
     - '0'
     - IMG_20141208_144155.jpg
     - '2016-04-09 01:15:40.936359'

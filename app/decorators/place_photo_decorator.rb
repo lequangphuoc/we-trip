@@ -5,7 +5,8 @@ class PlacePhotoDecorator < Draper::Decorator
     object.place.name
   end
 
-  def url
-    GoogleApiClient.get_place_photo(object.photo_reference, object.height)
+  def url(height = nil)
+    image_height = height ? height : object.height
+    GoogleApiClient.get_place_photo(object.photo_reference, image_height)
   end
 end

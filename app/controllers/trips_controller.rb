@@ -15,6 +15,7 @@
 class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show]
+  before_action :prepare_data, only: [:edit, :update]
 
   def show
   end
@@ -32,13 +33,23 @@ class TripsController < ApplicationController
   end
 
   def update
+    @trip.departure = Region.find_by(name: params[:trip][:departure])
     @updated = @trip.update_attributes(trip_update_params)
     respond_to :js
+  end
+
+  def friends_in_trip
+    render json: current_user.friends_in_trip(params[:id])
   end
 
   private
   def get_trip
     @trip = Trip.find(params[:id])
+  end
+
+  def prepare_data
+    @schedule_days = @trip.schedule_days.preload(:attractions => {:place => :display_photo}).decorate
+    @places = Place.all.preload(:region, :display_photo).decorate
   end
 
   def trip_params
@@ -47,7 +58,7 @@ class TripsController < ApplicationController
 
   def trip_update_params
     params.require(:trip).permit(
-        :title, :description, :expected_budget, :start_date, :departure_id
+        :title, :description, :expected_budget, :start_date
     )
   end
 end

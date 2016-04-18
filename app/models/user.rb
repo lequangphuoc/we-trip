@@ -17,8 +17,8 @@ class User < ActiveRecord::Base
   has_many :friend_relations
   has_many :user_trips
   has_many :trips, through: :user_trips
-  has_many :friends, through: :friend_relations, class_name: User, foreign_key: :target_id
   has_many :user_notifications
+  has_many :friends, through: :friend_relations, class_name: User, foreign_key: :target_id
   has_many :notifications, through: :user_notifications, class_name: Notification, foreign_key: :notification_id
 
   has_secure_password
@@ -28,11 +28,11 @@ class User < ActiveRecord::Base
   validates :email, uniqueness: true, format: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
   validates :point, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0}
 
-  def self.friends
-    User.where('id = (?)', friends.id)
-  end
-
   def self.possible_friend(current_user, search_data)
     where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%").order(:name)
+  end
+
+  def friends_in_trip(id)
+    User.where('id IN (?) AND id != (?)', Trip.find(id).users.pluck(:id), self.id)
   end
 end

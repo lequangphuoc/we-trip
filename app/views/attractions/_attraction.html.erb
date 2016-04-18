@@ -1,0 +1,34 @@
+<%= link_to attraction.place do %>
+    <li class="day_detail" id="day-detail_<%= attraction.index %>">
+      <% if attraction.index != 1 %>
+          <div class="transport-time">
+            <div class="day-transfer icn-driving"><%= attraction.distance %> &nbsp;/&nbsp; <%= attraction.duration %></div>
+          </div>
+      <% end %>
+      <input type="hidden" id="attraction_index" value="<%= attraction.index %>">
+      <div class="day-place-detail">
+        <div class="col-img">
+          <%= image_tag(attraction.image_url, height: '50', width: '50', style: 'vertical-align: bottom', class: 'img-circle') %>
+        </div>
+
+        <div class="day-place-detail-middle col-name">
+          <p class="day-place-name"><%= attraction.title %></p>
+          <h3 class="tag"><%= attraction.hour_spend %> hour</h3>
+        </div>
+
+        <div class="text-right remove-itinerary col-remove">
+          <%= link_to schedule_day_attraction_path(attraction.schedule_day_id, attraction),
+                      id: "remove-itinerary_#{attraction.index}", rel: "day-detail_#{attraction.index}",
+                      remote: true, method: :delete do %>
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <% end %>
+        </div>
+      </div>
+    </li>
+
+    <script>
+      $('#remove-itinerary_<%= attraction.index %>').click(function () {
+        showLoading();
+      })
+    </script>
+<% end %>

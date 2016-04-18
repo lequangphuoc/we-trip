@@ -8,19 +8,20 @@
         </button>
         <h4 class="modal-title" id="loginFormLabel">Create New Trip</h4>
       </div>
-      <%= form_tag new_trip_path, remote: true do %>
+      <%= form_tag trips_path, method: :post, remote: true do %>
           <div class="modal-body">
             <div id="trip-error"></div>
 
             <div class="form-group">
               <label for="title" class="form-control-label">Title:</label>
-              <input type="text" class="form-control" id="title" value="<%= params[:title] %>"
+              <input type="text" class="form-control" id="title"
                      name="trip[title]" placeholder="Enter your title">
             </div>
 
             <div class="form-group">
-              <label for="expected_budget">Expected Budget</label>
-              <input type="number" class="form-control" id="expected_budget" min="0">
+              <label for="expected_budget">Expected Budget:</label>
+              <input type="number" class="form-control" id="expected_budget"
+                     placeholder="Enter expected budget" name="trip[expected_budget]" min="0">
             </div>
           </div>
 
@@ -29,16 +30,9 @@
               <div class="col-md-12">
                 <button type="submit" class="btn btn-success btn-lg btn-block">Create</button>
               </div>
-
             </div>
           </div>
       <% end %>
     </div>
   </div>
 </div>
-
-<script>
-  $('#trip-form').on('hidden.bs.modal', function (e) {
-    $('#trip-error').html("");
-  })
-</script>

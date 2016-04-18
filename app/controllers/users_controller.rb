@@ -14,13 +14,9 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def friends
-      render json: current_user.friends
-  end
-
   def available_friends
-      @friends = get_possible_friend(params[:search_data])
-      respond_to :js
+    @friends = get_possible_friend(params[:search_data])
+    respond_to :js
   end
 
   def update

@@ -12,113 +12,6 @@
 @import "toastr";
 @import 'bootstrap-datetimepicker';
 
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
-
-body {
-  line-height:1;
-}
-
-.twitter-typeahead {
-  width: 100%;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,menu,nav,section {
-  display:block;
-}
-
-nav ul {
-  list-style:none;
-}
-
-blockquote, q {
-  quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content:'';
-  content:none;
-}
-
-a {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color:#ff9;
-  color:#000;
-  font-style:italic;
-  font-weight:bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
-}
-
-table {
-  border-collapse:collapse;
-  border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display:block;
-  height:1px;
-  border:0;
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
-}
-
-input, select {
-  vertical-align:middle;
-}
-
 @font-face {
   font-family: josefin;
   src: font-url('JosefinSans-Regular.eot');
@@ -136,6 +29,7 @@ input, select {
   font-url('JosefinSans-Bold.woff') format('woff'),
   font-url('JosefinSans-Bold.svg#webfont') format('svg');
 }
+
 @font-face {
   font-family: blanchCap;
   src: font-url('blanch_caps.eot');
@@ -145,155 +39,198 @@ input, select {
   font-url('blanch_caps.svg#webfont') format('svg');
 }
 
-body, p, a{
-  font-family: josefin;
+@font-face {
+  font-family: southernAir;
+  src: font-url('southernAir.eot');
+  src: font-url('southernAir.ttf') format('truetype'),
+  font-url('southernAir.eot?#iefix') format('embedded-opentype'),
+  font-url('southernAir.woff') format('woff'),
+  font-url('southernAir.svg#webfont') format('svg');
 }
-h1{
+
+body, p, a {
+  font-family: josefinBold;
+}
+
+h1 {
   font-family: blanchCap;
+  font-size: 100px;
 }
+
 h2, h3, h4, h5, h6, strong, .bold-text {
   font-family: josefinBold;
 }
-.top-home{
-  background: #212121;
+
+.form-control {
+  font-size: 20px;
+  height: initial;
+  padding: 8px 12px;
+}
+
+.btn {
+  font-size: 16px;
+}
+
+#loginBtn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#registerBtn {
+  background-color: #e0d2a1;
+}
+
+#createTripBtn {
+  width: 300px;
+  font-size: 24px;
+  background: transparent;
+  border: 1px solid #fff;
+  &:hover {
+    background-color: #F7F7F7;
+    color: #333333;
+  }
+}
+
+/*landing page*/
+.image-search-home {
+  background-image: image-url('home_big.png');
   width: 1440px;
-  h1{
-    font-size: 90px;
-    color: #fff;
+  height: 400px;
+}
+
+.header {
+  color: #fff;
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
   }
-  .name-center{
-    float: left;
-    margin-left: 620px;
-  }
-  .info-right{
-    margin-top: 30px;
+}
+
+.home-top {
+  .nav-pills > li {
     float: right;
-    width: 300px;
   }
-  .top-after-login{
-    border: none;
-    a{
-      background: none;
-    }
-    .nav-link{
-
-      padding: 5px;
-      height: 45px;
-      border: none !important;
-      width: 159px;
-      .img-rounded{
-        float: left;
-      }
-      .username-right-top{
-        float: left;
-        font-size: 20px;
-        margin-top: 6px;
-        margin-left: 5px;
-      }
-
-    }
-    .nav-link:hover{
-      color: #777777;
-    }
-
-    .caret{
-      margin-top: 15px;
-    }
-    .dropdown-item:hover{
-      background-color: #EFEFEF;
-    }
-    span{
-      font-size: 18px;
-    }
+  .username-right-top {
+    color: #F7F7F7;
+  }
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent !important;
   }
 }
-.top_img_home{
-  background-image: image-url('home_big.jpg');
+
+.main-search {
+  top: 65px;
+  position: relative;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  input {
+    width: 300px !important;
+  }
+}
+
+.top-after-login {
+  border: none;
+  a {
+    background: none;
+  }
+  .dropdown-menu > li > a {
+    font-size: 16px;
+  }
+  .nav-link {
+
+    padding: 5px;
+    height: 45px;
+    border: none !important;
+    width: 159px;
+    .img-rounded {
+      float: left;
+    }
+    .username-right-top {
+      float: left;
+      font-size: 20px;
+      margin-top: 6px;
+      margin-left: 5px;
+    }
+
+  }
+  .nav-link:hover {
+    color: #777777;
+  }
+
+  .caret {
+    margin-top: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #EFEFEF;
+  }
+  span {
+    font-size: 18px;
+  }
+
+}
+
+/*trip page*/
+.trip-top-header {
+  background-image: image-url('foot_travel.jpg');
   width: 1440px;
-  height: 300px;
-  .container{
-    text-align: center;
-    padding-top: 50px;
-  }
-  h1{
+  height: 80px;
+  h1 {
+    margin: 0 auto;
+    display: inline-block;
     color: #fff;
-    font-size: 40px;
+    margin-top: -20px;
   }
-  .home-search{
-    margin-top: 50px;
+  .top-right-trip {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
   }
-  .home-search-box{
-    width: 300px;
-  }
-  .file-custom::after {
-    content: "Choose avatar...";
-  }
-}
-
-/*login form*/
-.trip-form{
-
-  .modal-header{
-    background: #212121;
+  .slogan {
     color: #fff;
-    .close{
-      color:#fff;
-      opacity: 1;
-    }
+    font-family: southernAir;
+    font-size: 45px;
   }
 
-}
-
-/*location*/
-#photos-place{
-  img{
-    width: 200px;
-    height: 200px;
-  }
-}
-
-.one-column{
-  h1{
-    font-size: 50px;
-    border-bottom: 1px dashed #BBBBBB;
-    margin-bottom: 10px;
-  }
-  h2{
-    font-size: 30px;
-    margin: 10px 0;
-    color: #0E507B;
-    text-decoration: underline;
-  }
-
-  p{
-    padding: 10px 10px 10px 0;
-  }
 }
 
 /*process form*/
 /*form styles*/
 #msform {
-  margin: 50px auto;
+  margin: 0 auto;
   text-align: center;
   position: relative;
-  width: 1000px;
 }
+
 #msform .form-slide {
   background: white;
   border: 0 none;
   border-radius: 3px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-  padding: 20px 30px;
   box-sizing: border-box;
-  width: 1000px;
+  margin: 0;
+  position: relative;
+  background-color: rgba(191, 170, 63, 0.1);
+  padding: 0 0 16px 0;
+}
+
+.form-card {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 16px 16px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   /*stacking fieldsets above each other*/
   position: relative;
 }
+
 /*Hide all except first fieldset*/
 #msform .form-slide:not(:first-of-type) {
   display: none;
 }
+
 /*inputs
 #msform input, #msform textarea {
   padding: 15px;
@@ -309,46 +246,67 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 /*buttons*/
 #msform .action-button {
 
-  background: #27AE60;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
+  bfont-weight: bold;
+  color: #8F6618;
+  border-radius: 4px;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 9px 18px;
   margin: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #8F6618;
 }
+
+#msform .save-btn {
+  background-color: #DC4B32;
+  color: #fff;
+  width: 117px;
+}
+
 #msform .action-button:hover, #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #DEC698;
 }
+
 /*headings*/
 .fs-title {
-  font-size: 15px;
+  font-size: 32px;
   text-transform: uppercase;
   color: #2C3E50;
   margin-bottom: 10px;
+  border-bottom: 1px solid rgba(76, 63, 25, 0.3);
+  margin-top: 30px;
 }
+
+.control-label {
+  font-size: 18px;
+}
+
 .fs-subtitle {
   font-weight: normal;
   font-size: 13px;
   color: #666;
   margin-bottom: 20px;
 }
+
 /*progressbar*/
 #progressbar {
-  margin-bottom: 30px;
+  margin: 16px 0 0 0;
   overflow: hidden;
+  padding: 0;
+  display: inline-block;
   /*CSS counters to number the steps*/
   counter-reset: step;
+
 }
+
 #progressbar li {
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   width: 200px;
   float: left;
   position: relative;
 }
+
 #progressbar li:before {
   content: counter(step);
   counter-increment: step;
@@ -361,6 +319,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   border-radius: 3px;
   margin: 0 auto 5px auto;
 }
+
 /*progressbar connectors*/
 #progressbar li:after {
   content: '';
@@ -372,128 +331,283 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   top: 9px;
   z-index: -1; /*put it behind the numbers*/
 }
+
 #progressbar li:first-child:after {
   /*connector not needed before the first step*/
   content: none;
 }
+
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-  background: #27AE60;
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #DEC698;
 
 }
-/*basic info*/
-.basic-info-schedule{
-  margin-top: 20px;
-  background-color: #E7F4F2;
-  padding: 10px 0;
-  .basic-schedule-detail{
-    margin: 10px 0;
+
+.trip-basic-info-form {
+  width: 600px;
+  #departure {
+    width: 270px;
   }
-}
-
-
-/*tab itinerary*/
-.badge {
-  background-color: #777;
-}
-
-.tabs-left { margin-top: 3rem; }
-
-.nav-tabs-vertical {
-  float: left;
-  border-bottom: 0;
-  min-height: 100px;
-
-
-  li {
-    float: none;
-    margin: 0;
-
-    a {
-      margin-right: 0;
-      border: 0;
-      background-color: #333;
-
-      &:hover {
-        background-color: #fff;
-        .glyphicon{
-          color: #333;
-
-        }
-      }
-    }
+  label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
   }
 
-  .glyphicon {
-    color: #fff;
-  }
-
-  .active a
-  {
-    background-color: #fff;
-    .glyphicon {
-      color: #333;
-    }
-  }
-}
-
-.nav-tabs-vertical>li.active>a, .nav-tabs-vertical>li.active>a:hover, .nav-tabs-vertical>li.active>a:focus {
-  border:0;
-}
-
-.tab-content {
-  margin-left: 45px;
-
-  .tab-pane {
-    display: none;
-    background-color: #fff;
-    padding: 1.6rem;
-    overflow-y: auto;
-  }
-
-  .active { display: block; }
-}
-
-.list-group {
-  width: 100%;
-
-  .list-group-item {
-    height: 50px;
-
-    h4, span {
-      line-height: 11px;
-    }
-  }
 }
 
 /*typeahead*/
-.tt-menu{
+.tt-menu {
   width: 100%;
   text-align: left;
   border: 1px solid #BBBBBB;
   background-color: #EFEFEF;
-  .tt-suggestion{
+  font-size: 20px;
+  padding: 8px 5px;
+  .tt-suggestion {
     cursor: pointer;
   }
 }
 
-.add_friend_result_wraper{
+.short-border {
+  display: inline-block;
+  padding: 0 80px;
+}
+
+/*itinerary*/
+.panel.with-nav-tabs {
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-size: 24px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.panel.with-nav-tabs .panel-heading {
+  padding: 5px 5px 0 5px;
+  background: transparent;
+}
+
+.panel.with-nav-tabs .nav-tabs {
+  border-bottom: none;
+}
+
+.panel.with-nav-tabs .nav-justified {
+  margin-bottom: -1px;
+}
+
+/********************************************************************/
+/*** PANEL DEFAULT ***/
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+  color: #777;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+  color: #777;
+  background-color: #ddd;
+  border-color: transparent;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #DEC698;
+  border-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+  color: #777;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+  background-color: #ddd;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+  color: #fff;
+  background-color: #555;
+}
+
+.sortable {
+  list-style: none;
+  padding: 0;
+}
+
+.form-schedule {
+  box-shadow: none;
+  background: transparent;
+
+  select {
+    width: 324px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  label {
+    font-size: 20px;
+    display: block;
+  }
+  input {
+    position: relative;
+    vertical-align: top;
+    width: 324px;
+    background-color: transparent;
+  }
+  .addItineraryBtn {
+    width: 324px;
+    background-color: #DC4B32;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+}
+
+.day-transfer {
+  font-size: 18px;
+}
+
+.day-place-detail {
+  background-color: #fbfaf7;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  height: auto;
+  overflow: hidden;
+  font-size: 18px;
+  .col-img {
+    float: left;
+    padding: 0;
+    width: 55px;
+  }
+  .col-name {
+    float: left;
+    width: 220px;
+  }
+  .col-remove {
+    float: left;
+    padding: 0;
+    width: 30px;
+  }
+  .day-place-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    position: relative;
+    top: 5px;
+  }
+  .day-place-detail-middle {
+    padding: 0;
+  }
+  .tag {
+    background: #aaa;
+    color: #fff;
+    line-height: 14px;
+    margin: 10px 3px 4px 0;
+    padding: 8px 4px;
+    font-size: 18px;
+    width: 75px;
+  }
+  .remove-itinerary {
+    margin-top: 10px;
+  }
+  .day-transfer {
+    background: #fff;
+    color: #767676;
+    font-size: 12px;
+    line-height: 28px;
+    padding-left: 42px;
+    position: relative;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    z-index: 2;
+  }
+  .day-transfer:before {
+    margin-right: 39px;
+  }
+  .icn-driving:before {
+    content: '\e08f';
+  }
+}
+
+.add-to-itinerary-form {
+  .modal-header {
+    color: #fff;
+    background-color: #DEC698;
+  }
+}
+
+#addAttractionItineraryBtn {
+  width: 300px;
+  font-size: 24px;
+  background-color: #DC4B32;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dropdown-suggestion {
+  padding: 16px 8px;
+  float: left;
+  border-bottom: 1px solid #8F6618;
+  width: 100%;
+  image {
+
+  }
+  .dropdown-suggestion-image {
+    float: left;
+    width: 60px;
+  }
+}
+
+.add_friend_result_wraper {
   display: inline-block;
   padding-right: 10px;
 }
 
-.result_name{
+.result_name {
   margin-right: 3px;
 }
 
-.notification{
+.notification {
   border: 1px solid #A9A9A9;
   border-radius: 5px;
   padding: 10px;
   margin: 5px;
 }
 
-.notification-box{
+.notification-box {
   min-width: 250px !important;
+}
+
+.dropdown-suggestion-name {
+  float: left;
+  width: 200px;
+}
+
+.tt-menu {
+  background-color: #FCF4CE;
 }

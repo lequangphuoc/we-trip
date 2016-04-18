@@ -25,12 +25,17 @@ class GoogleApiClient
 
   def self.get_place_photo(photo_reference, height)
     params = "?maxheight=#{height}&photoreference=#{photo_reference}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
-    return 'https://maps.googleapis.com/maps/api/place/photo' + params
+    'https://maps.googleapis.com/maps/api/place/photo' + params
   end
 
   def self.get_map_frame(place_id)
     params = "?q=place_id:#{place_id}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
-    return 'https://www.google.com/maps/embed/v1/place' + params
+    'https://www.google.com/maps/embed/v1/place' + params
+  end
+
+  def self.calculate_distance(origin_latitude, origin_longitude, des_latitude, des_longitude)
+    params = "?units=metric&origins=#{origin_latitude},#{origin_longitude}&destinations=#{des_latitude},#{des_longitude}&key=#{API_KEY}"
+    get_method('https://maps.googleapis.com/maps/api/distancematrix/json' + params)['rows'][0]['elements'][0]
   end
 
   private

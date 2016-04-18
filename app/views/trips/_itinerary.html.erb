@@ -1,57 +1,50 @@
-<div class="form-slide">
-  <form>
-    <h2 class="fs-title">Itinerary</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-5">
-          <div class="tabs-left">
-            <ul class="nav nav-tabs-vertical">
-              <li class="active"><a href="#day1" data-toggle="tab">Day 1</a></li>
-              <li><a href="#day2" data-toggle="tab">Day 2</a></li>
-              <li><a href="#day3" data-toggle="tab">Day 3</a></li>
+<h2 class="fs-title short-border">Itinerary</h2>
+<div class="panel with-nav-tabs panel-default">
+  <div class="panel-heading">
+    <ul class="nav nav-tabs" id="day-left-panel">
+      <li>
+        <%= link_to trip_schedule_days_path(@trip), method: :post,
+                    remote: true, class: 'btn-add-schedule' do %>
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Day
+        <% end %>
+      </li>
 
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="day1">
-                <div class="container">
-                  <h2>Dynamic Tabs</h2>
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-                  </ul>
+      <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :schedule_day %>
+    </ul>
+  </div>
+  <script>
+    DEFAULT_LAT_AVG = 14.0583;
+    DEFAULT_LNG_AVG = 108.2772;
 
-                  <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                      <h3>HOME</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                      <h3>Menu 1</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                      <h3>Menu 2</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="menu3" class="tab-pane fade">
-                      <h3>Menu 3</h3>
-                      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                    </div>
-                  </div>
-                </div>
+    // Toggle maps
+    maps = {};
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      var map = maps[e.target.id][0];
+      var bounds = maps[e.target.id][1];
+      google.maps.event.trigger(map, 'resize');
+      map.setZoom(15);
+      if (bounds.isEmpty()) {
+        map.setZoom(5);
+        map.setCenter(new google.maps.LatLng(DEFAULT_LAT_AVG, DEFAULT_LNG_AVG));
+      } else {
+        map.fitBounds(bounds);
+      }
+    });
 
-
-              </div>
-              <div class="tab-pane" id="day2">
-
-              </div>
-              <div class="tab-pane" id="day3">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
-              </div><!-- /tab-content -->
-          </div><!-- /tabbable -->
-        </div><!-- /col -->
-      </div><!-- /row -->
-    </div><!-- /container -->
-  </form>
+    // Place engine
+    places = <%= raw @places.to_json %>;
+    placeEngine = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('suggest_title'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      identify: function (obj) {
+        return obj.id;
+      },
+      local: places
+    });
+  </script>
+  <div class="panel-body">
+    <div class="tab-content" id="itinerary-content">
+      <%= render @schedule_days %>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,74 @@
+function initialize(mapId) {
+  var mapCanvas = document.getElementById(mapId);
+  var directionsService = new google.maps.DirectionsService;
+  var latCenter = parseFloat("<%= schedule_day.center_point[:latitude] %>");
+  var lngCenter = parseFloat("<%= schedule_day.center_point[:longitude] %>");
+  var mapOptions = {
+    center: new google.maps.LatLng(latCenter, lngCenter),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  addAttractionsToMap(map);
+  calculateAndDisplayRoute(map, directionsService);
+}
+
+function addAttractionsToMap(map) {
+  var markers = [];
+  <% schedule_day.attractions.each do |attraction| %>
+  var lat = parseFloat("<%= attraction.place.latitude %>");
+  var lng = parseFloat("<%= attraction.place.longitude %>");
+  var overlay = new CustomMarker(
+      new google.maps.LatLng(lat, lng), map, "<%= attraction.image_url(56) %>"
+  );
+  markers.push(overlay);
+  <% end %>
+  var bounds = new google.maps.LatLngBounds();
+  for (var i = 0; i < markers.length; i++) {
+    bounds.extend(markers[i].getPosition());
+  }
+  maps["li_tab<%= schedule_day.index %>"] = [map, bounds];
+  if (bounds.isEmpty()) {
+    map.setZoom(5);
+    map.setCenter(new google.maps.LatLng(DEFAULT_LAT_AVG, DEFAULT_LNG_AVG));
+  } else {
+    map.fitBounds(bounds);
+  }
+}
+
+function calculateAndDisplayRoute(map, directionsService) {
+  <% schedule_day.pairs_of_attractions.each do |first, second| %>
+  directionsService.route({
+    origin: {placeId: "<%= first.place.location_id %>"},
+    destination: {placeId: "<%= second.place.location_id %>"},
+    travelMode: google.maps.TravelMode.DRIVING,
+    unitSystem: google.maps.UnitSystem.METRIC
+  }, function (response, status) {
+    if (status === google.maps.DirectionsStatus.OK) {
+      var directionsDisplay = new google.maps.DirectionsRenderer({
+        polylineOptions: {
+          strokeColor: "red"
+        },
+        preserveViewport: true,
+        suppressMarkers: true
+      });
+      directionsDisplay.setMap(map);
+      directionsDisplay.setDirections(response);
+    } else {
+      console.log('Directions request failed due to ' + status);
+    }
+  });
+  <% end %>
+}
+
+function getImage(url) {
+  return {
+    url: url,
+    size: new google.maps.Size(48, 48),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(24, 24)
+  };
+}
+
+// Initialize here
+google.maps.event.addDomListener(window, 'load', initialize('map<%= schedule_day.index %>'));

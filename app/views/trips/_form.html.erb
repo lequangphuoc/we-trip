@@ -8,58 +8,47 @@
     <li>Todo</li>
     <li>Attachment</li>
   </ul>
+
   <!-- fieldsets -->
-  <%= render 'trips/basic_info' %>
-  <%= render 'trips/itinerary' %>
-  <%= render 'trips/budget_plan' %>
-  <%= render 'trips/todo' %>
-  <%= render 'trips/attachment' %>
+  <div class="form-slide" id="basic_info">
+    <%= render 'trips/basic_info' %>
+  </div>
+
+  <div class="form-slide" id="itinerary">
+  </div>
+
+  <div class="form-slide" id="budget_plan">
+    <%= render 'trips/budget_plan' %>
+  </div>
+
+  <div class="form-slide" id="todo">
+    <%= render 'trips/todo' %>
+  </div>
+
+  <div class="form-slide" id="attachment">
+    <%= render 'trips/attachment' %>
+  </div>
 </div>
 
 <script>
   $(document).ready(function () {
-    //jQuery time
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var left, opacity, scale; //fieldset properties which we will animate
-    var animating; //flag to prevent quick multi-click glitches
+    hideLoading();
 
-    $(".next").click(function () {
+    // jQuery time
+    current_fs = $('#basic_info');
+    var previous_fs; // fieldsets
+    var left, opacity, scale; // fieldset properties which we will animate
+    var animating; // flag to prevent quick multi-click glitches
+
+    moveToNextScreen = function () {
       if (animating) return false;
       animating = true;
-
-      current_fs = $(this).parent().parent();
-      next_fs = $(this).parent().parent().next();
-
-      //activate next step on progressbar using the index of next_fs
+      var next_fs = current_fs.next();
       $("#progressbar li").eq($(".form-slide").index(next_fs)).addClass("active");
-
-      //show the next form-slide
-      next_fs.show();
-      //hide the current form-slide with style
-      current_fs.animate({opacity: 0}, {
-        step: function (now, mx) {
-          //as the opacity of current_fs reduces to 0 - stored in "now"
-          //1. scale current_fs down to 80%
-          scale = 1 - (1 - now) * 0.2;
-          //2. bring next_fs from the right(50%)
-          left = (now * 50) + "%";
-          //3. increase opacity of next_fs to 1 as it moves in
-          opacity = 1 - now;
-          current_fs.css({
-            'transform': 'scale(' + scale + ')',
-            'position': 'absolute'
-          });
-          next_fs.css({'left': left, 'opacity': opacity});
-        },
-        duration: 800,
-        complete: function () {
-          current_fs.hide();
-          animating = false;
-        },
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
-      });
-    });
+      next_fs.fadeIn(800);
+      current_fs.fadeOut(800);
+      current_fs = next_fs;
+    };
 
     $(".previous").click(function () {
       if (animating) return false;

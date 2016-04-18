@@ -11,10 +11,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160414134105) do
+ActiveRecord::Schema.define(version: 20160418132133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attachments", force: :cascade do |t|
+    t.string   "path"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "attachments", ["trip_id"], name: "index_attachments_on_trip_id", using: :btree
+
+  create_table "attractions", force: :cascade do |t|
+    t.integer  "schedule_day_id"
+    t.integer  "place_id"
+    t.integer  "index"
+    t.decimal  "hour_spend",      default: 1.0
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "distance"
+    t.string   "duration"
+  end
+
+  add_index "attractions", ["index"], name: "index_attractions_on_index", using: :btree
+  add_index "attractions", ["place_id"], name: "index_attractions_on_place_id", using: :btree
+  add_index "attractions", ["schedule_day_id"], name: "index_attractions_on_schedule_day_id", using: :btree
+
+  create_table "budget_sections", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "budget_sections", ["trip_id"], name: "index_budget_sections_on_trip_id", using: :btree
+
+  create_table "budgets", force: :cascade do |t|
+    t.decimal  "price",             default: 0.0
+    t.integer  "budget_section_id"
+    t.integer  "attraction_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  add_index "budgets", ["attraction_id"], name: "index_budgets_on_attraction_id", using: :btree
+  add_index "budgets", ["budget_section_id"], name: "index_budgets_on_budget_section_id", using: :btree
 
   create_table "friend_relations", force: :cascade do |t|
     t.string   "status",     default: "pending"
@@ -72,6 +116,28 @@ ActiveRecord::Schema.define(version: 20160414134105) do
 
   add_index "regions", ["name"], name: "index_regions_on_name", using: :btree
 
+  create_table "schedule_days", force: :cascade do |t|
+    t.integer  "index"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "schedule_days", ["index"], name: "index_schedule_days_on_index", using: :btree
+  add_index "schedule_days", ["trip_id"], name: "index_schedule_days_on_trip_id", using: :btree
+
+  create_table "todos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "trip_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "todos", ["trip_id"], name: "index_todos_on_trip_id", using: :btree
+  add_index "todos", ["user_id"], name: "index_todos_on_user_id", using: :btree
+
   create_table "trips", force: :cascade do |t|
     t.datetime "start_date"
     t.integer  "departure_id"
@@ -118,7 +184,16 @@ ActiveRecord::Schema.define(version: 20160414134105) do
 
   add_index "users", ["name"], name: "index_users_on_name", using: :btree
 
+  add_foreign_key "attachments", "trips"
+  add_foreign_key "attractions", "places"
+  add_foreign_key "attractions", "schedule_days"
+  add_foreign_key "budget_sections", "trips"
+  add_foreign_key "budgets", "attractions"
+  add_foreign_key "budgets", "budget_sections"
   add_foreign_key "friend_relations", "users"
+  add_foreign_key "schedule_days", "trips"
+  add_foreign_key "todos", "trips"
+  add_foreign_key "todos", "users"
   add_foreign_key "user_notifications", "notifications"
   add_foreign_key "user_notifications", "users"
   add_foreign_key "user_trips", "trips"
