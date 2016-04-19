@@ -37,7 +37,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :notifications
   resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
+  resources :budgets
+  resources :budget_sections
+  resources :todos
+  resources :attachments
+  resources :notifications
 end
