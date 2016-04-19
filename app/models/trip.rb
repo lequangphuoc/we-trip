@@ -16,6 +16,7 @@ class Trip < ActiveRecord::Base
   has_many :user_trips
   has_many :schedule_days
   has_many :users, through: :user_trips
+  has_many :attractions, through: :schedule_days
   belongs_to :departure, class_name: Region, foreign_key: :departure_id
 
   validates_presence_of :title
@@ -30,5 +31,9 @@ class Trip < ActiveRecord::Base
 
   def users_except_current
     User.where('id IN (?) AND id != (?)', self.users.pluck(:id), self.id)
+  end
+
+  def list_of_attractions
+    Attraction.where(schedule_day_id: schedule_day_ids)
   end
 end
