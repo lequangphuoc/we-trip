@@ -14,15 +14,19 @@ function initialize(mapId) {
 }
 
 function addAttractionsToMap(map) {
+
+  // markers
   var markers = [];
   <% schedule_day.attractions.each do |attraction| %>
-  var lat = parseFloat("<%= attraction.place.latitude %>");
-  var lng = parseFloat("<%= attraction.place.longitude %>");
-  var overlay = new CustomMarker(
-      new google.maps.LatLng(lat, lng), map, "<%= attraction.image_url(56) %>"
-  );
-  markers.push(overlay);
+    var lat = parseFloat("<%= attraction.place.latitude %>");
+    var lng = parseFloat("<%= attraction.place.longitude %>");
+    var marker = new CustomMarker(
+        new google.maps.LatLng(lat, lng), map, "<%= attraction.image_url(50) %>", "<%= attraction.place.name %>"
+    );
+    markers.push(marker);
   <% end %>
+
+  // bounds
   var bounds = new google.maps.LatLngBounds();
   for (var i = 0; i < markers.length; i++) {
     bounds.extend(markers[i].getPosition());
@@ -38,35 +42,41 @@ function addAttractionsToMap(map) {
 
 function calculateAndDisplayRoute(map, directionsService) {
   <% schedule_day.pairs_of_attractions.each do |first, second| %>
-  directionsService.route({
-    origin: {placeId: "<%= first.place.location_id %>"},
-    destination: {placeId: "<%= second.place.location_id %>"},
-    travelMode: google.maps.TravelMode.DRIVING,
-    unitSystem: google.maps.UnitSystem.METRIC
-  }, function (response, status) {
-    if (status === google.maps.DirectionsStatus.OK) {
-      var directionsDisplay = new google.maps.DirectionsRenderer({
-        polylineOptions: {
-          strokeColor: "red"
-        },
-        preserveViewport: true,
-        suppressMarkers: true
-      });
-      directionsDisplay.setMap(map);
-      directionsDisplay.setDirections(response);
-    } else {
-      console.log('Directions request failed due to ' + status);
-    }
-  });
+    directionsService.route({
+      origin: new google.maps.LatLng(
+          parseFloat("<%= first.place.latitude %>"),
+          parseFloat("<%= first.place.longitude %>")
+      ),
+      destination: new google.maps.LatLng(
+          parseFloat("<%= second.place.latitude %>"),
+          parseFloat("<%= second.place.longitude %>")
+      ),
+      travelMode: google.maps.TravelMode.DRIVING,
+      unitSystem: google.maps.UnitSystem.METRIC
+    }, function (response, status) {
+      if (status === google.maps.DirectionsStatus.OK) {
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          polylineOptions: {
+            strokeColor: "red"
+          },
+          preserveViewport: true,
+          suppressMarkers: true
+        });
+        directionsDisplay.setMap(map);
+        directionsDisplay.setDirections(response);
+      } else {
+        console.log('Directions request failed due to ' + status);
+      }
+    });
   <% end %>
 }
 
 function getImage(url) {
   return {
     url: url,
-    size: new google.maps.Size(48, 48),
+    size: new google.maps.Size(50, 50),
     origin: new google.maps.Point(0, 0),
-    anchor: new google.maps.Point(24, 24)
+    anchor: new google.maps.Point(25, 25)
   };
 }
 
