@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   resources :trips, only: [:new, :edit, :create, :update, :show] do
     resources :schedule_days, only: [:create]
     member do
-      get :friends_in_trip
+      get :available_friends
     end
   end
 

@@ -32,7 +32,13 @@ class User < ActiveRecord::Base
     where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%").order(:name)
   end
 
-  def friends_in_trip(id)
-    User.where('id IN (?) AND id != (?)', Trip.find(id).users.pluck(:id), self.id)
+  def notifications_with_senders
+    self.user_notifications.preload(:notification, :sender)
+  end
+
+  def friends_not_in_trip(trip_id)
+    User.find(
+        friends.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
+    )
   end
 end

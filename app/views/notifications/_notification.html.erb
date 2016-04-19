@@ -1,5 +1,29 @@
 <% if !current_user.user_notifications.blank? %>
-    <%= render partial: 'notifications/show', collection: current_user.user_notifications, as: :user_notification %>
+    <%= render partial: 'notifications/show',
+               collection: current_user.notifications_with_senders,
+               as: :user_notification %>
 <% else %>
     You have no notification
 <% end %>
+
+<script>
+  $('.notification .accept').on('click', function (e) {
+    $.ajax({
+      method: 'POST',
+      url: 'friend_relations/confirm.js',
+      data: {'target_id': $(this).parent().find('.sender_id').text()},
+      success: function (data) {
+      }
+    });
+  });
+
+  $('.notification .deny').on('click', function (e) {
+    $.ajax({
+      method: 'POST',
+      url: 'friend_relations/reject.js',
+      data: {'target_id': $(this).parent().find('.sender_id').text()},
+      success: function (data) {
+      }
+    });
+  });
+</script>

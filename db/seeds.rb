@@ -13,8 +13,7 @@ users = []
   )
 end
 
-
 users.each do |user|
-  @service = FriendRelationsService.new(user, 4)
+  @service = FriendRelationsService.new(user, 1)
   @service.create
 end

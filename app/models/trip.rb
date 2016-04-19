@@ -27,4 +27,8 @@ class Trip < ActiveRecord::Base
   def create_default_schedule_day
     self.schedule_days.create(index: 1)
   end
+
+  def users_except_current
+    User.where('id IN (?) AND id != (?)', self.users.pluck(:id), self.id)
+  end
 end
