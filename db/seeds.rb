@@ -12,3 +12,9 @@ users = []
       password_confirmation: "password-#{index}"
   )
 end
+
+
+users.each do |user|
+  @service = FriendRelationsService.new(user, 4)
+  @service.create
+end

@@ -16,8 +16,8 @@ class GoogleApiClient
 
   def self.get_all_regions
     get_method('http://api.tala.xyz/config/data')['regions'].map { |region| region['name'] }
+    endhttps
   end
-
   def self.get_nearby_places(latitude, longitude)
     params = "?location=#{latitude},#{longitude}&type=#{TYPES}&radius=#{RADIUS}&key=#{API_KEY}"
     get_method('https://maps.googleapis.com/maps/api/place/nearbysearch/json' + params)
