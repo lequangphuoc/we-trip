@@ -33,33 +33,24 @@
 <script>
   $(document).ready(function () {
     hideLoading();
-
-    // jQuery time
-    current_fs = $('#basic_info'); // fieldsets
-    var left, opacity, scale; // fieldset properties which we will animate
-    var animating; // flag to prevent quick multi-click glitches
-
-    $(".next").click(function (e) {
-      e.preventDefault();
-      nextScreen();
-    });
-
-    $(".previous").click(function(){
-      alert("test");
-    });
+    currentScreen = $('#basic_info');
 
     moveToNextScreen = function () {
-      if (animating) return false;
-      animating = true;
-      var next_fs = current_fs.next();
-      $("#progressbar li").eq($(".form-slide").index(next_fs)).addClass("active");
-      next_fs.fadeIn(800);
-      current_fs.fadeOut(800);
-      current_fs = next_fs;
+      doAnimation(currentScreen.next());
     };
 
+    moveToPreviousScreen = function () {
+      doAnimation(currentScreen.prev());
+    };
 
-
+    doAnimation = function (nextScreen) {
+      $("#progressbar li").eq($(".form-slide")
+          .index(nextScreen))
+          .addClass("active");
+      nextScreen.fadeIn(800);
+      currentScreen.fadeOut(800);
+      currentScreen = nextScreen;
+    };
 
     $(".submit").click(function () {
       return false;

@@ -19,8 +19,12 @@
     // Toggle maps
     maps = {};
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-      var map = maps[e.target.id][0];
-      var bounds = maps[e.target.id][1];
+      resumeMap(e.target.id);
+    });
+
+    resumeMap = function (id) {
+      var map = maps[id][0];
+      var bounds = maps[id][1];
       google.maps.event.trigger(map, 'resize');
       map.setZoom(15);
       if (bounds.isEmpty()) {
@@ -29,7 +33,7 @@
       } else {
         map.fitBounds(bounds);
       }
-    });
+    };
 
     // Place engine
     places = <%= raw @places.to_json %>;
@@ -47,8 +51,6 @@
       <%= render @schedule_days %>
     </div>
   </div>
-  <input type="button" name="previous" class="previous action-button" value="Previous">
-  <input type="button" name="next" class="next action-button" value="Next">
 
+  <%= render 'trips/footer_navigator' %>
 </div>
-
