@@ -22,6 +22,10 @@
       resumeMap(e.target.id);
     });
 
+    setTimeout(function() {
+      resumeMap("li_tab1");
+    }, 1200);
+
     resumeMap = function (id) {
       var map = maps[id][0];
       var bounds = maps[id][1];
