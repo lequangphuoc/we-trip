@@ -211,6 +211,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   position: relative;
   background-color: rgba(191, 170, 63, 0.1);
   padding: 0 0 16px 0;
+  float: left;
+  width: 100%;
 }
 
 .form-card {
@@ -610,4 +612,45 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 
 .tt-menu {
   background-color: #FCF4CE;
+}
+.nav-button{
+  font-size: 18px;
+  background: #DEC698 !important;
+  color: #fff;
+  width: 100px;
+}
+
+.budget-plan{
+  width: 800px;
+  font-size: 20px;
+  padding: 16px 0;
+}
+.budget-row{
+  border-bottom: 1px solid #FCEAB5;
+  float: left;
+  width: 100%;
+}
+.header-budget{
+  font-size: 24px;
+  color: #C89668;
+}
+.foot-nav{
+  float: left;
+  width: 100%;
+  padding: 16px 0;
+}
+.section-budget-header{
+  color: #983F3E;
+  font-size: 24px;
+  padding: 16px 0;
+  background-color: #FEE9C2;
+}
+.section-budget-item{
+  padding: 16px 0;
+}
+.total-budget{
+  background-color: #01328D;
+  padding: 16px 0;
+  font-size: 24px;
+  color: #fff;
 }

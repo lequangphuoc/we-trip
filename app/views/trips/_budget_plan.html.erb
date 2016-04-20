@@ -1,12 +1,56 @@
-<div class="form-slide">
-  <form>
-    <h2 class="fs-title">Budget Plan</h2>
-    <h3 class="fs-subtitle">We will never sell it</h3>
-    <input type="text" name="fname" placeholder="First Name"/>
-    <input type="text" name="lname" placeholder="Last Name"/>
-    <input type="text" name="phone" placeholder="Phone"/>
-    <textarea name="address" placeholder="Address"></textarea>
-    <input type="button" name="previous" class="previous action-button" value="Previous"/>
-    <input type="button" name="next" class="next action-button" value="Next"/>
-  </form>
+<h2 class="fs-title short-border">Budget Plan</h2>
+<div class="budget-plan">
+  <div class="budget-row header-budget">
+    <div class="col-md-4">
+      Item
+    </div>
+    <div class="col-md-4">
+      Cost
+    </div>
+    <div class="col-md-4">
+      Assignee
+    </div>
+  </div>
+
+  <div class="budget-row section-budget-header">
+    Pre-trip
+  </div>
+  <div class="budget-row section-budget-item pre-trip-budget">
+    <div class="col-md-4">
+      Accomodation
+    </div>
+    <div class="col-md-4">
+      3.000.000 VND
+    </div>
+    <div class="col-md-4">
+      Vu Huy Quan
+    </div>
+  </div>
+  <div class="budget-row section-budget-item pre-trip-budget">
+    <div class="col-md-4">
+      Camping tools
+    </div>
+    <div class="col-md-4">
+      2.000.000 VND
+    </div>
+    <div class="col-md-4">
+      Vu Huy Quan
+    </div>
+  </div>
+  <div class="budget-row section-budget-header">
+    On-trip
+  </div>
+  <div class="budget-row section-budget-header">
+    Day 1
+  </div>
+  <div class="budget-row section-budget-header">
+    Day 2
+  </div>
+  <div class="budget-row total-budget">
+    Total: <span>10.000.000vnd</span>
+  </div>
 </div>
+<div class="budget-plan-split-individual">
+
+</div>
+<%= render 'trips/footer_navigator' %>
