@@ -619,11 +619,15 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   color: #fff;
   width: 100px;
 }
-
 .budget-plan{
-  width: 800px;
+  float: left;
+  width: 100%;
+}
+.budget-plan-table{
+  width: 60%;
   font-size: 20px;
   padding: 16px 0;
+  float: left;
 }
 .budget-row{
   border-bottom: 1px solid #FCEAB5;
@@ -653,4 +657,23 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   padding: 16px 0;
   font-size: 24px;
   color: #fff;
+}
+
+.budget-plan-split-individual{
+    float: left;
+    width: 40%;
+    padding: 50px;
+  font-size: 20px;
+  .budget-row{
+    padding: 16px 0;
+  }
+}
+
+.assignee-name{
+  background-color: #983F3E !important;
+  color: #fff !important;
+  font-size: 20px;
+  .panel-title{
+    font-size: 20px;
+  }
 }
