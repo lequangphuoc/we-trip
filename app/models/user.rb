@@ -35,4 +35,9 @@ class User < ActiveRecord::Base
   def friends_in_trip(id)
     User.where('id IN (?) AND id != (?)', Trip.find(id).users.pluck(:id), self.id)
   end
+
+  def self.get_top_7_contributor
+    order(point: :desc).limit(7)
+  end
+
 end

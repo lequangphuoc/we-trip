@@ -12,25 +12,3 @@
   <%= user_notification.notification.description %>
   <% end %>
 </div>
-
-<script>
-  $('.notification .accept').on('click', function (e) {
-    $.ajax({
-      method: 'POST',
-      url: 'friend_relations/confirm',
-      data: {'target_id': $(this).parent().find('.sender_id').text()},
-      success: function (data) {
-      }
-    });
-  });
-
-  $('.notification .deny').on('click', function (e) {
-    $.ajax({
-      method: 'POST',
-      url: 'friend_relations/reject',
-      data: {'target_id': $(this).parent().find('.sender_id').text()},
-      success: function (data) {
-      }
-    });
-  });
-</script>

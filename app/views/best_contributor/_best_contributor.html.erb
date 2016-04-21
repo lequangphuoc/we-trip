@@ -1,0 +1,11 @@
+<% if !User.get_top_7_contributor.blank? %>
+  <div class="owl-carousel">
+    <%= render partial: 'best_contributor/show', collection: User.get_top_7_contributor, as: :user %>
+  </div>
+<% else %>
+  There is no User yet
+<% end %>
+
+<script>
+  $('.owl-carousel').owlCarousel();
+</script>
