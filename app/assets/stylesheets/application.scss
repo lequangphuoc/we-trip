@@ -243,7 +243,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 /*buttons*/
 #msform .action-button {
 
-  bfont-weight: bold;
+  font-weight: bold;
   color: #8F6618;
   border-radius: 4px;
   cursor: pointer;
@@ -619,6 +619,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .budget-plan {
   float: left;
   width: 100%;
+  padding: 0 16px;
 }
 
 .budget-plan-table {
@@ -703,5 +704,61 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .budget-plan-item-action {
   .glyphicon-edit {
     margin-right: 16px;
+  }
+}
+
+#photos-place img {
+  width: 280px;
+  height: 280px;
+  padding: 16px 16px 16px 0;
+}
+.btn-behind-title{
+  display: block;
+  padding: 8px;
+}
+.import-facebook-album{
+  background-color: #45619D;
+  color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 16px;
+
+}
+.import-facebook-album:hover{
+  background-color: #fff;
+  color: #45619D;
+  text-decoration: none;
+}
+#importFBAlbumModal{
+  .modal-header{
+    background-color: #45619D;
+    color: #fff;
+    font-size: 24px;
+  }
+  .modal-body{
+    background: image-url('bg_import_fb.jpg') no-repeat;
+  }
+  .close{
+    color: #fff;
+    opacity: 1;
+  }
+  .facebook-album-list{
+    font-size: 18px;
+    th{
+      text-align: center;
+      color: #45619D;
+      font-size: 20px;
+    }
+    .select-album-btn{
+      padding: 5px 18px;
+      font-size: 18px;
+    }
+  }
+}
+.btn-publish-trip{
+  font-size: 18px;
+  .glyphicon{
+    margin-left: 5px;
   }
 }

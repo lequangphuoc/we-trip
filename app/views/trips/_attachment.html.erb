@@ -1,4 +1,101 @@
 <h2 class="fs-title short-border">Gallery</h2>
+<span class="btn-behind-title">
+  <a href="#" class="import-facebook-album" data-toggle="modal" data-target="#importFBAlbumModal">Import album from Facebook</a>
+</span>
+<div class="attachment-container">
+  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body next"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left prev">
+              <i class="glyphicon glyphicon-chevron-left"></i>
+              Previous
+            </button>
+            <button type="button" class="btn btn-primary next">
+              Next
+              <i class="glyphicon glyphicon-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="photos-place">
+    <a href="http://images.nationalgeographic.com/wpf/media-live/photos/000/714/overrides/ho-chi-minh-city-vietnam_71471_990x742.jpg" title="Banana" data-gallery>
+      <img src="http://images.nationalgeographic.com/wpf/media-live/photos/000/714/overrides/ho-chi-minh-city-vietnam_71471_990x742.jpg" alt="Banana">
+    </a>
+    <a href="http://cache1.asset-cache.net/gc/523959663-sunrise-over-ho-chi-minh-city-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=21zqa0CogSjKAyX7FkEw6LrGEseUti1Miq926hUnniodYh4KDlVbnhbTmY1hH%2Fed4KLZNeQbNGkFImowLsMbOw%3D%3D" title="Apple" data-gallery>
+      <img src="http://cache1.asset-cache.net/gc/523959663-sunrise-over-ho-chi-minh-city-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=21zqa0CogSjKAyX7FkEw6LrGEseUti1Miq926hUnniodYh4KDlVbnhbTmY1hH%2Fed4KLZNeQbNGkFImowLsMbOw%3D%3D" alt="Apple">
+    </a>
+    <a href="http://www.photoweeklyonline.com/wp-content/uploads/2011/12/Ho_Chi_Minh_Traffic.jpg" title="Orange" data-gallery>
+      <img src="http://www.photoweeklyonline.com/wp-content/uploads/2011/12/Ho_Chi_Minh_Traffic.jpg" alt="Orange">
+    </a>
+    <a href="http://www.abdphoto.net/gallery/wedding/saigon-notre-dame.jpg" title="Apple" data-gallery>
+      <img src="http://www.abdphoto.net/gallery/wedding/saigon-notre-dame.jpg" alt="Apple">
+    </a>
+  </div>
+</div>
 
 
-<%= render 'trips/footer_navigator' %>
+
+<!-- Modal -->
+<div class="modal fade" id="importFBAlbumModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Import Album from Facebook</h3>
+      </div>
+      <div class="modal-body">
+        <h2>Vu Huy Quan's Albums</h2>
+        <table class="table table-striped facebook-album-list">
+          <thead>
+          <tr>
+            <th>Album Name</th>
+            <th>Created Date</th>
+            <th>Number of Photos</th>
+            <th>&nbsp;</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Ha Noi Trips</td>
+            <td>15 Feb 2016</td>
+            <td>20</td>
+            <td><a href="#" class="btn btn-primary">Select</a></td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default select-album-btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="foot-nav">
+  <button type="button" name="previous" class="btn previous nav-button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</button>
+  <button type="button" name="next" class="btn btn-success btn-publish-trip">Submit <span class="glyphicon glyphicon-share" aria-hidden="true"></span></button>
+</div>
