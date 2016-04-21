@@ -60,7 +60,9 @@
       </div>
     </div>
 
-    <input type="submit" name="save" class="btn save-btn" id="update_trip" value="Save & Next"/>
+    <button type="submit" class="btn hot-action-button" id="update_trip">
+      Save & Next
+    </button>
 <% end %>
 
 <script>
@@ -76,7 +78,7 @@
   // friends tag
   $.ajax({
     method: 'GET',
-    url: '/trips/<%= @trip.id %>/friends_in_trip',
+    url: '/trips/<%= @trip.id %>/available_friends',
     success: function (data) {
       $('#participantTags').tagit({
         availableTags: data.map(function (user) {
@@ -86,8 +88,8 @@
         singleFieldNode: $('#participant')
       });
 
-      <% @trip.users.each do |user| %>
-      $("#participantTags").tagit("createTag", "<%= user.name %>");
+      <% @trip.users_except_current.each do |user| %>
+        $("#participantTags").tagit("createTag", "<%= user.name %>");
       <% end %>
 
       $('#participantTags').tagit({

@@ -1,0 +1,16 @@
+<div class="foot-nav">
+  <button type="button" name="previous" class="btn previous nav-button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</button>
+  <button type="button" name="next" class="btn next nav-button">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+</div>
+
+<script>
+  $(".next").click(function (event) {
+    event.preventDefault();
+    moveToNextScreen();
+  });
+
+  $(".previous").click(function (event) {
+    event.preventDefault();
+    moveToPreviousScreen();
+  });
+</script>

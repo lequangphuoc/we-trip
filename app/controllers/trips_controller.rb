@@ -38,8 +38,8 @@ class TripsController < ApplicationController
     respond_to :js
   end
 
-  def friends_in_trip
-    render json: current_user.friends_in_trip(params[:id])
+  def available_friends
+    render json: current_user.friends_not_in_trip(params[:id])
   end
 
   private

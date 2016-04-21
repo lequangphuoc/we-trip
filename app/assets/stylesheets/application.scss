@@ -140,11 +140,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     font-size: 16px;
   }
   .nav-link {
-
     padding: 5px;
-    height: 45px;
     border: none !important;
-    width: 159px;
     .img-rounded {
       float: left;
     }
@@ -154,7 +151,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
       margin-top: 6px;
       margin-left: 5px;
     }
-
   }
   .nav-link:hover {
     color: #777777;
@@ -169,7 +165,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   span {
     font-size: 18px;
   }
-
 }
 
 /*trip page*/
@@ -213,6 +208,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   position: relative;
   background-color: rgba(191, 170, 63, 0.1);
   padding: 0 0 16px 0;
+  float: left;
+  width: 100%;
 }
 
 .form-card {
@@ -610,6 +607,79 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     width: 200px;
   }
 
-  .tt-menu {
-    background-color: #FCF4CE;
+.tt-menu {
+  background-color: #FCF4CE;
+}
+
+.nav-button {
+  font-size: 18px;
+  background: #DEC698 !important;
+  color: #fff;
+  width: 100px;
+}
+
+.budget-plan {
+  float: left;
+  width: 100%;
+}
+
+.budget-plan-table {
+  width: 60%;
+  font-size: 20px;
+  padding: 16px 0;
+  float: left;
+}
+
+.budget-row {
+  border-bottom: 1px solid #FCEAB5;
+  float: left;
+  width: 100%;
+}
+
+.header-budget {
+  font-size: 24px;
+  color: #C89668;
+}
+
+.foot-nav {
+  float: left;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.section-budget-header {
+  color: #983F3E;
+  font-size: 24px;
+  padding: 16px 0;
+  background-color: #FEE9C2;
+}
+
+.section-budget-item {
+  padding: 16px 0;
+}
+
+.total-budget {
+  background-color: #01328D;
+  padding: 16px 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.budget-plan-split-individual {
+  float: left;
+  width: 40%;
+  padding: 50px;
+  font-size: 20px;
+  .budget-row {
+    padding: 16px 0;
   }
+}
+
+.assignee-name {
+  background-color: #983F3E !important;
+  color: #fff !important;
+  font-size: 20px;
+  .panel-title {
+    font-size: 20px;
+  }
+}

@@ -33,57 +33,24 @@
 <script>
   $(document).ready(function () {
     hideLoading();
-
-    // jQuery time
-    current_fs = $('#basic_info');
-    var previous_fs; // fieldsets
-    var left, opacity, scale; // fieldset properties which we will animate
-    var animating; // flag to prevent quick multi-click glitches
+    currentScreen = $('#basic_info');
 
     moveToNextScreen = function () {
-      if (animating) return false;
-      animating = true;
-      var next_fs = current_fs.next();
-      $("#progressbar li").eq($(".form-slide").index(next_fs)).addClass("active");
-      next_fs.fadeIn(800);
-      current_fs.fadeOut(800);
-      current_fs = next_fs;
+      doAnimation(currentScreen.next());
     };
 
-    $(".previous").click(function () {
-      if (animating) return false;
-      animating = true;
+    moveToPreviousScreen = function () {
+      doAnimation(currentScreen.prev());
+    };
 
-      current_fs = $(this).parent().parent();
-      previous_fs = $(this).parent().parent().prev();
-
-      //de-activate current step on progressbar
-      $("#progressbar li").eq($(".form-slide").index(current_fs)).removeClass("active");
-
-      //show the previous form-slide
-      previous_fs.show();
-      //hide the current form-slide with style
-      current_fs.animate({opacity: 0}, {
-        step: function (now, mx) {
-          //as the opacity of current_fs reduces to 0 - stored in "now"
-          //1. scale previous_fs from 80% to 100%
-          scale = 0.8 + (1 - now) * 0.2;
-          //2. take current_fs to the right(50%) - from 0%
-          left = ((1 - now) * 50) + "%";
-          //3. increase opacity of previous_fs to 1 as it moves in
-          opacity = 1 - now;
-          current_fs.css({'left': left});
-          previous_fs.css({'transform': 'scale(' + scale + ')', 'opacity': opacity});
-        },
-        duration: 800,
-        complete: function () {
-          current_fs.hide();
-          animating = false;
-        },
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
-      });
-    });
+    doAnimation = function (nextScreen) {
+      $("#progressbar li").eq($(".form-slide")
+          .index(nextScreen))
+          .addClass("active");
+      nextScreen.fadeIn(800);
+      currentScreen.fadeOut(800);
+      currentScreen = nextScreen;
+    };
 
     $(".submit").click(function () {
       return false;
