@@ -659,6 +659,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   padding: 16px 0;
   font-size: 24px;
   color: #fff;
+  text-align: right;
 }
 
 .budget-plan-split-individual{
@@ -681,5 +682,19 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   font-size: 20px;
   .panel-title{
     font-size: 20px;
+  }
+}
+.budget-item-form{
+  select{
+    height: 45px;
+  }
+  button{
+    font-size: 20px;
+    height: 45px;
+  }
+}
+.budget-plan-item-action{
+  .glyphicon-edit{
+    margin-right: 16px;
   }
 }

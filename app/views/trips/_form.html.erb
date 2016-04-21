@@ -5,8 +5,7 @@
     <li class="active">Basic Info</li>
     <li>Itinerary</li>
     <li>Budget Plan</li>
-    <li>Todo</li>
-    <li>Attachment</li>
+    <li>Gallery</li>
   </ul>
 
   <!-- fieldsets -->
@@ -21,10 +20,6 @@
     <%= render 'trips/budget_plan' %>
   </div>
 
-  <div class="form-slide" id="todo">
-    <%= render 'trips/todo' %>
-  </div>
-
   <div class="form-slide" id="attachment">
     <%= render 'trips/attachment' %>
   </div>
@@ -32,6 +27,17 @@
 
 <script>
   $(document).ready(function () {
+
+    $("body").on('click','.next',function (event) {
+      event.preventDefault();
+      moveToNextScreen();
+    });
+
+    $("body").on('click','.previous',function (event) {
+      event.preventDefault();
+      moveToPreviousScreen();
+    });
+
     hideLoading();
     currentScreen = $('#basic_info');
 
