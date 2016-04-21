@@ -41,4 +41,9 @@ class User < ActiveRecord::Base
         friends.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
     )
   end
+
+  def self.get_top_7_contributor
+    order(point: :desc).limit(7)
+  end
+
 end

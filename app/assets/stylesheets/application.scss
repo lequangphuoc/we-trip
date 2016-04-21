@@ -6,6 +6,8 @@
  *= require blueimp-gallery-video
  *= require jquery-ui
  *= require jquery.tagit.css
+ *= require owl.carousel
+ *= require owl.theme
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -140,9 +142,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .nav-link {
 
     padding: 5px;
-    height: 45px;
     border: none !important;
-    width: 159px;
     .img-rounded {
       float: left;
     }
@@ -152,7 +152,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
       margin-top: 6px;
       margin-left: 5px;
     }
-
   }
   .nav-link:hover {
     color: #777777;
@@ -563,7 +562,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   }
 }
 
-#addAttractionItineraryBtn {
+#addAttractionItineraryBtn, .hot-action-button {
   width: 300px;
   font-size: 24px;
   background-color: #DC4B32;
