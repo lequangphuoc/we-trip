@@ -55,6 +55,8 @@ gem 'httparty'
 gem 'puma'
 # dumbing database
 gem 'yaml_db'
+# Graph API
+gem 'koala', '~> 2.2'
 # ui libaries
 gem 'Bootstrap-Image-Gallery-rails'
 gem 'jquery-ui-rails'
