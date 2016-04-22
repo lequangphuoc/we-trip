@@ -42,6 +42,10 @@ class TripsController < ApplicationController
     render json: current_user.friends_not_in_trip(params[:id])
   end
 
+  def budget_plan
+    respond_to :js
+  end
+
   private
   def get_trip
     @trip = Trip.find(params[:id])

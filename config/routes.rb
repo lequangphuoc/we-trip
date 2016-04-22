@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'attractions/create'
-
   get 'home/index'
   root 'home#index'
 
@@ -29,6 +27,7 @@ Rails.application.routes.draw do
       get :available_friends
     end
   end
+  post 'trips/budget_plan' => 'trips#budget_plan'
 
   resources :schedule_days, only: [] do
     resources :attractions, only: [:create, :destroy]
