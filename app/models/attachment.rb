@@ -1,6 +1,16 @@
-class Attachment < ActiveRecord::Base
-  belongs_to :trip, dependent: :destroy
+# == Schema Information
+#
+# Table name: attachments
+#
+#  id         :integer          not null, primary key
+#  path       :string
+#  trip_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 
-  mount_uploader :path, AttachmentUploader
+class Attachment < ActiveRecord::Base
+  belongs_to :trip
+
   validates_presence_of :trip_id, :path
 end

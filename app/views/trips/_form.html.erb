@@ -17,7 +17,6 @@
   </div>
 
   <div class="form-slide" id="budget_plan">
-    <%= render 'trips/budget_plan' %>
   </div>
 
   <div class="form-slide" id="attachment">
@@ -27,10 +26,20 @@
 
 <script>
   $(document).ready(function () {
-
     $("body").on('click','.foot-nav .next',function (event) {
       event.preventDefault();
-      moveToNextScreen();
+      if (currentScreen[0].id == "itinerary") {
+        showLoading();
+        $.ajax({
+          method: 'GET',
+          url: '/trips/<%= @trip.id %>/budget_plan.js',
+          success: function (data) {
+            hideLoading();
+          }
+        });
+      } else {
+        moveToNextScreen();
+      }
     });
 
     $("body").on('click','.foot-nav .previous',function (event) {
@@ -46,6 +55,9 @@
     };
 
     moveToPreviousScreen = function () {
+      $("#progressbar li").eq($(".form-slide")
+          .index(currentScreen))
+          .removeClass("active");
       doAnimation(currentScreen.prev());
     };
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160418132133) do
+ActiveRecord::Schema.define(version: 20160422132134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,25 +40,26 @@ ActiveRecord::Schema.define(version: 20160418132133) do
   add_index "attractions", ["place_id"], name: "index_attractions_on_place_id", using: :btree
   add_index "attractions", ["schedule_day_id"], name: "index_attractions_on_schedule_day_id", using: :btree
 
-  create_table "budget_sections", force: :cascade do |t|
-    t.string   "title"
-    t.integer  "trip_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "budget_sections", ["trip_id"], name: "index_budget_sections_on_trip_id", using: :btree
-
-  create_table "budgets", force: :cascade do |t|
-    t.decimal  "price",             default: 0.0
+  create_table "budget_items", force: :cascade do |t|
     t.integer  "budget_section_id"
-    t.integer  "attraction_id"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.integer  "price"
+    t.string   "name"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
-  add_index "budgets", ["attraction_id"], name: "index_budgets_on_attraction_id", using: :btree
-  add_index "budgets", ["budget_section_id"], name: "index_budgets_on_budget_section_id", using: :btree
+  add_index "budget_items", ["budget_section_id"], name: "index_budget_items_on_budget_section_id", using: :btree
+
+  create_table "budget_sections", force: :cascade do |t|
+    t.integer  "schedule_day_id"
+    t.integer  "trip_id"
+    t.string   "title"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "budget_sections", ["schedule_day_id"], name: "index_budget_sections_on_schedule_day_id", using: :btree
+  add_index "budget_sections", ["trip_id"], name: "index_budget_sections_on_trip_id", using: :btree
 
   create_table "friend_relations", force: :cascade do |t|
     t.string   "status",     default: "pending"
@@ -126,18 +127,6 @@ ActiveRecord::Schema.define(version: 20160418132133) do
   add_index "schedule_days", ["index"], name: "index_schedule_days_on_index", using: :btree
   add_index "schedule_days", ["trip_id"], name: "index_schedule_days_on_trip_id", using: :btree
 
-  create_table "todos", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.integer  "trip_id"
-    t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "todos", ["trip_id"], name: "index_todos_on_trip_id", using: :btree
-  add_index "todos", ["user_id"], name: "index_todos_on_user_id", using: :btree
-
   create_table "trips", force: :cascade do |t|
     t.datetime "start_date"
     t.integer  "departure_id"
@@ -149,6 +138,18 @@ ActiveRecord::Schema.define(version: 20160418132133) do
   end
 
   add_index "trips", ["departure_id"], name: "index_trips_on_departure_id", using: :btree
+
+  create_table "user_budgets", force: :cascade do |t|
+    t.integer  "budget_item_id"
+    t.integer  "user_id"
+    t.integer  "price"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "kind"
+  end
+
+  add_index "user_budgets", ["budget_item_id"], name: "index_user_budgets_on_budget_item_id", using: :btree
+  add_index "user_budgets", ["user_id"], name: "index_user_budgets_on_user_id", using: :btree
 
   create_table "user_notifications", force: :cascade do |t|
     t.integer  "notification_id"
@@ -187,13 +188,13 @@ ActiveRecord::Schema.define(version: 20160418132133) do
   add_foreign_key "attachments", "trips"
   add_foreign_key "attractions", "places"
   add_foreign_key "attractions", "schedule_days"
+  add_foreign_key "budget_items", "budget_sections"
+  add_foreign_key "budget_sections", "schedule_days"
   add_foreign_key "budget_sections", "trips"
-  add_foreign_key "budgets", "attractions"
-  add_foreign_key "budgets", "budget_sections"
   add_foreign_key "friend_relations", "users"
   add_foreign_key "schedule_days", "trips"
-  add_foreign_key "todos", "trips"
-  add_foreign_key "todos", "users"
+  add_foreign_key "user_budgets", "budget_items"
+  add_foreign_key "user_budgets", "users"
   add_foreign_key "user_notifications", "notifications"
   add_foreign_key "user_notifications", "users"
   add_foreign_key "user_trips", "trips"

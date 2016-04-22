@@ -16,8 +16,14 @@ class ScheduleDay < ActiveRecord::Base
   belongs_to :trip
   has_many :attractions, -> { order(:index) }, dependent: :destroy
   has_many :places, through: :attractions
+  has_one :budget_section, dependent: :destroy
 
   validates_presence_of :index, :trip_id
+  after_create :init_budget_section
+
+  def init_budget_section
+    self.create_budget_section(trip_id: self.trip_id)
+  end
 
   def pairs_of_attractions
     count = self.attractions.size

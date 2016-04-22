@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'attractions/create'
-
   get 'home/index'
   root 'home#index'
 
@@ -27,6 +25,7 @@ Rails.application.routes.draw do
     resources :schedule_days, only: [:create]
     member do
       get :available_friends
+      get :budget_plan
     end
   end
 
@@ -39,12 +38,8 @@ Rails.application.routes.draw do
 
   resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
-
+  resources :budget_items, only: [:create, :destroy, :update]
   resources :attachments
   post 'attachments/get_album' => 'attachments#get_album'
-
-  resources :budgets
-  resources :budget_sections
-  resources :todos
   resources :notifications
 end

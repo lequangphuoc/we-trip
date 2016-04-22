@@ -14,7 +14,7 @@
 
 class TripsController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:edit, :update, :show]
+  before_action :get_trip, only: [:edit, :update, :show, :budget_plan]
   before_action :prepare_data, only: [:edit, :update]
 
   def show
@@ -40,6 +40,11 @@ class TripsController < ApplicationController
 
   def available_friends
     render json: current_user.friends_not_in_trip(params[:id])
+  end
+
+  def budget_plan
+    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
+    respond_to :js
   end
 
   private

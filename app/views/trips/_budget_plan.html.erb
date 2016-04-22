@@ -16,191 +16,28 @@
       </div>
     </div>
 
-    <div class="budget-row section-budget-header">
-      Pre-trip
-    </div>
-    <div class="budget-row section-budget-item pre-trip-budget">
-      <div class="col-md-3">
-        Accomodation
-      </div>
-      <div class="col-md-3">
-        Vu Huy Quan
-
-      </div>
-      <div class="col-md-3">
-        3.000.000 VND
-      </div>
-      <div class="col-md-3 budget-plan-item-action">
-        <a href="#" data-toggle="modal" data-target="#budget-plan-item-form"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-        <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-      </div>
+    <div id="list_budget_sections">
+      <%= render @budget_sections %>
     </div>
 
-    <div class="budget-row section-budget-item pre-trip-budget">
-      <div class="col-md-3">
-        Camping tools
-      </div>
-      <div class="col-md-3">
-        Vu Huy Quan
-
-      </div>
-      <div class="col-md-3">
-        3.000.000 VND
-      </div>
-      <div class="col-md-3 budget-plan-item-action">
-        <a href="#" data-toggle="modal" data-target="#budget-plan-item-form"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-        <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-      </div>
-    </div>
-    <div class="budget-row section-budget-item budget-item-form" id="pre-trip-form">
-      <form>
-        <div class="col-md-3">
-          <input type="text" class="form-control" id="title"
-                 name="budget[item]" placeholder="Item">
-        </div>
-        <div class="col-md-3">
-          <select class="form-control">
-            <option>Vu Huy Quan</option>
-            <option>Doan Phuong Lan</option>
-            <option>Split Equally</option>
-          </select>
-
-        </div>
-        <div class="col-md-3">
-          <input type="number" class="form-control" id="expected_budget"
-                 placeholder="Cost" name="budget[cost]" min="0">
-        </div>
-        <div class="col-md-3">
-          <button type="submit" class="btn btn-success btn-block">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <div class="budget-row section-budget-header">
-      Day 1
-    </div>
-    <div class="budget-row section-budget-item budget-item-form" id="day-1-form">
-      <form>
-        <div class="col-md-3">
-          <input type="text" class="form-control" id="title"
-                 name="budget[item]" placeholder="Item">
-        </div>
-        <div class="col-md-3">
-          <select class="form-control">
-            <option>Vu Huy Quan</option>
-            <option>Doan Phuong Lan</option>
-            <option>Split Equally</option>
-          </select>
-
-        </div>
-        <div class="col-md-3">
-          <input type="number" class="form-control" id="expected_budget"
-                 placeholder="Cost" name="budget[cost]" min="0">
-        </div>
-        <div class="col-md-3">
-          <button type="submit" class="btn btn-success btn-block">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-          </button>
-        </div>
-      </form>
-    </div>
-    <div class="budget-row section-budget-header">
-      Day 2
-    </div>
-    <div class="budget-row section-budget-item budget-item-form" id="day-2-form">
-      <form>
-        <div class="col-md-3">
-          <input type="text" class="form-control" id="title"
-                 name="budget[item]" placeholder="Item">
-        </div>
-        <div class="col-md-3">
-          <select class="form-control">
-            <option>Vu Huy Quan</option>
-            <option>Doan Phuong Lan</option>
-            <option>Split Equally</option>
-          </select>
-
-        </div>
-        <div class="col-md-3">
-          <input type="number" class="form-control" id="expected_budget"
-                 placeholder="Cost" name="budget[cost]" min="0">
-        </div>
-        <div class="col-md-3">
-          <button type="submit" class="btn btn-success btn-block">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-          </button>
-        </div>
-      </form>
-    </div>
     <div class="budget-row total-budget">
       <div class="col-md-3">Total:</div>
       <div class="col-md-3">&nbsp;</div>
       <div class="col-md-3">
-        10.000.000vnd
+        <%= format_price(@total_money) %>
       </div>
       <div class="col-md-3">
         &nbsp;
       </div>
-
     </div>
   </div>
+
   <div class="budget-plan-split-individual">
     <span class="budget-plan-split-individual-title">Individual Expenses</span>
     <div class="panel-group" id="accordion">
-      <div class="panel panel-default">
-        <div class="panel-heading assignee-name">
-          <h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-              Vu Huy Quan</a>
-          </h2>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-          <div class="panel-body">
-            <div class="budget-row">
-              <div class="col-md-6">
-                Ticket fee
-              </div>
-              <div class="col-md-6">
-                20.000 VND
-              </div>
-            </div>
-            <div class="budget-row">
-              <div class="col-md-12 text-right">
-                10.000.000 VND
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading assignee-name">
-          <h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-              Doan Phuong Lan</a>
-          </h2>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <div class="panel-body">
-            <div class="budget-row">
-              <div class="col-md-6">
-                Ticket fee
-              </div>
-              <div class="col-md-6">
-                20.000 VND
-              </div>
-            </div>
-            <div class="budget-row">
-              <div class="col-md-12 text-right">
-                10.000.000 VND
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%= render partial: 'users/user_with_budgets', collection: @user_with_budgets, as: :user %>
     </div>
   </div>
 </div>
-<%= render 'trips/budget_plan_edit' %>
+
 <%= render 'trips/footer_navigator' %>
