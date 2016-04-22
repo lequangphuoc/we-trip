@@ -16,6 +16,7 @@ class ScheduleDaysController < ApplicationController
 
   def create
     @schedule_day = @trip.schedule_days.create(index: next_index).decorate
+
     respond_to :js
   end
 

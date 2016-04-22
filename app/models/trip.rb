@@ -18,6 +18,10 @@ class Trip < ActiveRecord::Base
   has_many :users, through: :user_trips
   has_many :attractions, through: :schedule_days
   belongs_to :departure, class_name: Region, foreign_key: :departure_id
+  has_many :budget_sections, dependent: :destroy
+  has_many :budget_items, through: :budget_sections
+  has_many :user_budgets, through: :budget_items
+  has_many :attachments, dependent: :destroy
 
   validates_presence_of :title
   validates_numericality_of :expected_budget
@@ -27,6 +31,7 @@ class Trip < ActiveRecord::Base
 
   def create_default_schedule_day
     self.schedule_days.create(index: 1)
+    self.budget_sections.create(title: 'Pre-trip')
   end
 
   def users_except_current

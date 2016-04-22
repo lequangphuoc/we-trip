@@ -20,6 +20,11 @@ class User < ActiveRecord::Base
   has_many :user_notifications
   has_many :friends, through: :friend_relations, class_name: User, source: :target
   has_many :notifications, through: :user_notifications, class_name: Notification, source: :notification
+  has_many :user_budgets, class_name: UserBudget, dependent: :destroy do
+    def for_trip(trip_id)
+      where(id: Trip.find(trip_id).user_budget_ids)
+    end
+  end
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader
@@ -29,7 +34,8 @@ class User < ActiveRecord::Base
   validates :point, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0}
 
   def self.possible_friend(current_user, search_data)
-    where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id).where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%").order(:name)
+    where.not(id: FriendRelation.where(user: current_user).pluck(:target_id)).where.not(id: current_user.id)
+        .where("name like ? OR email like ?", "%#{search_data}%", "%#{search_data}%").order(:name)
   end
 
   def notifications_with_senders

@@ -39,12 +39,8 @@ Rails.application.routes.draw do
 
   resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
-
   resources :attachments
   post 'attachments/get_album' => 'attachments#get_album'
-
-  resources :budgets
-  resources :budget_sections
-  resources :todos
+  resources :budget_items
   resources :notifications
 end
