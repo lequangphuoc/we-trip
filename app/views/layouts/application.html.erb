@@ -10,24 +10,7 @@
 </head>
 <body>
 
-<% if params[:controller] == 'trips' %>
-
-    <!-- HEADER VIEW -->
-    <div class="trip-top-header">
-      <div class="container">
-        <h1>WE TRIP</h1>
-        <span class="slogan">Travel in your way</span>
-        <div class="top-right-trip">
-          <%= render 'share/login_user_menu' %>
-        </div>
-      </div>
-    </div>
-
-    <%= yield %>
-
-    <!-- LOADING VIEW -->
-    <%= render 'share/loading' %>
-<% else %>
+<% if params[:controller] == 'home' %>
     <div class="image-search-home">
       <div class="container">
 
@@ -54,6 +37,25 @@
     <div class="container">
       <%= yield %>
     </div>
+
+<% else %>
+
+        <!-- HEADER VIEW -->
+        <div class="trip-top-header">
+          <div class="container">
+            <h1>WE TRIP</h1>
+            <span class="slogan">Travel in your way</span>
+            <div class="top-right-trip">
+              <%= render 'share/login_user_menu' %>
+            </div>
+          </div>
+        </div>
+
+        <%= yield %>
+<% if params[:controller] == 'trips' && params[:action] == 'edit'  %>
+        <!-- LOADING VIEW -->
+        <%= render 'share/loading' %>
+    <% end %>
 <% end %>
 
 </body>

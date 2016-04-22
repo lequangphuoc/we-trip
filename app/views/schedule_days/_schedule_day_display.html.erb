@@ -1,0 +1,25 @@
+<div class="tab-pane fade in <%= schedule_day.index == 1 && 'active' %> days-tab" id="day<%= schedule_day.index %>">
+  <!-- Attractions -->
+  <div class="col-md-3">
+    <div class="schedule-form">
+      <div class="schedule-content" style="margin-top: 24px">
+        <div id="schedule_<%= schedule_day.index %>" class="schedule">
+          <ul class="sortable" id="sortable_<%= schedule_day.index %>">
+            <%= render partial: 'attractions/attraction_display', collection: schedule_day.attractions, as: :attraction %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="col-md-9">
+    <div id="map<%= schedule_day.index %>" style="width: 100%; height: 400px"></div>
+  </div>
+</div>
+
+<script>
+  // Map
+  <%= render 'schedule_days/map.js', schedule_day: schedule_day %>
+
+</script>
