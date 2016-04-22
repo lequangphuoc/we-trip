@@ -55,6 +55,9 @@
     };
 
     moveToPreviousScreen = function () {
+      $("#progressbar li").eq($(".form-slide")
+          .index(currentScreen))
+          .removeClass("active");
       doAnimation(currentScreen.prev());
     };
 

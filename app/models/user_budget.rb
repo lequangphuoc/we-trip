@@ -8,6 +8,7 @@
 #  price          :integer
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
+#  kind           :string
 #
 
 class UserBudget < ActiveRecord::Base
@@ -15,5 +16,5 @@ class UserBudget < ActiveRecord::Base
   belongs_to :user
 
   validates_presence_of :budget_item_id, :user_id
-  validates_numericality_of :price, only_integer: true
+  validates_uniqueness_of :budget_item_id, scope: :user_id
 end

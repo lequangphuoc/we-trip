@@ -1,11 +1,17 @@
 <div class="budget-row section-budget-item pre-trip-budget">
-  <div class="col-md-4">
+  <div class="col-md-3">
     <%= budget_item.name %>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <%= budget_item.price %>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-3">
     <%= budget_item.assignee %>
+  </div>
+  <div class="col-md-3 budget-plan-item-action">
+    <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+    <%= link_to budget_item_path(budget_item, trip_id: @trip.id), method: :delete, remote: true do %>
+      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+    <% end %>
   </div>
 </div>

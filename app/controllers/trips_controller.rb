@@ -43,12 +43,7 @@ class TripsController < ApplicationController
   end
 
   def budget_plan
-    @budget_sections = @trip.budget_sections.preload(
-        :schedule_day, :budget_items => {:user_budgets => :user}
-    ).decorate
-    @people_in_trip = @trip.users
-    @user_with_budgets = @trip.users.preload(:user_budgets => :budget_item)
-                             .where(user_budgets: {id: @trip.user_budget_ids}).decorate
+    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
     respond_to :js
   end
 

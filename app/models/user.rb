@@ -21,11 +21,6 @@ class User < ActiveRecord::Base
   has_many :friends, through: :friend_relations, class_name: User, source: :target
   has_many :notifications, through: :user_notifications, class_name: Notification, source: :notification
   has_many :user_budgets, dependent: :destroy
-  # has_many :user_budgets, class_name: UserBudget, dependent: :destroy do
-  #   def for_trip(trip_id)
-  #     where(id: Trip.find(trip_id).user_budget_ids)
-  #   end
-  # end
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader
@@ -47,5 +42,9 @@ class User < ActiveRecord::Base
     User.find(
         friends.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
     )
+  end
+
+  def total_amount_to_pay
+    self.user_budgets.reduce(0) { |amount, budget| amount + budget.price }
   end
 end

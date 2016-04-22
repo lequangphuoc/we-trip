@@ -110,6 +110,10 @@
       url: '/user_trips',
       data: {trip_id: '<%= @trip.id %>', tag: tagLabel},
       success: function (data) {
+        if (data) {
+          $("#participantTags").tagit("createTag", tagLabel);
+          alert("This user has been assigned budget... Please delete their budget first!!!");
+        }
       }
     });
   };

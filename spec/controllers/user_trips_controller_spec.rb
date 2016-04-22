@@ -49,7 +49,7 @@ RSpec.describe UserTripsController, type: :controller do
       delete :destroy, {tag: user.name, trip_id: trip.id}
       result = JSON.parse(response.body)
       expect(result['success']).to eq(true)
-      expect(result['data']['user_id']).to eq(user.id)
+      expect(result['data']).to eq(false)
     end
   end
 end
