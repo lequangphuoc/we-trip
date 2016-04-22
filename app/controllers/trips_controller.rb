@@ -15,6 +15,7 @@
 class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show, :budget_plan]
+  before_action :check_member, except: [:show, :new, :available_friends]
   before_action :prepare_data, only: [:edit, :update]
 
   def show
@@ -50,6 +51,10 @@ class TripsController < ApplicationController
   private
   def get_trip
     @trip = Trip.find(params[:id])
+  end
+
+  def check_member
+    redirect_to root_path unless @trip.user_ids.include?(current_user_id)
   end
 
   def prepare_data

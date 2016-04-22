@@ -14,7 +14,7 @@ class BudgetItemsController < ApplicationController
   end
 
   def update
-    # TODO: implement this
+    UpdateBudgetService.new(params).execute
     prepare_data
     respond_to :js
   end
