@@ -15,7 +15,7 @@
 class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show, :budget_plan]
-  before_action :check_member, except: [:show, :new, :available_friends]
+  before_action :check_member, except: [:show, :new, :available_friends, :create]
   before_action :prepare_data, only: [:edit, :update]
 
   def show
