@@ -7,13 +7,18 @@
           <ul class="sortable" id="sortable_<%= schedule_day.index %>">
             <%= render schedule_day.attractions %>
           </ul>
+
+          <!-- Add button -->
           <button type="button" class="btn hot-action-button" id="addAttractionItineraryBtn" data-toggle="modal"
                   data-target="#add-to-itinerary-form_<%= schedule_day.index %>">
             Add Attraction
           </button>
-          <button type="button" class="btn delete-day-btn" id="deleteDayBtn">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete Day
-          </button>
+
+          <!-- Delete button -->
+          <%= link_to [@trip, schedule_day], class: 'btn delete-day-btn',
+                      id: 'deleteDayBtn', remote: true, method: :delete do %>
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete Day
+          <% end %>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="modal fade trip-form" id="budget_item_form<%= budget_item.id %>"
+<div class="modal fade budget-plan-edit-form" id="budget_item_form<%= budget_item.id %>"
      tabindex="-1" role="dialog" aria-labelledby="budgetPlanItemLabel"
      aria-hidden="true" xmlns="http://www.w3.org/1999/html">
   <div class="modal-dialog" role="document">
@@ -36,8 +36,9 @@
                    value="<%= budget_item.price %>"
                    name="budget_item[price]" placeholder="Item">
           </div>
-          <div class="row">
-            <button type="submit" class="btn btn-success">Save</button>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success"
+                    style="margin-bottom: 8px; margin-top: 16px; width: 50%">Save</button>
           </div>
       <% end %>
     </div>

@@ -712,11 +712,13 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   height: 280px;
   padding: 16px 16px 16px 0;
 }
-.btn-behind-title{
+
+.btn-behind-title {
   display: block;
   padding: 8px;
 }
-.import-facebook-album{
+
+.import-facebook-album {
   background-color: #45619D;
   color: #fff;
   display: inline-block;
@@ -725,44 +727,47 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   padding: 16px;
 
 }
-.import-facebook-album:hover{
+
+.import-facebook-album:hover {
   background-color: #fff;
   color: #45619D;
   text-decoration: none;
 }
-#importFBAlbumModal{
-  .modal-header{
+
+#importFBAlbumModal {
+  .modal-header {
     background-color: #45619D;
     color: #fff;
     font-size: 24px;
   }
-  .modal-body{
+  .modal-body {
     background: image-url('bg_import_fb.jpg') no-repeat;
   }
-  .close{
+  .close {
     color: #fff;
     opacity: 1;
   }
-  .facebook-album-list{
+  .facebook-album-list {
     font-size: 18px;
-    th{
+    th {
       text-align: center;
       color: #45619D;
       font-size: 20px;
     }
-    .select-album-btn{
+    .select-album-btn {
       padding: 5px 18px;
       font-size: 18px;
     }
   }
 }
-#budget-plan-item-form{
-  .modal-header{
+
+.budget-plan-edit-form {
+  .modal-header {
     background-color: #983F3E;
     color: #fff;
     font-size: 24px;
   }
-  .close{
+  .close {
     color: #fff;
     opacity: 1;
   }
@@ -777,31 +782,32 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     text-align: center;
   }
 
-     select {
-       width: 324px;
-       height: 30px;
-       margin: 0 auto;
-     }
-  .btn-success{
+  select {
+    width: 324px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .btn-success {
     font-size: 20px;
     width: 200px;
   }
 
-
 }
-.btn-publish-trip{
+
+.btn-publish-trip {
   font-size: 18px;
-  .glyphicon{
+  .glyphicon {
     margin-left: 5px;
   }
 }
+
 .delete-day-btn {
   width: 300px;
   font-size: 24px;
   background-color: #fff;
   color: #DC4B32;
   margin-top: 16px;
-  .glyphicon{
+  .glyphicon {
     margin-right: 8px;
   }
 }

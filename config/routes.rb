@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   end
 
   resources :trips, only: [:new, :edit, :create, :update, :show] do
-    resources :schedule_days, only: [:create]
+    resources :schedule_days, only: [:create, :destroy]
     member do
       get :available_friends
       get :budget_plan
