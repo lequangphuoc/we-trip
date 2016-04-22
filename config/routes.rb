@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post 'friend_relations/confirm' => 'friend_relations#confirm'
   post 'friend_relations/reject' => 'friend_relations#reject'
 
-  resources :users, only: [:create, :edit, :update] do
+  resources :users, only: [:create, :show, :update] do
     collection do
       get :friends, :available_friends
     end
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   resources :regions do
     collection do
-      get :all
+      get :all, :get_starting_regions
     end
   end
 

@@ -36,4 +36,8 @@ class Trip < ActiveRecord::Base
   def list_of_attractions
     Attraction.where(schedule_day_id: schedule_day_ids)
   end
+
+  def list_of_destination_regions
+    Region.where(id: Trip.all.collect(&:departure_id))
+  end
 end

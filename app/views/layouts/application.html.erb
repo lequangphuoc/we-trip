@@ -10,53 +10,50 @@
 </head>
 <body>
 
-<% if params[:controller] == 'trips' %>
+  <% if params[:controller] == 'trips' %>
 
-    <!-- HEADER VIEW -->
-    <div class="trip-top-header">
-      <div class="container">
-        <h1>WE TRIP</h1>
-        <span class="slogan">Travel in your way</span>
-        <div class="top-right-trip">
-          <%= render 'share/login_user_menu' %>
-        </div>
-      </div>
-    </div>
-
-    <%= yield %>
-
-    <!-- LOADING VIEW -->
-    <%= render 'share/loading' %>
-<% else %>
-    <div class="image-search-home">
-      <div class="container">
-
-        <!-- NAV BAR -->
-        <%= render 'share/navbar' %>
-
-        <!-- CREATE ACTION -->
-        <div class="header text-center">
-          <h1>WE TRIP</h1>
-          <h2>Travel in your way</h2>
-          <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
-            Create a trip
-          </button>
-        </div>
-      </div>
-
-      <!-- SEARCH ACTION -->
-      <div class="main-search text-center">
-        <%= render 'share/search' %>
-      </div>
-    </div>
-
-    <!-- MAIN ACTION -->
+  <!-- HEADER VIEW -->
+  <div class="trip-top-header">
     <div class="container">
-      <%= yield %>
+      <h1>WE TRIP</h1>
+      <span class="slogan">Travel in your way</span>
+      <div class="top-right-trip">
+        <%= render 'share/login_user_menu' %>
+      </div>
     </div>
-<% end %>
+  </div>
 
-<%= render 'best_contributor/best_contributor' %>
+  <%= yield %>
 
+  <!-- LOADING VIEW -->
+  <%= render 'share/loading' %>
+  <% else %>
+  <div class="image-search-home">
+    <div class="container">
+
+      <!-- NAV BAR -->
+      <%= render 'share/navbar' %>
+
+      <!-- CREATE ACTION -->
+      <div class="header text-center">
+        <h1>WE TRIP</h1>
+        <h2>Travel in your way</h2>
+        <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
+          Create a trip
+        </button>
+      </div>
+    </div>
+
+    <!-- SEARCH ACTION -->
+    <div class="main-search text-center">
+      <%= render 'share/search' %>
+    </div>
+  </div>
+
+  <!-- MAIN ACTION -->
+  <div class="container">
+    <%= yield %>
+  </div>
+  <% end %>
 </body>
 </html>

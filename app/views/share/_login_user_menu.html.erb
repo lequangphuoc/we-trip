@@ -20,7 +20,7 @@
     <ul class="dropdown-menu">
       <li><a href="#" data-toggle="modal" data-target="#trip-form">New Trip</a></li>
       <li><a href="#" data-toggle="modal" data-target="#friend-form">Add Friend</a></li>
-      <li><%= link_to 'Profile', edit_user_path(current_user_id), method: :get %></li>
+      <li><%= link_to 'Profile', user_path(current_user_id), method: :get %></li>
       <li><%= link_to 'Home', root_path %></li>
       <li><%= link_to 'Logout', sessions_path, method: :delete %></li>
     </ul>

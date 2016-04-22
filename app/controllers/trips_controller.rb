@@ -42,6 +42,11 @@ class TripsController < ApplicationController
     render json: current_user.friends_not_in_trip(params[:id])
   end
 
+  def get_possible_destination
+    @regions = Region.get_starting_regions
+    render json: @regions
+  end
+
   private
   def get_trip
     @trip = Trip.find(params[:id])
