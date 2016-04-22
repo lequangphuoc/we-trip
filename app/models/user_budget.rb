@@ -15,4 +15,5 @@ class UserBudget < ActiveRecord::Base
   belongs_to :user
 
   validates_presence_of :budget_item_id, :user_id
+  validates_numericality_of :price, only_integer: true
 end

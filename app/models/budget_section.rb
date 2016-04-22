@@ -14,4 +14,8 @@ class BudgetSection < ActiveRecord::Base
   belongs_to :schedule_day
   belongs_to :trip
   has_many :budget_items, dependent: :destroy
+
+  def total
+    budget_items.reduce(0) { |total, budget_item| total + budget_item.price }
+  end
 end

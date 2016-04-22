@@ -26,14 +26,13 @@
 
 <script>
   $(document).ready(function () {
-
     $("body").on('click','.foot-nav .next',function (event) {
       event.preventDefault();
       if (currentScreen[0].id == "itinerary") {
         showLoading();
         $.ajax({
-          method: 'POST',
-          url: '/trips/budget_plan.js',
+          method: 'GET',
+          url: '/trips/<%= @trip.id %>/budget_plan.js',
           success: function (data) {
             hideLoading();
           }

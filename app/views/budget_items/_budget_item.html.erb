@@ -1,25 +1,11 @@
-<div class="budget-row section-budget-item budget-item-form" id="pre-trip-form">
-  <form>
-    <div class="col-md-3">
-      <input type="text" class="form-control" id="title"
-             name="budget[item]" placeholder="Item">
-    </div>
-    <div class="col-md-3">
-      <select class="form-control">
-        <option>Vu Huy Quan</option>
-        <option>Doan Phuong Lan</option>
-        <option>Split Equally</option>
-      </select>
-
-    </div>
-    <div class="col-md-3">
-      <input type="number" class="form-control" id="expected_budget"
-             placeholder="Cost" name="budget[cost]" min="0">
-    </div>
-    <div class="col-md-3">
-      <button type="submit" class="btn btn-success btn-block">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
-      </button>
-    </div>
-  </form>
+<div class="budget-row section-budget-item pre-trip-budget">
+  <div class="col-md-4">
+    <%= budget_item.name %>
+  </div>
+  <div class="col-md-4">
+    <%= budget_item.price %>
+  </div>
+  <div class="col-md-4">
+    <%= budget_item.assignee %>
+  </div>
 </div>

@@ -16,8 +16,8 @@
           </div>
           <div class="col-md-6">
             <fieldset class="form-group">
-              <label for="expected_budget">Expected Budget</label>
-              <input type="number" class="form-control" id="expected_budget" min="0" value="<%= @trip.expected_budget %>"
+              <label for="expected_budget">Expected Budget (VND)</label>
+              <input type="number" class="form-control" id="expected_budget" min="0" value="<%= @trip.expected_budget.to_i%>"
                      placeholder="Enter expected budget" name="trip[expected_budget]">
             </fieldset>
           </div>

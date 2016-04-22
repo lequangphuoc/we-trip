@@ -1,25 +1,9 @@
-<div class="panel panel-default">
-  <div class="panel-heading assignee-name">
-    <h2 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        Doan Phuong Lan</a>
-    </h2>
+<div class="budget-row">
+  <div class="col-md-6">
+    <%= user_budget.budget_item.name %>
   </div>
-  <div id="collapse2" class="panel-collapse collapse">
-    <div class="panel-body">
-      <div class="budget-row">
-        <div class="col-md-6">
-          Ticket fee
-        </div>
-        <div class="col-md-6">
-          20.000 VND
-        </div>
-      </div>
-      <div class="budget-row">
-        <div class="col-md-12 text-right">
-          10.000.000 VND
-        </div>
-      </div>
-    </div>
+
+  <div class="col-md-6">
+    <%= format_price(user_budget.price) %>
   </div>
 </div>

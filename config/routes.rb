@@ -25,9 +25,9 @@ Rails.application.routes.draw do
     resources :schedule_days, only: [:create]
     member do
       get :available_friends
+      get :budget_plan
     end
   end
-  post 'trips/budget_plan' => 'trips#budget_plan'
 
   resources :schedule_days, only: [] do
     resources :attractions, only: [:create, :destroy]

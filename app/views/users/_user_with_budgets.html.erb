@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading assignee-name">
+    <h2 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= user.id %>">
+        <%= user.name %>
+      </a>
+    </h2>
+  </div>
+  <div id="collapse<%= user.id %>" class="panel-collapse collapse">
+    <div class="panel-body">
+
+      <div id="list_user_budgets<%= %>">
+        <%= render user.user_budgets %>
+      </div>
+
+      <div class="budget-row">
+        <div class="col-md-12 text-right">
+          <%= format_price(user.total_amount_to_pay) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

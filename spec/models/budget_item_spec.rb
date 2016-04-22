@@ -5,6 +5,7 @@
 #  id                :integer          not null, primary key
 #  budget_section_id :integer
 #  price             :integer
+#  name              :string
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #

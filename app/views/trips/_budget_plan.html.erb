@@ -16,27 +16,30 @@
       </div>
     </div>
 
-    <%= render 'budget_sections/budget_section' %>
-    <%= render 'budget_sections/budget_section' %>
-    <%= render 'budget_sections/budget_section' %>
+    <div id="list_budget_sections">
+      <%= render @budget_sections %>
+    </div>
 
     <div class="budget-row total-budget">
       <div class="col-md-3">Total:</div>
       <div class="col-md-3">&nbsp;</div>
       <div class="col-md-3">
-        10.000.000vnd
+        <%= format_price(@trip.total_money) %>
       </div>
       <div class="col-md-3">
         &nbsp;
       </div>
     </div>
   </div>
+
+  <script>
+    // TODO: add logic calculate total amount
+  </script>
+
   <div class="budget-plan-split-individual">
     <span class="budget-plan-split-individual-title">Individual Expenses</span>
     <div class="panel-group" id="accordion">
-      <%= render 'user_budget/user_budget' %>
-      <%= render 'user_budget/user_budget' %>
-      <%= render 'user_budget/user_budget' %>
+      <%= render partial: 'users/user_with_budgets', collection: @user_with_budgets, as: :user %>
     </div>
   </div>
 </div>
