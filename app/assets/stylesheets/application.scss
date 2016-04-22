@@ -756,9 +756,43 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     }
   }
 }
+#budget-plan-item-form{
+  .modal-header{
+    background-color: #983F3E;
+    color: #fff;
+    font-size: 24px;
+  }
+  .close{
+    color: #fff;
+    opacity: 1;
+  }
+  input {
+    width: 324px;
+    display: block;
+    margin: 0 auto;
+  }
+  label {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+
+     select {
+       width: 324px;
+       height: 30px;
+       margin: 0 auto;
+     }
+  .btn-success{
+    font-size: 20px;
+    width: 200px;
+  }
+
+
+}
 .btn-publish-trip{
   font-size: 18px;
   .glyphicon{
     margin-left: 5px;
   }
 }
+

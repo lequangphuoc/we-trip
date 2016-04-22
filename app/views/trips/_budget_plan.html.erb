@@ -31,7 +31,7 @@
         3.000.000 VND
       </div>
       <div class="col-md-3 budget-plan-item-action">
-        <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        <a href="#" data-toggle="modal" data-target="#budget-plan-item-form"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
         <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
       </div>
     </div>
@@ -48,7 +48,7 @@
         3.000.000 VND
       </div>
       <div class="col-md-3 budget-plan-item-action">
-        <a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        <a href="#" data-toggle="modal" data-target="#budget-plan-item-form"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
         <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
       </div>
     </div>
@@ -202,5 +202,5 @@
     </div>
   </div>
 </div>
-
+<%= render 'trips/budget_plan_edit' %>
 <%= render 'trips/footer_navigator' %>
