@@ -22,12 +22,11 @@ class ScheduleDaysController < ApplicationController
   def destroy
     ScheduleDay.transaction do
       @trip.schedule_days.each do |day|
-        day.update_attributes(index: @schedule_day.index - 1) if day.index > @schedule_day.index
+        day.decrement!(:index, by = 1) if day.index > @schedule_day.index
       end
       @schedule_day.destroy
-      @trip.schedule_days.reload
-      @count = @trip.schedule_days.count
     end
+    prepare_data
     respond_to :js
   end
 
@@ -43,6 +42,10 @@ class ScheduleDaysController < ApplicationController
 
   def get_schedule_day
     @schedule_day = ScheduleDay.find(params[:id]).decorate
+  end
+
+  def prepare_data
+    @schedule_days, @places = ItineraryQuery.new(@trip).execute
   end
 
   def next_index

@@ -1,10 +1,2 @@
-<% if @count %>
-  $('#li-day<%= @schedule_day.index %>').remove();
-  $('#day<%= @schedule_day.index %>').remove();
-  <% @count.times do |index| %>
-    $("#li_tab<%= index %>").html("Day <%= index %>");
-  <% end %>
-  if ($('#li_tab1').length > 0) {
-    $('#li_tab1').click();
-  }
-<% end %>
+$('#itinerary').html("<%= j(render 'trips/itinerary') %>");
+hideLoading();

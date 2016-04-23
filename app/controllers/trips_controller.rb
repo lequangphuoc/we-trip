@@ -58,8 +58,7 @@ class TripsController < ApplicationController
   end
 
   def prepare_data
-    @schedule_days = @trip.schedule_days.preload(:attractions => {:place => :display_photo}).decorate
-    @places = Place.all.preload(:region, :display_photo).decorate
+    @schedule_days, @places = ItineraryQuery.new(@trip).execute
   end
 
   def trip_params
