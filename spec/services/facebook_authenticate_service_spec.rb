@@ -8,6 +8,10 @@ RSpec.describe FacebookAuthenticateService do
             name: 'nongdenchet',
             image: 'https://vipei.ca/img/default_avatar.jpg'
         },
+        credentials: {
+            token: 'access_token'
+        },
+        provider: 'facebook',
         uid: 'quan'
     }
     allow_any_instance_of(AvatarUploader).to receive(:download!)
