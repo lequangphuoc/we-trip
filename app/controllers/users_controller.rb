@@ -14,6 +14,10 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def show
+
+  end
+
   def available_friends
     @friends = get_possible_friend(params[:search_data])
     respond_to :js
