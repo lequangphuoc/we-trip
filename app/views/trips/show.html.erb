@@ -3,7 +3,7 @@
   <!-- Basic iInfo -->
   <div class="trip-basic-info-display">
     <h2 class="trip-title"><%= @trip.title %></h2>
-    <span class="trip-destination"><%= @trip.departure.name %> - <%= @trip.schedule_days.count %>days</span>
+    <span class="trip-destination"><%= @trip.departure.name %> - <%= @trip.schedule_days.count %> days</span>
     <span class="trip-time">Start Date: <%= @trip.start_date.strftime('%d/%m/%Y') %></span>
     <span class="trip-description">Etiam sit amet mi velit. Donec euismod ipsum ac libero laoreet, vel dignissim orci elementum. Maecenas iaculis iaculis tempus. In vitae odio molestie orci convallis vulputate. Sed id tincidunt leo. Pellentesque non arcu id purus egestas scelerisque vitae in magna. Vestibulum pellentesque tincidunt tincidunt. Sed vulputate risus in nisl condimentum accumsan at at sem.</span>
   </div>
@@ -114,9 +114,9 @@
 
 <!-- Clone button -->
 <div class="fix-btn-bar">
-  <button class="btn btn-success">
-    <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
-  </button>
+  <%= link_to clone_trip_path(@trip), class: 'btn btn-success' do %>
+      <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
+  <% end %>
 </div>
 
 <script type="text/javascript">

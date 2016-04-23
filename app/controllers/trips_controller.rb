@@ -14,9 +14,9 @@
 
 class TripsController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery, :publish]
-  before_action :check_member, except: [:show, :new, :available_friends, :create, :publish]
-  before_action :prepare_data, only: [:edit, :update, :show]
+  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery, :publish, :clone]
+  before_action :check_member, except: [:show, :new, :available_friends, :create, :publish, :clone]
+  before_action :get_itinerary, only: [:edit, :update, :show]
   before_action :get_budget, only: [:show, :budget_plan]
 
   def show
@@ -60,6 +60,11 @@ class TripsController < ApplicationController
     redirect_to @trip
   end
 
+  def clone
+    new_trip = CloneTripService.new(@trip, current_user).execute
+    redirect_to edit_trip_path(new_trip)
+  end
+
   private
   def get_trip
     @trip = Trip.find(params[:id])
@@ -69,7 +74,7 @@ class TripsController < ApplicationController
     redirect_to root_path unless @trip.user_ids.include?(current_user_id)
   end
 
-  def prepare_data
+  def get_itinerary
     @schedule_days, @places = ItineraryQuery.new(@trip).execute
   end
 

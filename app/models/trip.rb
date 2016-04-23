@@ -14,8 +14,8 @@
 #
 
 class Trip < ActiveRecord::Base
-  has_many :user_trips
-  has_many :schedule_days
+  has_many :user_trips, dependent: :destroy
+  has_many :schedule_days, dependent: :destroy
   has_many :users, through: :user_trips
   has_many :attractions, through: :schedule_days
   belongs_to :departure, class_name: Region, foreign_key: :departure_id
@@ -27,7 +27,6 @@ class Trip < ActiveRecord::Base
   validates_presence_of :title
   validates_numericality_of :expected_budget
   validates_presence_of :departure_id, :description, :start_date, on: :update
-
   after_create :create_default_schedule_day
 
   def create_default_schedule_day
@@ -36,7 +35,10 @@ class Trip < ActiveRecord::Base
   end
 
   def total_money
-    self.budget_sections.reduce(0) { |total_money, budget_section| total_money + budget_section.total }
+    sections = self.budget_sections.includes(:budget_items)
+    sections.reduce(0) { |total_money, budget_section|
+      total_money + budget_section.budget_items.map(&:price).inject(0, &:+)
+    }
   end
 
   def users_except_current(current_user_id)

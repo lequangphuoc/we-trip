@@ -9,7 +9,7 @@ class BudgetPlanQuery
 
   private
   def budget_sections
-    @trip.budget_sections.preload(
+    @trip.budget_sections.includes(
         :schedule_day, :budget_items => {:user_budgets => :user}
     ).decorate
   end

@@ -25,6 +25,7 @@ Rails.application.routes.draw do
     resources :schedule_days, only: [:create, :destroy]
     member do
       put :publish
+      get :clone
       get :available_friends
       get :budget_plan
       get :gallery

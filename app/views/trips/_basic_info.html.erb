@@ -17,7 +17,7 @@
           <div class="col-md-6">
             <fieldset class="form-group">
               <label for="expected_budget">Expected Budget (VND)</label>
-              <input type="number" class="form-control" id="expected_budget" min="0" value="<%= @trip.expected_budget.to_i%>"
+              <input type="number" class="form-control" id="expected_budget" min="0" value="<%= @trip.expected_budget.to_i %>"
                      placeholder="Enter expected budget" name="trip[expected_budget]">
             </fieldset>
           </div>
@@ -66,6 +66,9 @@
 <% end %>
 
 <script>
+  setTimeout(function () {
+    hideLoading();
+  }, 1000);
   $('#update_trip').click(function () {
     showLoading();
   });
@@ -89,7 +92,7 @@
       });
 
       <% @trip.users_except_current(current_user_id).each do |user| %>
-        $("#participantTags").tagit("createTag", "<%= user.name %>");
+      $("#participantTags").tagit("createTag", "<%= user.name %>");
       <% end %>
 
       $('#participantTags').tagit({
