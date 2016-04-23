@@ -88,7 +88,7 @@
         singleFieldNode: $('#participant')
       });
 
-      <% @trip.users_except_current.each do |user| %>
+      <% @trip.users_except_current(current_user_id).each do |user| %>
         $("#participantTags").tagit("createTag", "<%= user.name %>");
       <% end %>
 

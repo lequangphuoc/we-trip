@@ -17,9 +17,9 @@ class TripsController < ApplicationController
   before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery]
   before_action :check_member, except: [:show, :new, :available_friends, :create]
   before_action :prepare_data, only: [:edit, :update, :show]
+  before_action :get_budget, only: [:show, :budget_plan]
 
   def show
-    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
   end
 
   def new
@@ -31,6 +31,7 @@ class TripsController < ApplicationController
   def create
     @trip = Trip.new(trip_params)
     @created = @trip.save
+    @trip.user_trips.create(user_id: current_user_id) if @created
     respond_to :js
   end
 
@@ -45,7 +46,6 @@ class TripsController < ApplicationController
   end
 
   def budget_plan
-    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
     respond_to :js
   end
 
@@ -69,6 +69,10 @@ class TripsController < ApplicationController
 
   def trip_params
     params.require(:trip).permit(:title, :expected_budget)
+  end
+
+  def get_budget
+    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
   end
 
   def trip_update_params

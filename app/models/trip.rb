@@ -38,8 +38,8 @@ class Trip < ActiveRecord::Base
     self.budget_sections.reduce(0) { |total_money, budget_section| total_money + budget_section.total }
   end
 
-  def users_except_current
-    User.where('id IN (?) AND id != (?)', self.users.pluck(:id), self.id)
+  def users_except_current(current_user_id)
+    User.where('id IN (?) AND id != (?)', self.users.pluck(:id), current_user_id)
   end
 
   def list_of_attractions
