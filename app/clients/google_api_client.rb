@@ -1,6 +1,7 @@
 # :nocov:
 class GoogleApiClient
   API_KEY = ENV['GOOGLE_API_KEY']
+  API_KEY_2 = ENV['GOOGLE_API_KEY_2']
   TYPES = 'museum|night_club|shopping_small|cafe|movie_theater'
   RADIUS = 20000
 
@@ -24,12 +25,12 @@ class GoogleApiClient
   end
 
   def self.get_place_photo(photo_reference, height)
-    params = "?maxheight=#{height}&photoreference=#{photo_reference}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
+    params = "?maxheight=#{height}&photoreference=#{photo_reference}&key=#{API_KEY_2}"
     'https://maps.googleapis.com/maps/api/place/photo' + params
   end
 
   def self.get_map_frame(place_id)
-    params = "?q=place_id:#{place_id}&key=AIzaSyBrJ4kgKukKBQGXsu7ULAynrPaBz65k3iA"
+    params = "?q=place_id:#{place_id}&key=#{API_KEY_2}"
     'https://www.google.com/maps/embed/v1/place' + params
   end
 

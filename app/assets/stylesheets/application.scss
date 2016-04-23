@@ -734,6 +734,12 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   text-decoration: none;
 }
 
+.table > thead > tr > th, .table > thead > tr > td,
+.table > tbody > tr > th, .table > tbody > tr > td,
+.table > tfoot > tr > th, .table > tfoot > tr > td {
+  vertical-align: baseline;
+}
+
 #importFBAlbumModal {
   .modal-header {
     background-color: #45619D;

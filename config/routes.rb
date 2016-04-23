@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     member do
       get :available_friends
       get :budget_plan
+      get :gallery
     end
   end
 
@@ -39,7 +40,6 @@ Rails.application.routes.draw do
   resource :user_trips, only: [:create, :destroy]
   resources :places, only: [:show, :index]
   resources :budget_items, only: [:create, :destroy, :update]
-  resources :attachments
-  post 'attachments/get_album' => 'attachments#get_album'
+  resources :attachments, only: [:create]
   resources :notifications
 end

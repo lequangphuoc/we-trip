@@ -1,0 +1,9 @@
+<tr>
+  <td style="vertical-align: baseline"><%= album[:name] %></td>
+  <td><%= album[:created_time] %></td>
+  <td><%= album[:count] %></td>
+  <td>
+    <%= link_to 'Select', attachments_path(trip_id: @trip.id, album_id: album[:id]),
+                method: :post, remote: true, class: 'btn btn-primary' %>
+  </td>
+</tr>

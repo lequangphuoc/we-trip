@@ -19,9 +19,7 @@
   <div class="form-slide" id="budget_plan">
   </div>
 
-  <div class="form-slide" id="attachment">
-    <%= render 'trips/attachment' %>
-  </div>
+  <div class="form-slide" id="gallery"></div>
 </div>
 
 <script>
@@ -33,6 +31,15 @@
         $.ajax({
           method: 'GET',
           url: '/trips/<%= @trip.id %>/budget_plan.js',
+          success: function (data) {
+            hideLoading();
+          }
+        });
+      } else if (currentScreen[0].id == "budget_plan") {
+        showLoading();
+        $.ajax({
+          method: 'GET',
+          url: '/trips/<%= @trip.id %>/gallery.js',
           success: function (data) {
             hideLoading();
           }
