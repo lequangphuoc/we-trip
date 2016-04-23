@@ -14,8 +14,8 @@
 
 class TripsController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery]
-  before_action :check_member, except: [:show, :new, :available_friends, :create]
+  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery, :publish]
+  before_action :check_member, except: [:show, :new, :available_friends, :create, :publish]
   before_action :prepare_data, only: [:edit, :update, :show]
   before_action :get_budget, only: [:show, :budget_plan]
 
@@ -53,6 +53,11 @@ class TripsController < ApplicationController
     @albums = GetAlbumService.new(current_user).execute
     @photos = @trip.attachments
     respond_to :js
+  end
+
+  def publish
+    @trip.update_attributes(is_published: true)
+    redirect_to @trip
   end
 
   private

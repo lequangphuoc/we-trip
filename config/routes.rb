@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   resources :trips, only: [:new, :edit, :create, :update, :show] do
     resources :schedule_days, only: [:create, :destroy]
     member do
+      put :publish
       get :available_friends
       get :budget_plan
       get :gallery
