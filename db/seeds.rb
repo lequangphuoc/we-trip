@@ -14,6 +14,6 @@ users = []
 end
 
 users.each do |user|
-  @service = FriendRelationsService.new(user, 1)
-  @service.create
+  FriendRelationsService.new(user, 1).create
+  FriendRelationsService.new(User.find(1), user.id).confirm
 end

@@ -17,7 +17,7 @@ class FriendRelationsService
       find_sender_relation(@target_id, @current_user.id).update_attributes(status: 'accepted')
     end
     find_sender_relation(@current_user.id, @target_id).update_attributes(status: 'accepted')
-    updateNotification(@target_id, @current_user.id)
+    update_notification(@target_id, @current_user.id)
   end
 
   def reject
@@ -30,7 +30,7 @@ class FriendRelationsService
     FriendRelation.where(target_id: receiver_id, user_id: sender_id).first
   end
 
-  def updateNotification(target_id, current_user_id)
+  def update_notification(target_id, current_user_id)
     UserNotification.where(sender_id: target_id, user_id: current_user_id).first.notification.update_attributes(description: "Has become your friend", category: "news")
   end
 end
