@@ -1,5 +1,10 @@
 class GetAlbumService
+  def initialize(current_user)
+    @provider = current_user.providers.find_by(name: 'facebook')
+  end
+
   def execute
+    # graph = Koala::Facebook::API.new(@provider.access_token)
     graph = Koala::Facebook::API.new(ENV['ACCESS_TOKEN'])
     graph.get_connections('me', 'albums').map { |album|
       {

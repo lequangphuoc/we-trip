@@ -50,8 +50,9 @@ class TripsController < ApplicationController
   end
 
   def gallery
-    @albums = GetAlbumService.new.execute
+    @albums = GetAlbumService.new(current_user).execute
     @photos = @trip.attachments
+    respond_to :js
   end
 
   private

@@ -1,4 +1,11 @@
 <h2 class="fs-title short-border">Budget Plan</h2>
+
+<% if @total_money > @trip.expected_budget %>
+    <div class="alert alert-danger" role="alert">
+      Total money (<%= format_price(@total_money) %>) overcomes expected budget (<%= format_price(@trip.expected_budget) %>)
+    </div>
+<% end %>
+
 <div class="budget-plan">
   <div class="budget-plan-table">
     <div class="budget-row header-budget">

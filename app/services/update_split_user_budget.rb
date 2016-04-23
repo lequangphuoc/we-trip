@@ -23,10 +23,10 @@ class UpdateSplitUserBudget
   end
 
   def update_user_budgets(budget_item)
-    split_price = @budget_item.price / @trip.users.count
+    split_price = budget_item.price / @trip.users.count
     @trip.user_ids.each do |user_id|
-      user_budget = UserBudget.where(user_id: user_id, budget_item_id: @budget_item.id).first_or_initialize
-      user_budget.update_attributes(price: split_price, kind: 'split')
+      user_budget = UserBudget.where(user_id: user_id, budget_item_id: budget_item.id).first_or_initialize
+      user_budget.update_attributes(price: split_price, kind: 'split') if user_budget.save
     end
   end
 end

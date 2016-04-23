@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422132134) do
+ActiveRecord::Schema.define(version: 20160423080745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -107,6 +107,19 @@ ActiveRecord::Schema.define(version: 20160422132134) do
   add_index "places", ["name"], name: "index_places_on_name", using: :btree
   add_index "places", ["region_id"], name: "index_places_on_region_id", using: :btree
 
+  create_table "providers", force: :cascade do |t|
+    t.string   "uid"
+    t.string   "access_token"
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "providers", ["name"], name: "index_providers_on_name", using: :btree
+  add_index "providers", ["uid"], name: "index_providers_on_uid", using: :btree
+  add_index "providers", ["user_id"], name: "index_providers_on_user_id", using: :btree
+
   create_table "regions", force: :cascade do |t|
     t.string   "name"
     t.decimal  "latitude"
@@ -192,6 +205,7 @@ ActiveRecord::Schema.define(version: 20160422132134) do
   add_foreign_key "budget_sections", "schedule_days"
   add_foreign_key "budget_sections", "trips"
   add_foreign_key "friend_relations", "users"
+  add_foreign_key "providers", "users"
   add_foreign_key "schedule_days", "trips"
   add_foreign_key "user_budgets", "budget_items"
   add_foreign_key "user_budgets", "users"
