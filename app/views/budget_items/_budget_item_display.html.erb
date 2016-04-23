@@ -3,9 +3,9 @@
     <%= budget_item.name %>
   </div>
   <div class="col-md-4">
-    <%= budget_item.price %>
+    <%= budget_item.assignee %>
   </div>
   <div class="col-md-4">
-    <%= budget_item.assignee %>
+    <%= format_price(budget_item.price) %>
   </div>
 </div>
