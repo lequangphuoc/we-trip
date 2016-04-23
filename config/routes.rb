@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   resources :regions do
     collection do
-      get :all, :get_starting_regions
+      get :all, :get_starting_regions, :get_destinations_regions
     end
   end
 

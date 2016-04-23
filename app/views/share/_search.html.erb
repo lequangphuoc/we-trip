@@ -2,11 +2,11 @@
 <form class="form-inline home-search">
   <div class="form-group">
     <label class="sr-only" for="fromPlace">From</label>
-    <input type="email" class="form-control home-search-box" id="fromPlace" placeholder="Departure">
+    <input type="text" class="form-control home-search-box" id="fromPlace" placeholder="Departure">
   </div>
   <div class="form-group">
-    <label class="sr-only" for="toPlace">Password</label>
-    <input type="password" class="form-control home-search-box" id="toPlace" placeholder="Destination">
+    <label class="sr-only" for="toPlace">To</label>
+    <input type="text" class="form-control home-search-box" id="toPlace" placeholder="Destination">
   </div>
   <button type="submit" class="btn btn-primary">Search</button>
 </form>
@@ -35,4 +35,34 @@
       });
     }
   });
+
+  $('#fromPlace').change(function() {
+    if ($('#fromPlace').val()) {
+     $.ajax({
+      method: 'GET',
+      url: '/regions/get_destinations_regions',
+      data: {name: $('#fromPlace').val()},
+      success: function (data) {
+        var states = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          local: data.map(function (region) {
+            return region.name;
+          })
+        });
+
+        $('#toPlace').typeahead({
+          hint: true,
+          highlight: true,
+          minLength: 1
+        },
+        {
+          name: 'states',
+          source: states
+        });
+      }
+    });
+   }
+ });
+
 </script>

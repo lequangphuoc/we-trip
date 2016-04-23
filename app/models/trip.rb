@@ -33,11 +33,20 @@ class Trip < ActiveRecord::Base
     User.where('id IN (?) AND id != (?)', self.users.pluck(:id), self.id)
   end
 
+  # def self.list_of_destination_regions
+  #   @attractions = Attraction.all.preload(:place)
+  #   @regions = []
+  #   @attractions.each do |attraction|
+  #     @regions << attraction.place.region.name
+  #   end
+  #   @regions.uniq
+  # end
+
   def list_of_attractions
     Attraction.where(schedule_day_id: schedule_day_ids)
   end
 
-  def list_of_destination_regions
-    Region.where(id: Trip.all.collect(&:departure_id))
+  def self.trips_start_at_departure(name)
+    Trip.where(departure_id: Region.find_by(name: name).id).uniq
   end
 end
