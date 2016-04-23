@@ -172,6 +172,9 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   background-image: image-url('foot_travel.jpg');
   width: 1440px;
   height: 80px;
+  a:hover{
+    text-decoration: none;
+  }
   h1 {
     margin: 0 auto;
     display: inline-block;
