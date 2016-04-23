@@ -16,9 +16,10 @@ class TripsController < ApplicationController
   before_action :require_login
   before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery]
   before_action :check_member, except: [:show, :new, :available_friends, :create]
-  before_action :prepare_data, only: [:edit, :update]
+  before_action :prepare_data, only: [:edit, :update, :show]
 
   def show
+    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
   end
 
   def new
