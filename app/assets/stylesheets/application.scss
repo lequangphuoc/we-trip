@@ -936,6 +936,21 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   height: 50px;
   width: 50px;
 }
+
+.second-contributor-icon{
+  background: image-url('star_2.png') no-repeat;
+  display: inline-block;
+  height: 50px;
+width: 50px;
+}
+
+.third-contributor-icon{
+  background: image-url('star_3.png') no-repeat;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
 .profile-photo{
   width: 200px;
   float: left;
