@@ -11,6 +11,8 @@
 @import "bootstrap";
 @import "toastr";
 @import 'bootstrap-datetimepicker';
+@import "slick";
+@import 'slick-theme';
 
 @font-face {
   font-family: josefin;
@@ -808,7 +810,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .trip-display{
   float: left;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .trip-basic-info-display{
   text-align: center;
@@ -854,6 +856,9 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   width: 100%;
   text-align: center;
   float: left;
+  .budget-plan{
+    padding: 24px;
+  }
   .budget-plan-table {
     width: 60%;
     font-size: 20px;
@@ -879,4 +884,19 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .glyphicon{
     margin-right: 3px;
   }
+}
+
+.trip-gallery-display{
+  float: left;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(191, 170, 63, 0.1);
+  padding: 8px 0 16px 0;
+  .trip-gallery-carousel{
+    width: 880px;
+    margin: 16px auto;
+  }
+}
+.slick-prev:before, .slick-next:before{
+  color: #4C4A4A;
 }

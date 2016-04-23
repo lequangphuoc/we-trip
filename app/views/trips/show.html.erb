@@ -96,7 +96,28 @@
     </div>
   </div>
 </div>
+
+  <div class="trip-gallery-display">
+    <h2 class="fs-title short-border">Trip Gallery</h2>
+    <div class="trip-gallery-carousel">
+      <div><img width="200" height="150" src="https://xotours.vn/blog/wp-content/uploads/2013/04/saigon-at-sunset.jpg" /></div>
+      <div><img width="200" height="150" src="http://www.abdphoto.net/gallery/wedding/saigon-notre-dame.jpg" /></div>
+      <div><img width="200" height="150" src="https://s-media-cache-ak0.pinimg.com/736x/3e/a0/07/3ea0079b17bfd0588fad9a4590499130.jpg" /></div>
+      <div><img width="200" height="150" src="http://farm9.staticflickr.com/8116/8661097896_885146ed3c_b.jpg" /></div>
+      <div><img width="200" height="150" src="http://images.nationalgeographic.com/wpf/media-live/photos/000/714/overrides/ho-chi-minh-city-vietnam_71471_990x742.jpg" /></div>
+    </div>
+  </div>
 </div>
 <div class="fix-btn-bar">
 <button class="btn btn-success"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip</button>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.trip-gallery-carousel').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+  });
+  });
+</script>
