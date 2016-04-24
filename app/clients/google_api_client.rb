@@ -2,7 +2,8 @@
 class GoogleApiClient
   API_KEY = ENV['GOOGLE_API_KEY']
   API_KEY_2 = ENV['GOOGLE_API_KEY_2']
-  TYPES = 'museum|night_club|shopping_small|cafe|movie_theater'
+  API_KEY_3 = ENV['GOOGLE_API_KEY_3']
+  TYPES = 'zoo|park|museum|shopping_small|cafe|amusement_park|park|movie_theater|art_gallery'
   RADIUS = 20000
 
   def self.search_address(address)
@@ -11,16 +12,16 @@ class GoogleApiClient
   end
 
   def self.search_place_detail(place_id)
-    params = "?placeid=#{place_id}&key=#{API_KEY}"
+    params = "?placeid=#{place_id}&key=#{API_KEY_3}"
     get_method('https://maps.googleapis.com/maps/api/place/details/json' + params)
   end
 
   def self.get_all_regions
     get_method('http://api.tala.xyz/config/data')['regions'].map { |region| region['name'] }
-    endhttps
   end
+
   def self.get_nearby_places(latitude, longitude)
-    params = "?location=#{latitude},#{longitude}&type=#{TYPES}&radius=#{RADIUS}&key=#{API_KEY}"
+    params = "?location=#{latitude},#{longitude}&type=#{TYPES}&radius=#{RADIUS}&key=#{API_KEY_3}"
     get_method('https://maps.googleapis.com/maps/api/place/nearbysearch/json' + params)
   end
 
