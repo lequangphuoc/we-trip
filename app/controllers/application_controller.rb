@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  include SessionsHelper, PlacePhotosHelper
+  include SessionsHelper, PlacePhotosHelper, PriceHelper
   helper_method :current_user, :sign_in?
 
   def current_user

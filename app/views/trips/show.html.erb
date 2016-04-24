@@ -1,0 +1,130 @@
+<div class="trip-display">
+
+  <!-- Basic iInfo -->
+  <div class="trip-basic-info-display">
+    <h2 class="trip-title"><%= @trip.title %></h2>
+    <span class="trip-destination"><%= @trip.departure.try(:name) %> - <%= @trip.schedule_days.count %> days</span>
+    <span class="trip-time">Start Date: <%= @trip.start_date.strftime('%d/%m/%Y') %></span>
+    <span class="trip-description">Etiam sit amet mi velit. Donec euismod ipsum ac libero laoreet, vel dignissim orci elementum. Maecenas iaculis iaculis tempus. In vitae odio molestie orci convallis vulputate. Sed id tincidunt leo. Pellentesque non arcu id purus egestas scelerisque vitae in magna. Vestibulum pellentesque tincidunt tincidunt. Sed vulputate risus in nisl condimentum accumsan at at sem.</span>
+  </div>
+
+  <!-- Itinerary -->
+  <div class="trip-itinerary-display">
+    <h2 class="fs-title short-border">Itinerary</h2>
+    <div class="panel with-nav-tabs panel-default">
+      <div class="panel-heading">
+        <ul class="nav nav-tabs" id="day-left-panel">
+          <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :schedule_day %>
+        </ul>
+      </div>
+      <script>
+        DEFAULT_LAT_AVG = 14.0583;
+        DEFAULT_LNG_AVG = 108.2772;
+
+        // Toggle maps
+        maps = {};
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+          resumeMap(e.target.id);
+        });
+
+        setTimeout(function () {
+          resumeMap("li_tab1");
+        }, 1200);
+
+        resumeMap = function (id) {
+          var map = maps[id][0];
+          var bounds = maps[id][1];
+          google.maps.event.trigger(map, 'resize');
+          map.setZoom(15);
+          if (bounds.isEmpty()) {
+            map.setZoom(5);
+            map.setCenter(new google.maps.LatLng(DEFAULT_LAT_AVG, DEFAULT_LNG_AVG));
+          } else {
+            map.fitBounds(bounds);
+          }
+        };
+
+        // Place engine
+        places = <%= raw @places.to_json %>;
+        placeEngine = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('suggest_title'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          identify: function (obj) {
+            return obj.id;
+          },
+          local: places
+        });
+      </script>
+      <div class="panel-body">
+        <div class="tab-content" id="itinerary-content">
+          <%= render partial: 'schedule_days/schedule_day_display', collection: @schedule_days, as: :schedule_day %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Budget Plan -->
+  <div class="trip-budget-display">
+    <h2 class="fs-title short-border">Budget Plan</h2>
+    <div class="budget-plan">
+      <div class="budget-plan-table">
+        <div class="budget-row header-budget">
+          <div class="col-md-4">
+            Item
+          </div>
+          <div class="col-md-4">
+            Assignee
+          </div>
+          <div class="col-md-4">
+            Cost
+          </div>
+        </div>
+
+        <div id="list_budget_sections">
+          <%= render partial: 'budget_sections/budget_section_display', collection: @budget_sections, as: :budget_section %>
+        </div>
+
+        <div class="budget-row total-budget">
+          <div class="col-md-4">Total:</div>
+
+          <div class="col-md-4">
+            &nbsp;
+          </div>
+          <div class="col-md-4">
+            <%= format_price(@total_money) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Display -->
+  <div class="trip-gallery-display">
+    <h2 class="fs-title short-border">Trip Gallery</h2>
+    <div class="trip-gallery-carousel">
+      <% @trip.attachments.each do |photo| %>
+          <div>
+            <%= image_tag photo.path, width: 200, height: 150 %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- Clone button -->
+<div class="fix-btn-bar">
+  <%= link_to clone_trip_path(@trip), class: 'btn btn-success' do %>
+      <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.trip-gallery-carousel').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    });
+  });
+</script>

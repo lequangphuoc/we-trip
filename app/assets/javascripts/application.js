@@ -32,4 +32,4 @@
 //= require twitter/typeahead.min
 //= require handlebars
 //= require custom_marker
-//= require owl.carousel
+//= require jquery.slick

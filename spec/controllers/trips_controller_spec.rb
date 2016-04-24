@@ -6,6 +6,7 @@ RSpec.describe TripsController, type: :controller do
 
   before(:each) do
     allow(controller).to receive(:require_login)
+    allow(controller).to receive(:check_member)
     session[:user_id] = user.id
   end
 

@@ -4,12 +4,19 @@ class UserTripsController < ApplicationController
 
   def create
     @user_trip = @user_trips.new(trip_id: params[:trip_id])
-    render json: JsonResponse.new(@user_trip.save, @user_trip)
+    @created = @user_trip.save
+    UpdateSplitUserBudget.new(params[:trip_id]).execute if @created
+    render json: JsonResponse.new(@created, @user_trip)
   end
 
   def destroy
-    @user_trip = @user_trips.find_by(trip_id: params[:trip_id]).destroy
-    render json: JsonResponse.new(true, @user_trip)
+    @user_trip = @user_trips.find_by(trip_id: params[:trip_id])
+    @has_budget = @user_trip.has_budget?
+    unless @has_budget
+      @user_trip.destroy
+      UpdateSplitUserBudget.new(params[:trip_id]).execute
+    end
+    render json: JsonResponse.new(true, @has_budget)
   end
 
   private

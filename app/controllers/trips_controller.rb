@@ -14,8 +14,10 @@
 
 class TripsController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:edit, :update, :show]
-  before_action :prepare_data, only: [:edit, :update]
+  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery, :publish, :clone]
+  before_action :check_member, except: [:show, :new, :available_friends, :create, :publish, :clone]
+  before_action :get_itinerary, only: [:edit, :update, :show]
+  before_action :get_budget, only: [:show, :budget_plan]
 
   def show
   end
@@ -29,6 +31,7 @@ class TripsController < ApplicationController
   def create
     @trip = Trip.new(trip_params)
     @created = @trip.save
+    @trip.user_trips.create(user_id: current_user_id) if @created
     respond_to :js
   end
 
@@ -47,18 +50,45 @@ class TripsController < ApplicationController
     render json: @regions
   end
 
+  def budget_plan
+    respond_to :js
+  end
+
+  def gallery
+    @albums = GetAlbumService.new(current_user).execute
+    @photos = @trip.attachments
+    respond_to :js
+  end
+
+  def publish
+    @trip.update_attributes(is_published: true)
+    redirect_to @trip
+  end
+
+  def clone
+    new_trip = CloneTripService.new(@trip, current_user).execute
+    redirect_to edit_trip_path(new_trip)
+  end
+
   private
   def get_trip
     @trip = Trip.find(params[:id])
   end
 
-  def prepare_data
-    @schedule_days = @trip.schedule_days.preload(:attractions => {:place => :display_photo}).decorate
-    @places = Place.all.preload(:region, :display_photo).decorate
+  def check_member
+    redirect_to root_path unless @trip.user_ids.include?(current_user_id)
+  end
+
+  def get_itinerary
+    @schedule_days, @places = ItineraryQuery.new(@trip).execute
   end
 
   def trip_params
     params.require(:trip).permit(:title, :expected_budget)
+  end
+
+  def get_budget
+    @budget_sections, @user_with_budgets, @people_in_trip, @total_money = BudgetPlanQuery.new(@trip).execute
   end
 
   def trip_update_params

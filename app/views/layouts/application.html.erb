@@ -10,50 +10,55 @@
 </head>
 <body>
 
-  <% if params[:controller] == 'trips' %>
+<% if params[:controller] == 'home' %>
+    <div class="image-search-home">
+      <div class="container">
 
-  <!-- HEADER VIEW -->
-  <div class="trip-top-header">
-    <div class="container">
-      <h1>WE TRIP</h1>
-      <span class="slogan">Travel in your way</span>
-      <div class="top-right-trip">
-        <%= render 'share/login_user_menu' %>
+        <!-- NAV BAR -->
+        <%= render 'share/navbar' %>
+
+        <!-- CREATE ACTION -->
+        <div class="header text-center">
+          <h1>WE TRIP</h1>
+          <h2>Travel in your way</h2>
+          <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
+            Create a trip
+          </button>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <%= yield %>
-
-  <!-- LOADING VIEW -->
-  <%= render 'share/loading' %>
-  <% else %>
-  <div class="image-search-home">
-    <div class="container">
-
-      <!-- NAV BAR -->
-      <%= render 'share/navbar' %>
-
-      <!-- CREATE ACTION -->
-      <div class="header text-center">
-        <h1>WE TRIP</h1>
-        <h2>Travel in your way</h2>
-        <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
-          Create a trip
-        </button>
+      <!-- SEARCH ACTION -->
+      <div class="main-search text-center">
+        <%= render 'share/search' %>
       </div>
     </div>
 
-    <!-- SEARCH ACTION -->
-    <div class="main-search text-center">
-      <%= render 'share/search' %>
+    <!-- MAIN ACTION -->
+    <div class="container">
+      <%= yield %>
     </div>
-  </div>
 
-  <!-- MAIN ACTION -->
-  <div class="container">
+<% else %>
+
+    <!-- HEADER VIEW -->
+    <div class="trip-top-header">
+      <div class="container">
+        <a href="<%= root_path %>">
+          <h1>WE TRIP</h1>
+          <span class="slogan">Travel in your way</span>
+        </a>
+        <div class="top-right-trip">
+          <%= render 'share/login_user_menu' %>
+        </div>
+      </div>
+    </div>
+
     <%= yield %>
-  </div>
-  <% end %>
+    <% if params[:controller] == 'trips' && params[:action] == 'edit'  %>
+        <!-- LOADING VIEW -->
+        <%= render 'share/loading' %>
+    <% end %>
+<% end %>
+
 </body>
 </html>

@@ -1,13 +1,20 @@
-<div>
-  <div class="row">
-    <div class="col-sm-4 profile">
-      <h3><%= @user.name %></h3>
-      <p><%= @user.email %></p>
-      <br>
-      <p>Points: <%= @user.point %></p>
+<div class="horizontal-block-center">
+  <div class="profile-basic-info">
+    <div class="profile-photo">
+      <%= image_tag @user.avatar, class: 'img-rounded', style: 'height: 120px; width: 120px' %>
     </div>
-    <div class="col-sm-8">
-
+    <div class="basic-info">
+      <h2><%= @user.name %></h2>
+      <p>Points: <%= @user.point %></p>
+      <span class="top-contributor-icon"></span>
+    </div>
+  </div>
+  <div class="trip-list horizontal-block-center-bg-yellow">
+    <h2 class="fs-title short-border"><%= @user.name %> Trips</h2>
+    <div class="container">
+      <div class="row">
+        <%= render partial: 'trips/trip_summary', collection: @user.trips, as: :trip %>
+      </div>
     </div>
   </div>
 </div>

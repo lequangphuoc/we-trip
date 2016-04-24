@@ -55,6 +55,8 @@ gem 'httparty'
 gem 'puma'
 # dumbing database
 gem 'yaml_db'
+# Graph API
+gem 'koala', '~> 2.2'
 # ui libaries
 gem 'Bootstrap-Image-Gallery-rails'
 gem 'jquery-ui-rails'
@@ -64,6 +66,7 @@ gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'twitter-typeahead-rails'
+gem "jquery-slick-rails"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'

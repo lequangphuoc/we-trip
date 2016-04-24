@@ -1,12 +1,11 @@
 <!-- multistep form -->
-<div id="msform">
+<div id="msform" data-no-turbolink>
   <!-- progressbar -->
   <ul id="progressbar">
     <li class="active">Basic Info</li>
     <li>Itinerary</li>
     <li>Budget Plan</li>
-    <li>Todo</li>
-    <li>Attachment</li>
+    <li>Gallery</li>
   </ul>
 
   <!-- fieldsets -->
@@ -18,20 +17,43 @@
   </div>
 
   <div class="form-slide" id="budget_plan">
-    <%= render 'trips/budget_plan' %>
   </div>
 
-  <div class="form-slide" id="todo">
-    <%= render 'trips/todo' %>
-  </div>
-
-  <div class="form-slide" id="attachment">
-    <%= render 'trips/attachment' %>
-  </div>
+  <div class="form-slide" id="gallery"></div>
 </div>
 
 <script>
   $(document).ready(function () {
+    $("body").on('click','.foot-nav .next',function (event) {
+      event.preventDefault();
+      if (currentScreen[0].id == "itinerary") {
+        showLoading();
+        $.ajax({
+          method: 'GET',
+          url: '/trips/<%= @trip.id %>/budget_plan.js',
+          success: function (data) {
+            hideLoading();
+          }
+        });
+      } else if (currentScreen[0].id == "budget_plan") {
+        showLoading();
+        $.ajax({
+          method: 'GET',
+          url: '/trips/<%= @trip.id %>/gallery.js',
+          success: function (data) {
+            hideLoading();
+          }
+        });
+      } else {
+        moveToNextScreen();
+      }
+    });
+
+    $("body").on('click','.foot-nav .previous',function (event) {
+      event.preventDefault();
+      moveToPreviousScreen();
+    });
+
     hideLoading();
     currentScreen = $('#basic_info');
 
@@ -40,6 +62,9 @@
     };
 
     moveToPreviousScreen = function () {
+      $("#progressbar li").eq($(".form-slide")
+          .index(currentScreen))
+          .removeClass("active");
       doAnimation(currentScreen.prev());
     };
 

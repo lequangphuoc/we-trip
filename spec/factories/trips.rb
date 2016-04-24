@@ -10,6 +10,7 @@
 #  expected_budget :decimal(, )
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  is_published    :boolean          default("false")
 #
 
 FactoryGirl.define do

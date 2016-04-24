@@ -10,6 +10,7 @@
 #  expected_budget :decimal(, )
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  is_published    :boolean          default("false")
 #
 
 require 'rails_helper'
@@ -26,7 +27,7 @@ RSpec.describe Trip, type: :model do
   it { should respond_to(:departure_id) }
   it { should respond_to(:start_date) }
   it { should respond_to(:description) }
-  it { should have_many(:schedule_days) }
+  it { should have_many(:schedule_days).dependent(:destroy) }
   it { should have_many(:attractions).through(:schedule_days) }
   it { should belong_to(:departure).class_name(Region).with_foreign_key(:departure_id) }
 end

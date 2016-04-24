@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :skip_login, only: [:create]
   before_action :require_login, except: [:create]
-  before_action :get_user, only: [:edit, :update]
+  before_action :get_user, only: [:edit, :update, :show]
 
   def create
     @user = User.create(user_params)
@@ -13,6 +13,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+  end
+
+  def show
   end
 
   def available_friends

@@ -11,11 +11,22 @@
 
 class ScheduleDaysController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:create]
-  before_action :get_schedule_day, only: [:sort]
+  before_action :get_trip, only: [:create, :destroy]
+  before_action :get_schedule_day, only: [:sort, :destroy]
 
   def create
     @schedule_day = @trip.schedule_days.create(index: next_index).decorate
+    respond_to :js
+  end
+
+  def destroy
+    ScheduleDay.transaction do
+      @trip.schedule_days.each do |day|
+        day.decrement!(:index, by = 1) if day.index > @schedule_day.index
+      end
+      @schedule_day.destroy
+    end
+    prepare_data
     respond_to :js
   end
 
@@ -31,6 +42,10 @@ class ScheduleDaysController < ApplicationController
 
   def get_schedule_day
     @schedule_day = ScheduleDay.find(params[:id]).decorate
+  end
+
+  def prepare_data
+    @schedule_days, @places = ItineraryQuery.new(@trip).execute
   end
 
   def next_index
