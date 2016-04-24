@@ -562,6 +562,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     color: #fff;
     background-color: #DEC698;
   }
+  .tt-menu{
+    height: 300px;
+    overflow: auto;
+  }
 }
 
 .hot-action-button {
@@ -932,7 +936,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   display: inline-block;
   margin: 0 auto;
   h2 {
-    display: inline-block;
     color: #900C0C;
   }
 }
@@ -979,7 +982,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .basic-info {
-  width: 300px;
+  float: left;
 }
 
 .horizontal-block-center {
