@@ -18,6 +18,7 @@ class TripsController < ApplicationController
   before_action :check_member, except: [:show, :new, :available_friends, :create, :clone]
   before_action :get_itinerary, only: [:edit, :update, :show, :itinerary]
   before_action :get_budget, only: [:show, :budget_plan]
+  before_action :remove_current_screen, only: [:show, :create, :clone, :publish]
 
   def show
   end
@@ -42,6 +43,7 @@ class TripsController < ApplicationController
     render json: current_user.friends_not_in_trip(params[:id])
   end
 
+  # user edit
   def itinerary
     respond_to :js
   end
@@ -60,6 +62,7 @@ class TripsController < ApplicationController
     respond_to :js
   end
 
+  # user interact
   def publish
     @trip.update_attributes(is_published: true)
     redirect_to @trip
@@ -71,6 +74,10 @@ class TripsController < ApplicationController
   end
 
   private
+  def remove_current_screen
+    set_current_screen(nil)
+  end
+
   def get_trip
     @trip = Trip.find(params[:id])
   end
