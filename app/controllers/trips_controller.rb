@@ -18,12 +18,15 @@ class TripsController < ApplicationController
   before_action :check_member, except: [:show, :new, :available_friends, :create, :clone]
   before_action :get_itinerary, only: [:edit, :update, :show, :itinerary]
   before_action :get_budget, only: [:show, :budget_plan]
-  before_action :remove_current_screen, only: [:show, :create, :clone, :publish]
 
   def show
   end
 
   def edit
+    if @trip.id != current_trip
+      set_current_trip(@trip.id)
+      set_current_screen(nil)
+    end
   end
 
   def create
@@ -74,10 +77,6 @@ class TripsController < ApplicationController
   end
 
   private
-  def remove_current_screen
-    set_current_screen(nil)
-  end
-
   def get_trip
     @trip = Trip.find(params[:id])
   end

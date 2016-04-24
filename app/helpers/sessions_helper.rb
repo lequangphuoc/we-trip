@@ -11,8 +11,16 @@ module SessionsHelper
     session[:current_screen] = screen_id
   end
 
+  def set_current_trip(trip_id)
+    session[:current_trip] = trip_id
+  end
+
   def current_screen
     session[:current_screen] ? session[:current_screen] : 'basic_info'
+  end
+
+  def current_trip
+    session[:current_trip]
   end
 
   def clear_user_id
