@@ -39,7 +39,7 @@ class Trip < ActiveRecord::Base
   end
 
   def display_photo
-    place_photos.empty? ? DEFAULT_PHOTO : place_photos.first.decorate.url(600)
+    place_photos.empty? ? DEFAULT_PHOTO : place_photos.order("RANDOM()").first.decorate.url(600)
   end
 
   def is_owner?(current_user_id)
