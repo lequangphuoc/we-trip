@@ -14,6 +14,8 @@
 #
 
 class Trip < ActiveRecord::Base
+  DEFAULT_PHOTO = 'https://www.mariecuriealumni.eu/sites/default/files/styles/50x50_avatar/public/pictures/picture-default.jpg?itok=uk4ugbrt'
+
   has_many :user_trips, dependent: :destroy
   has_many :schedule_days, dependent: :destroy
   has_many :users, through: :user_trips
@@ -23,6 +25,8 @@ class Trip < ActiveRecord::Base
   has_many :budget_items, through: :budget_sections
   has_many :user_budgets, through: :budget_items
   has_many :attachments, dependent: :destroy
+  has_many :places, through: :attractions
+  has_many :place_photos, through: :places
 
   validates_presence_of :title
   validates_numericality_of :expected_budget
@@ -32,6 +36,14 @@ class Trip < ActiveRecord::Base
   def create_default_schedule_day
     self.schedule_days.create(index: 1)
     self.budget_sections.create(title: 'Pre-trip')
+  end
+
+  def display_photo
+    place_photos.empty? ? DEFAULT_PHOTO : place_photos.first.decorate.url(600)
+  end
+
+  def is_owner?(current_user_id)
+    user_ids.include?(current_user_id)
   end
 
   def total_money

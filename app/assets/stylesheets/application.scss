@@ -172,7 +172,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   background-image: image-url('foot_travel.jpg');
   width: 1440px;
   height: 80px;
-  a:hover{
+  a:hover {
     text-decoration: none;
   }
   h1 {
@@ -921,61 +921,68 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 .slick-prev:before, .slick-next:before {
   color: #4C4A4A;
 }
-.profile-basic-info{
+
+.profile-basic-info {
   padding: 16px;
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  h2{
+  h2 {
     color: #900C0C;
   }
 }
-.top-contributor-icon{
+
+.top-contributor-icon {
   background: image-url('star_1.png') no-repeat;
   display: inline-block;
   height: 50px;
   width: 50px;
 }
 
-.second-contributor-icon{
+.second-contributor-icon {
   background: image-url('star_2.png') no-repeat;
   display: inline-block;
   height: 50px;
-width: 50px;
+  width: 50px;
 }
 
-.third-contributor-icon{
+.third-contributor-icon {
   background: image-url('star_3.png') no-repeat;
   display: inline-block;
   height: 50px;
   width: 50px;
 }
 
-.profile-photo{
+.profile-photo {
   width: 200px;
   float: left;
   display: block;
 }
-.profile-photo img{
+
+.profile-photo img {
   width: 200px;
   height: 200px;
 }
-.profile-email{
+
+.profile-email {
   display: block;
   font-size: 20px;
   padding: 8px;
-  .glyphicon{
+  .glyphicon {
     margin-right: 8px;
   }
 }
-.basic-info{
-  width: 500px;
+
+.basic-info {
+  width: 400px;
 }
-.horizontal-block-center{
+
+.horizontal-block-center {
   text-align: center;
   padding: 16px;
 }
-.horizontal-block-center-bg-yellow{
+
+.horizontal-block-center-bg-yellow {
   text-align: center;
   padding: 16px;
   background-color: rgba(191, 170, 63, 0.1);
@@ -995,6 +1002,7 @@ width: 50px;
     margin-right: 8px;
   }
 }
+
 .card span.card-title {
   color: #fff;
   font-size: 24px;
@@ -1006,51 +1014,61 @@ width: 50px;
   position: relative;
   overflow: hidden;
 }
+
 .card .card-image img {
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
   position: relative;
   z-index: -1;
 }
+
 .card .card-image span.card-title {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 16px;
 }
+
 .card .card-content {
   padding: 16px;
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
   box-sizing: border-box;
 }
-.card .card-content .trip-budget{
+
+.card .card-content .trip-budget {
   color: #730E15;
   font-size: 18px;
 }
+
 .card .card-content p {
   margin: 0;
   color: inherit;
   font-size: 20px;
 }
+
 .card .card-content span.card-title {
   line-height: 48px;
 }
+
 .card .card-action {
   border-top: 1px solid rgba(160, 160, 160, 0.2);
   padding: 16px;
 }
+
 .card .card-action a {
   color: #ffab40;
   margin-right: 16px;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
+
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
 }
-.num-people-clone{
+
+.num-people-clone {
   color: #4C4A4A;
   font-size: 18px;
   display: block;
