@@ -21,12 +21,14 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :trips, only: [:new, :edit, :create, :update, :show] do
+  resources :trips, only: [:edit, :create, :update, :show] do
     resources :schedule_days, only: [:create, :destroy]
     member do
       put :publish
       get :clone
       get :available_friends
+      get :itinerary
+      get :basic_info
       get :budget_plan
       get :gallery
     end

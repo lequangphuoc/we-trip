@@ -2,79 +2,88 @@
 <div id="msform" data-no-turbolink>
   <!-- progressbar -->
   <ul id="progressbar">
-    <li class="active">Basic Info</li>
+    <li>Basic Info</li>
     <li>Itinerary</li>
     <li>Budget Plan</li>
     <li>Gallery</li>
   </ul>
 
   <!-- fieldsets -->
-  <div class="form-slide" id="basic_info">
-    <%= render 'trips/basic_info' %>
-  </div>
-
-  <div class="form-slide" id="itinerary">
-  </div>
-
-  <div class="form-slide" id="budget_plan">
-  </div>
-
+  <div class="form-slide" id="basic_info"></div>
+  <div class="form-slide" id="itinerary"></div>
+  <div class="form-slide" id="budget_plan"></div>
   <div class="form-slide" id="gallery"></div>
 </div>
 
 <script>
   $(document).ready(function () {
-    $("body").on('click','.foot-nav .next',function (event) {
-      event.preventDefault();
-      if (currentScreen[0].id == "itinerary") {
-        showLoading();
-        $.ajax({
-          method: 'GET',
-          url: '/trips/<%= @trip.id %>/budget_plan.js',
-          success: function (data) {
-            hideLoading();
-          }
-        });
-      } else if (currentScreen[0].id == "budget_plan") {
-        showLoading();
-        $.ajax({
-          method: 'GET',
-          url: '/trips/<%= @trip.id %>/gallery.js',
-          success: function (data) {
-            hideLoading();
-          }
-        });
-      } else {
-        moveToNextScreen();
+    // Retrieve current screen
+    currentScreen = $('#<%= current_screen %>');
+
+    $.ajax({
+      method: 'GET',
+      url: '/trips/<%= @trip.id %>/' + currentScreen[0].id + '.js',
+      success: function (data) {
+        hideLoading();
+        updateStateIndicator(currentScreen);
+        currentScreen.fadeIn(800);
       }
     });
 
-    $("body").on('click','.foot-nav .previous',function (event) {
+    $("body").on('click', '.foot-nav .next', function (event) {
+      event.preventDefault();
+      moveToNextScreen();
+    });
+
+    $("body").on('click', '.foot-nav .previous', function (event) {
       event.preventDefault();
       moveToPreviousScreen();
     });
 
-    hideLoading();
-    currentScreen = $('#basic_info');
-
     moveToNextScreen = function () {
-      doAnimation(currentScreen.next());
+      showLoading();
+      var nextScreen = currentScreen.next();
+      $.ajax({
+        method: 'GET',
+        url: '/trips/<%= @trip.id %>/' + nextScreen[0].id + '.js',
+        success: function (data) {
+          hideLoading();
+          updateStateIndicator(nextScreen);
+          doAnimation(nextScreen);
+        }
+      });
     };
 
     moveToPreviousScreen = function () {
-      $("#progressbar li").eq($(".form-slide")
-          .index(currentScreen))
-          .removeClass("active");
-      doAnimation(currentScreen.prev());
+      showLoading();
+      var prevScreen = currentScreen.prev();
+      $.ajax({
+        method: 'GET',
+        url: '/trips/<%= @trip.id %>/' + prevScreen[0].id + '.js',
+        success: function (data) {
+          hideLoading();
+          updateStateIndicator(prevScreen);
+          doAnimation(prevScreen);
+        }
+      });
     };
 
-    doAnimation = function (nextScreen) {
-      $("#progressbar li").eq($(".form-slide")
-          .index(nextScreen))
-          .addClass("active");
-      nextScreen.fadeIn(800);
+    updateStateIndicator = function(newScreen) {
+      var i;
+      for (i = 0; i <= $(".form-slide").index(currentScreen); i++) {
+        $("#progressbar li").eq(i)
+            .removeClass("active");
+      }
+      for (i = 0; i <= $(".form-slide").index(newScreen); i++) {
+        $("#progressbar li").eq(i)
+            .addClass("active");
+      }
+    };
+
+    doAnimation = function (newScreen) {
+      newScreen.fadeIn(800);
       currentScreen.fadeOut(800);
-      currentScreen = nextScreen;
+      currentScreen = newScreen;
     };
 
     $(".submit").click(function () {

@@ -14,15 +14,12 @@
 
 class TripsController < ApplicationController
   before_action :require_login
-  before_action :get_trip, only: [:edit, :update, :show, :budget_plan, :gallery, :publish, :clone]
-  before_action :check_member, except: [:show, :new, :available_friends, :create, :publish, :clone]
-  before_action :get_itinerary, only: [:edit, :update, :show]
+  before_action :get_trip, except: [:new, :create, :available_friends]
+  before_action :check_member, except: [:show, :new, :available_friends, :create, :clone]
+  before_action :get_itinerary, only: [:edit, :update, :show, :itinerary]
   before_action :get_budget, only: [:show, :budget_plan]
 
   def show
-  end
-
-  def new
   end
 
   def edit
@@ -45,7 +42,15 @@ class TripsController < ApplicationController
     render json: current_user.friends_not_in_trip(params[:id])
   end
 
+  def itinerary
+    respond_to :js
+  end
+
   def budget_plan
+    respond_to :js
+  end
+
+  def basic_info
     respond_to :js
   end
 

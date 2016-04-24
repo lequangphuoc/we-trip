@@ -1,7 +1,5 @@
-hideLoading();
 <% if @updated %>
   $('#trip-error').html("");
-  $('#itinerary').html("<%= j(render 'trips/itinerary') %>");
   moveToNextScreen();
 <% else %>
   $('#trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
