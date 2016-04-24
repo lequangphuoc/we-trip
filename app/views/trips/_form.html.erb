@@ -19,7 +19,6 @@
   $(document).ready(function () {
     // Retrieve current screen
     currentScreen = $('#<%= current_screen %>');
-
     $.ajax({
       method: 'GET',
       url: '/trips/<%= @trip.id %>/' + currentScreen[0].id + '.js',
@@ -30,45 +29,48 @@
       }
     });
 
+    $("#progressbar li").click(function (event) {
+      var newScreen = $(".form-slide:eq(" + $(this).index() + ")");
+      if (newScreen[0].id != currentScreen[0].id) {
+        loadScreen(newScreen);
+      }
+    });
+
+    // Next button
     $("body").on('click', '.foot-nav .next', function (event) {
       event.preventDefault();
       moveToNextScreen();
     });
 
+    // Previous button
     $("body").on('click', '.foot-nav .previous', function (event) {
       event.preventDefault();
       moveToPreviousScreen();
     });
 
     moveToNextScreen = function () {
-      showLoading();
-      var nextScreen = currentScreen.next();
-      $.ajax({
-        method: 'GET',
-        url: '/trips/<%= @trip.id %>/' + nextScreen[0].id + '.js',
-        success: function (data) {
-          hideLoading();
-          updateStateIndicator(nextScreen);
-          doAnimation(nextScreen);
-        }
-      });
+      loadScreen(currentScreen.next());
     };
 
     moveToPreviousScreen = function () {
+      loadScreen(currentScreen.prev());
+    };
+
+    loadScreen = function (newScreen) {
+      console.log(newScreen);
       showLoading();
-      var prevScreen = currentScreen.prev();
       $.ajax({
         method: 'GET',
-        url: '/trips/<%= @trip.id %>/' + prevScreen[0].id + '.js',
+        url: '/trips/<%= @trip.id %>/' + newScreen[0].id + '.js',
         success: function (data) {
           hideLoading();
-          updateStateIndicator(prevScreen);
-          doAnimation(prevScreen);
+          updateStateIndicator(newScreen);
+          doAnimation(newScreen);
         }
       });
     };
 
-    updateStateIndicator = function(newScreen) {
+    updateStateIndicator = function (newScreen) {
       var i;
       for (i = 0; i <= $(".form-slide").index(currentScreen); i++) {
         $("#progressbar li").eq(i)
