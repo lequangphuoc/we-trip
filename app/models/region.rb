@@ -25,14 +25,4 @@ class Region < ActiveRecord::Base
   def self.list_of_regions_by_departure(name)
     Region.where(id: Place.list_of_places_by_departure(name).pluck(:region_id))
   end
-
-  def self.search_trips(departure, destination)
-    @departure = Region.find_by(name: departure)
-    @destination = Region.find_by(name: destination)
-
-    @attractions = Attraction.where(place_id: Place.where(region_id: Region.where(id: @destination.id).pluck(:id)).pluck(:id))
-
-    Trip.where(id: ScheduleDay.where(id: @attractions.collect(&:schedule_day_id)).pluck(:trip_id).uniq).where(departure_id: @departure.id)
-  end
-
 end
