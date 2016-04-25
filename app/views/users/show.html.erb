@@ -1,11 +1,11 @@
 <div class="horizontal-block-center">
   <div class="profile-basic-info">
     <div class="profile-photo">
-      <%= image_tag @user.avatar, class: 'img-rounded', style: 'height: 120px; width: 120px' %>
+      <%= image_tag @user.avatar, class: 'img-rounded', style: 'height: 120px; width: 120px; object-fit: cover;' %>
     </div>
     <div class="basic-info">
       <h2><%= @user.name %></h2>
-      <span class="top-contributor-icon"></span>
+      <span class="num-contribution" style="font-size: 24px"><%= pluralize(@user.point, 'point') %></span>
     </div>
   </div>
   <div class="trip-list horizontal-block-center-bg-yellow">

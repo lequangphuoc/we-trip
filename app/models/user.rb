@@ -40,8 +40,11 @@ class User < ActiveRecord::Base
   end
 
   def friends_not_in_trip(trip_id)
+    # User.find(
+    #     friends.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
+    # )
     User.find(
-        friends.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
+        User.pluck(:id) - UserTrip.where(trip_id: trip_id).pluck(:user_id)
     )
   end
 

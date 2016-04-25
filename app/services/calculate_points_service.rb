@@ -16,8 +16,6 @@ class CalculatePointsService
     case type
       when 'view'
         user.increment!(:point)
-      when 'create'
-        user.increment!(:point, by = 3)
       when 'clone'
         user.increment!(:point, by = 5)
       when 'published'
