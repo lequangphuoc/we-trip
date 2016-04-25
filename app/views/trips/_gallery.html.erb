@@ -1,9 +1,21 @@
 <h2 class="fs-title short-border">Gallery</h2>
-<span class="btn-behind-title">
-  <a href="#" class="import-facebook-album" data-toggle="modal" data-target="#importFBAlbumModal">
-    Import album from Facebook
-  </a>
-</span>
+<div>
+  <span class="btn-behind-title">
+    <a href="#" class="import-facebook-album" data-toggle="modal" data-target="#importFBAlbumModal">
+      Import album from Facebook
+    </a>
+  </span>
+</div>
+
+<div>
+  <span class="btn-behind-title">
+    <a href="#" class="import-facebook-album hidden" style="width: 316px"
+       data-toggle="modal" id="gif_button" data-target="#shareFacebook">
+      Your wonderful moment
+    </a>
+  </span>
+</div>
+
 <div class="attachment-container">
   <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
   <div id="blueimp-gallery" class="blueimp-gallery">
@@ -46,6 +58,16 @@
 </div>
 
 <!-- Modal -->
+<div class="modal fade" id="shareFacebook" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img id="gif_gallery" width="240" style="margin: 20px">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="importFBAlbumModal" role="dialog">
   <div class="modal-dialog">
 
@@ -75,7 +97,6 @@
         <button type="button" class="btn btn-default select-album-btn" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -90,5 +111,18 @@
 </div>
 
 <script>
+  <% unless @photos.empty? %>
+    $('#gif_button').removeClass('hidden');
+    gifshot.createGIF({
+      'images': <%= raw @photos.map(&:path) %>,
+      'interval': 0.5
+    }, function (obj) {
+      console.log(obj);
+      if (!obj.error) {
+        var animatedImage = document.getElementById('gif_gallery');
+        animatedImage.src = obj.image;
+      }
+    });
+  <% end %>
   <% set_current_screen('gallery') %>
 </script>

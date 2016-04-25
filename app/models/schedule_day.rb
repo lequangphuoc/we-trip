@@ -36,6 +36,10 @@ class ScheduleDay < ActiveRecord::Base
     {latitude: average_latitude, longitude: average_longitude}
   end
 
+  def self.list_of_schedule_day_by_departure(name)
+    ScheduleDay.where(trip_id: Trip.trips_start_at_departure(name).pluck(:id))
+  end
+
   private
   def has_place?
     self.places.size > 0
