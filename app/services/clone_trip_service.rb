@@ -21,9 +21,7 @@ class CloneTripService
     @new_trip.save
     @new_trip.schedule_days.destroy_all
     @new_trip.budget_sections.destroy_all
-
     CalculatePointsService.new(@trip).add_point_by_trip('clone')
-
   end
 
   def add_current_user
