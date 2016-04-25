@@ -20,6 +20,7 @@ class TripsController < ApplicationController
   before_action :get_budget, only: [:show, :budget_plan]
 
   def show
+    CalculatePointsService.new(Trip.find(params[:id])).add_point_by_trip('view')
   end
 
   def edit
@@ -33,6 +34,7 @@ class TripsController < ApplicationController
     @trip = Trip.new(trip_params)
     @created = @trip.save
     @trip.user_trips.create(user_id: current_user_id) if @created
+    CalculatePointsService.new(@trip).add_point_by_trip('create')
     respond_to :js
   end
 
@@ -105,7 +107,7 @@ class TripsController < ApplicationController
 
   def trip_update_params
     params.require(:trip).permit(
-        :title, :description, :expected_budget, :start_date
-    )
+                                 :title, :description, :expected_budget, :start_date
+                                 )
   end
 end
