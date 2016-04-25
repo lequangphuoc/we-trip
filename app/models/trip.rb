@@ -68,8 +68,8 @@ class Trip < ActiveRecord::Base
   def self.search_trips(departure, destination)
     @departure = Region.find_by(name: departure)
     @destination = Region.find_by(name: destination)
-    if @departure != nil && destination == nil
-      Trip.where(departure_id: @departure.id)
+    if @departure != nil && @destination == nil
+      Trip.all
     elsif @departure != nil && @destination != nil
       @attractions = Attraction.where(place_id: Place.where(region_id: Region.where(id: @destination.id).pluck(:id)).pluck(:id))
 

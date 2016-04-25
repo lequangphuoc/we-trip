@@ -1,4 +1,8 @@
+<% if !params[:destination].blank? %>
 <h1>Trips from <%= params[:departure] %> to <%= params[:destination] %></h1>
+<% else %>
+<h1>Trips from <%= params[:departure] %></h1>
+<% end %>
 
 <% if !@trips.blank? %>
 <div class="horizontal-block-center">
@@ -11,5 +15,6 @@
   </div>
 </div>
 <% else %>
-
+<h3>No Trips match your search</h3>
+<%= link_to "Back to homepage", root_path %>
 <% end %>
