@@ -1,2 +1,15 @@
 $('#photos-place').html('<%= j(render partial: 'attachments/photo', collection: @photos, as: :photo) %>');
 $('#importFBAlbumModal').modal('hide');
+<% unless @photos.empty? %>
+  $('#gif_button').removeClass('hidden');
+  gifshot.createGIF({
+    'images': <%= raw @photos.map(&:path) %>,
+    'interval': 0.5
+  }, function (obj) {
+    console.log(obj);
+    if (!obj.error) {
+      var animatedImage = document.getElementById('gif_gallery');
+      animatedImage.src = obj.image;
+    }
+  });
+<% end %>

@@ -76,6 +76,12 @@ class TripsController < ApplicationController
     redirect_to edit_trip_path(new_trip)
   end
 
+  #search
+  def get_possible_destination
+    @regions = Region.get_starting_regions
+    render json: @regions
+  end
+
   private
   def get_trip
     @trip = Trip.find(params[:id])
@@ -99,7 +105,7 @@ class TripsController < ApplicationController
 
   def trip_update_params
     params.require(:trip).permit(
-        :title, :description, :expected_budget, :start_date
-    )
+                                 :title, :description, :expected_budget, :start_date
+                                 )
   end
 end

@@ -562,6 +562,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     color: #fff;
     background-color: #DEC698;
   }
+  .tt-menu {
+    height: 300px;
+    overflow: auto;
+  }
 }
 
 .hot-action-button {
@@ -717,6 +721,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   width: 280px;
   height: 280px;
   padding: 16px 16px 16px 0;
+  object-fit: cover;
 }
 
 .btn-behind-title {
@@ -758,6 +763,9 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   .close {
     color: #fff;
     opacity: 1;
+  }
+  .trip-gallery-photo-item {
+    object-fit: cover;
   }
   .facebook-album-list {
     font-size: 18px;
@@ -975,12 +983,12 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .basic-info {
-  width: 400px;
+  float: left;
 }
 
 .horizontal-block-center {
   text-align: center;
-  padding: 16px;
+  margin-top: 16px;
 }
 
 .horizontal-block-center-bg-yellow {
@@ -1021,6 +1029,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   background-clip: padding-box;
   position: relative;
   z-index: -1;
+  object-fit: cover;
 }
 
 .card .card-image span.card-title {
@@ -1058,7 +1067,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .card .card-action a {
-  color: #ffab40;
+  color: #fff;
   margin-right: 16px;
   transition: color 0.3s ease;
   text-transform: uppercase;
@@ -1077,7 +1086,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 /*home page*/
-.search-icon{
+.search-icon {
   background: image-url('isearch.png') no-repeat;
   display: block;
   height: 100px;
@@ -1086,7 +1095,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   margin: 0 auto;
 }
 
-.planning-icon{
+.planning-icon {
   background: image-url('iplanning.png') no-repeat;
   display: block;
   height: 100px;
@@ -1095,7 +1104,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   margin: 0 auto;
 }
 
-.share-icon{
+.share-icon {
   background: image-url('ishare.png') no-repeat;
   display: block;
   height: 100px;
@@ -1103,68 +1112,72 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   opacity: 0.5;
   margin: 0 auto;
 }
-.site-features{
+
+.site-features {
   text-align: center;
 }
-.site-feature{
+
+.site-feature {
   padding: 16px 32px;
-  h3{
+  h3 {
     text-align: center;
     border-bottom: 2px solid #A51919;
     padding: 16px;
   }
 }
-.feature-info{
+
+.feature-info {
   display: block;
   width: 70%;
   margin: auto;
-  p{
+  p {
     font-size: 18px;
   }
 }
-h2.home-info{
+
+h2.home-info {
   text-align: center;
   color: #A51919;
 }
 
-.site-best-contributor{
+.site-best-contributor {
   width: 100%;
-  background-color: #A51919;
+  background-color: #A19D91;
   float: left;
   padding: 16px;
   text-align: center;
-  h2{
+  h2 {
     text-transform: uppercase;
     color: #fff;
   }
 }
-.best-contributor-carousel{
+
+.best-contributor-carousel {
   width: 880px;
   margin: 16px auto;
-  .slick-slide{
+  .slick-slide {
     background-color: #fff;
     margin-right: 24px;
   }
-  .slick-prev:before, .slick-next:before{
+  .slick-prev:before, .slick-next:before {
     color: #fff;
     font-size: 24px;
   }
-  .best-contributor-photo{
+  .best-contributor-photo {
     width: 100%;
     float: left;
-    img{
-      width: 100%;
-      height: 152px;
+    img {
+      object-fit: cover;
       border-bottom: 1px solid #777;
     }
   }
-  .contributor-info{
+  .contributor-info {
     width: 100%;
     float: left;
     text-align: center;
     padding: 8px 0;
   }
-  .num-contribution{
+  .num-contribution {
     display: block;
     font-size: 18px;
     color: #A51919;
@@ -1172,30 +1185,30 @@ h2.home-info{
   }
 }
 
-.site-our-team{
+.site-our-team {
   width: 100%;
   float: left;
   text-align: center;
-  h3{
+  h3 {
     text-transform: uppercase;
     font-size: 24px;
   }
-  .team-info{
+  .team-info {
     width: 1000px;
     margin: 0 auto;
     text-align: center;
   }
-  .site-mem{
-      padding: 16px 32px;
+  .site-mem {
+    padding: 16px 32px;
 
   }
-  .mem-name{
+  .mem-name {
     display: block;
     margin: auto;
   }
 }
 
-.landoan-photo{
+.landoan-photo {
   background: image-url('landoan-photo.png') no-repeat;
   display: block;
   height: 100px;
@@ -1203,7 +1216,7 @@ h2.home-info{
   margin: 0 auto;
 }
 
-.quanvu-photo{
+.quanvu-photo {
   background: image-url('quanvu-photo.png') no-repeat;
   display: block;
   height: 100px;
@@ -1211,7 +1224,7 @@ h2.home-info{
   margin: 0 auto;
 }
 
-.khanhdang-photo{
+.khanhdang-photo {
   background: image-url('khanhdang-photo.png') no-repeat;
   display: block;
   height: 100px;
