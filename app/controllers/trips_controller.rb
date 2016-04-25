@@ -20,6 +20,9 @@ class TripsController < ApplicationController
   before_action :get_budget, only: [:show, :budget_plan]
 
   def show
+    unless @trip.user_ids.include?(current_user_id)
+      CalculatePointsService.new(@trip).add_point_by_trip('view')
+    end
   end
 
   def edit
@@ -33,6 +36,7 @@ class TripsController < ApplicationController
     @trip = Trip.new(trip_params)
     @created = @trip.save
     @trip.user_trips.create(user_id: current_user_id) if @created
+    CalculatePointsService.new(@trip).add_point_by_trip('create')
     respond_to :js
   end
 
@@ -68,6 +72,7 @@ class TripsController < ApplicationController
   # user interact
   def publish
     @trip.update_attributes(is_published: true)
+    CalculatePointsService.new(@trip).add_point_by_trip('view')
     redirect_to @trip
   end
 
