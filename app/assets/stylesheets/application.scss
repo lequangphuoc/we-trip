@@ -608,6 +608,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 
 .notification-box {
   min-width: 250px !important;
+  font-size: 18px;
+  padding: 8px;
 }
 
 .dropdown-suggestion-name {
@@ -718,7 +720,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 #photos-place img {
-  width: 280px;
+  width: 310px;
   height: 280px;
   padding: 16px 16px 16px 0;
   object-fit: cover;
@@ -1230,4 +1232,57 @@ h2.home-info {
   height: 100px;
   width: 100px;
   margin: 0 auto;
+}
+
+/*attraction details*/
+.place-icon {
+  background: image-url('place_icon.png') no-repeat;
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+.place-basic-info{
+  text-align: center;
+  padding: 16px;
+  h2{
+    color: #A51919;
+    font-weight: bold;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+.rating-icon{
+  background: image-url('irating.png') no-repeat;
+  display:inline-block;
+  width: 32px;
+  height: 32px;
+}
+.photo-place-detail{
+  background-color: rgba(191, 170, 63, 0.1);
+  padding: 16px;
+  text-align: center;
+  #photos-place{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  #photos-place img{
+    width: 310px;
+  }
+}
+.map-place-detail{
+  text-align: center;
+  padding: 16px;
+}
+
+.notification-icon{
+  background: image-url('inotification.png') no-repeat;
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+}
+.notification-btn{
+  background-color: transparent;
 }
