@@ -1242,47 +1242,52 @@ h2.home-info {
   width: 100px;
   margin: 0 auto;
 }
-.place-basic-info{
+
+.place-basic-info {
   text-align: center;
   padding: 16px;
-  h2{
+  h2 {
     color: #A51919;
     font-weight: bold;
   }
-  p{
+  p {
     font-size: 18px;
   }
 }
-.rating-icon{
+
+.rating-icon {
   background: image-url('irating.png') no-repeat;
-  display:inline-block;
+  display: inline-block;
   width: 32px;
   height: 32px;
 }
-.photo-place-detail{
+
+.photo-place-detail {
   background-color: rgba(191, 170, 63, 0.1);
   padding: 16px;
   text-align: center;
-  #photos-place{
+  #photos-place {
     width: 90%;
     margin: 0 auto;
     text-align: left;
   }
-  #photos-place img{
+  #photos-place img {
     width: 310px;
   }
 }
-.map-place-detail{
+
+.map-place-detail {
   text-align: center;
   padding: 16px;
 }
 
-.notification-icon{
+.notification-icon {
   background: image-url('inotification.png') no-repeat;
-  display:inline-block;
+  display: inline-block;
   width: 20px;
   height: 20px;
 }
-.notification-btn{
+
+.notification-btn {
   background-color: transparent;
 }
