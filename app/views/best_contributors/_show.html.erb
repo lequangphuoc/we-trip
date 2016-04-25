@@ -1,0 +1,8 @@
+<% if !User.get_top_7_contributors.blank? %>
+<%= render partial: 'best_contributors/contributor',
+               collection: User.get_top_7_contributors,
+               as: :user %>
+<% else %>
+<h3>There is no user yet</h3>
+<% end %>
+

@@ -45,7 +45,7 @@ class User < ActiveRecord::Base
     )
   end
 
-  def self.get_top_7_contributor
+  def self.get_top_7_contributors
     order(point: :desc).limit(7)
   end
 
