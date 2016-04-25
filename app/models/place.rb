@@ -23,4 +23,9 @@ class Place < ActiveRecord::Base
 
   validates_presence_of :name, :latitude, :longitude, :vicinity,
                         :region_id, :description, :rating
+
+  def self.list_of_places_by_departure(name)
+    Place.where(id: Attraction.list_of_attractions_by_departure(name).pluck(:place_id))
+  end
+
 end

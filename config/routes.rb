@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'home/index'
   root 'home#index'
 
@@ -17,9 +18,11 @@ Rails.application.routes.draw do
 
   resources :regions do
     collection do
-      get :all
+      get :all, :get_starting_regions, :get_destinations_regions
     end
   end
+
+  resources :searchs, only: [:index]
 
   resources :trips, only: [:edit, :create, :update, :show] do
     resources :schedule_days, only: [:create, :destroy]
