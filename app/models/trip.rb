@@ -60,4 +60,19 @@ class Trip < ActiveRecord::Base
   def list_of_attractions
     Attraction.where(schedule_day_id: schedule_day_ids)
   end
+
+  def self.trips_start_at_departure(name)
+    Trip.where(departure_id: Region.find_by(name: name).id).uniq
+  end
+
+  def self.search_trips(departure, destination)
+    @departure = Region.find_by(name: departure)
+    @destination = Region.find_by(name: destination)
+
+    if @departure != nil && @destination != nil
+      @attractions = Attraction.where(place_id: Place.where(region_id: Region.where(id: @destination.id).pluck(:id)).pluck(:id))
+
+      Trip.where(id: ScheduleDay.where(id: @attractions.collect(&:schedule_day_id)).pluck(:trip_id).uniq).where(departure_id: @departure.id)
+    end
+  end
 end

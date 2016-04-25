@@ -19,4 +19,16 @@ class Attraction < ActiveRecord::Base
 
   validates_presence_of :place_id, :schedule_day_id, :index
   validates_numericality_of :hour_spend
+
+  def get_region
+    Region.where(place_id: place_id)
+  end
+
+  def get_trip
+    self.schedule_day.trip
+  end
+
+  def self.list_of_attractions_by_departure(name)
+    Attraction.where(schedule_day_id: ScheduleDay.list_of_schedule_day_by_departure(name))
+  end
 end

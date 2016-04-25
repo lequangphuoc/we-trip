@@ -1,0 +1,15 @@
+<h1>Trips from <%= params[:departure] %> to <%= params[:destination] %></h1>
+
+<% if !@trips.blank? %>
+<div class="horizontal-block-center">
+  <div class="trip-list horizontal-block-center-bg-yellow">
+    <div class="container">
+      <div class="row">
+        <%= render partial: 'trips/trip_summary', collection: @trips, as: :trip %>
+      </div>
+    </div>
+  </div>
+</div>
+<% else %>
+
+<% end %>
