@@ -45,6 +45,10 @@ class User < ActiveRecord::Base
     )
   end
 
+  def self.get_top_7_contributor
+    order(point: :desc).limit(7)
+  end
+
   def authenticate_facebook?
     self.providers.find_by(name: 'facebook')
   end
