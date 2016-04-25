@@ -105,7 +105,7 @@ class TripsController < ApplicationController
 
   def trip_update_params
     params.require(:trip).permit(
-                                 :title, :description, :expected_budget, :start_date
-                                 )
+        :title, :description, :expected_budget, :start_date
+    )
   end
 end
