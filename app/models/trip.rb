@@ -34,8 +34,8 @@ class Trip < ActiveRecord::Base
   after_create :create_default_schedule_day
 
   def create_default_schedule_day
-    self.schedule_days.create(index: 1)
     self.budget_sections.create(title: 'Pre-trip')
+    self.schedule_days.create(index: 1)
   end
 
   def display_photo

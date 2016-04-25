@@ -33,3 +33,4 @@
 //= require handlebars
 //= require custom_marker
 //= require jquery.slick
+//= require gifshot

@@ -8,8 +8,11 @@ class FetchPlacesService
 
   private
   def fetch_places_foreach_region
+    # Region.order('id DESC')
     Region.all.each do |region|
+      puts "#{region.id} - #{region.name}"
       results = GoogleApiClient.get_nearby_places(region.latitude, region.longitude)['results']
+      puts results
       create_places(results, region.id)
     end
   end
