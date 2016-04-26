@@ -27,7 +27,7 @@ class ScheduleDay < ActiveRecord::Base
 
   def pairs_of_attractions
     count = self.attractions.size
-    count >= 3 ? self.attractions[0..count-2].zip(self.attractions[1..count-1]) : []
+    count >= 2 ? self.attractions[0..count-2].zip(self.attractions[1..count-1]) : []
   end
 
   def center_point
