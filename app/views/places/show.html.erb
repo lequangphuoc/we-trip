@@ -10,12 +10,12 @@
     %>
         No Rating
     <% else
-     i.times do |x|
+         i.times do |x|
     %>
-      <span class="rating-icon"></span>
-    <%
-      end
-      end %>
+            <span class="rating-icon"></span>
+        <%
+          end
+          end %>
     <p>
       <%= @place.vicinity %>
     </p>
@@ -63,13 +63,11 @@
     </div>
   </div>
 
-<div class="map-place-detail">
-  <h2 class="fs-title short-border">Maps</h2>
-  <div>
-
-    <iframe src="<%= @place.map_url %>" width="600" height="450"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div class="map-place-detail">
+    <h2 class="fs-title short-border">Maps</h2>
+    <div>
+      <iframe src="<%= @place.map_url %>" width="1200" height="450"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </div>
-</div>
-
 </div>
