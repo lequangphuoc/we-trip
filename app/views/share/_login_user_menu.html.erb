@@ -16,7 +16,7 @@
   <li role="presentation" class="dropdown" style="display: inline-flex">
     <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" style="color: white"
        role="button" aria-haspopup="true" aria-expanded="false">
-      <%= image_tag current_user.avatar, height: 30, class: 'img-rounded' %>
+      <%= image_tag "http://#{current_user.avatar}", height: 30, class: 'img-rounded' %>
       <div class="username-right-top"><%= current_user.name %></div>
       <span class="caret"></span>
     </a>

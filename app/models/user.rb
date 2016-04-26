@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
   has_many :friends, through: :friend_relations, class_name: User, source: :target
   has_many :notifications, through: :user_notifications, class_name: Notification, source: :notification
   has_many :user_budgets, dependent: :destroy
-  has_many :providers
+  has_many :providers, dependent: :destroy
 
   has_secure_password
   mount_uploader :avatar, AvatarUploader
