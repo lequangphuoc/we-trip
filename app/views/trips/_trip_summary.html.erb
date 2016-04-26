@@ -1,11 +1,11 @@
 <div class="col-md-6">
   <div class="card">
-    <div class="card-image">
-      <%= link_to trip do %>
-      <img height="300" style="width: 100%" src="<%= trip.display_photo %>">
-      <span class="card-title"><%= trip.title %></span>
-      <% end %>
-    </div>
+    <%= link_to trip do %>
+        <div class="card-image">
+          <img height="300" style="width: 100%" src="<%= trip.display_photo %>">
+          <span class="card-title"><%= trip.title %></span>
+        </div>
+    <% end %>
 
     <div class="card-content">
       <h4><%= trip.departure.try(:name) %></h4>
@@ -15,17 +15,17 @@
 
     <% if sign_in? %>
 
-    <div class="card-action">
-      <% if trip.is_owner?(current_user_id) %>
-        <%= link_to edit_trip_path(trip), class: 'btn btn-primary' do %>
-        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit
-      <% end %>
-      <% else %>
-        <%= link_to clone_trip_path(trip), class: 'btn btn-success' do %>
-        <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
-      <% end %>
-      <% end %>
-    </div>
+        <div class="card-action">
+          <% if trip.is_owner?(current_user_id) %>
+              <%= link_to edit_trip_path(trip), class: 'btn btn-primary' do %>
+                  <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit
+              <% end %>
+          <% else %>
+              <%= link_to clone_trip_path(trip), class: 'btn btn-success' do %>
+                  <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
+              <% end %>
+          <% end %>
+        </div>
     <% end %>
   </div>
 </div>

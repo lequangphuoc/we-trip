@@ -13,7 +13,7 @@
 #
 
 class TripsController < ApplicationController
-  before_action :require_login
+  before_action :require_login, except: [:show]
   before_action :get_trip, except: [:new, :create, :available_friends]
   before_action :check_member, except: [:show, :new, :available_friends, :create, :clone]
   before_action :get_itinerary, only: [:edit, :update, :show, :itinerary]
