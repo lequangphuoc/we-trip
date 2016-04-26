@@ -10,4 +10,8 @@ class RegionsController < ApplicationController
   def get_destinations_regions
     render json: Region.list_of_regions_by_departure(params[:name])
   end
+
+  def show
+
+  end
 end
