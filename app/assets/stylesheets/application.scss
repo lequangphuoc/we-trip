@@ -82,7 +82,24 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 #registerBtn {
   background-color: #e0d2a1;
 }
-
+.middle-before-login{
+  padding: 16px;
+  #loginBtn{
+    padding: 11px 31px;
+    font-size: 24px;
+  }
+  #registerBtn{
+    padding: 11px 25px;
+    font-size: 24px;
+  }
+  .modal{
+    color: #000;
+    text-align: left;
+    label{
+      font-size: 18px;
+    }
+  }
+}
 #createTripBtn {
   width: 300px;
   font-size: 24px;

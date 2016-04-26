@@ -27,9 +27,19 @@
         <div class="header text-center">
           <h1>WE TRIP</h1>
           <h2>Travel in your own way</h2>
+          <% if sign_in? %>
               <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
                 Create a trip
               </button>
+              <% else %>
+              <div class="middle-before-login">
+                <button type="button" class="btn" id="loginBtn" data-toggle="modal" data-target="#login-form">Login</button>
+                <button type="button" class="btn" id="registerBtn" data-toggle="modal" data-target="#register-form">Register</button>
+                <%= render 'sessions/new' %>
+                <%= render 'users/new' %>
+              </div>
+
+          <% end %>
         </div>
       </div>
 
