@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe SessionsController, type: :controller do
   before(:each) do
     @user = create(:user)
+    request.env["HTTP_REFERER"] = "back"
   end
 
   context 'GET #callback' do
@@ -19,7 +20,7 @@ RSpec.describe SessionsController, type: :controller do
       end
 
       it 'should redirect to users_path' do
-        expect(response).to redirect_to root_path
+        expect(response).to redirect_to "back"
       end
     end
 
@@ -30,7 +31,7 @@ RSpec.describe SessionsController, type: :controller do
       end
 
       it 'should redirect to root' do
-        expect(response).to redirect_to(root_path)
+        expect(response).to redirect_to "back"
       end
 
       it 'should show flash' do
@@ -58,7 +59,7 @@ RSpec.describe SessionsController, type: :controller do
       it 'should skip login' do
         session[:user_id] = @user.id
         post :create, email: 'aaa', password: 'aaa'
-        expect(response).to redirect_to(root_path)
+        expect(response).to redirect_to root_path
       end
     end
 

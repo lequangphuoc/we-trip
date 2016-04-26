@@ -14,6 +14,10 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
+  before(:each) do
+    request.env["HTTP_REFERER"] = "back"
+  end
+
   describe 'POST #create' do
     context 'create account successfully' do
       before(:each) do
@@ -70,7 +74,7 @@ RSpec.describe UsersController, type: :controller do
 
     it 'should require login' do
       get :edit, id: @user.id
-      expect(response).to redirect_to root_path
+      expect(response).to redirect_to "back"
     end
   end
 
@@ -102,7 +106,7 @@ RSpec.describe UsersController, type: :controller do
 
     it 'should redirect to login' do
       post :update, id: @user.id, user: attributes_for(:user)
-      expect(response).to redirect_to root_path
+      expect(response).to redirect_to "back"
     end
   end
 end
