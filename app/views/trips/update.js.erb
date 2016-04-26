@@ -2,5 +2,5 @@
   $('#trip-error').html("");
   moveToNextScreen();
 <% else %>
-  $('#trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
+  $('div #trip-error').html("<%= j(render 'share/model_error', object: @trip) %>");
 <% end %>
