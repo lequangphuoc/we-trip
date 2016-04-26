@@ -1,11 +1,18 @@
 <div class="col-md-6">
   <div class="card">
-    <%= link_to trip do %>
+    <%= link_to trip, id: "trip_sum_#{trip.id}" do %>
         <div class="card-image">
           <img height="300" style="width: 100%" src="<%= trip.display_photo %>">
           <span class="card-title"><%= trip.title %></span>
         </div>
     <% end %>
+
+
+    <script>
+      $('#trip_sum<%= trip.id %>').click(function () {
+        showLoading();
+      })
+    </script>
 
     <div class="card-content">
       <h4><%= trip.departure.try(:name) %></h4>
