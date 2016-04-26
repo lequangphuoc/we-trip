@@ -1144,25 +1144,27 @@ h2.home-info {
 
 .site-best-contributor {
   width: 100%;
-  background-color: #A19D91;
   float: left;
   padding: 16px;
   text-align: center;
   h2 {
     text-transform: uppercase;
-    color: #fff;
+    color: #A51919;
   }
 }
 
 .best-contributor-carousel {
-  width: 880px;
+  width: 865px;
   margin: 16px auto;
   .slick-slide {
-    background-color: #fff;
+    background-color: rgba(142, 87, 39, 0.41);
     margin-right: 24px;
+    a{
+      color: #F7F7F7;
+    }
   }
   .slick-prev:before, .slick-next:before {
-    color: #fff;
+    color: #A51919;
     font-size: 24px;
   }
   .best-contributor-photo {
@@ -1191,10 +1193,11 @@ h2.home-info {
   width: 100%;
   float: left;
   text-align: center;
-  h3 {
-    text-transform: uppercase;
-    font-size: 24px;
+  background-color: #DEBF74;
+  h2{
+    color: #fff;
   }
+
   .team-info {
     width: 1000px;
     margin: 0 auto;
@@ -1207,6 +1210,11 @@ h2.home-info {
   .mem-name {
     display: block;
     margin: auto;
+    h3 {
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #fff;
+    }
   }
 }
 
@@ -1290,4 +1298,19 @@ h2.home-info {
 
 .notification-btn {
   background-color: transparent;
+}
+
+.featured-destinations{
+  width: 100%;
+  background-color: #DEBF74;
+  float: left;
+  padding: 16px;
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .featured-city{
+    margin-right: 8px;
+  }
 }

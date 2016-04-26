@@ -21,10 +21,12 @@
       <!-- CREATE ACTION -->
       <div class="header text-center">
         <h1>WE TRIP</h1>
-        <h2>Travel in your way</h2>
+        <h2>Travel in your own way</h2>
+        <% if sign_in? %>
         <button type="button" class="btn" id="createTripBtn" data-toggle="modal" data-target="#trip-form">
           Create a trip
         </button>
+            <% end %>
       </div>
     </div>
 
@@ -43,7 +45,7 @@
     <div class="container">
       <a href="<%= root_path %>">
         <h1>WE TRIP</h1>
-        <span class="slogan">Travel in your way</span>
+        <span class="slogan">Travel in your own way</span>
       </a>
       <div class="top-right-trip">
         <% if sign_in? %>
