@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :skip_login, only: [:create]
-  before_action :require_login, except: [:create]
+  before_action :require_login, except: [:create, :show]
   before_action :get_user, only: [:edit, :update, :show]
 
   def create

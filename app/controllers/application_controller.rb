@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
   def require_login
     unless sign_in?
       flash[:alert] = 'Please login to your account'
-      redirect_to root_path
+      redirect_to :back
     end
   end
 end

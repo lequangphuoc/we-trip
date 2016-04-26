@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
     else
       flash[:alert] = 'Can not login with facebook'
     end
-    redirect_to root_path
+    redirect_to :back
   end
 
   def destroy
