@@ -38,15 +38,15 @@
     Top Destinations:
   </h2>
   <div class="home-destination-list">
-    <a href="#" class="featured-city">
-      <%= image_tag('danang_home.png') %>
-    </a>
-    <a href="#" class="featured-city">
-      <%= image_tag('hanoi_home.png') %>
-    </a>
-    <a href="#" class="featured-city">
-      <%= image_tag('saigon_home.png') %>
-    </a>
+    <%= link_to danang_regions_path(region_name: 'Đà Nẵng') do %>
+        <%= image_tag('danang_home.png') %>
+    <% end %>
+    <%= link_to hanoi_regions_path(region_name: 'Hà Nội') do %>
+        <%= image_tag('hanoi_home.png') %>
+    <% end %>
+    <%= link_to hcm_regions_path(region_name: 'Hồ Chí Minh') do %>
+        <%= image_tag('saigon_home.png') %>
+    <% end %>
   </div>
 </div>
 
@@ -92,7 +92,7 @@
 </div>
 
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.best-contributor-carousel').slick({
       infinite: true,
       slidesToShow: 4,

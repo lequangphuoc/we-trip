@@ -1,0 +1,103 @@
+<div class="region-header">
+  <%= image_tag('hanoi_detail.png') %>
+</div>
+
+<div class="region-detail ">
+  <div class="region-info">
+    <p>
+      The charming Vietnamese capital has aged well, preserving the Old Quarter, monuments and colonial architecture,
+      while making room for modern developments alongside. Hanoi may have shrugged off several former names, including
+      Thang Long, or "ascending dragon," but it hasn't forgotten its past, as sites such as Ho Chi Minh's Mausoleum and
+      Hoa Lo Prison attest. Lakes, parks, shady boulevards and more than 600 temples and pagodas add to the appeal of
+      this city, which is easily explored by taxi.
+    </p>
+  </div>
+  <div class="region-photos">
+    <div class="trip-gallery-display">
+      <h2 class="fs-title short-border">City Gallery</h2>
+      <div class="trip-gallery-carousel">
+        <div>
+          <img width="200" height="150" src="http://blog.chrisridley.co.uk/wp-content/uploads/2011/04/IMG_0550-110214-C-Ridley.jpg"/>
+        </div>
+        <div><img width="200" height="150" src="https://c6.staticflickr.com/8/7091/6998632957_acf240e307_b.jpg"/></div>
+        <div>
+          <img width="200" height="150" src="http://www.doi-travel.com/images/gallery/tour_tour/Hanoi-photography-tour.jpg"/>
+        </div>
+        <div>
+          <img width="200" height="150" src="http://edenimages.com/photoblog/wp-content/uploads/2010/09/hong-theanh-572.jpg"/>
+        </div>
+        <div>
+          <img width="200" height="150" src="http://a9.vietbao.vn/images/vi955/2010/10/55329874-1285993080-pho-co1.jpg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="place-trips">
+  <div class="trip-list horizontal-block-center-bg-yellow">
+    <h2 class="fs-title short-border">Ha Noi Trips</h2>
+
+    <div class="container">
+      <div class="row">
+        <!-- Card Projects -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-image">
+              <%= link_to @trips.first do %>
+                  <img class="img-responsive" src="https://nguyengrunzke.files.wordpress.com/2015/01/20120320_165943.jpg">
+                  <span class="card-title">Vietnam Capital City - Unforgetable</span>
+              <% end %>
+            </div>
+
+            <div class="card-content">
+              <h4>Da Nang- Ha Noi</h4>
+              <p><%= truncate("Curabitur vulputate orci non pharetra viverra. Nulla suscipit maximus enim, eget efficitur nisi iaculis eu. Aliquam aliquet varius vehicula.", :length => 40, :separator => ' ') %></p>
+              <span class="num-people-clone">100 people have cloned this trip.</span>
+              <span class="trip-budget">Total budget: 20.000.000 VND</span>
+            </div>
+
+            <div class="card-action">
+              <%= link_to clone_trip_path(@trips.first), class: 'btn btn-success' do %>
+                  <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-image">
+              <%= link_to @trips.second do %>
+                  <img class="img-responsive" src="http://edenvacation.com/wp-content/uploads/Hanoi-2.jpg">
+                  <span class="card-title">Ha Noi - Place to remember</span>
+              <% end %>
+            </div>
+
+            <div class="card-content">
+              <h4>TP Ho Chi Minh - Ha Noi</h4>
+              <p><%= truncate("Curabitur vulputate orci non pharetra viverra. Nulla suscipit maximus enim, eget efficitur nisi iaculis eu. Aliquam aliquet varius vehicula.", :length => 40, :separator => ' ') %></p>
+              <span class="num-people-clone">10 people have cloned this trip.</span>
+              <span class="trip-budget">Total budget: 15.000.000 VND</span>
+            </div>
+
+            <div class="card-action">
+              <%= link_to clone_trip_path(@trips.second), class: 'btn btn-success' do %>
+                  <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>Clone the trip
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.trip-gallery-carousel').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    });
+  });
+</script>
