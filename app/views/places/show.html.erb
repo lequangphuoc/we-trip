@@ -5,7 +5,7 @@
       <%= @place.name %>
     </h2>
     <%
-      i = @place.rating.round
+      i = @place.rating.try(:round)
       if i == 0
     %>
         No Rating
