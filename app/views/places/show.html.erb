@@ -4,18 +4,20 @@
     <h2>
       <%= @place.name %>
     </h2>
-    <%
-      i = @place.rating.try(:round)
-      if i == 0
-    %>
-        No Rating
-    <% else
-         i.times do |x|
-    %>
-            <span class="rating-icon"></span>
+    <% if @place.rating %>
         <%
-          end
-          end %>
+          i = @place.rating.round
+          if i == 0
+        %>
+            No Rating
+        <% else
+             i.times do |x|
+        %>
+                <span class="rating-icon"></span>
+            <%
+              end
+              end %>
+    <% end %>
     <p>
       <%= @place.vicinity %>
     </p>
