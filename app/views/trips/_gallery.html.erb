@@ -62,7 +62,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img id="gif_gallery" width="240" style="margin: 20px">
+        <img id="gif_gallery" width="500" style="margin: 20px">
       </div>
     </div>
   </div>
@@ -115,7 +115,9 @@
     $('#gif_button').removeClass('hidden');
     gifshot.createGIF({
       'images': <%= raw @photos.map(&:path) %>,
-      'interval': 0.5
+      'interval': 0.5,
+      'gifWidth': 500,
+      'gifHeight': 500
     }, function (obj) {
       console.log(obj);
       if (!obj.error) {
