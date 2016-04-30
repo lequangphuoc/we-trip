@@ -8,7 +8,7 @@
         <h3>SEARCH</h3>
         <p>
           Find details of tourist attractions and learn about travel experiences from available trips.
-        </p>
+        </p>b
       </div>
     </div>
 
@@ -33,70 +33,100 @@
     </div>
   </div>
 </div>
-<div class="featured-destinations">
+<section class="featured-destinations">
+  <div class="container">
   <h2>
     Top Destinations:
   </h2>
   <div class="home-destination-list">
-    <%= link_to danang_regions_path(region_name: 'Đà Nẵng') do %>
-        <%= image_tag('danang_home.png') %>
+    <%= link_to danang_regions_path(region_name: 'Đà Nẵng'), class: 'col-md-4 col-sm-4 col-xs-12' do %>
+        <%= image_tag 'danang_home.png', class: 'img-responsive' %>
     <% end %>
-    <%= link_to hanoi_regions_path(region_name: 'Hà Nội') do %>
-        <%= image_tag('hanoi_home.png') %>
+    <%= link_to hanoi_regions_path(region_name: 'Hà Nội'), class: 'col-md-4 col-sm-4 col-xs-12' do %>
+        <%= image_tag 'hanoi_home.png', class: 'img-responsive'  %>
     <% end %>
-    <%= link_to hcm_regions_path(region_name: 'Hồ Chí Minh') do %>
-        <%= image_tag('saigon_home.png') %>
+    <%= link_to hcm_regions_path(region_name: 'Hồ Chí Minh'), class: 'col-md-4 col-sm-4 col-xs-12' do %>
+        <%= image_tag 'saigon_home.png', class: 'img-responsive' %>
     <% end %>
   </div>
-</div>
+  </div>
+</section>
 
 <div class="site-best-contributor">
   <h2>
     Our Best Contributors:
   </h2>
 
-  <div class="best-contributor-display">
+  <div class="">
     <div class="best-contributor-carousel">
-
       <%= render 'best_contributors/show' %>
-
     </div>
   </div>
 </div>
 
 
-<div class="site-our-team">
-  <h2>WE-TRIP IS PROUDLY BUILT BY: </h2>
+<section class="site-our-team">
+  <div class="row">
+  <h2>WE-TRIP IS PROUDLY BUILT BY</h2>
   <div class="team-info">
-    <div class="col-md-4 site-mem">
+    <div class="col-md-4 col-sm-8 col-xs-12">
       <span class="landoan-photo"></span>
       <div class="mem-name">
         <h3>Doan Phuong Lan</h3>
       </div>
     </div>
 
-    <div class="col-md-4 site-mem">
+    <div class="col-md-4 col-sm-8 col-xs-12 site-mem">
       <span class="quanvu-photo site-mem"></span>
       <div class="mem-name">
         <h3>Vu Huy Quan</h3>
       </div>
     </div>
 
-    <div class="col-md-4 site-mem">
+    <div class="col-md-4 col-sm-8 col-xs-12 site-mem">
       <span class="khanhdang-photo"></span>
       <div class="mem-name">
         <h3>Dang Kim Khanh</h3>
       </div>
     </div>
   </div>
-</div>
+  </div>
+</section>
 
 <script type="text/javascript">
   $(document).ready(function () {
     $('.best-contributor-carousel').slick({
       infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 4
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   });
 </script>

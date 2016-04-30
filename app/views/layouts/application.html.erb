@@ -17,7 +17,7 @@
 <%= render 'share/loading' %>
 
 <% if params[:controller] == 'home' %>
-    <div class="image-search-home">
+    <div class="jumbotron image-search-home">
       <div class="container">
 
         <!-- NAV BAR -->
@@ -44,8 +44,10 @@
       </div>
 
       <!-- SEARCH ACTION -->
-      <div class="main-search text-center">
+      <div class="main-search">
+        <div class="col-sm-12">
         <%= render 'share/search' %>
+        </div>
       </div>
     </div>
 

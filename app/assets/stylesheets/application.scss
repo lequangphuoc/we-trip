@@ -82,24 +82,26 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 #registerBtn {
   background-color: #e0d2a1;
 }
-.middle-before-login{
+
+.middle-before-login {
   padding: 16px;
-  #loginBtn{
+  #loginBtn {
     padding: 11px 31px;
     font-size: 24px;
   }
-  #registerBtn{
+  #registerBtn {
     padding: 11px 25px;
     font-size: 24px;
   }
-  .modal{
+  .modal {
     color: #000;
     text-align: left;
-    label{
+    label {
       font-size: 18px;
     }
   }
 }
+
 #createTripBtn {
   width: 300px;
   font-size: 24px;
@@ -114,9 +116,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 /*landing page*/
 .image-search-home {
   background-image: image-url('home_big.png');
-  width: 1440px;
-  height: 400px;
-  margin: 0 auto;
+  background-size: cover;
+  position: relative;
+  height: 450px;
+  padding-top: 15px;
 }
 
 .header {
@@ -140,8 +143,10 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .main-search {
-  top: 55px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 16px;
   background-color: rgba(0, 0, 0, 0.6);
   input {
@@ -1178,7 +1183,7 @@ h2.home-info {
   .slick-slide {
     background-color: rgba(142, 87, 39, 0.41);
     margin-right: 24px;
-    a{
+    a {
       color: #F7F7F7;
     }
   }
@@ -1213,7 +1218,7 @@ h2.home-info {
   float: left;
   text-align: center;
   background-color: #DEBF74;
-  h2{
+  h2 {
     color: #fff;
   }
 
@@ -1319,7 +1324,7 @@ h2.home-info {
   background-color: transparent;
 }
 
-.featured-destinations{
+.featured-destinations {
   width: 100%;
   background-color: #DEBF74;
   float: left;
@@ -1329,20 +1334,42 @@ h2.home-info {
     text-transform: uppercase;
     color: #fff;
   }
-  .featured-city{
+  .featured-city {
     margin-right: 8px;
   }
 }
-.region-header{
-  img{
+
+.region-header {
+  img {
     width: 100%;
   }
 }
-.region-info{
+
+.region-info {
   padding: 16px;
   font-size: 20px;
-  p{
+  p {
     width: 60%;
     margin: auto;
+  }
+}
+
+.form-search {
+  display: table;
+  margin: 0 auto;
+  input, .btn {
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    border: none;
+  }
+}
+
+.home-destination-list {
+  img {
+    width: 100%;
+  }
+  a {
+    margin-bottom: 15px;
   }
 }
