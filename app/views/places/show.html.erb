@@ -26,7 +26,7 @@
     <% end %>
   </div>
   <div class="photo-place-detail">
-    <h2 class="fs-title short-border">Gallery</h2>
+    <h2 class="fs-title short-border text-center">Gallery</h2>
 
     <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
     <div id="blueimp-gallery" class="blueimp-gallery">
@@ -63,7 +63,7 @@
       </div>
     </div>
 
-    <div id="photos-place">
+    <div id="photos-place" class="row">
       <%= render_place_photos(@place_photos) %>
     </div>
   </div>
@@ -71,7 +71,7 @@
   <div class="map-place-detail">
     <h2 class="fs-title short-border">Maps</h2>
     <div>
-      <iframe src="<%= @place.map_url %>" width="1200" height="450"
+      <iframe src="<%= @place.map_url %>" width="100%" height="450"
               frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>

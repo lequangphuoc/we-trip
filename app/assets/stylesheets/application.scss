@@ -118,8 +118,20 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   background-image: image-url('home_big.png');
   background-size: cover;
   position: relative;
-  height: 450px;
+  height: 400px;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .image-search-home {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-search-home {
+    height: 550px;
+  }
 }
 
 .header {
@@ -193,8 +205,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 /*trip page*/
 .trip-top-header {
   background-image: image-url('foot_travel.jpg');
-  width: 1440px;
-  height: 80px;
   a:hover {
     text-decoration: none;
   }
@@ -320,16 +330,15 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   display: inline-block;
   /*CSS counters to number the steps*/
   counter-reset: step;
-
-}
-
-#progressbar li {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  width: 200px;
-  float: left;
-  position: relative;
+  width: 100%;
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 25%;
+    float: left;
+    position: relative;
+  }
 }
 
 #progressbar li:before {
@@ -651,16 +660,11 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .budget-plan {
-  float: left;
-  width: 100%;
   padding: 0 16px;
 }
 
 .budget-plan-table {
-  width: 60%;
   font-size: 20px;
-  padding: 16px 0;
-  float: left;
 }
 
 .budget-row {
@@ -702,9 +706,6 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .budget-plan-split-individual {
-  float: left;
-  width: 40%;
-  padding: 16px 0 0 50px;
   font-size: 20px;
   .budget-row {
     padding: 16px 0;
@@ -742,9 +743,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 #photos-place img {
-  width: 310px;
   height: 280px;
-  padding: 16px 16px 16px 0;
   object-fit: cover;
 }
 
@@ -1295,17 +1294,7 @@ h2.home-info {
 }
 
 .photo-place-detail {
-  background-color: rgba(191, 170, 63, 0.1);
-  padding: 16px;
   text-align: center;
-  #photos-place {
-    width: 90%;
-    margin: 0 auto;
-    text-align: left;
-  }
-  #photos-place img {
-    width: 310px;
-  }
 }
 
 .map-place-detail {
