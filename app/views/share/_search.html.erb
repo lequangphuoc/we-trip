@@ -36,7 +36,7 @@
     }
   });
 
-  $('#fromPlace').change(function () {
+  $('#fromPlace').bind('typeahead:select', function(ev, suggestion) {
     if ($('#fromPlace').val()) {
       $.ajax({
         method: 'GET',

@@ -10,6 +10,7 @@ class CloneTripService
       clone_pre_trip
       clone_schedule_days
       add_current_user
+      create_user_budget
     end
     @new_trip
   end
@@ -26,6 +27,24 @@ class CloneTripService
 
   def add_current_user
     UserTrip.create(user_id: @current_user.id, trip_id: @new_trip.id)
+  end
+
+  def create_user_budget
+    BudgetItem.transaction do
+      @new_trip.budget_items.each do |budget_item|
+        UpdateBudgetService.new(
+            ActionController::Parameters.new({
+                id: budget_item.id,
+                trip_id: @new_trip.id,
+                assignee: 'split',
+                budget_item: {
+                    price: budget_item.price,
+                    name: budget_item.name
+                }
+            })
+        ).execute
+      end
+    end
   end
 
   def clone_schedule_days

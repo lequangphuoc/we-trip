@@ -24,7 +24,6 @@ class Region < ActiveRecord::Base
   end
 
   def self.list_of_regions_by_departure(name)
-    Region.where(id: Place.list_of_places_by_departure(name).pluck(:region_id))
+    Region.where(id: Place.list_of_places_by_departure(name).pluck(:region_id).uniq)
   end
-
 end

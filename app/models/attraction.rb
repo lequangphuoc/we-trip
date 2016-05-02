@@ -29,6 +29,6 @@ class Attraction < ActiveRecord::Base
   end
 
   def self.list_of_attractions_by_departure(name)
-    Attraction.where(schedule_day_id: ScheduleDay.list_of_schedule_day_by_departure(name))
+    Attraction.where(schedule_day_id: ScheduleDay.list_of_schedule_day_by_departure(name).pluck(:id))
   end
 end

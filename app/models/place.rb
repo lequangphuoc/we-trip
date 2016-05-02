@@ -27,5 +27,4 @@ class Place < ActiveRecord::Base
   def self.list_of_places_by_departure(name)
     Place.where(id: Attraction.list_of_attractions_by_departure(name).pluck(:place_id))
   end
-
 end

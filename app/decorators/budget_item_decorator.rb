@@ -8,6 +8,6 @@ class BudgetItemDecorator < Draper::Decorator
 
   private
   def split_equally?
-    object.user_budgets.length > 1
+    object.user_budgets.select(:kind).map(&:kind).include?('split')
   end
 end
