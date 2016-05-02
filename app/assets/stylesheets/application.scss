@@ -50,8 +50,17 @@
   font-url('southernAir.svg#webfont') format('svg');
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: font-url('OpenSans-Regular.eot');
+  src: font-url('OpenSans-Regular.ttf') format('truetype'),
+  font-url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  font-url('OpenSans-Regular.woff') format('woff'),
+  font-url('OpenSans-Regular.svg#webfont') format('svg');
+}
+
 body, p, a {
-  font-family: josefinBold;
+  font-family: OpenSans;
 }
 
 h1 {
@@ -60,7 +69,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6, strong, .bold-text {
-  font-family: josefinBold;
+  font-family: OpenSans;
 }
 
 .form-control {
@@ -233,6 +242,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  padding: 8px;
 }
 
 #msform .form-slide {
@@ -309,6 +319,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(76, 63, 25, 0.3);
   margin-top: 30px;
+  padding: 8px 0;
 }
 
 .control-label {
@@ -390,6 +401,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     font-weight: bold;
     font-size: 20px;
     text-align: left;
+    padding: 8px 0;
   }
 
 }
@@ -562,7 +574,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
     margin: 10px 3px 4px 0;
     padding: 8px 4px;
     font-size: 18px;
-    width: 75px;
+    width: 90px;
   }
   .remove-itinerary {
     margin-top: 10px;
@@ -653,7 +665,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 .nav-button {
-  font-size: 18px;
+  font-size: 16px;
   background: #DEC698 !important;
   color: #fff;
   width: 100px;
