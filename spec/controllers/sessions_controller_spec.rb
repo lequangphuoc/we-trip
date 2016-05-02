@@ -12,6 +12,7 @@ RSpec.describe SessionsController, type: :controller do
         user = double(User)
         allow(user).to receive(:id).and_return(1)
         allow_any_instance_of(FacebookAuthenticateService).to receive(:authenticate).and_return(user)
+        allow_any_instance_of(FacebookAuthenticateService).to receive(:create_provider)
         get :callback, provider: :facebook
       end
 
