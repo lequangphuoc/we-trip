@@ -64,6 +64,7 @@ class TripsController < ApplicationController
 
   def gallery
     @albums = GetAlbumService.new(current_user).execute
+    @has_provider = current_user.providers.where(name: 'facebook').count > 0
     @photos = @trip.attachments
     respond_to :js
   end

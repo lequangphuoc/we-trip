@@ -1,9 +1,15 @@
 <h2 class="fs-title short-border">Gallery</h2>
 <div>
   <span class="btn-behind-title">
-    <a href="#" class="import-facebook-album" data-toggle="modal" data-target="#importFBAlbumModal">
-      Import album from Facebook
-    </a>
+    <% if @has_provider %>
+        <a href="#" class="import-facebook-album" data-toggle="modal" data-target="#importFBAlbumModal">
+          Import album from Facebook
+        </a>
+    <% else %>
+        <a href="/auth/facebook" class="import-facebook-album">
+          Login Facebook to import album
+        </a>
+    <% end %>
   </span>
 </div>
 
@@ -112,19 +118,19 @@
 
 <script>
   <% unless @photos.empty? %>
-    $('#gif_button').removeClass('hidden');
-    gifshot.createGIF({
-      'images': <%= raw @photos.map(&:path) %>,
-      'interval': 0.5,
-      'gifWidth': 500,
-      'gifHeight': 500
-    }, function (obj) {
-      console.log(obj);
-      if (!obj.error) {
-        var animatedImage = document.getElementById('gif_gallery');
-        animatedImage.src = obj.image;
-      }
-    });
+  $('#gif_button').removeClass('hidden');
+  gifshot.createGIF({
+    'images': <%= raw @photos.map(&:path) %>,
+    'interval': 0.5,
+    'gifWidth': 500,
+    'gifHeight': 500
+  }, function (obj) {
+    console.log(obj);
+    if (!obj.error) {
+      var animatedImage = document.getElementById('gif_gallery');
+      animatedImage.src = obj.image;
+    }
+  });
   <% end %>
   <% set_current_screen('gallery') %>
 </script>

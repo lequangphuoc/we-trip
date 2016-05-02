@@ -8,13 +8,7 @@ class FacebookAuthenticateService
   def authenticate
     user = retrieve_user
     user = update_user(user)
-    user.save && create_provider(user) && user
-  end
-
-  private
-  def retrieve_user
-    email = @auth[:info][:email] || "#{@auth[:uid]}@facebook.com"
-    User.where(email: email).first_or_initialize
+    user.save && user
   end
 
   def create_provider(user)
@@ -22,6 +16,12 @@ class FacebookAuthenticateService
     provider.name = @auth[:provider]
     provider.access_token = @auth[:credentials][:token]
     provider.save
+  end
+
+  private
+  def retrieve_user
+    email = @auth[:info][:email] || "#{@auth[:uid]}@facebook.com"
+    User.where(email: email).first_or_initialize
   end
 
   def update_user(user)
