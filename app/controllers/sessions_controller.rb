@@ -9,7 +9,10 @@ class SessionsController < ApplicationController
   end
 
   def callback
-    if (user = FacebookAuthenticateService.new(env['omniauth.auth']).authenticate)
+    service = FacebookAuthenticateService.new(env['omniauth.auth'])
+    user = current_user || service.authenticate
+    if user
+      service.create_provider(user)
       store_user_id(user.id)
     else
       flash[:alert] = 'Can not login with facebook'
