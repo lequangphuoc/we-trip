@@ -550,7 +550,7 @@ h2, h3, h4, h5, h6, strong, .bold-text {
   }
   .col-name {
     float: left;
-    width: 220px;
+    width: 215px;
   }
   .col-remove {
     float: left;
@@ -755,8 +755,8 @@ h2, h3, h4, h5, h6, strong, .bold-text {
 }
 
 #photos-place img {
-  height: 280px;
   object-fit: cover;
+  padding: 8px;
 }
 
 .btn-behind-title {
