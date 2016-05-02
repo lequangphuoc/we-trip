@@ -14,9 +14,9 @@ class StoreAlbumService
 
   private
   def save_photos
-    # graph = Koala::Facebook::API.new(@provider.access_token)
-    graph = Koala::Facebook::API.new(ENV['ACCESS_TOKEN'])
-    photos = graph.get_connections(@album_id, 'photos').each do |photo|
+    graph = Koala::Facebook::API.new(@provider.access_token)
+    # graph = Koala::Facebook::API.new(ENV['ACCESS_TOKEN'])
+    photos = graph.get_object("#{@album_id}?fields=photos.fields(images)")['photos']['data'].each do |photo|
       Attachment.transaction do
         @trip.attachments.create(path: photo['images'][0]['source'])
       end

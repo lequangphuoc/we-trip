@@ -4,10 +4,10 @@ class GetAlbumService
   end
 
   def execute
-    # graph = Koala::Facebook::API.new(@provider.access_token)
     begin
-      graph = Koala::Facebook::API.new(ENV['ACCESS_TOKEN'])
-      graph.get_connections('me', 'albums').map { |album|
+      graph = Koala::Facebook::API.new(@provider.access_token)
+      # graph = Koala::Facebook::API.new(ENV['ACCESS_TOKEN'])
+      graph.get_object('me?fields=albums.fields(id,name,count,created_time)')['albums']['data'].map { |album|
         {
             id: album['id'],
             name: album['name'],
