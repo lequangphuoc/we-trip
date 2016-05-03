@@ -17,11 +17,7 @@ class SessionsController < ApplicationController
     else
       flash[:alert] = 'Can not login with facebook'
     end
-    begin
-      redirect_to :back
-    rescue ActionController::RedirectBackError => e
-      redirect_to root_path
-    end
+    redirect_to_previous
   end
 
   def destroy
@@ -31,6 +27,14 @@ class SessionsController < ApplicationController
   end
 
   private
+  def redirect_to_previous
+    begin
+      redirect_to :back
+    rescue ActionController::RedirectBackError => e
+      redirect_to root_path
+    end
+  end
+
   def authenticate
     @user = User.find_by(email: params[:email])
     @user && @user.authenticate(params[:password])
