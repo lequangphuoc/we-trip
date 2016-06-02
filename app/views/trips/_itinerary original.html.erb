@@ -1,27 +1,20 @@
 <h2 class="fs-title short-border">Itinerary</h2>
 <div class="panel with-nav-tabs panel-default">
-  <div class="row">
-
-    <div class="col-sm-2 no-padding-right" style="padding-top: 10px;">
-      <div class="border-right">
-        <ul class="nav nav-tabs nav-stacked" id="day-left-panel">
-          <li>
-            <%= link_to trip_schedule_days_path(@trip), method: :post,
-            remote: true, class: 'btn-add-schedule' do %>
+  <div class="panel-heading">
+    <ul class="nav nav-tabs" id="day-left-panel">
+      <li>
+        <%= link_to trip_schedule_days_path(@trip), method: :post,
+                    remote: true, class: 'btn-add-schedule' do %>
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Day
-            <% end %>
-          </li>
+        <% end %>
+      </li>
 
-          <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :schedule_day %>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-sm-10 no-padding-left">
-
-      <script>
-        DEFAULT_LAT_AVG = 14.0583;
-        DEFAULT_LNG_AVG = 108.2772;
+      <%= render partial: 'schedule_days/li_schedule_day', collection: @schedule_days, as: :schedule_day %>
+    </ul>
+  </div>
+  <script>
+    DEFAULT_LAT_AVG = 14.0583;
+    DEFAULT_LNG_AVG = 108.2772;
 
     // Toggle maps
     maps = {};
@@ -57,24 +50,13 @@
       local: places
     });
   </script>
-
-  <div class="panel-body" style="padding-bottom: 0;">
+  <div class="panel-body">
     <div class="tab-content" id="itinerary-content">
-      <%= render @schedule_days %>
+      <!-- <%= render @schedule_days %> -->
     </div>
   </div>
 
-  <!-- Show Town Detail -->
-  <div class="town-info">
-    <p><span class="town-name">Tokyo</span></p>
-    <p class="town-description">Some random stuff I have no idea what it's about</p>
-  </div>
-</div>
-
-<!-- Show back, next button -->
-</div>
-<%= render 'trips/footer_navigator' %>
-
+  <%= render 'trips/footer_navigator' %>
 </div>
 
 <script>

@@ -1,0 +1,18 @@
+<div class="place_summary_screen" id="place-summary_<%= attraction.index %>">
+  <div class="whiteFrame">
+    <%= image_tag(attraction.image_url, height: '50', width: '50', style: 'margin-top: 15px; ', class: 'img-circle') %>
+    <p class="place_name"><%= attraction.place.name %></p>
+    <p class="place_description" id="place_description_<%= attraction.index %>"><%= attraction.place.description %></p>
+    <%= link_to "View more...", attraction.place, class: "btn btn-info"  %>
+  </div>
+</div>
+
+<script>
+  $("#place-summary_<%= attraction.index %>").click(function() {
+    $("#place-summary_<%= attraction.index %>").hide();
+  });
+
+  $("#place_description_<%= attraction.index %>").text($("#place_description_<%= attraction.index %>").text().substring(0,300) + "...")
+  $("#place-summary_<%= attraction.index %>").hide();
+</script>
+15px;
